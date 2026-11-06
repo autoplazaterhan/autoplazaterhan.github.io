@@ -80,9 +80,20 @@
         <span class="text-[11px] px-2.5 py-1 rounded-full bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-semibold">
           رصدخانه اطلاعاتی کمپین
         </span>
+        <div id="header-live-badge" class="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span><strong id="live-header-users" class="font-black font-mono">--</strong> آنلاین</span>
+        </div>
       </div>
 
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#live-stats" class="hover:text-[#E85A2A] transition-colors flex items-center gap-1.5 text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          آمار زنده
+        </a>
         <a href="#about" class="hover:text-[#E85A2A] transition-colors">درباره مجموعه</a>
         <a href="#features" class="hover:text-[#E85A2A] transition-colors">امکانات و سازه</a>
         <a href="#ownership" class="hover:text-[#E85A2A] transition-colors">مالکیت و مدیران</a>
@@ -158,6 +169,101 @@
               <p class="text-sm font-extrabold mt-0.5">۸۲,۰۰۰ مترمربع فضای شوروم + ۸۲,۰۰۰ مترمربع پارکینگ و پیست</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Real-Time Analytics & Traffic Observatory -->
+  <section id="live-stats" class="py-12 border-b border-white/5 bg-[#0a0c12]/95 relative overflow-hidden">
+    <div class="absolute -top-24 -end-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -start-24 w-96 h-96 bg-[#E85A2A]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 mb-2">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            پایش لحظه‌ای ترافیک رصدخانه (Realtime Pulse)
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">آمار زنده بازدیدکنندگان و مخاطبان آنلاین</h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">شفافیت کامل در میزان توجه افکار عمومی، حضور فعال کاربران و حجم مراجعات به پرونده اتوپلازا تهران</p>
+        </div>
+        
+        <div class="flex items-center gap-3 text-xs text-slate-400">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-mono text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            همگام‌سازی ابری فعال
+          </span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Live Online Users -->
+        <div class="apz-card rounded-2xl p-6 border border-emerald-500/30 relative overflow-hidden group hover:border-emerald-500/60 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.06)]">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              کاربران آنلاین در لحظه
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-mono">زنده</span>
+          </div>
+          <div class="flex items-baseline gap-2 my-2">
+            <span id="stat-online-users" class="text-4xl sm:text-5xl font-black text-emerald-400 font-mono tracking-tight">--</span>
+            <span class="text-xs text-emerald-300/80 font-medium">کاربر فعال</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-2">هم‌اکنون در حال مطالعه بخش‌های پرونده و رصد تایم‌لاین</p>
+        </div>
+
+        <!-- Today Stats -->
+        <div class="apz-card rounded-2xl p-6 border border-white/10 relative overflow-hidden group hover:border-[#E85A2A]/40 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">بازدیدهای امروز</span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-white/5 text-slate-400 font-mono">از ۰۰:۰۰</span>
+          </div>
+          <div class="flex items-baseline gap-2 my-2">
+            <span id="stat-today-views" class="text-4xl sm:text-5xl font-black text-white font-mono tracking-tight">--</span>
+            <span class="text-xs text-slate-400 font-medium">صفحه</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-2">
+            شامل <span id="stat-today-visitors" class="font-bold text-[#E85A2A] font-mono">--</span> بازدیدکننده یکتا در طول امروز
+          </p>
+        </div>
+
+        <!-- Yesterday Stats -->
+        <div class="apz-card rounded-2xl p-6 border border-white/10 relative overflow-hidden group hover:border-white/20 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">بازدیدهای دیروز</span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-white/5 text-slate-400 font-mono">۲۴ ساعت گذشته</span>
+          </div>
+          <div class="flex items-baseline gap-2 my-2">
+            <span id="stat-yesterday-views" class="text-4xl sm:text-5xl font-black text-slate-200 font-mono tracking-tight">--</span>
+            <span class="text-xs text-slate-400 font-medium">صفحه</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-2">
+            شامل <span id="stat-yesterday-visitors" class="font-bold text-slate-300 font-mono">--</span> بازدیدکننده یکتای روز گذشته
+          </p>
+        </div>
+
+        <!-- Total Stats -->
+        <div class="apz-card rounded-2xl p-6 border border-[#E85A2A]/30 relative overflow-hidden group hover:border-[#E85A2A]/60 transition-all duration-300 shadow-[0_0_30px_rgba(232,90,42,0.06)]">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider">مجموع کل بازدیدها</span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-[#E85A2A]/10 text-[#E85A2A] font-mono">کل کمپین</span>
+          </div>
+          <div class="flex items-baseline gap-2 my-2">
+            <span id="stat-total-views" class="text-4xl sm:text-5xl font-black text-[#E85A2A] font-mono tracking-tight">--</span>
+            <span class="text-xs text-slate-400 font-medium">بازدید</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-2">
+            مجموع <span id="stat-total-visitors" class="font-bold text-white font-mono">--</span> مخاطب و پژوهشگر یکتا
+          </p>
         </div>
       </div>
     </div>
@@ -3735,6 +3841,97 @@ Don’t send DMs, ...
       <p class="dir-ltr font-mono text-slate-600">Hosted on GitHub Pages: autoplazaterhan.github.io</p>
     </div>
   </footer>
+
+  <!-- Floating Live Users Widget (Bottom Corner) -->
+  <div id="floating-live-widget" class="fixed bottom-5 start-5 z-40 bg-[#0d0f15]/90 backdrop-blur-md border border-white/10 rounded-full px-4 py-2 shadow-2xl flex items-center gap-3 text-xs text-slate-300 hover:border-emerald-500/40 transition-all cursor-pointer" onclick="document.getElementById('live-stats').scrollIntoView({behavior:'smooth'})" title="مشاهده آمار کامل رصدخانه">
+    <span class="relative flex h-2.5 w-2.5">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+    </span>
+    <span class="font-medium">
+      <strong id="float-online-users" class="font-black font-mono text-emerald-400">--</strong> آنلاین
+    </span>
+    <span class="w-1 h-1 rounded-full bg-slate-600"></span>
+    <span class="text-slate-400">
+      <strong id="float-today-views" class="font-bold font-mono text-slate-200">--</strong> بازدید امروز
+    </span>
+  </div>
+
+  <!-- Realtime Analytics Engine -->
+  <script>
+    (function() {
+      const STATS_API = 'https://mrhermes.ir/api/autoplaza_stats.php';
+
+      function getSessionId() {
+        let sid = localStorage.getItem('apz_visitor_sid');
+        if (!sid) {
+          sid = 'apz_' + Math.random().toString(36).substring(2, 11) + '_' + Date.now().toString(36);
+          localStorage.setItem('apz_visitor_sid', sid);
+        }
+        return sid;
+      }
+
+      function toPersianDigits(n) {
+        if (n === undefined || n === null || isNaN(n)) return '--';
+        return Number(n).toLocaleString('fa-IR');
+      }
+
+      function applyStats(data) {
+        if (!data || !data.success) return;
+
+        // Online Users
+        const online = data.online || 0;
+        const onlineText = toPersianDigits(online);
+        ['stat-online-users', 'live-header-users', 'float-online-users'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = onlineText;
+        });
+
+        // Today
+        const todayViews = toPersianDigits(data.today?.views);
+        const todayVisitors = toPersianDigits(data.today?.visitors);
+        const todayViewsEl = document.getElementById('stat-today-views');
+        const todayVisitorsEl = document.getElementById('stat-today-visitors');
+        const floatTodayEl = document.getElementById('float-today-views');
+        if (todayViewsEl) todayViewsEl.textContent = todayViews;
+        if (todayVisitorsEl) todayVisitorsEl.textContent = todayVisitors;
+        if (floatTodayEl) floatTodayEl.textContent = todayViews;
+
+        // Yesterday
+        const yestViews = toPersianDigits(data.yesterday?.views);
+        const yestVisitors = toPersianDigits(data.yesterday?.visitors);
+        const yestViewsEl = document.getElementById('stat-yesterday-views');
+        const yestVisitorsEl = document.getElementById('stat-yesterday-visitors');
+        if (yestViewsEl) yestViewsEl.textContent = yestViews;
+        if (yestVisitorsEl) yestVisitorsEl.textContent = yestVisitors;
+
+        // Total
+        const totalViews = toPersianDigits(data.total?.views);
+        const totalVisitors = toPersianDigits(data.total?.visitors);
+        const totalViewsEl = document.getElementById('stat-total-views');
+        const totalVisitorsEl = document.getElementById('stat-total-visitors');
+        if (totalViewsEl) totalViewsEl.textContent = totalViews;
+        if (totalVisitorsEl) totalVisitorsEl.textContent = totalVisitors;
+      }
+
+      const sid = getSessionId();
+      const page = window.location.pathname + window.location.hash;
+
+      // 1. Initial Page Hit
+      fetch(`${STATS_API}?action=hit&sid=${encodeURIComponent(sid)}&page=${encodeURIComponent(page)}`)
+        .then(res => res.json())
+        .then(applyStats)
+        .catch(err => console.log('Analytics pulse:', err));
+
+      // 2. Periodic Live Heartbeat (every 25 seconds)
+      setInterval(() => {
+        fetch(`${STATS_API}?action=heartbeat&sid=${encodeURIComponent(sid)}&page=${encodeURIComponent(window.location.pathname + window.location.hash)}`)
+          .then(res => res.json())
+          .then(applyStats)
+          .catch(() => {});
+      }, 25000);
+    })();
+  </script>
 
 </body>
 </html>
