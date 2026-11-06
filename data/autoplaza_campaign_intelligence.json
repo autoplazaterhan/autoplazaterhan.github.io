@@ -1,0 +1,81 @@
+{
+  "campaign_name": "Tehran Auto Plaza Grand Opening",
+  "organization": "Iran Novin Group (Kanoon Iran Novin)",
+  "ownership_and_founders": {
+    "founder_and_ceo": "Maryam Shafiei",
+    "chairman_of_the_board": "Sepehr Seifi",
+    "holding_company": "Kanoon Iran Novin Advertising Agency",
+    "investment_arm": "Novin Ventures"
+  },
+  "executive_leadership": [
+    {"name": "Amirparviz Farzan", "role": "General Manager / Director Tehran Auto Plaza"},
+    {"name": "Amirhossein Afrasiabipour", "role": "VP of Strategy & Business Development (Iran Novin / AutoPlaza)"},
+    {"name": "Mehdi Moazzami", "role": "VP of Digital Marketing (Iran Novin / AutoPlaza SuperApp Lead)"},
+    {"name": "Mehdi Moazzeni", "role": "Technical Product Lead (SuperApp)"}
+  ],
+  "location": "Tehran, Km 11 Lashgari Expressway, corner of 30th St",
+  "dates": "13 to 19 Aban 1405 (November 2026)",
+  "metrics": {
+    "total_area_sqm": 164000,
+    "showroom_area_sqm": 82000,
+    "showrooms_count": 90,
+    "parking_capacity": 3000
+  },
+  "offers": {
+    "cash_discount_toman": 200000000,
+    "daily_raffle": "Peugeot 207 every night",
+    "grand_raffle": "XPENG EV",
+    "concerts_nights": 7
+  },
+  "concert_lineup": [
+    {"date": "1405-08-13", "artist": "Ashvan", "handle": "ashvan_official"},
+    {"date": "1405-08-14", "artist": "Reza Sadeghi", "handle": "rezasadeghi_official"},
+    {"date": "1405-08-15", "artist": "Omid Hajili", "handle": "omidhajili"},
+    {"date": "1405-08-16", "artist": "Alireza Talischi", "handle": "alirezatalischioriginal"},
+    {"date": "1405-08-17", "artist": "Arshiyas", "handle": "arshiyas"}
+  ],
+  "influencers": [
+    {"handle": "ahooraniazi", "name": "Ahoora Niazi", "followers": 2248000, "niche": "Tech", "type": "Collab Lead"},
+    {"handle": "benyamin_co.ir", "name": "Benyamin BE", "followers": 2384000, "niche": "Cars", "type": "Collab Member"},
+    {"handle": "hoseindelavar", "name": "Hossein Delavar", "followers": 256000, "niche": "Auto Journalism", "type": "Collab Member"},
+    {"handle": "_fatemereyhani", "name": "Fateme Reyhani", "followers": 492000, "niche": "Lifestyle & Skate", "type": "Collab Member"},
+    {"handle": "hope.styl", "name": "Hope Styl", "followers": 1981000, "niche": "Viral Comedy", "type": "Collab Lead (105K likes)"},
+    {"handle": "mahyarhassan", "name": "Mahyar Hassan", "followers": 1549000, "niche": "Viral Comedy", "type": "Threads / Reels"},
+    {"handle": "h3n", "name": "Hassan Amiri", "followers": 1082000, "niche": "3D Director", "type": "Collab Lead"},
+    {"handle": "khashayarvaziri", "name": "Khashayar Ahmadvaziri", "followers": 1076000, "niche": "Comedy", "type": "Collab Member"},
+    {"handle": "behnood_mk", "name": "Behnood Maleki", "followers": 778000, "niche": "Offroad", "type": "Collab Member"},
+    {"handle": "hadiseheydariiii", "name": "Hadise Heydari", "followers": 409000, "niche": "Lifestyle", "type": "Collab Member"},
+    {"handle": "moeidhamidi", "name": "Moeid Hamidi", "followers": 267000, "niche": "Auto Journalism", "type": "Collab Member"},
+    {"handle": "vahidmolaei1369", "name": "Vahid Molaei", "followers": 783000, "niche": "Supercars", "type": "Reels"},
+    {"handle": "zizi.salimi", "name": "Zizi Salimi", "followers": 615000, "niche": "Lifestyle / Cybertruck", "type": "Reels"},
+    {"handle": "salar.reviews", "name": "Salar Homayouni", "followers": 553000, "niche": "Cars", "type": "Reels"},
+    {"handle": "oto_arkan_vip", "name": "Hamidreza Mokhlespour", "followers": 434000, "niche": "Cars / RAM TRX", "type": "Reels"},
+    {"handle": "mahdii_dgr", "name": "Mahdi Dadgar", "followers": 411000, "niche": "Cars / Corvette C8", "type": "Reels / Shemron Cars"},
+    {"handle": "matin.tech", "name": "Matin Akbari", "followers": 372000, "niche": "Tech", "type": "Reels"},
+    {"handle": "vahid_boush", "name": "Vahid Boush", "followers": 373000, "niche": "Motor / Travel", "type": "Reels"},
+    {"handle": "saeedyousefiofficial", "name": "Saeed Yousefi", "followers": 333000, "niche": "Blogger", "type": "Collab (7K shares)"},
+    {"handle": "sheikhigasht", "name": "Vahid Sheikhi", "followers": 297000, "niche": "Lifestyle / Food", "type": "Collab"},
+    {"handle": "sabcar.ir", "name": "Saber Mohseni", "followers": 233000, "niche": "Auto Consultant", "type": "Reels"},
+    {"handle": "mrmashinbaz", "name": "Mr Mashinbaz", "followers": 178000, "niche": "Cars", "type": "Collab"},
+    {"handle": "hamirent", "name": "Hami Rent", "followers": 129000, "niche": "Supercar Supplier", "type": "Display Supplier"},
+    {"handle": "matinnasiri", "name": "Matin Nasiri", "followers": 66000, "niche": "Auto Journalist", "type": "XPENG Mona M03"},
+    {"handle": "tvpluss", "name": "TV Pluss", "followers": 2634000, "niche": "Media", "type": "Reportage"},
+    {"handle": "sosfact", "name": "SOS Fact", "followers": 10329000, "niche": "Publisher", "type": "Collab & Tag Network"}
+  ],
+  "telegram_channels": [
+    {"channel": "akharin_khodro", "post_id": 8826, "date": "2026-11-02", "views": 26209, "type": "Teaser & Official News"},
+    {"channel": "mycariran", "post_id": 19354, "date": "2026-11-02", "views": 7979, "type": "Concerts & Raffles Hook"},
+    {"channel": "mycariran", "post_id": 18540, "date": "2026-10-12", "views": 12590, "type": "Showrooms & IG Reel"},
+    {"channel": "charkhan", "post_id": 19501, "date": "2026-10-12", "views": 1314, "type": "Full Feature Reportage"},
+    {"channel": "ecoiran_webtv", "post_id": 53534, "date": "2026-10-13", "views": 2306, "type": "Video Interview Farzan"},
+    {"channel": "ecoiran_webtv", "post_id": 53522, "date": "2026-10-13", "views": 2651, "type": "Industry Analysis Video"},
+    {"channel": "khabaronline_ir", "post_id": 667173, "date": "2026-11-02", "views": 5816, "type": "Grand Opening Campaign"},
+    {"channel": "khabaronline_ir", "post_id": 664307, "date": "2026-10-13", "views": 5265, "type": "SuperApp 19 AI Agents"},
+    {"channel": "khabaronline_ir", "post_id": 664241, "date": "2026-10-12", "views": 5531, "type": "Press Day Intro"},
+    {"channel": "isna94", "post_id": 411586, "date": "2026-11-03", "views": 2523, "type": "Official Opening Launch"},
+    {"channel": "isna94", "post_id": 408500, "date": "2026-10-12", "views": 3724, "type": "Project Announcement"},
+    {"channel": "tabnak", "post_id": 243965, "date": "2026-10-18", "views": 5963, "type": "District 21 Auto Market"},
+    {"channel": "sedayebourse", "post_id": 179739, "date": "2026-10-12", "views": 8719, "type": "Fintech & Leasing"},
+    {"channel": "GizmizTel", "post_id": 161897, "date": "2026-09-17", "views": 142486, "type": "Staff Recruitment Iran Novin"}
+  ]
+}

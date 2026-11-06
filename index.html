@@ -1,0 +1,3737 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتو پلازا تهران | پایگاه جامع رصد، تحلیل و داده‌های اطلاعاتی (Tehran Auto Plaza)</title>
+  <meta name="description" content="پرونده جامع اطلاعاتی، ساختار سازمانی، تایم‌لاین افتتاحیه و رصدنامه کمپین‌های اتوپلازا تهران (هلدینگ کانون ایران نوین - نوین ونچرز).">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            apz: {
+              orange: '#E85A2A',
+              hover: '#ff6b38',
+              glow: 'rgba(232, 90, 42, 0.35)',
+              dark: '#07080b',
+              card: '#0d0f15',
+              border: 'rgba(255, 255, 255, 0.08)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      letter-spacing: 0 !important;
+    }
+    body {
+      font-family: 'Vazirmatn', -apple-system, sans-serif;
+      background-color: #050608;
+      color: #f3f4f6;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 75% 15%, rgba(232, 90, 42, 0.16) 0%, transparent 55%),
+                  radial-gradient(circle at 20% 85%, rgba(232, 90, 42, 0.1) 0%, transparent 45%),
+                  linear-gradient(180deg, #07080b 0%, #050608 100%);
+    }
+    .apz-card {
+      background: rgba(14, 16, 22, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(16px);
+      transition: all 0.25s ease;
+    }
+    .apz-card:hover {
+      border-color: rgba(232, 90, 42, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -10px rgba(232, 90, 42, 0.15);
+    }
+    .grid-pattern {
+      background-size: 50px 50px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-[#E85A2A] selection:text-white">
+
+  <!-- Header / Navigation (Auto Plaza Official Structure) -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#07080b]/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-3">
+          <img src="assets/apz1.png" alt="لوگوی اتو پلازا" class="h-10 w-auto filter drop-shadow-[0_4px_12px_rgba(232,90,42,0.4)]">
+          <img src="assets/apz2-light.png" alt="اتوپلازا تهران" class="h-6 w-auto hidden sm:block">
+        </a>
+        <span class="text-[11px] px-2.5 py-1 rounded-full bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-semibold">
+          رصدخانه اطلاعاتی کمپین
+        </span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-[#E85A2A] transition-colors">درباره مجموعه</a>
+        <a href="#features" class="hover:text-[#E85A2A] transition-colors">امکانات و سازه</a>
+        <a href="#ownership" class="hover:text-[#E85A2A] transition-colors">مالکیت و مدیران</a>
+        <a href="#opening" class="hover:text-[#E85A2A] transition-colors">جشنواره افتتاحیه</a>
+        <a href="#influencers" class="hover:text-[#E85A2A] transition-colors">اینفلوئنسرها (56)</a>
+        <a href="#posts" class="hover:text-[#E85A2A] transition-colors">تایم‌لاین (55)</a>
+        <a href="#news" class="hover:text-[#E85A2A] transition-colors">رسانه‌های خبری</a>
+        <a href="data/tehran_autoplaza_comprehensive_investigation.md" target="_blank" class="px-4 py-2 rounded-xl bg-[#E85A2A] hover:bg-[#ff6b38] text-white font-bold transition-all shadow-lg shadow-[#E85A2A]/20">
+          دانلود پرونده
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative hero-glow grid-pattern py-16 sm:py-24 border-b border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-[#E85A2A] animate-pulse"></span>
+            مقصدی فراتر از خودرو | هلدینگ کانون ایران نوین
+          </div>
+          
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight text-white">
+            مقیاس یک مقصد،<br>
+            <span class="text-[#E85A2A]">نه یک نمایشگاه.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            مجموعه ۱۶۴ هزار مترمربعی «اتو پلازا تهران» در کیلومتر ۱۱ جاده مخصوص کرج؛ پایگاهی متمرکز برای خرید و فروش، ۹۰ شوروم تخصصی نمایندگی برندها، خدمات فنی و کارشناسی رنگ، سوپراپلیکیشن مجهز به ۱۹ دستیار هوش مصنوعی و مراکز رفاهی و تفریحی.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+            <div class="apz-card rounded-2xl p-4 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-[#E85A2A]">۱۶۴,۰۰۰</span>
+              <span class="text-xs text-slate-400 mt-1 block">متر مربع وسعت کل</span>
+            </div>
+            <div class="apz-card rounded-2xl p-4 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-[#E85A2A]">۹۰</span>
+              <span class="text-xs text-slate-400 mt-1 block">شوروم تخصصی برندها</span>
+            </div>
+            <div class="apz-card rounded-2xl p-4 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-[#E85A2A]">۳,۰۰۰</span>
+              <span class="text-xs text-slate-400 mt-1 block">ظرفیت پارکینگ مسقف</span>
+            </div>
+            <div class="apz-card rounded-2xl p-4 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-[#E85A2A]">۱۹</span>
+              <span class="text-xs text-slate-400 mt-1 block">دستیار هوش مصنوعی</span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[#E85A2A]">📍</span> تهران، کیلومتر ۱۱ بزرگراه شهید لشگری (جاده مخصوص)، نبش خیابان ۳۰
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-[#E85A2A]">📞</span> ۰۹۳۰۹۰۰۰۲۲۲
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-[#E85A2A]">🌐</span> autoplaza.ir
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative group rounded-3xl overflow-hidden p-2 apz-card">
+            <img src="assets/hero-plaza.jpg" alt="سازه اتوپلازا" class="w-full h-auto rounded-2xl object-cover transform group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none rounded-2xl"></div>
+            <div class="absolute bottom-6 right-6 left-6 text-white pointer-events-none">
+              <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block">سازه اختصاصی هلدینگ</span>
+              <p class="text-sm font-extrabold mt-0.5">۸۲,۰۰۰ مترمربع فضای شوروم + ۸۲,۰۰۰ مترمربع پارکینگ و پیست</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities & Features Section -->
+  <section id="features" class="py-16 border-b border-white/5 bg-[#07080b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-2">فراتر از یک بازار خودرو</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">همه چیز خودرو، در یک مقصد متمرکز</h2>
+        <p class="text-sm text-slate-400 mt-2">تجمیع تمام فرآیندهای خرید، فروش، بیمه، تسهیلات و خدمات جانبی بدون واسطه</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="apz-card rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-[#E85A2A]/10 border border-[#E85A2A]/30 flex items-center justify-center text-xl mb-4">
+            🚗
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">خرید و فروش خودرو</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            ۹۰ شوروم مستقل با حضور رسمی برندهای وارداتی و مونتاژی، خودروهای صفر، گارانتی اصالت و معامله مستقیم در فضایی استاندارد.
+          </p>
+        </div>
+
+        <div class="apz-card rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-[#E85A2A]/10 border border-[#E85A2A]/30 flex items-center justify-center text-xl mb-4">
+            ⚙️
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">خدمات فنی و کارشناسی</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            کارشناسی چندمرحله‌ای رنگ و بدنه، عیب‌یابی دیاگ، باجه اختصاصی تعویض پلاک، خدمات لیزینگ و صدور بیمه‌نامه در محل.
+          </p>
+        </div>
+
+        <div class="apz-card rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-[#E85A2A]/10 border border-[#E85A2A]/30 flex items-center justify-center text-xl mb-4">
+            📱
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">سوپراپ و ۱۹ هوش مصنوعی</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            دستیار هوشمند خرید و مقایسه خودرو، ایجنت‌های تخصصی مشاوره، رزرو آنلاین خدمات کارشناسی و یکپارچه‌سازی تراکنش‌ها.
+          </p>
+        </div>
+
+        <div class="apz-card rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-[#E85A2A]/10 border border-[#E85A2A]/30 flex items-center justify-center text-xl mb-4">
+            ☕
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">امکانات رفاهی و سرگرمی</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            فودکورت مدرن، کافه‌ها و رستوران‌ها، هایپرمارکت قطعات و اکسسوری، سالن‌های اجتماعات و استودیوهای تخصصی رسانه.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ownership & Corporate Intelligence -->
+  <section id="ownership" class="py-16 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-2">ساختار شرکتی و سرمایه‌گذاری</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">مالکیت، بنیان‌گذاران و مدیران ارشد</h2>
+        <p class="text-sm text-slate-400 mt-2">وابستگی مستقیم به گروه کانون ایران نوین و بازوی سرمایه‌گذاری نوین ونچرز</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div class="apz-card rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-[#E85A2A] uppercase tracking-wider">
+            هلدینگ بالاسری
+          </div>
+          <h3 class="text-xl font-bold text-white">کانون ایران نوین (نوین ونچرز)</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            بزرگ‌ترین آژانس تبلیغاتی و بازاریابی ایران (تاسیس ۱۳۶۹) با بیش از ۳۴ سال سابقه، ۷۰۰+ پرسنل و انحصار بیشترین سازه‌های تبلیغات محیطی و بیلبوردی در بزرگراه‌های تهران؛ مالک، سازنده و بهره‌بردار مگاپروژه اتوپلازا.
+          </p>
+          <div class="pt-3 border-t border-white/10 space-y-2.5 text-sm">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">بنیان‌گذار و مدیرعامل هلدینگ:</span>
+              <span class="font-bold text-white">مریم شفیعی</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">رئیس هیئت‌مدیره کانون ایران نوین:</span>
+              <span class="font-bold text-white">سپهر سیفی</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">محصولات هم‌گروه نوین ونچرز:</span>
+              <span class="text-xs text-[#E85A2A]">ابزارمارت (abzarmart.com) | نوین تراول (1606.ir)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="apz-card rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-[#E85A2A] uppercase tracking-wider">
+            کادر اجرایی و هدایت‌کننده
+          </div>
+          <h3 class="text-xl font-bold text-white">مدیران پروژه اتوپلازا تهران</h3>
+          <div class="space-y-3 pt-1">
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5">
+              <div class="font-bold text-sm text-white">امیرپرویز فرزان (فرزام)</div>
+              <div class="text-xs text-slate-400 mt-0.5">مدیر اتوپلازای تهران (مدیر اجرایی و مسئول مستقیم راهبری کل مجتمع)</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5">
+              <div class="font-bold text-sm text-white">امیرحسین افراسیابی‌پور (امیر افراسیابی)</div>
+              <div class="text-xs text-slate-400 mt-0.5">معاونت استراتژی و توسعه کسب‌وکار کانون ایران نوین و سخنگوی پروژه</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5">
+              <div class="font-bold text-sm text-white">مهدی معظمی</div>
+              <div class="text-xs text-slate-400 mt-0.5">معاونت دیجیتال مارکتینگ و مدیر پلتفرم سوپراپ با ۱۹ ایجنت هوش مصنوعی</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5">
+              <div class="font-bold text-sm text-white">مهدی موذنی</div>
+              <div class="text-xs text-slate-400 mt-0.5">مسئول فنی توسعه محصول و مدیر معرفی سوپراپلیکیشن</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening Festival & Concerts -->
+  <section id="opening" class="py-16 border-b border-white/5 bg-[#07080b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-2">رویداد بزرگ پاییزی</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">جشنواره ۷ شب افتتاحیه اتوپلازا</h2>
+        <p class="text-sm text-slate-400 mt-2">۱۳ تا ۱۹ آبان ۱۴۰۵ | ساعت ۱۶ الی ۲۲ | ورودی کاملاً رایگان | کیلومتر ۱۱ جاده مخصوص</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="apz-card rounded-2xl p-6 border-s-4 border-s-[#E85A2A]">
+          <div class="text-xs font-bold text-[#E85A2A] mb-1">کنسرت‌های زنده شبانه</div>
+          <h3 class="text-lg font-bold text-white mb-2">استیج کنسرت‌های عمومی</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            اجرای بدون فروش بلیت هر شب از ساعت ۱۹:۰۰ با حضور خوانندگان مطرح پاپ نظیر اشوان، رضا صادقی، امید حاجیلی، علیرضا طلیسچی و ارشیاس.
+          </p>
+        </div>
+
+        <div class="apz-card rounded-2xl p-6 border-s-4 border-s-emerald-500">
+          <div class="text-xs font-bold text-emerald-400 mb-1">جوایز روزانه و پایانی</div>
+          <h3 class="text-lg font-bold text-white mb-2">قرعه‌کشی ۷ خودرو و XPENG</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            قرعه‌کشی روزانه ۱ دستگاه پژو ۲۰۷ بین خریداران همان روز (مجموعاً ۷ دستگاه) و قرعه‌کشی ۱ دستگاه خودرو تمام‌برقی پیشرفته XPeng Mona M03.
+          </p>
+        </div>
+
+        <div class="apz-card rounded-2xl p-6 border-s-4 border-s-amber-500">
+          <div class="text-xs font-bold text-amber-400 mb-1">آفرهای نقدی خرید خودرو</div>
+          <h3 class="text-lg font-bold text-white mb-2">۲۰۰ میلیون تومان تخفیف مستقیم</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            مجموعاً ۲۰۰ میلیون تومان تخفیف روی فاکتور خریداران همراه با پکیج خدمات کارشناسی رنگ، فنی و تعویض پلاک در محل.
+          </p>
+        </div>
+      </div>
+
+      <!-- Lineup Grid -->
+      <div class="apz-card rounded-3xl p-6 sm:p-8">
+        <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#E85A2A]"></span>
+          جدول اجرای خوانندگان در هفته افتتاحیه
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+
+          <div class="p-4 rounded-xl bg-black/50 border border-white/5 text-center space-y-2">
+            <span class="inline-block px-2.5 py-0.5 rounded bg-[#E85A2A]/15 text-[#E85A2A] text-xs font-mono font-bold">1405-08-13</span>
+            <div class="font-extrabold text-white text-base">Ashvan</div>
+            <a href="https://instagram.com/ashvan_official" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] block transition-colors dir-ltr font-mono">@ashvan_official</a>
+          </div>
+    
+          <div class="p-4 rounded-xl bg-black/50 border border-white/5 text-center space-y-2">
+            <span class="inline-block px-2.5 py-0.5 rounded bg-[#E85A2A]/15 text-[#E85A2A] text-xs font-mono font-bold">1405-08-14</span>
+            <div class="font-extrabold text-white text-base">Reza Sadeghi</div>
+            <a href="https://instagram.com/rezasadeghi_official" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] block transition-colors dir-ltr font-mono">@rezasadeghi_official</a>
+          </div>
+    
+          <div class="p-4 rounded-xl bg-black/50 border border-white/5 text-center space-y-2">
+            <span class="inline-block px-2.5 py-0.5 rounded bg-[#E85A2A]/15 text-[#E85A2A] text-xs font-mono font-bold">1405-08-15</span>
+            <div class="font-extrabold text-white text-base">Omid Hajili</div>
+            <a href="https://instagram.com/omidhajili" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] block transition-colors dir-ltr font-mono">@omidhajili</a>
+          </div>
+    
+          <div class="p-4 rounded-xl bg-black/50 border border-white/5 text-center space-y-2">
+            <span class="inline-block px-2.5 py-0.5 rounded bg-[#E85A2A]/15 text-[#E85A2A] text-xs font-mono font-bold">1405-08-16</span>
+            <div class="font-extrabold text-white text-base">Alireza Talischi</div>
+            <a href="https://instagram.com/alirezatalischioriginal" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] block transition-colors dir-ltr font-mono">@alirezatalischioriginal</a>
+          </div>
+    
+          <div class="p-4 rounded-xl bg-black/50 border border-white/5 text-center space-y-2">
+            <span class="inline-block px-2.5 py-0.5 rounded bg-[#E85A2A]/15 text-[#E85A2A] text-xs font-mono font-bold">1405-08-17</span>
+            <div class="font-extrabold text-white text-base">Arshiyas</div>
+            <a href="https://instagram.com/arshiyas" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] block transition-colors dir-ltr font-mono">@arshiyas</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Influencers & Creators Network -->
+  <section id="influencers" class="py-16 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-1">بازاریابی تاثیرگذار و اینفلوئنسرها</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">شبکه همکاران رسانه‌ای و محتوایی</h2>
+        </div>
+        <div class="text-xs text-slate-400">
+          تعداد صفحات ممیزی‌شده: <span class="font-bold text-[#E85A2A] font-mono text-sm">56 پیج</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/benyamin_co.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Benyamin BE
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@benyamin_co.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Cars
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Youtub       + 600k
+TikTok        + 80k
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">2,389,669</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/hope.styl" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  گروه هوپ استایل🌱
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@hope.styl</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Artist
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              اینجا ، جاییه که اُمـید نقش مهمی داشته و داره✨
+هماهنگی جهت همکاری: @hopestyl.ads 
+پیج کودک...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,982,571</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/mahyarhassan" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  مهيارحسن
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@mahyarhassan</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Artist
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              استوری ها در پیج دوم:
+@mahyarhassan23
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,548,896</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/hoseindelavar" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Hossein Delavar
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@hoseindelavar</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Journalist
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ✒Auto Journalists 🚗
+سردبیر پایگاه خبری آخرین خودرو
+@akharinkhodro.ir
+مشاوره خودرو از لینک ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">256,530</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/_fatemereyhani" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Fateme Reyhani
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@_fatemereyhani</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Athlete
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              داور و مربی رسمی فدراسیون اسکیت🪭👩🏻‍💼
+جادوی در حال تکامل🪐
+@spinxcomplexe مجموعه ورزشی من🧬
+@...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">491,929</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/tehranautoplaza" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  اتو پلازا تهران | Tehran Auto Plaza
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@tehranautoplaza</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              اتوپلازا تهران، اولین و بزرگ‌ترین بازار خرید، فروش و خدمات خودرو در ایران. ✌🏻
+‌ 📍کیلومتر ۱...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">74,667</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/mr.mahbod" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  مهبُد حسن
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@mr.mahbod</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Personal blog
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              مشاوره،ایده پرداز و راه اندازی کافه
+@yegane.mahdii 
+Cafe and Restaurant manager 
+Y❣️
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">11,125</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/ahooraniazi" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Ahoora Niazi | Tech blogger
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@ahooraniazi</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Science &amp; Tech
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              فعال حوزه فناوری (Technology)
+روشن باشید و آگاه
+ارتباط جهت همکاری👇🏻
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">2,248,822</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/behnood_mk" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Behnood Maleki
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@behnood_mk</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              چقدددر داره خوش میگذره…
+برگذاری سفر های افرودی و کویر 🏜️
+خاص ترینهای ایرانو قراره اینجا به...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">777,489</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/hadiseheydariiii" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  حدیثه حیدری | Hadise heydari
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@hadiseheydariiii</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Reel creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              هایلایتارو از دست نده😉🥰 
+🖌️همکاری و معرفی📩⬇️
+🤍⛓️
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">409,143</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/moeidhamidi" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  معید حمیدی | فعال خودرویی
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@moeidhamidi</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              🟠 مدیرمسئول رسانه ماشین‌نامه
+@mashinname
+🟠 خبرنگار تخصصی خودرو
+🟠 دانشجوی دکترای مهندسی مکا...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">267,440</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/zizi.salimi" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  زی‌زی سلیمی
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@zizi.salimi</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Reel creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              همه چیز درباره تکنولوژی و هوش مصنوعی
+معرفی گجت
+همکاری @zi.factory
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">614,667</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/h3n" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Hassan Amiri
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@h3n</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Reel creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ☀️
+3D Artist 
+Director
+راه ارتباطی از طریق واتس اپ:
++98 998 122 4321
+برنامه (تاچ آخر)👇🏽🔥
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,082,481</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/salar.reviews" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Salar Homayouni | سالار ریویوز
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@salar.reviews</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              نقد، تست و بررسی، مقایسه خودروها
+کانال یوتوب👇
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">552,942</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/vahidmolaei1369" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  وحیدمولایی
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@vahidmolaei1369</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              My Business:
+🏎️اجاره خودرو لاکچری کیش 
+@molaeirent 
+@molaeirent.dubai 
+رستوران  — @lacava....
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">783,121</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/khashayarvaziri" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Khashayar ahmadvaziri
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@khashayarvaziri</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Personal blog
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              خدایا تو بساز توبسازی قشنگه...!🦅
+اینجا بمون بخندیم😍
+همکاری واتس.اپ
+0992 555 3242
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,077,271</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/oto_arkan_vip" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  آکادمی آرکان خودرو(حمیدمخلصپور)🔵
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@oto_arkan_vip</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Entrepreneur
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              به تصویر کشیدن مشاغل مختلف
+تهران، ایران مال، آرکان خودرو
+912.144.1506ادمین،سروش
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">435,206</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/vahid_boush" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  وحیدبوش / سفر باموتور
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@vahid_boush</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Digital creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Adventure Filmmaker
+Motorcycle Travel &amp; Cinematic Stories
+Funder of : @alpmoto.adv 
+Collab...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">373,423</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/shemron_cars" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  برگزار کننده دورهمی های خودرویی
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@shemron_cars</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              welcome to shemron cars ❤️
+Admin: 
+@mahdii_dgr 
+@rezahydariiiii
+برای اسپانسر شدن و تبلیغ ک...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">28,973</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/matin.tech" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Matin Akbarikhorram
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@matin.tech</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Digital creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              🤍 تنها خـدا برایم کافیست 🤍
+همکاری : @mt.advertising
+کانال تلگرام 👇🏻
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">373,663</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/mahdii_dgr" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  𝐌ahdi Dadgar
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@mahdii_dgr</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ماشین باز 
+خودروهای خاص ایران 🏎️
+  خرید | فروش خودروهای لوکس 
+@mahdidgrofficial
+@shemron_c...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">411,683</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/sheikhigasht" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  sheikhigasht|وحید شیخی|cafe lover&amp;taster
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@sheikhigasht</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Personal blog
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              بریم هرجا که طعم و خاطره یکی می‌شن
+cafe lover/ travel/ style  همکاری📲دایرکت
+Discovering ca...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">297,135</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/tehran.luxury.restaurants" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Tehran Luxury Restaurants
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@tehran.luxury.restaurants</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              تهران لاکچری - Tehran Luxury ⚜️
+معرفی رستوران های سوپر لاکچری در تهران
+همکاری و تبلیغات 👇
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">597,582</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/hosseinrezaiii_" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  hossein rezaei
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@hosseinrezaiii_</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              خُـــــــــدايا شُـــــــــكرت 
+خنك آن قمار بازى كه بباخت آنچه بودش
+بنماند هيچش الا هوس قم...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">37,159</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/saeedyousefiofficial" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  سعید یوسفی | بلاگر || Blogger | Lifestyle
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@saeedyousefiofficial</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              بیاید باهم کشف کنیم🌎
+قراره کلی زیبایی ببینیم و در کنار هم تجربه کنیم
+Owner of @zhinpizzeri...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">333,456</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/mrmashinbaz" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  آقای ماشین‌باز
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@mrmashinbaz</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Journalist
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              عمادالدین جعفری
+✍️خبرنگار
+🏎راننده مسابقه
+🚗🛵کارشناس صنعت خودرو
+🛞🔩مدیر مسئول پایگاه خبری قطع...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">178,379</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/sabcar.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  صابر محسنی تحلیلگر ومشاورخودرو 🏎️
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@sabcar.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              📍راهنمای توبرای خریدخودروی مطمئن
+🔻مدیر مسئول پایگاه خبری نیش ترمز
+🔻خبرنگارصنایع خودرووقطعا...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">232,960</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/digimachinemag" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  مشاوره فنی و بررسی غیر تبلیغاتی خودرو
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@digimachinemag</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Media
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              رسانه بین المللی خودرو و فناوری
+اسپانسر: digiato.com
+دیجی ماشین مگ آغاز فعالیت: 1389
+مشاور...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">47,983</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/tvpluss" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  تی وی پلاس
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@tvpluss</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Media/news company
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              TVPluss
+برای مشاوره و رزرو تبلیغات به @tvplusdigital در اینستاگرام و @tvplussagancy در تلگ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">2,635,153</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/kafe.marketing" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  کافه مارکتینگ | رسانه مستقل
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@kafe.marketing</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Media/news company
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              «خبر، تحلیل، نقد»
+.
+📍برای استعلام تعرفه آگهی&quot;دایرکت&quot; بدهید.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">65,209</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/matinnasiri" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  متین نصیری | Matin Nasiri
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@matinnasiri</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Journalist
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              روزنامه‌نگار خودرو و مدیر مسئول رسانه تخصصی خودرویی خودرو دال و موتورانو
+@motoraano
+@khodr...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">65,852</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/hamirent" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  اجاره خودرو حامی رنت | اولین مرکز اجاره ایران
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@hamirent</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ♦️اولین مرکز اجاره خودرو لوکس ایران
+☎️ 02191311888
+📍تهران - فرمانیه - برج پارامیس
+کروت،لند...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">128,765</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/studiolozhi" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Ali Ebrahimi
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@studiolozhi</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Photography Videography
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              استدیولوژی
+Luxury Video &amp; Photography
+online shop 🛍 @apblvk
+tehran &amp; Kish Island🇮🇷
+DM for ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">60,521</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/khodronevis.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  خودرونویس
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@khodronevis.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                News &amp; media website
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              🚗صفحه رسمی پایگاه خبری خودرونویس
+📣جهت همکاری با خودرونویس پیام بدهید
+🌐آدرس وب سایت 👇👇👇👇
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">85,953</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/akharinkhodro.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  آخرین خودرو
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@akharinkhodro.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              پایگاه خبری آخرین خودرو
+تست و بررسی خودرو 🚘
+اخبار خودرو 🗞
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">690,893</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/mycar.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  مشاوره آنلاین خرید خودرو
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@mycar.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ‌
+زیرمجموعه گروه رسانه‌ای #روزنو
+‌
+‌
+اطلاع از جدیدترین شرایط فروش خودروهای موجود در بازار ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">551,761</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/motoraano" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Motoraano | موتورانو
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@motoraano</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                News &amp; media website
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              موتورانو - مجله آنلاین خودرو و صنعت حمل‌ونقل
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">501,519</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/danestani_rooz" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  دانستنی روز
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@danestani_rooz</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              📚حقیقت های  جالب و عجیب🔬😍
+📱بهترین اطلاعات روز دنیا 🔎
+💬تنها راه ارتباطی با ادمین لینک زیر👇
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">8,380,018</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/sosfact" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Mahdi Samani
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@sosfact</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              👆 ما معروفیم به استووووریامون
+🛸🚀😀 سرگرمی ، علمی ،خنده و...
+🎞️📽️ پربیننده‌ترین ویدیوهای جها...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">10,328,595</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/dandeh.5" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  دنـده پـنـج
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@dandeh.5</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Cars
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              1   3    5
+ |----|----|
+2   4    R
+For Credit / Removal, Please Direct
+جهت ارتباط و کانال‌...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,147,180</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/ir_luxecars" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  IR_Luxecars | لوکس کارزIR صفحه
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@ir_luxecars</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              بزرگترین صفحه خودرویی،بیش از ۳ میلیون فالور
+‏‎‏‎| فيلم | مستند و بررسی ، دانستنی های خودرو...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">3,115,341</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/picopry" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  PicoPry
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@picopry</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Reel creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Multi-Genre Documentaries for Millions 🪐🚀
+From Science to History — and Beyond 🛸
+📍ارتباط ب...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">6,175,747</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/whats.fact" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  واتس فکت | حقایق علمی، اجتماعی و حواشی ناگفته
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@whats.fact</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Reel creator
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              اینجا جایی برای ذهن‌های تشنه‌ می باشد
+فالو کن تا همواره از اطرافیانت آگاه‌تر باشی
+.
+⚠️ ما ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">4,295,661</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/novinarchitecture" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Novin Architecture@Irannovin
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@novinarchitecture</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Architectural Designer
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ☎️ 27634
+The Most Powerful Advertising &amp; Marketing Agency in Iran.
+( since 1990 )
+.
+📱0930 ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">4,795</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/ashvan_official" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  ASHVAN| اشوان
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@ashvan_official</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Musician
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              New track “ MISHE BARGARDI KHOONE “
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">2,031,723</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/elikaabdolrazaghi.official" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Elika Abdolrazzaghi
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@elikaabdolrazaghi.official</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Art
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Iranian cinema, stage and TV actress.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,426,817</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/irannovingraphic" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Graphic Dept | Irannovin
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@irannovingraphic</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Advertising Agency
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              📞 27634
+Kanoon Iran Novin Full Service Marketing and Advertising Agency
+( since 1990 )
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">11,010</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/arshiyas" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Shaik Arshiya
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@arshiyas</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">66</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/omidhajili" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Omid Hajili
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@omidhajili</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Musician/band
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Program manager: @farhadgooyabadi 
+@avayehajilitto company
++989127113661
++98912 2 235 236
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">959,464</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/rezasadeghi_official" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Reza Sadeghi
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@rezasadeghi_official</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Musician/band
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              ‌
+Management : @limaconcert 🌟
+MUSIC PRODUCER/ COMPOSER/SINGER
+‌
+🎵Listen to «🔺DELSHOORE🔺
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">4,450,479</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/alirezatalischioriginal" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  alirezatalischioriginal
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@alirezatalischioriginal</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">5</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/m4tinbeigipv" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Rick Sanchez 🤍 ریک سانچز
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@m4tinbeigipv</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Blogger
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Public Account: @M4tinBeigi
+دایرکت پیام نده، ج نمیدم
+پیچ شخصیه؛ دنبال چیز خاصی نباش
+ریک هس...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">3,523</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/m4tinbeigi" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Rick Sanchez
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@m4tinbeigi</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Event Planner
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              Event Organizer &amp; Community Builder
+Marketer who codes | Wikipedia Mentor
+Don’t send DMs, ...
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">43,340</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/amir_hrostami" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Amir Hossein Rostami
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@amir_hrostami</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Actor
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              🎬🎭🎾 
+کنارم باشید تا رویای سلامتی ۱۴ هزار کودک بیمار محک واقعی بشه🙏
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">1,415,530</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/pedal.ir" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  Pedal l مجله پدال
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@pedal.ir</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Media/news company
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">484,543</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div>
+                <a href="https://instagram.com/irtoya.co" target="_blank" class="font-bold text-white hover:text-[#E85A2A] transition-colors block text-sm leading-snug">
+                  صفحه رسمی نمایندگی مرکزی ایرتویا
+                </a>
+                <span class="text-xs text-[#E85A2A] dir-ltr font-mono block mt-0.5">@irtoya.co</span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10 whitespace-nowrap">
+                Cars
+              </span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4 line-clamp-3">
+              
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <span class="text-slate-400">دنبال‌کننده:</span>
+            <span class="font-bold text-white font-mono">99,375</span>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts & Timeline -->
+  <section id="posts" class="py-16 border-b border-white/5 bg-[#07080b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-1">آرشیو محتوا و تایم‌لاین</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">تایم‌لاین محتوای شبکه‌های اجتماعی</h2>
+        </div>
+        <div class="text-xs text-slate-400">
+          تعداد پست‌های ثبت‌شده: <span class="font-bold text-[#E85A2A] font-mono text-sm">55 پست</span>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 19:26
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfXZZqEx0Tj" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfXZZqEx0Tj
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 3,030</span>
+              <span>💬 31</span>
+              <span>▶️ 106,777</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	حضور امیرحسین رستمی عزیز در شب اول افتتاحیه اتوپلازا تهران🔥
+
+هرروز از ۱۱ صبح تا ۱۱ شب، برنامه‌های ویژه به مناسبت افتتاحیه
+
+📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)
+برای لوکیشن، در اپلیکیشن سرچ کنید “اتوپلازا تهرا...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 19:10
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfXWIF3R5om" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfXWIF3R5om
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 3,375</span>
+              <span>💬 8</span>
+              <span>▶️ 59,605</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              اتوپلازا تهران، جایی برای دوستداران خودرو✌🏻🔥
+
+🔸یک هفته کنسرت بدون ورودی
+🔸اجرای زنده دیجی‌های مطرح
+و کلی برنامه‌های تفریحی
+
+به همراه شرایط ویژه برای خرید خودرو
+قیمت‌های بسیار ویژه + ۲۰۰ میلیون تخفیف برای همه خریداران
+
+هرش...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 18:41
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfXUWWURD_J" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfXUWWURD_J
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,234</span>
+              <span>💬 16</span>
+              <span>▶️ 49,985</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              حال و هوای افتتاحیه اتوپلازا تهران🔥
+این مراسم به مدت یک هفته تا سه‌شنبه ۱۹ ابان ادامه داره
+و شرکت در این مراسم برای عموم ازاد و رایگانه✌🏻
+
+#اتوپلازا_میبینمت✌🏻 
+📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)
+
+#اتوپلازاتهران...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 13:55
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfWz_ZQpng5" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfWz_ZQpng5
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 2,103</span>
+              <span>💬 26</span>
+              <span>▶️ 64,076</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              جذاب، دیدنی، هیجان‌انگیز و پر از شگفتی!🔥
+
+همه‌چیز در اتوپلازا برای یک تجربه متفاوت فراهم شده، از خودروهای خاص و شوروم‌های متنوع گرفته تا سرگرمی‌ها، برنامه‌های ویژه و کلی اتفاق جذاب که منتظر شماست.
+ 
+هفت شب، کنسرت و اجرای...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 12:37
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfWquX9OeNE" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfWquX9OeNE
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 4,722</span>
+              <span>💬 40</span>
+              <span>▶️ 121,056</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	اتوپلازا تهران، فضایی محبوب برای دوست‌داران خودرو✌🏻
+۷ شب افتتاحیه، با برنامه‌های متنوع، رایگان و عمومی در اتوپلازا تهران🔥
+
+#اتوپلازا_ببینمت✌🏻 
+
+📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)
+لوکیشن در هایلایت‌ها هست
+
+#ا...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 11:38
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfWkE9TOmWe" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfWkE9TOmWe
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 2,464</span>
+              <span>💬 143</span>
+              <span>▶️ 118,578</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              امشب توی اتوپلازا، میزبان رضا صادقی عزیز هستیم✌🏻
+شرکت در مراسم افتتاحیه اتوپلازا برای عموم آزاد و رایگان هست🔥
+
+#اتوپلازا_میبینمت✌🏻
+
+📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)
+لوکیشن در هایلایت‌ها هست
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 11:32
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Carousel
+              </span>
+              <a href="https://instagram.com/p/DfWjmHAjk2k" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfWjmHAjk2k
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 4,489</span>
+              <span>💬 114</span>
+              <span>▶️ 0</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              امروز توی اتوپلازا تهران چه خبرهایی قراره باشه؟😎
+
+هرشب کنسرت، اجرای دی‌جی‌ها و امکانات تفریحی به مدت یک هفته✌🏻
+
+پنج‌شنبه ۱۴ آبان، میزبان رضا صادقی برای اجرای کنسرت هستیم😎
+
+#اتوپلازا_ببینمت✌🏻
+
+📍کیلومتر ۱۰ جاده مخصوص تهران...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/14 ساعت 11:22
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfWiLtHOjAP" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfWiLtHOjAP
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 31,098</span>
+              <span>💬 250</span>
+              <span>▶️ 706,456</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	⁨	روز اول افتتاحیه اتوپلازا تهران اما هنوز تموم نشده😎✌🏻
+
+مراسم افتتاحیه به مدت یک هفته از ۱۳ تا ۱۹ ابان هرروز از ساعت ۱۱ الی ۲۳ برقراره✌🏻
+
+📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)⁩⁩
+
+#اتوپلازاتهران #tehranautopl...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/13 ساعت 19:09
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfUx2HBR-UD" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfUx2HBR-UD
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 13,697</span>
+              <span>💬 178</span>
+              <span>▶️ 393,042</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              تور کامل اتوپلازا با الیکا عبدالرزاقی!
+
+از شوروم‌ها و خودروهای متنوع تا بخش‌های مختلف مجموعه، در این ویدیو همراه با این ستاره سینما به گشت‌وگذار در اتوپلازا بپردازید و با گوشه‌وکنار این مجموعه آشنا شوید.
+
+یک تور متفاوت ا...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/13 ساعت 16:55
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfUjmPCg2n3" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfUjmPCg2n3
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 10,949</span>
+              <span>💬 87</span>
+              <span>▶️ 330,807</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	روز اول شروع شد، اما هیجان تازه اول راهه! 🎉
+
+اتوپلازا تهران از امروز میزبان شماست؛ جایی که می‌تونید بین شوروم‌های برندهای مختلف خودرویی قدم بزنید، خودروهای محبوبتون رو از نزدیک ببینید و در کنار خانواده و دوستان، از برن...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/13 ساعت 16:49
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfUi_KcRcTD" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfUi_KcRcTD
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,035</span>
+              <span>💬 13</span>
+              <span>▶️ 51,064</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              افتتاحیه بزرگ اتوپلازا، با برنامه‌های ویژه و جوایز ارزشمند برای خریداران خودرو!🏎️🎁
+
+در طول مراسم افتتاحیه، هر شب فرصت برنده شدن یک جایزه ویژه برای خریداران فراهم است.🎁
+
+🔹جوایز هر شب:
+یک دستگاه پژو ۲۰۷
+
+🔹و جایزه ویژه روز ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/13 ساعت 00:45
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfS0uHWg12Y" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfS0uHWg12Y
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,811</span>
+              <span>💬 34</span>
+              <span>▶️ 71,539</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	آخرین نورها روشن می‌شن…
+آخرین جزئیات تکمیل می‌شن…
+و حالا وقت شروعه! 🔥
+
+🚘 اتوپلازا تهران | چهارشنبه ۱۳ آبان
+کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)
+
+#اتوپلازا_تهران #افتتاحیه #AutoPlaza⁩⁩
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 22:30
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfSlUSmpXQI" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSlUSmpXQI
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,155</span>
+              <span>💬 20</span>
+              <span>▶️ 54,678</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	بهمن موتور در جمع بزرگ اتوپلازا!⚡️
+
+حضور مدل‌های متنوع بهمن موتور در فضایی اختصاصی، امکان بررسی و مقایسه نزدیک‌تر خودروهای این مجموعه را برای بازدیدکنندگان فراهم می‌کند.
+
+اتوپلازا؛ یک مقصد، مجموعه‌ای از بهترین‌ها.🔥
+کیل...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 22:11
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfSf11uIrnS" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSf11uIrnS
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 182,406</span>
+              <span>💬 1,883</span>
+              <span>▶️ 2,409,482</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	این سری واسه ماشین‌بازا پخت‌و‌پز کردیم 🫯
+
+‪‪@tehranautoplaza‬‪@tehranautoplaza‬za‬za
+
+یه افتتاحیه هیجان‌انگیز توو راهه! 🌪️😵‍💫
+
+از همین چهارشنبه، ۱۳ آبان،
+افتتاحیه ۷ روزه اتوپلازا شروع می‌شه؛
+با کلی اتفاق جذاب..
+
+🎤 ۷ ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 21:33
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfSdtHCsid7" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSdtHCsid7
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 4,346</span>
+              <span>💬 382</span>
+              <span>▶️ 1,524,741</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	اشوان در افتتاحیه بزرگ اتوپلازا!🔥
+
+چهارشنبه ۱۳ آبان، در نخستین روز افتتاحیه بزرگ‌ترین مقصد خودروی تهران، میزبان اجرای زنده اشوان خواهیم بود.✨
+
+در کنار حضور برندهای مطرح و تماشای مجموعه‌ای از خودروهای روز، کنسرت اشوان...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 20:10
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfSVRRjJQy5" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSVRRjJQy5
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 735</span>
+              <span>💬 9</span>
+              <span>▶️ 40,543</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              از نزدیک ببینید...
+مقایسه کنید...
+و با دنیای محصولات BM CARS آشنا شوید!✨
+
+تمام خودروها تنها در یک مقصد؛ اتوپلازای تهران.🔥
+
+#اتوپلازاتهران #اتوپلازا_تهران #tehranautoplaza
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 19:51
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfSSqXhsdXW" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSSqXhsdXW
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 14,535</span>
+              <span>💬 489</span>
+              <span>▶️ 1,252,758</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	🚘🎉 یه افتتاحیه متفاوت برای عاشقان خودرو در راهه!
+
+به افتتاحیه بزرگ اتوپلازا دعوتی!🧡جایی که دنیای خودرو، جایــ.ـزه‌های هیجان‌انگیز و کنسرت‌های رایگان کنار هم جمع شدن. 🔥
+
+از چهارشنبه ۱۳ آبان تا سه‌شنبه ۲۰ آبان، به مدت یک...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 19:22
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Carousel
+              </span>
+              <a href="https://instagram.com/p/DfSP2ozDYt3" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfSP2ozDYt3
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 5,533</span>
+              <span>💬 153</span>
+              <span>▶️ 0</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	اتوپلازا؛ بزرگ‌ترین مقصد خودرو، میزبان یک افتتاحیه باشکوه!✨🔥
+
+چهارشنبه ۱۳ آبان، اتوپلازای تهران میزبان رویدادی ویژه با حضور مجموعه‌ای از برندهای مطرح خودرو، چهره‌های محبوب و برنامه‌های جذاب خواهد بود.
+
+🎤 کنسرت اشوان 
+🎧...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 16:00
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfR4weAJq-5" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfR4weAJq-5
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 546</span>
+              <span>💬 5</span>
+              <span>▶️ 34,131</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              تمام خدمات خودرویی، در یک مجموعه!🔥
+
+از کارشناسی و معاینه فنی تا سرویس و تعمیر، بیمه، لیزینگ و تیونینگ...
+اتوپلازا تهران مجموعه‌ای از خدمات موردنیاز خودرو را در یک مقصد گرد هم آورده است!🏎️🔥 
+
+#autoplaza #tehran #اتوپلازا ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 11:59
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfRc_arA4ER" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfRc_arA4ER
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,322</span>
+              <span>💬 13</span>
+              <span>▶️ 47,686</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	هر شوروم، نماینده یک نام معتبر در دنیای خودروست...🏎️⚡️
+
+در اتوپلازای تهران، مجموعه‌ای از برندهای مطرح خودرو در فضاهایی اختصاصی حضور دارند تا تصویری متفاوت از دنیای خودرو پیش روی شما قرار بگیرد.⚡️
+
+اینجا، مقصد نام‌های ب...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/12 ساعت 10:00
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfRPjUJJUK5" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfRPjUJJUK5
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 705</span>
+              <span>💬 6</span>
+              <span>▶️ 30,829</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	اولین‌ها، در اتوپلازا کنار هم قرار می‌گیرند...⚡️
+
+مجموعه‌ای ازمطرح‌ترین برندهای خودرو در اتوپلازا تهران، فرصتی برای آشنایی با تازه‌ترین مدل‌های دنیای خودرو فراهم می‌کنند.⚡️
+
+اتوپلازا تهران؛ مقصدی برای تجربه‌ای نو از دن...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/11 ساعت 22:42
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfQBkfJR8oU" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfQBkfJR8oU
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 38,815</span>
+              <span>💬 736</span>
+              <span>▶️ 1,385,940</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ما براش خیلی زحمت کشیدیم، شماهم لطفا با هدفون گوش بدین🎧
+مرسی🤩
+
+نمی‌دونم از سرگرمی ۷ روزه‌ش بگم
+یا خدمات مجموعه؟
+
+«اتوپلازا» چیه؟
+یک اکوسیستم کامل خودرویی با ۹۰ شو روم و ۸ هکتار فضا
+
+@tehranautoplaza 
+
+یه افتتاحیه بسیار ه...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/11 ساعت 17:38
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfP1sECJHhu" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfP1sECJHhu
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 2,042</span>
+              <span>💬 16</span>
+              <span>▶️ 58,529</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	⁨	بهترین برندهای خودرو، یک مقصد مشترک دارند...⚡️
+
+مجموعه‌ای از برندهای مطرح و نام‌آشنای دنیای خودرو، در یک مقصد گرد هم آمده‌اند تا تنوعی گسترده از خودروها را پیش روی علاقه‌مندان قرار دهند.⚡️
+
+اتوپلازا تهران؛ مقصدی در...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/11 ساعت 16:00
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DgXd7YvpRm4" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DgXd7YvpRm4
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 794</span>
+              <span>💬 24</span>
+              <span>▶️ 36,113</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	ایکس پنگ در اتوپلازا! ⚡
+
+با مدل‌های ایکس پنگ از نزدیک آشنا بشید و طراحی، امکانات و جزئیات هر خودرو رو در شوروم اختصاصی این برند در اتوپلازای تهران بررسی کنید. ✨🔍
+
+تجربه‌ای متفاوت از کشف دنیای خودروها، در یک مجموعه! 🏙️
+...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/11 ساعت 13:54
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfPBCVegL-U" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfPBCVegL-U
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 984</span>
+              <span>💬 17</span>
+              <span>▶️ 36,994</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	⁨	⁨	⁨	⁨	همه‌چیز در حال آماده‌سازی است… 🔥
+
+جزئیات در حال تکمیل‌اند تا اتوپلازای تهران، به یکی از مقاصد شاخص دنیای خودرو تبدیل شود.
+از ۱۳ آبان، منتظر دیدار شما در بزرگ‌ترین گردهمایی خودرویی تهران هستیم!⁩⁩ 🏎️⁩⁩⁩
+
+#اتوپل...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/10 ساعت 10:50
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfMLoOPJl58" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfMLoOPJl58
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 802</span>
+              <span>💬 11</span>
+              <span>▶️ 33,213</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              🏢 هر برند، شوروم اختصاصی خودش رو داره.
+
+شوروم پژو در اتوپلازا تهران🔥
+
+در اتوپلازای تهران، هر شوروم با هویت بصری و فضای منحصربه‌فرد خودش، دنیای متفاوتی از خودروها رو به نمایش می‌ذاره. 🚗✨
+
+اتوپلازای تهران؛ هر برند، یک تجرب...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/09 ساعت 21:00
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfKsHjIgvXK" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfKsHjIgvXK
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 6,063</span>
+              <span>💬 362</span>
+              <span>▶️ 1,329,928</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	یک هفته با پیشنهادهای ویژه اتوپلازا!🔥
+
+از ۱۳ آبان، به مدت یک هفته، شرایط ویژه‌ای در اتوپلازا به مناسبت افتتاحیه درنظر گرفته شده!
+
+از تخفیف نقدی ۲۰۰ میلیون تومانی برای هر خودرو و تحویل فوری خودروها تا تخفیف ۵۰ درصدی بیم...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/09 ساعت 17:23
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Photo
+              </span>
+              <a href="https://instagram.com/p/DfKTaMPgvGz" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfKTaMPgvGz
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 769</span>
+              <span>💬 69</span>
+              <span>▶️ 0</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              با بودجه ۶ تا ۷ میلیارد تومن، انتخاب شما کدوم ماشینه؟🚗
+
+تصور کن به اتوپلازا اومدی... جایی که می‌تونی بین شوروم‌های مختلف بگردی، خودروها رو از نزدیک ببینی و حتی پشت فرمون بشینی و فضای کابین هر مدل رو بررسی کنی. 
+
+حالا با ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/06 ساعت 17:05
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfCjaUvJ5by" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfCjaUvJ5by
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 655</span>
+              <span>💬 21</span>
+              <span>▶️ 29,079</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	با جزئیاتی تازه در صنعت خودروی کشور!
+
+اتوپلازای تهران با وسعتی چشمگیر و ۹۰ شوروم تخصصی، برای نخستین بار بستری فراهم کرده تا برندهای متعدد خودرویی در یک مقصد واحد حضور داشته باشند.
+ابعاد پروژه، ظرفیت میزبانی از برندهای ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/05 ساعت 19:00
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DfALvIpJhex" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DfALvIpJhex
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,193</span>
+              <span>💬 40</span>
+              <span>▶️ 44,152</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨ برندهای مطرح، مدل‌های متنوع و دنیایی از انتخاب‌های جذاب در یک مجموعه!✨🏎️
+
+اتوپلازا تهران، مجموعه‌ای که برندها و مدل‌های متنوع خودرو رو کنار هم جمع کرده تا بتونید از نزدیک بررسی‌شون کنید، جزئیاتشون رو بشناسید و با دید ب...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/04 ساعت 18:26
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/De9i6P0At93" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/De9i6P0At93
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 623</span>
+              <span>💬 36</span>
+              <span>▶️ 27,810</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	برترین‌ها، اینجا کنار هم‌اند!✨
+
+اتوپلازای تهران برای نخستین بار، مجموعه‌ای از برندهای مطرح دنیای خودرو رو در کنار هم گرد هم آورده است.
+
+شما جای کدام برند را در اتوپلازا خالی می‌دانید؟
+
+#اتوپلازا #اتوپلازاتهران #autopla...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/03 ساعت 19:59
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/De7IZ1JtOMm" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/De7IZ1JtOMm
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 692</span>
+              <span>💬 29</span>
+              <span>▶️ 30,912</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	از دل جزئیات، تصویری متفاوت از دنیای خودرو شکل می‌گیرد.
+
+ساخت شوروم‌های اتوپلازا با تمرکز بر طراحی، کیفیت اجرا و استانداردهای متمایز ادامه دارد تا فضایی درخور تجربه‌ای متفاوت در صنعت خودرو فراهم شود.
+
+این شروع شکل‌گیری...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/03 ساعت 17:26
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/De66GjSp97I" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/De66GjSp97I
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 681</span>
+              <span>💬 15</span>
+              <span>▶️ 22,578</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	تجربه‌های خاص، همیشه دور از دسترس نیستند!
+
+اتوپلازا با گردهم‌آوردن شوروم‌های تخصصی در فضایی متمایز، امکان آشنایی نزدیک‌تر با دنیای خودرو را فراهم کرده است، تجربه‌ای که با اولین حضور در این مجموعه آغاز می‌شود.⁩ 
+
+‎#ات...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/08/02 ساعت 17:50
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/De4VPELtQr6" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/De4VPELtQr6
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 629</span>
+              <span>💬 17</span>
+              <span>▶️ 29,724</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              از تصمیم تا انتخاب...
+تا ثبت یک خرید مطمئن بدون اتلاف وقت!
+
+تو اتوپلازا، فاصله‌ی انتخاب تا خرید اون‌قدرها هم طولانی نیست! 
+
+#اتوپلازا #اتوپلازاتهران #بازار_خودرو #Autoplaza #tehranautoplaza
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/29 ساعت 14:57
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DewSke1g2vs" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DewSke1g2vs
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 7,263</span>
+              <span>💬 179</span>
+              <span>▶️ 244,555</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              اتوپلازا، فراتر از چیزی که در نگاه اول می‌بینید!✨
+
+بیش از ۸۲ هزار مترمربع فضا، ۹۰ شوروم خودرو، زیرساخت‌هایی که برای شکل‌دادن به تجربه‌ای متفاوت در صنعت خودرو طراحی شده‌اند.👌🏻 
+
+از حضور برندها و شوروم‌های تخصصی تا امکانات...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/28 ساعت 12:39
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DetcTjRtcxd" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DetcTjRtcxd
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 447</span>
+              <span>💬 10</span>
+              <span>▶️ 14,549</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              هویت اتوپلازا، از ایده تا تصویر✨
+هر رنگ، خط و نشانه، بخشی از شخصیت بصری اتوپلازاست؛ 
+هویتی که با دقت و خلاقیت در آتلیه گرافیک کانون ایران نوین طراحی و شکل گرفته است.
+
+#اتوپلازا #هویت_بصری #طراحی_گرافیک #AutoPlaza #visual...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/26 ساعت 18:45
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/Deo-zjCAzEW" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/Deo-zjCAzEW
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 753</span>
+              <span>💬 18</span>
+              <span>▶️ 23,412</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              اولین‌ها همیشه به اتوپلازا می‌رسن!🏁1️⃣
+
+اینجا اتفاق‌های بزرگ‌تری برای دنیای خودرو رقم می‌خوره، مسیری که قراره همه نگاه‌ها رو به خودش جلب کنه!🔥
+
+#اتوپلازا #اتوپلازاتهران #تسلا #Autoplaza #tehranautoplaza
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/25 ساعت 16:28
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DemKPYJAnIH" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DemKPYJAnIH
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 1,191</span>
+              <span>💬 23</span>
+              <span>▶️ 54,773</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              اتوپلازا تهران، نگاهی تازه به آینده صنعت خودرو...!
+ جایی که ایده‌های بزرگ، تجربه‌های متفاوت و چشم‌اندازهای جدید کنار هم قرار می‌گیرن تا مسیر تازه‌ای برای این صنعت بسازن.
+
+این فقط شروع ماجراست؛ آینده، نزدیک‌تر از چیزیست ک...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/23 ساعت 14:04
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/Degvs76Aypl" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/Degvs76Aypl
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 449</span>
+              <span>💬 26</span>
+              <span>▶️ 21,405</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	بخش‌های مختلف اتوپلازا با سرعت در حال تکمیل‌اند؛ با دقت در جزئیات و کیفیت اجرا، تا هر فضا برای استفاده‌ای که از آن انتظار می‌رود آماده شود.
+تیم معماری کانون ایران نوین هم در اتوپلازا مستقر شده و طراحی و اجرای فضاها را ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/22 ساعت 19:44
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeeyGdnged7" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeeyGdnged7
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 486</span>
+              <span>💬 17</span>
+              <span>▶️ 19,811</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	⁨	اتوپلازا تهران به اصحاب رسانه معرفی شد!
+
+در مراسم رونمایی این مجموعه، ظرفیت‌ها، امکانات و چشم‌انداز اتوپلازا به حاضران معرفی شد؛ مجموعه‌ای با ۹۰ شوروم اختصاصی که با هدف ایجاد فضایی متفاوت برای حضور فعالان صنعت خودرو ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/21 ساعت 22:06
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DecdltIgV-L" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DecdltIgV-L
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 4,372</span>
+              <span>💬 95</span>
+              <span>▶️ 152,802</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	۲۰ مهر، درهای اتوپلازا تهران باز شد؛ جایی که خرید، فروش و خدمات خودرو در یک مجموعه کنار هم قرار گرفته‌اند.
+این افتتاحیه، آغاز مسیر اولین و بزرگ‌ترین مرکز خرید، فروش و خدمات خودرویی ایران بود؛ مجموعه‌ای برای دیدن، مقایس...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/21 ساعت 19:26
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DecLXMQAaa1" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DecLXMQAaa1
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 575</span>
+              <span>💬 30</span>
+              <span>▶️ 28,871</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              اتوپلازا؛ آغاز یک حضور بزرگ در صنعت خودرو!
+
+با برگزاری مراسم رسمی، اتوپلازا به‌عنوان یکی از مراکز جامع دنیای خودرو معرفی شد.
+
+از حضور برندهای خودرویی و خدمات تخصصی تا امکانات و راهکارهای مرتبط با انتخاب، نگهداری و مالکیت...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/20 ساعت 20:56
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeZwy78Atco" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeZwy78Atco
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 3,779</span>
+              <span>💬 341</span>
+              <span>▶️ 1,110,605</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              آغاز یک فصل تازه در صنعت خودرو!
+
+پس از مدت‌ها تلاش و برنامه‌ریزی، اتوپلازا تهران در مراسمی با حضور فعالان صنعت خودرو و اهالی رسانه، رونمایی شد.
+مجموعه‌ای با ابعاد گسترده و رویکردی جامع که تمامی خدمات دنیای خودرو را در کن...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/20 ساعت 10:53
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeYsBRwAuBG" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeYsBRwAuBG
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 962</span>
+              <span>💬 35</span>
+              <span>▶️ 49,186</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	امروز، اتوپلازا در نقطه شروع قرار دارد!
+
+مجموعه‌ای که با هدف ایجاد ارتباط میان برندها، خدمات و بخش‌های مختلف دنیای خودرو شکل گرفته و حالا آماده است تا مسیر خود را آغاز کند.
+
+روایتی تازه از اتوپلازا، از اینجا ادامه پیدا...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/18 ساعت 22:32
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeUyaC9gB2F" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeUyaC9gB2F
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 573</span>
+              <span>💬 29</span>
+              <span>▶️ 27,202</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              کیفیت، حاصل توجه به جزئیات است!
+
+در اتوپلازا، هر مرحله از آماده‌سازی با هدف دستیابی به بالاترین سطح استاندارد دنبال می‌شود تا نتیجه نهایی، بازتابی از چشم‌انداز و اهداف این مجموعه باشد.
+
+«اتوپلازا» در مسیر خلق تجربه‌ای مت...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/17 ساعت 13:11
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeRNS41Ao1v" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeRNS41Ao1v
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 601</span>
+              <span>💬 26</span>
+              <span>▶️ 26,595</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              یک تصویر بزرگ…
+یک هدف مشخص…
+و مسیری که تا رسیدن به بهترین شدن، ادامه پیدا می‌کند!
+
+#اتوپلازا #اتوپلازا_تهران #AutoPlaza #AutoPlazaTehran #خودرو
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/16 ساعت 17:29
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DePGLGsgL4V" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DePGLGsgL4V
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 817</span>
+              <span>💬 30</span>
+              <span>▶️ 36,795</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              به‌زودی، یک اتفاق جدید برای بازار خودرو تهران…
+
+«اتوپلازا» نخستین و بزرگ‌ترین مرکز خرید و فروش خودرویی در تهران، با ۹۰ جایگاه تخصصی، یک مجموعه جامع برای حضور برندها و فعالان بازار خودرو و ایجاد یک مقصد متمرکز برای خرید و...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/15 ساعت 17:27
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeMhEHGgHbq" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeMhEHGgHbq
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 564</span>
+              <span>💬 32</span>
+              <span>▶️ 21,688</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              قدم‌به‌قدم، جزئیات شکل می‌گیرند...
+
+از اجرای ساختار اصلی و المان‌های معماری تا تکمیل جزئیات، هر مرحله با دقت پیش می‌رود تا تصویری تازه در اتوپلازا شکل بگیرد.
+در ادامه این مسیر، حضور تویوتا در اتوپلازا نیز درحال شکل گرفتن...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/14 ساعت 20:19
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeKQEOxA4tX" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeKQEOxA4tX
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 478</span>
+              <span>💬 23</span>
+              <span>▶️ 18,864</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              هر برند، شایسته فضایی متناسب با هویت و جایگاه خودش است!
+
+در اتوپلازا، طراحی و جزئیات فضا با همین نگاه شکل گرفته تا حضور هر برند، در سطحی متناسب با استانداردهای آن دیده شود.
+طراحی فضا، نورپردازی و جزئیات معماری، محیطی ساخ...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/13 ساعت 19:46
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeHnbmTgvDC" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeHnbmTgvDC
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 489</span>
+              <span>💬 24</span>
+              <span>▶️ 19,846</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	یک اتفاق تازه در دنیای خودرو آغاز شده است...
+
+اتوپلازا تهران با نگاهی جامع به این صنعت شکل گرفته تا تعریفی متفاوتی از حضور، ارتباط و تجربه در دنیای خودرو ارائه دهد.
+
+این شروع اتوپلازاست!
+
+#اتوپلازا #اتوپلازاتهران #خودر...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/12 ساعت 15:04
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeEia_8AOJ2" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeEia_8AOJ2
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 610</span>
+              <span>💬 45</span>
+              <span>▶️ 120,135</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              مقصدی تازه در راه است...
+
+جایی که قرار است دنیای خودرو، شکل دیگری از حضور و انتخاب را تجربه کند!
+
+از حضور برندهای مختلف و امکان مقایسه و خرید خودرو، تا خدمات تخصصی، سرویس و نگهداری، کارشناسی، بیمه، تیونینگ و دیگر خدمات م...
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/11 ساعت 16:46
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DeCJOl8ARgY" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeCJOl8ARgY
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 459</span>
+              <span>💬 36</span>
+              <span>▶️ 246,076</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	ابعاد و امکانات، تنها بخشی از یک مجموعه را روایت می‌کنند!
+آنچه تفاوت را رقم می‌زند، استانداردی است که در جزئیات آن جریان دارد.
+
+اتو پلازا؛ جایی که کیفیت، روایت تازه‌ای در تهران پیدا می‌کند!⁩
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/10 ساعت 23:37
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Carousel
+              </span>
+              <a href="https://instagram.com/p/DeATj1JAJgW" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DeATj1JAJgW
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 396</span>
+              <span>💬 21</span>
+              <span>▶️ 0</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              فراتر رفتن، از یک نگاه تازه شروع می‌شود.
+
+از تعریف دوباره حضور، توجه به جزئیات و ساختن تجربه‌ای متفاوت.
+
+اتو پلازا، در مسیر یک حرکت متفاوت…
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/08 ساعت 17:31
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/Dd6gANsghPW" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/Dd6gANsghPW
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 441</span>
+              <span>💬 24</span>
+              <span>▶️ 17,240</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              ⁨	تهران، به‌زودی یک فضای تازه را تجربه خواهد کرد...
+با رویکردی متفاوت، برای ساختن جایی فراتر از انتظار.
+
+این آغاز یک تجربه تازه است!⁩
+            </p>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/5">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2.5 py-1 rounded bg-[#E85A2A]/15 text-[#E85A2A] border border-[#E85A2A]/30 font-mono font-bold">
+                1405/07/05 ساعت 20:30
+              </span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300">
+                Reel / Video
+              </span>
+              <a href="https://instagram.com/p/DdzGCQHAVVK" target="_blank" class="text-xs text-slate-400 hover:text-[#E85A2A] dir-ltr font-mono">
+                p/DdzGCQHAVVK
+              </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <span>❤️ 342</span>
+              <span>💬 42</span>
+              <span>▶️ 19,525</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line">
+              یک فضای تازه در حال شکل‌گیری است!
+جایی که قرار است تجربه خرید، فروش و حضور در دنیای خودرو، شکل متفاوتی پیدا کند.
+
+۸۵٬۰۰۰ مترمربع فضا، ۹۰ شوروم و مجموعه‌ای که قرار است بخش‌های مختلف این مسیر را در یک مقصد کنار هم قرار دهد...
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Telegram Reports -->
+  <section id="news" class="py-16 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold text-[#E85A2A] uppercase tracking-wider block mb-2">بازتاب در رسانه‌های ملی</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">پوشش رسانه‌های رسمی و کانال‌های تلگرام</h2>
+        <p class="text-sm text-slate-400 mt-2">رپرتاژهای تفصیلی، مصاحبه‌های تصویری و گزارش‌های تحلیلی بورس و خودرو</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@akharin_khodro</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-11-02</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Teaser & Official News</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/akharin_khodro/8826" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 26,209 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@mycariran</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-11-02</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Concerts & Raffles Hook</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/mycariran/19354" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 7,979 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@mycariran</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-12</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Showrooms & IG Reel</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/mycariran/18540" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 12,590 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@charkhan</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-12</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Full Feature Reportage</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/charkhan/19501" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 1,314 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@ecoiran_webtv</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-13</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Video Interview Farzan</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/ecoiran_webtv/53534" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 2,306 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@ecoiran_webtv</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-13</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Industry Analysis Video</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/ecoiran_webtv/53522" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 2,651 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@khabaronline_ir</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-11-02</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Grand Opening Campaign</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/khabaronline_ir/667173" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 5,816 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@khabaronline_ir</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-13</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">SuperApp 19 AI Agents</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/khabaronline_ir/664307" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 5,265 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@khabaronline_ir</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-12</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Press Day Intro</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/khabaronline_ir/664241" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 5,531 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@isna94</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-11-03</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Official Opening Launch</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/isna94/411586" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 2,523 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@isna94</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-12</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Project Announcement</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/isna94/408500" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 3,724 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@tabnak</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-18</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">District 21 Auto Market</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/tabnak/243965" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 5,963 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@sedayebourse</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-10-12</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Fintech & Leasing</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/sedayebourse/179739" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 8,719 بازدید</span>
+          </div>
+        </div>
+    
+        <div class="apz-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono text-[#E85A2A] dir-ltr">@GizmizTel</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-400">2026-09-17</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Staff Recruitment Iran Novin</h4>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs">
+            <a href="https://t.me/GizmizTel/161897" target="_blank" class="text-[#E85A2A] hover:underline">مشاهده پست تلگرام</a>
+            <span class="text-slate-400 font-mono">👁️ 142,486 بازدید</span>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Raw Files Download Section -->
+  <section class="py-16 bg-[#07080b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="apz-card rounded-3xl p-8 sm:p-12 text-center space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">دسترسی مستقیم به بانک‌های داده و گزارش‌های خام</h2>
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          کلیه داده‌ها، لاگ‌های استخراج‌شده از اینستاگرام، تلگرام و گزارش‌های اقتصادی در ریپازیتوری عمومی گیت‌هاب در دسترس پژوهشگران و فعالان رسانه‌ای قرار دارد.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 pt-2">
+          <a href="data/autoplaza_campaign_intelligence.json" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-semibold text-white border border-white/10 transition-all">
+            Campaign Intelligence (JSON)
+          </a>
+          <a href="data/autoplaza_instagram_pages_audit.json" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-semibold text-white border border-white/10 transition-all">
+            ممیزی اینستاگرام (JSON)
+          </a>
+          <a href="data/autoplaza_all_posts_timeline.json" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-semibold text-white border border-white/10 transition-all">
+            تایم‌لاین پست‌ها (JSON)
+          </a>
+          <a href="data/tehran_autoplaza_comprehensive_investigation.md" target="_blank" class="px-5 py-2.5 rounded-xl bg-[#E85A2A] hover:bg-[#ff6b38] text-xs sm:text-sm font-bold text-white transition-all shadow-lg shadow-[#E85A2A]/20">
+            مطالعه پرونده جامع (Markdown)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-white/5 bg-[#050608] text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-3">
+      <div class="flex justify-center items-center gap-3">
+        <img src="assets/apz1.png" alt="اتو پلازا" class="h-6 w-auto opacity-70">
+        <span class="text-slate-400 font-bold">اتوپلازا تهران (Tehran Auto Plaza)</span>
+      </div>
+      <p>رصدخانه جامع اطلاعات، رسانه‌ها و مگاپروژه اتوپلازا تهران | هلدینگ کانون ایران نوین</p>
+      <p class="dir-ltr font-mono text-slate-600">Hosted on GitHub Pages: autoplazaterhan.github.io</p>
+    </div>
+  </footer>
+
+</body>
+</html>
