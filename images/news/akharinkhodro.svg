@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="10" fill="#3b0764"/>
+  <text x="100" y="33" fill="#a855f7" font-family="Vazirmatn, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">آخرین خودرو</text>
+  <text x="100" y="48" fill="#d8b4fe" font-family="Vazirmatn, sans-serif" font-size="10" text-anchor="middle">Akharin Khodro</text>
+</svg>
