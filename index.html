@@ -63,7 +63,15 @@
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     داده‌کاوی زنده اینستاگرام با باکس API (BoxAPI)
                 </span>
-                <a href="https://github.com/m4tinbeigi-official/autoplaza" target="_blank" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-dark-700 hover:bg-dark-600 text-xs text-slate-200 border border-slate-700 transition">
+                <button onclick="exportDataJSON()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-xs text-emerald-400 border border-emerald-500/30 transition">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v7.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 10.586V3a1 1 0 011-1zM3 14a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                    <span>دانلود دیتابیس JSON</span>
+                </button>
+                <button onclick="exportTimelineCSV()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-xs text-cyan-400 border border-cyan-500/30 transition">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v7.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 10.586V3a1 1 0 011-1zM3 14a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>
+                    <span>خروجی CSV</span>
+                </button>
+                <a href="https://github.com/autoplazaterhan/autoplazaterhan.github.io" target="_blank" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-dark-700 hover:bg-dark-600 text-xs text-slate-200 border border-slate-700 transition">
                     <span>گیت‌هاب</span>
                 </a>
             </div>
@@ -349,7 +357,41 @@
         </div>
 
         <!-- Tab Buttons -->
+        <!-- Global Search Bar across all Observatory Data -->
+        <div class="glass-panel rounded-2xl p-4 sm:p-5 border border-cyan-500/30 bg-gradient-to-r from-dark-900 via-dark-800 to-dark-900 shadow-lg mb-4">
+            <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+                <div class="flex-1 relative">
+                    <div class="absolute inset-y-0 start-0 ps-3.5 flex items-center pointer-events-none text-cyan-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <input type="text" id="global-search-input" oninput="runGlobalSearch(this.value)" placeholder="جستجوی سراسری در اخبار، توییت‌ها، اینفلوئنسرها، ایجنت‌های هوش مصنوعی و قیمت‌ها..." class="w-full ps-11 pe-4 py-3 rounded-xl bg-dark-900/90 border border-slate-700 focus:border-cyan-400 focus:outline-none text-sm text-white placeholder-slate-400 transition" />
+                    <button onclick="clearGlobalSearch()" id="global-clear-btn" class="hidden absolute inset-y-0 end-0 pe-3.5 flex items-center text-slate-400 hover:text-white text-xs">پاک کردن</button>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-300 overflow-x-auto py-1">
+                    <span class="text-slate-400">جستجوی سریع:</span>
+                    <button onclick="quickSearch('ایران نوین')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 border border-slate-700 text-cyan-300">ایران نوین</button>
+                    <button onclick="quickSearch('قرعه‌کشی')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 border border-slate-700 text-amber-300">قرعه‌کشی</button>
+                    <button onclick="quickSearch('DeepSeek')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 border border-slate-700 text-emerald-300 font-mono">DeepSeek</button>
+                    <button onclick="quickSearch('بیت‌ران')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 border border-slate-700 text-purple-300">بیت‌ران</button>
+                    <button onclick="quickSearch('تخفیف ۲۰۰')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 border border-slate-700 text-rose-300">تخفیف ۲۰۰</button>
+                </div>
+            </div>
+            <div id="global-search-feedback" class="hidden mt-3 pt-3 border-t border-slate-800 text-xs flex flex-wrap items-center justify-between gap-2 text-slate-400">
+                <div id="global-search-count" class="font-medium text-cyan-300"></div>
+                <div class="text-[11px] text-slate-400">با کلیک روی هر تب، نتایج آن بخش را به صورت هایلایت مشاهده کنید.</div>
+            </div>
+        </div>
+
+        <!-- Tab Buttons -->
         <div class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-800">
+            <button onclick="switchTab('ai-audit')" id="tab-btn-ai-audit" class="tab-btn px-4 py-2 rounded-xl text-sm font-medium text-emerald-400 hover:text-emerald-300 hover:bg-dark-700 transition flex items-center gap-1.5 border border-emerald-500/20 bg-emerald-500/5 whitespace-nowrap">
+                <span>کالبدشکافی ۱۹ ایجنت هوش مصنوعی</span>
+                <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-emerald-500/20 text-emerald-300 font-bold font-mono">تلمتری زنده</span>
+            </button>
+            <button onclick="switchTab('market-guild')" id="tab-btn-market-guild" class="tab-btn px-4 py-2 rounded-xl text-sm font-medium text-amber-400 hover:text-amber-300 hover:bg-dark-700 transition flex items-center gap-1.5 border border-amber-500/20 bg-amber-500/5 whitespace-nowrap">
+                <span>تحلیل صنفی، جوایز و تعارض منافع</span>
+                <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-amber-500/20 text-amber-300 font-bold font-mono">راستی‌آزمایی</span>
+            </button>
             <button onclick="switchTab('timeline')" id="tab-btn-timeline" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 whitespace-nowrap">تایم‌لاین جامع رویدادها (۶۹ مرحله) و ۵۵ پست رسمی</button>
             <button onclick="switchTab('influencers')" id="tab-btn-influencers" class="tab-btn px-4 py-2 rounded-xl text-sm font-medium text-amber-400 hover:text-amber-300 hover:bg-dark-700 transition flex items-center gap-1.5 border border-amber-500/20 bg-amber-500/5 whitespace-nowrap">
                 <span>شبکه اینفلوئنسرها و استوری‌ها</span>
@@ -5782,7 +5824,410 @@ The Most Powerful Advertising &amp; Marketing Agency in Iran.
         </section>
 
 
-        <!-- WhatsApp Feedback & Public Opinion Contribution Section -->
+        
+        <!-- Tab: AI Agents Deep Audit -->
+        <section id="tab-ai-audit" class="tab-pane hidden space-y-8">
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-500/30 bg-gradient-to-br from-emerald-950/20 via-dark-800 to-dark-900">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            کالبدشکافی فنی و اعتبارسنجی زنده وب‌سرویس
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-black text-white">راستی‌آزمایی ادعای ۱۹ ایجنت هوش مصنوعی سوپراپ اتوپلازا</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">بررسی سورس‌کد فرانت‌اند، شِمای اعتبارسنجی Zod و وضعیت لحظه‌ای اندپوینت رسمی /api/agents/status</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-900 border border-emerald-500/30 text-xs font-mono text-emerald-300 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            <span>LLM: DeepSeek-V4-Flash (ابر آروان)</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- KPI Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+                    <div class="p-4 rounded-xl bg-dark-900/90 border border-slate-800">
+                        <span class="text-xs text-slate-400 block mb-1">تعداد ایجنت ادعاشده در کمپین</span>
+                        <div class="text-3xl font-black text-cyan-400 font-mono">۱۹</div>
+                        <span class="text-[11px] text-slate-400 mt-1 block">مانور تبلیغاتی در خبرگزاری‌ها و بیلبوردها</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-dark-900/90 border border-emerald-500/30">
+                        <span class="text-xs text-slate-400 block mb-1">ایجنت‌های فعال در مکالمه مستقیم</span>
+                        <div class="text-3xl font-black text-emerald-400 font-mono">۲</div>
+                        <span class="text-[11px] text-emerald-400/80 mt-1 block">صرفاً A01 و A03 (۱۰٪ تحقق چت)</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-dark-900/90 border border-rose-500/30">
+                        <span class="text-xs text-slate-400 block mb-1">ایجنت‌های توسعه‌نیافته (not_built)</span>
+                        <div class="text-3xl font-black text-rose-400 font-mono">۱۰</div>
+                        <span class="text-[11px] text-rose-400/80 mt-1 block">فقدان مکالمه، بیمه، لیزینگ و مزایده</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-dark-900/90 border border-amber-500/30">
+                        <span class="text-xs text-slate-400 block mb-1">وضعیت داده‌های کلان (طلا/ارز)</span>
+                        <div class="text-3xl font-black text-amber-400 font-mono">مسدود</div>
+                        <span class="text-[11px] text-amber-400/80 mt-1 block">خطای FX_MARKET_PROVIDER not configured</span>
+                    </div>
+                </div>
+
+                <!-- Analysis Text -->
+                <div class="p-5 rounded-xl bg-dark-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed space-y-3">
+                    <h3 class="font-bold text-white text-base flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        <span>نتیجه ممیزی و شکاف عمیق بین ادعای روابط عمومی و ساختار فنی نرم‌افزار</span>
+                    </h3>
+                    <p>
+                        بررسی ساختار کدهای جاوااسکریپت و شِمای ارتباطی سوپراپلیکیشن اتوپلازا نشان می‌دهد که توسعه‌دهندگان، ساختاری ۲۰ عضوی (A01 تا A20) را در کاتالوگ معماری نرم‌افزار تعریف کرده‌اند، اما این معماری در فاز بازاریابی به عنوان «۱۹ عامل فعال هوش مصنوعی که هم‌اکنون به مشتریان خدمت می‌دهند» معرفی گردید. در واقعیت فنی، اکثر ایجنت‌ها صرفاً عناوینی پیش‌بینی‌شده برای آینده یا توابع ساده پایگاه‌داده هستند.
+                    </p>
+                    <p>
+                        علاوه بر این، در ایجنت‌های تشخیص سلامت فنی خودرو (مانند A12، A18 و A19) قابلیت گفتگو به طور مستقیم در کد مسدود شده است (`conversation: blocked`) و کامنت رسمی توسعه‌دهندگان تصریح می‌کند: «تشخیص قطعی از گفتگو صادر نمی‌شود». این موضوع به دلیل ریسک‌های حقوقی و مسئولیت مالی صدور برگه کارشناسی اشتباه بوده است، اما در محتوای تبلیغاتی اینفلوئنسرها، این پلتفرم به عنوان سیستمی تمام‌هوشمند برای عیب‌یابی خودرو معرفی شده بود.
+                    </p>
+                </div>
+
+                <!-- Table Filter Controls -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-6 border-t border-slate-800">
+                    <div class="flex items-center gap-1.5 text-xs">
+                        <span class="text-slate-400">فیلتر وضعیت ایجنت‌ها:</span>
+                        <button onclick="filterAgentsTable('all')" class="px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 font-medium">همه (۲۰)</button>
+                        <button onclick="filterAgentsTable('active')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 text-emerald-400 border border-slate-700">فعال (۲)</button>
+                        <button onclick="filterAgentsTable('tools_ready')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 text-cyan-300 border border-slate-700">آماده ابزار (۸)</button>
+                        <button onclick="filterAgentsTable('not_built')" class="px-2.5 py-1 rounded-lg bg-dark-700 hover:bg-dark-600 text-rose-300 border border-slate-700">توسعه‌نیافته (۱۰)</button>
+                    </div>
+                    <div class="text-[11px] text-slate-500 font-mono">Endpoint: https://app.autoplaza.ir/api/agents/status</div>
+                </div>
+
+                <!-- Agents Table -->
+                <div class="overflow-x-auto mt-4 rounded-xl border border-slate-800">
+                    <table class="w-full text-start text-xs sm:text-sm">
+                        <thead class="bg-dark-900/90 text-slate-400 text-start border-b border-slate-800">
+                            <tr>
+                                <th class="py-3 px-3 text-start">کد</th>
+                                <th class="py-3 px-3 text-start">نام ایجنت در سامانه</th>
+                                <th class="py-3 px-3 text-start">وضعیت فعال‌سازی</th>
+                                <th class="py-3 px-3 text-start">مسئولیت تعریف‌شده در پرامپت</th>
+                                <th class="py-3 px-3 text-start">ابزارهای دامنه متصل</th>
+                                <th class="py-3 px-3 text-start">نتیجه ممیزی و راستی‌آزمایی</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/40 bg-dark-900/40">
+                            <tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="configured" data-status="فعال و متصل">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A01</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">راهنمای مشتری (Customer Guide)</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-emerald-500/10 text-emerald-400 border-emerald-500/30">فعال و متصل</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">تشخیص قصد کاربر در بین سرویس‌ها، جمع‌آوری زمینه و مسیریابی به ابزارهای دامنه</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="list_services, list_garage, nearby_centers, check_coverage, resolveVehicleIdentity, calculateValuation, searchInternalListings, shortlistInternal, compareListings, runSwapMatch">list_services, list_garage, nearby_centers, check_coverage, resolveVehicleIdentity, calculateValuation, searchInternalListings, shortlistInternal, compareListings, runSwapMatch</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">متصل به ابزارهای داخلی جستجو و تعیین هویت خودرو؛ عمل به عنوان روتر اولیه چت.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="آماده ابزار (بدون مکالمه مستقیم)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A02</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">قیمت‌گذاری خودرو</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">آماده ابزار (بدون مکالمه مستقیم)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">پرسش‌های مؤثر، رفع ابهام، اجرای موتور عددی، توضیح بازه و ارجاع کارشناسی بدون عددسازی LLM</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="resolveVehicleIdentity, calculateValuation, validateCarListings">resolveVehicleIdentity, calculateValuation, validateCarListings</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">موتور محاسباتی فرمول‌محور؛ چت مستقل ندارد و خروجی را از طریق فرم ارزیابی تحویل می‌دهد.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="فعال (چت متصل به دیتابیس)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A03</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مشاور پیشنهاد خرید</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-emerald-500/10 text-emerald-400 border-emerald-500/30">فعال (چت متصل به دیتابیس)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">فهم نیاز خریدار، پرسش تکمیلی در صورت ابهام، و پیشنهاد جداگانه از شوروم و خرید بدون ساختن خودرو</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="searchShowroom, searchOnlineSale, askUser">searchShowroom, searchOnlineSale, askUser</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">اصلی‌ترین ایجنت فعال در ظاهر سایت؛ در صورت ثبت بودجه پایین، کاربر را به گزینه‌های گران‌تر از بودجه هدایت می‌کند.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="آماده ابزار">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A04</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مشاور معاوضه خودرو</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">آماده ابزار</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">تشکیل خواسته معاوضه، تطابق داخلی، دلتای واقعی و پیشنهاد قابل تأیید با رضایت دو طرف</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="runSwapMatch, createSwapDraft, setSwapPreferences">runSwapMatch, createSwapDraft, setSwapPreferences</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">صرفاً بر روی موجودی‌های داخل پلتفرم انطباق انجام می‌دهد و جستجوی خارجی ندارد.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="آماده ابزار">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A05</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مقایسه پیشرفته مدل‌ها</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">آماده ابزار</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">مقایسه ۲ تا ۴ مدل یا نمونه داخلی با برجسته‌سازی تفاوت‌ها</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="compareListings">compareListings</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">جدول مقایسه مشخصات فنی خودروهای شوروم.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="configured" data-status="پیکربندی‌شده">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A06</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">توضیح گزارش کارشناسی</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">پیکربندی‌شده</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">توضیح ساده گزارش تحویل‌شده، اهمیت هر عیب و سؤال پیشنهادی برای کارشناس بدون تغییر گزارش</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="getInspectionReport">getInspectionReport</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">خلاصه‌ساز متنی برگه‌های کارشناسی فنی رنگ و بدنه.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A07</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">همراه معامله و پشتیبانی</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">وضعیت پرونده، رزرو، پرداخت، قرارداد و حمل با گردش کار</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /deals/:id, temporal describe deal workflow, GET /deals/:id/documents">GET /deals/:id, temporal describe deal workflow, GET /deals/:id/documents</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">بخش مکالمه ساخته نشده است (conversation: not_built).</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="مسدود (blocked)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A08</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">همراه تحلیل بازار خودرو</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">مسدود (blocked)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">خواندن شواهد قیمت و موجودی داخلی بدون نرخ ساختگی</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /pricing/mcp/status, GET /pricing/market, POST /agents/a08/runs">GET /pricing/mcp/status, GET /pricing/market, POST /agents/a08/runs</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">تأمین‌کنندگان داده‌های کلان ارز، طلا و شاخص بورس مسدود هستند.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A09</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">همراه عملیات و شعب</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">خواندن صف تأیید، شعب و وضعیت عملیاتی از API واقعی</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /inventory/listings, GET /parts/shipments/carrier-status">GET /inventory/listings, GET /parts/shipments/carrier-status</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">مکالمه هوشمند پیاده‌سازی نشده است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A10</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">همراه محتوا و دانش</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">فهرست و متن مقالات و پرسش‌های متداول از CMS</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /mag, GET /mag/:slug, GET /faq">GET /mag, GET /mag/:slug, GET /faq</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">رابط مکالمه ندارد و صرفاً فراخوانی مقالات وبلاگ است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="not_built" data-status="کاملاً ساخته‌نشده (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A11</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مشاور قطعه و سازگاری یدکی</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">کاملاً ساخته‌نشده (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">پیشنهاد قطعه با مشخصات معتبر و بررسی سازگاری فنی</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /parts/products, POST /parts/fitment-checks">GET /parts/products, POST /parts/fitment-checks</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">در زمان تبلیغات رسانه‌ای هنوز توسعه داده نشده بود.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="مسدود (blocked)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A12</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">تشخیص عیب مکانیکی</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-amber-500/10 text-amber-400 border-amber-500/30">مسدود (blocked)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">تشخیص قطعی از گفتگو صادر نمی‌شود</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="فاقد ابزار دامنه">فاقد ابزار دامنه</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">به دلیل ملاحظات حقوقی و مسئولیت کارشناسی، چت مستقیم مسدود است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A13</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مشاور لیزینگ و اقساط</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">محاسبه پیش‌پرداخت و اقساط بدون نرخ تضمینی</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /leasing/plans, POST /leasing/quotes">GET /leasing/plans, POST /leasing/quotes</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">مکالمه هوشمند فعال نیست و صرفاً محاسبات پایه‌ای فرمول لیزینگ است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A14</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">مشاور و مقایسه بیمه</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">مقایسه استعلام بیمه‌نامه‌ها از شرکت‌های بیمه‌گر</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /insurance/products, GET /insurance/quotes">GET /insurance/products, GET /insurance/quotes</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">بخش مکالمه مستقیم کاربر پیاده‌سازی نشده است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A15</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">راهنمای امور و عوارض خودرو</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">استعلام معاینه فنی، خلافی و عوارض بدون داده جعلی</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /technical-inspection/status, GET /fines/status, GET /tolls/status">GET /technical-inspection/status, GET /fines/status, GET /tolls/status</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">رابط مکالمه ساخته نشده و وب‌سرویس مستقیم است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="not_built" data-status="کاملاً ساخته‌نشده (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A16</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">همراه تالار مزایده</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">کاملاً ساخته‌نشده (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">بررسی پارت‌های مزایده و ثبت پیشنهاد با تأیید کاربر</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /auctions/:id/snapshot, POST /auctions/:id/bids">GET /auctions/:id/snapshot, POST /auctions/:id/bids</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">سرویس تالار مزایده در فاز افتتاحیه فعال نبوده است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="توسعه‌نیافته (not_built)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A17</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">راهنمای باشگاه مشتریان</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-rose-500/10 text-rose-400 border-rose-500/30">توسعه‌نیافته (not_built)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">عضویت، امتیاز و پاداش‌های فعال از لجر باشگاه</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="GET /club/membership, GET /club/rewards">GET /club/membership, GET /club/rewards</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">چت ندارد و گردش کار متصل نشده است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="مسدود (blocked)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A18</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">بررسی سازگاری بدنه و رنگ</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-amber-500/10 text-amber-400 border-amber-500/30">مسدود (blocked)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">سازگاری نامعلوم تا بررسی مرکز قطعی نیست</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="فاقد ابزار دامنه">فاقد ابزار دامنه</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">مکالمه به صورت قطعی مسدود است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="مسدود (blocked)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A19</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">بررسی تجهیزات صوتی و الکترونیک</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-amber-500/10 text-amber-400 border-amber-500/30">مسدود (blocked)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">سازگاری صوتی از کاتالوگ و بررسی مرکز می‌آید</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="فاقد ابزار دامنه">فاقد ابزار دامنه</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">مکالمه به صورت قطعی مسدود است.</td>
+    </tr>
+<tr class="border-b border-slate-800/60 hover:bg-dark-800/50 transition agent-row" data-activation="tools_ready" data-status="آماده ابزار (پردازش داخلی)">
+        <td class="py-3 px-3 font-mono font-bold text-cyan-400 text-xs sm:text-sm">A20</td>
+        <td class="py-3 px-3 font-semibold text-white text-xs sm:text-sm">تولید برگه فنی خودرو</td>
+        <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">آماده ابزار (پردازش داخلی)</span>
+        </td>
+        <td class="py-3 px-3 text-xs text-slate-300 leading-relaxed max-w-xs">تولید شناسنامه و برگه مشخصات فنی خودروها از پروتکل MCP و منابع آنلاین</td>
+        <td class="py-3 px-3 text-[11px] font-mono text-slate-400 max-w-xs truncate" title="mcp_specs_crawler, online_catalog_fetch">mcp_specs_crawler, online_catalog_fetch</td>
+        <td class="py-3 px-3 text-xs text-amber-300/90 leading-relaxed">ابزار بک‌اندی برای ساخت کاتالوگ و مشخصات خودروها در شوروم.</td>
+    </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Tab: Market, Guild & Conflict of Interest -->
+        <section id="tab-market-guild" class="tab-pane hidden space-y-8">
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-amber-500/30 bg-gradient-to-br from-amber-950/20 via-dark-800 to-dark-900 space-y-8">
+                <div class="border-b border-slate-800 pb-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-semibold text-amber-400 mb-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        تحلیل صنفی، راستی‌آزمایی مشوق‌های مالی و ارزیابی ریسک
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-black text-white">راستی‌آزمایی تخفیف‌ها، قرعه‌کشی و تعارض منافع ساختاری</h2>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1">بررسی شرایط حقوقی خرید، بیعانه ۳۰۰ میلیونی، موضع اتحادیه نمایشگاه‌داران خودرو و چالش‌های ترافیکی کیلومتر ۱۱</p>
+                </div>
+
+                <!-- 4 Investigative Pillars Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Pillar 1: Offer & Deposit Reality -->
+                    <div class="p-6 rounded-xl bg-dark-900/80 border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-2 text-amber-400 font-bold text-base">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            <h4>راستی‌آزمایی تخفیف ۲۰۰ میلیونی و بیعانه ۳۰۰ میلیونی</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            بررسی متادیتای اندپوینت رسمی فروش نشان می‌دهد این تخفیف بر روی قیمت‌های پایه‌ای اعمال شده که در برخی تیپ‌ها بالاتر از میانگین کف بازار آزاد بوده‌اند؛ به طور مثال قیمت نهایی تارا اتوماتیک پس از کسر تخفیف ۴ میلیارد و ۳۷۰ میلیون تومان، دنا پلاس دستی ۳ میلیارد و ۱۸۰ میلیون تومان و هایما 7X برابر با ۸ میلیارد تومان ثبت شده است.
+                        </p>
+                        <div class="p-3.5 rounded-lg bg-dark-900 border border-slate-800/80 space-y-2 text-xs">
+                            <div class="flex justify-between text-slate-400">
+                                <span>حداقل بیعانه نقدی فوری:</span>
+                                <strong class="text-emerald-400 font-mono font-bold">۳۰۰٬۰۰۰٬۰۰۰ تومان بیعانه نقدی فوری</strong>
+                            </div>
+                            <div class="flex justify-between text-slate-400">
+                                <span>فرصت رزرو موقت:</span>
+                                <strong class="text-cyan-400 font-mono">۳۰ دقیقه رزرو موقت پس از رفتن به درگاه</strong>
+                            </div>
+                            <div class="flex justify-between text-slate-400">
+                                <span>مهلت تسویه باقیمانده میلیاردی:</span>
+                                <strong class="text-amber-400">پرداخت باقیمانده مبلغ میلیاردی خودرو منحصراً تا ساعت ۱۹:۰۰ اولین روز کاری بعد به صورت حضوری در اتوپلازا</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2: Raffle Conditions -->
+                    <div class="p-6 rounded-xl bg-dark-900/80 border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-2 text-cyan-400 font-bold text-base">
+                            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                            <h4>شفاف‌سازی قرعه‌کشی خودروهای پژو ۲۰۷ و XPENG</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            برخلاف برداشت اولیه افکار عمومی که قرعه‌کشی پژو ۲۰۷ و خودرو برقی XPENG را ویژه عموم بازدیدکنندگان یا حاضران در کنسرت‌ها قلمداد می‌کردند، طبق اساسنامه سیستم فروش، قرعه‌کشی شبانه منحصراً میان خریداران قطعی خودرو در همان روز که تسویه حساب کامل کرده بودند برگزار شده است.
+                        </p>
+                        <div class="p-3.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-xs text-amber-200 leading-relaxed">
+                            <strong>نکته حقوقی:</strong> در هیچ‌یک از اسناد رسمی و قراردادهای آنلاین، قرعه‌کشی به عنوان یک لاتاری عمومی ثبت نشده و شانس برنده شدن منحصراً به پرداخت مبالغ میلیاردی خرید خودرو در بازه افتتاحیه منوط شده بود.
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3: Vertical Conflict of Interest -->
+                    <div class="p-6 rounded-xl bg-dark-900/80 border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-2 text-rose-400 font-bold text-base">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
+                            <h4>تعارض منافع ساختاری در ادغام عمودی (Vertical Integration)</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            در مدل‌های مرسوم تجاری، مدیریت فضای فیزیکی از فرآیند فروش و نظارت فنی تفکیک شده است. اما در اتوپلازا، هلدینگ کانون ایران نوین هم‌زمان مالک عرصه، بهره‌بردار شوروم‌ها، کارگزار مستقیم فروش، مجری کارشناسی رنگ و فنی، کارگزار بیمه و تسهیلات لیزینگ است. این تجمیع عمودی (Vertical Integration) استقلال و بی‌طرفی برگه‌های کارشناسی و قیمت‌گذاری را در مواجهه با منافع فروش خود مجموعه با چالش جدی روبرو می‌کند.
+                        </p>
+                        <p class="text-xs text-slate-400">
+                            <strong>منبع تحلیل:</strong> گزارش کارشناسی مانی حدادی در پایگاه تخصصی بیت‌ران پیرامون ریسک‌های تمرکز قدرت در هاب خودرویی.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 4: Trade Union & Market State -->
+                    <div class="p-6 rounded-xl bg-dark-900/80 border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-2 text-purple-400 font-bold text-base">
+                            <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+                            <h4>موضع رسمی اتحادیه نمایشگاه‌داران خودرو تهران</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            <strong>سخنگو:</strong> کرمی (رئیس وقت اتحادیه صنف دارندگان نمایشگاه‌ها و فروشندگان خودرو تهران)<br/>
+                            <strong>وضعیت بازار:</strong> رکود عمیق بازار، افت شدید تقاضای مصرفی و حباب قیمت‌های غیرواقعی
+                        </p>
+                        <ul class="space-y-1.5 text-xs text-slate-400 list-disc list-inside">
+                            <li>انتقاد از فعالیت مگامال‌های خودرویی خارج از پروانه کسب معتبر صنفی</li>
+                            <li>تغییر شغل و تعطیلی ۲۰٪ از نمایشگاه‌های سنتی در اثر رکود و اجاره‌بها</li>
+                            <li>تردید در توجیه اقتصادی نگهداری سازه ۱۶۴ هزار متری در شرایط رکود پایدار</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Geographical & Traffic Analysis -->
+                <div class="p-6 rounded-xl bg-dark-900/90 border border-slate-800 space-y-4">
+                    <h3 class="font-bold text-white text-base flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                        <span>ارزیابی ترافیکی و مکان‌یابی کیلومتر ۱۱ جاده مخصوص (نبش خیابان ۳۰)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+                        <div class="p-3.5 rounded-lg bg-dark-800 border border-slate-700/60">
+                            <strong class="text-cyan-400 block mb-1">دسترسی کندرو:</strong>
+                            <span>ورود صرفاً از طریق باند کندرو اتوبان لشگری که در ساعات ایونت باعث پس‌زدگی ترافیک به تندرو می‌شود.</span>
+                        </div>
+                        <div class="p-3.5 rounded-lg bg-dark-800 border border-slate-700/60">
+                            <strong class="text-amber-400 block mb-1">حمل‌ونقل عمومی:</strong>
+                            <span>نبود اتصال پیاده به ایستگاه‌های مترو؛ نزدیک‌ترین ایستگاه‌ها چیتگر و وردآورد در فاصله چند کیلومتری هستند.</span>
+                        </div>
+                        <div class="p-3.5 rounded-lg bg-dark-800 border border-slate-700/60">
+                            <strong class="text-emerald-400 block mb-1">بافت صنعتی منطقه ۲۱:</strong>
+                            <span>همجواری با کارخانجات صنعتی و تردد وسایل نقلیه سنگین در تقاطع‌های مجاور.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- WhatsApp Feedback & Public Opinion Contribution Section -->
         <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-500/30 bg-gradient-to-br from-emerald-950/30 via-dark-800 to-dark-900 relative overflow-hidden my-8">
             <div class="max-w-3xl mx-auto space-y-6 text-center">
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
@@ -5841,7 +6286,139 @@ The Most Powerful Advertising &amp; Marketing Agency in Iran.
     </footer>
 
     <script>
+        
+        // Global Search across all content and tabs
+        function runGlobalSearch(query) {
+            query = (query || '').toLowerCase().trim();
+            const clearBtn = document.getElementById('global-clear-btn');
+            const feedbackEl = document.getElementById('global-search-feedback');
+            const countEl = document.getElementById('global-search-count');
+            
+            if (!query) {
+                clearGlobalSearch();
+                return;
+            }
+            if (clearBtn) clearBtn.classList.remove('hidden');
+            if (feedbackEl) feedbackEl.classList.remove('hidden');
+            
+            let totalMatches = 0;
+            const tabMatches = {};
+
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                const paneId = pane.id.replace('tab-', '');
+                let paneCount = 0;
+                
+                // Check all text nodes / blocks inside pane
+                const items = pane.querySelectorAll('p, h2, h3, h4, tr, .glass-panel, .timeline-master-row, .tweet-card');
+                items.forEach(item => {
+                    const txt = (item.textContent || '').toLowerCase();
+                    if (txt.includes(query)) {
+                        paneCount++;
+                        item.classList.add('bg-cyan-500/10', 'transition');
+                    } else {
+                        item.classList.remove('bg-cyan-500/10');
+                    }
+                });
+                
+                if (paneCount > 0) {
+                    tabMatches[paneId] = paneCount;
+                    totalMatches += paneCount;
+                }
+            });
+            
+            if (countEl) {
+                countEl.innerHTML = `یافت شد: <strong class="text-cyan-400 font-mono">${totalMatches}</strong> مورد در کل رصدخانه. تب‌های دارای نتیجه: ` + 
+                    Object.keys(tabMatches).map(t => `<button onclick="switchTab('${t}')" class="underline text-emerald-400 me-2">${t} (${tabMatches[t]})</button>`).join('');
+            }
+        }
+
+        function quickSearch(term) {
+            const input = document.getElementById('global-search-input');
+            if (input) {
+                input.value = term;
+                runGlobalSearch(term);
+            }
+        }
+
+        function clearGlobalSearch() {
+            const input = document.getElementById('global-search-input');
+            if (input) input.value = '';
+            const clearBtn = document.getElementById('global-clear-btn');
+            if (clearBtn) clearBtn.classList.add('hidden');
+            const feedbackEl = document.getElementById('global-search-feedback');
+            if (feedbackEl) feedbackEl.classList.add('hidden');
+            document.querySelectorAll('.bg-cyan-500/10').forEach(el => el.classList.remove('bg-cyan-500/10'));
+        }
+
+        // Filter AI Agents Table
+        function filterAgentsTable(status) {
+            const rows = document.querySelectorAll('.agent-row');
+            rows.forEach(row => {
+                const act = row.getAttribute('data-activation') || '';
+                const st = row.getAttribute('data-status') || '';
+                if (status === 'all') {
+                    row.style.display = '';
+                } else if (status === 'active' && (st.includes('فعال') || act === 'configured')) {
+                    row.style.display = '';
+                } else if (status === 'tools_ready' && act === 'tools_ready') {
+                    row.style.display = '';
+                } else if (status === 'not_built' && act === 'not_built') {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Export data.json
+        function exportDataJSON() {
+            fetch('data.json')
+                .then(res => res.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'autoplaza_observatory_master_data.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(() => alert('داده‌ها در دسترس نیست.'));
+        }
+
+        // Export Timeline CSV
+        function exportTimelineCSV() {
+            fetch('data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const timeline = data.unified_master_timeline_69 || data.timeline || [];
+                    let csv = 'Row,Date,Type,Publisher,Headline,Link\n';
+                    timeline.forEach((item, idx) => {
+                        const row = [
+                            idx + 1,
+                            `"${(item.date || '').replace(/"/g, '""')}"`,
+                            `"${(item.type || item.media_type || '').replace(/"/g, '""')}"`,
+                            `"${(item.publisher || item.channel || '').replace(/"/g, '""')}"`,
+                            `"${(item.headline || item.title || '').replace(/"/g, '""')}"`,
+                            `"${(item.url || item.link || '').replace(/"/g, '""')}"`
+                        ].join(',');
+                        csv += row + '\n';
+                    });
+                    const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'autoplaza_timeline_69_master.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    URL.revokeObjectURL(url);
+                })
+                .catch(err => alert('خطا در استخراج CSV: ' + err));
+        }
+
         function switchTab(tabId) {
+
             document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.className = 'tab-btn px-4 py-2 rounded-xl text-sm font-medium text-slate-400 hover:text-slate-200 hover:bg-dark-700 transition';

@@ -18,7 +18,10 @@
     "whatsapp_feedback_number": "09127047813",
     "whatsapp_feedback_notice": "در صورتی که تمایل دارید نام، شماره تلفن یا مشخصات شما در سایت نمایش داده نشود و دیدگاهتان به صورت کاملاً ناشناس منتشر گردد، حتماً این موضوع را در ابتدای پیام واتساپ خود قید فرمایید.",
     "timeline_events_count": 69,
-    "audited_accounts_count": 58
+    "audited_accounts_count": 58,
+    "ai_audit_completed": true,
+    "guild_audit_completed": true,
+    "last_updated": "آبان ۱۴۰۵ - ارزیابی عمیق فنی و صنفی"
   },
   "facility_specs": {
     "total_area_sqm": 164000,
@@ -609,7 +612,7 @@
       "category_tag": "publishers",
       "category_label": "Reel creator",
       "is_verified": true,
-      "biography": "Multi-Genre Documentaries for Millions 🪐🚀\nFrom Science to History — and Beyond 🛸\n📍ارتباط با ادمین👇"
+      "biography": "Multi-Genre Documentaries for Millions 🪐🚀\nFrom Science to History - and Beyond 🛸\n📍ارتباط با ادمین👇"
     },
     {
       "handle": "rezasadeghi_official",
@@ -753,7 +756,7 @@
       "category_tag": "car_reviewers",
       "category_label": "",
       "is_verified": false,
-      "biography": "My Business:\n🏎️اجاره خودرو لاکچری کیش \n@molaeirent \n@molaeirent.dubai \nرستوران  — @lacava.ir\nباشگاه — @lambogym\nجهت همکا"
+      "biography": "My Business:\n🏎️اجاره خودرو لاکچری کیش \n@molaeirent \n@molaeirent.dubai \nرستوران  - @lacava.ir\nباشگاه - @lambogym\nجهت همکا"
     },
     {
       "handle": "behnood_mk",
@@ -8934,5 +8937,335 @@
       "cat": "live_event",
       "badge_color": "bg-amber-500/10 text-amber-400 border-amber-500/20"
     }
-  ]
+  ],
+  "ai_agents_audit": {
+    "summary": {
+      "advertised_count": 19,
+      "total_catalog_agents": 20,
+      "llm_provider": "ArvanCloud / DeepSeek-V4-Flash",
+      "market_providers_status": "Blocked (FX & Gold providers unconfigured)",
+      "active_conversation_count": 2,
+      "configured_count": 3,
+      "not_built_count": 10,
+      "blocked_conversation_count": 5,
+      "technical_verdict": "برخلاف ادعای رسانه‌ای مبنی بر فعالیت ۱۹ عامل هوشمند، تنها دو ایجنت گفتگو (A01 و A03) با ابزارهای محدود جستجوی پایگاه داده متصل هستند و بیش از ۶۵٪ ایجنت‌ها در وضعیت توسعه‌نیافته (not_built) یا مکالمه مسدود (blocked) قرار دارند."
+    },
+    "agents": [
+      {
+        "id": "A01",
+        "name": "راهنمای مشتری (Customer Guide)",
+        "activation": "configured",
+        "prompt_version": "a01-p1-v1",
+        "responsibility": "تشخیص قصد کاربر در بین سرویس‌ها، جمع‌آوری زمینه و مسیریابی به ابزارهای دامنه",
+        "status_badge": "فعال و متصل",
+        "status_color": "emerald",
+        "tools": [
+          "list_services",
+          "list_garage",
+          "nearby_centers",
+          "check_coverage",
+          "resolveVehicleIdentity",
+          "calculateValuation",
+          "searchInternalListings",
+          "shortlistInternal",
+          "compareListings",
+          "runSwapMatch"
+        ],
+        "audit_note": "متصل به ابزارهای داخلی جستجو و تعیین هویت خودرو؛ عمل به عنوان روتر اولیه چت."
+      },
+      {
+        "id": "A02",
+        "name": "قیمت‌گذاری خودرو",
+        "activation": "tools_ready",
+        "prompt_version": "a02-validate-v1",
+        "responsibility": "پرسش‌های مؤثر، رفع ابهام، اجرای موتور عددی، توضیح بازه و ارجاع کارشناسی بدون عددسازی LLM",
+        "status_badge": "آماده ابزار (بدون مکالمه مستقیم)",
+        "status_color": "cyan",
+        "tools": [
+          "resolveVehicleIdentity",
+          "calculateValuation",
+          "validateCarListings"
+        ],
+        "audit_note": "موتور محاسباتی فرمول‌محور؛ چت مستقل ندارد و خروجی را از طریق فرم ارزیابی تحویل می‌دهد."
+      },
+      {
+        "id": "A03",
+        "name": "مشاور پیشنهاد خرید",
+        "activation": "tools_ready",
+        "prompt_version": "a03-chat-v2",
+        "responsibility": "فهم نیاز خریدار، پرسش تکمیلی در صورت ابهام، و پیشنهاد جداگانه از شوروم و خرید بدون ساختن خودرو",
+        "status_badge": "فعال (چت متصل به دیتابیس)",
+        "status_color": "emerald",
+        "tools": [
+          "searchShowroom",
+          "searchOnlineSale",
+          "askUser"
+        ],
+        "audit_note": "اصلی‌ترین ایجنت فعال در ظاهر سایت؛ در صورت ثبت بودجه پایین، کاربر را به گزینه‌های گران‌تر از بودجه هدایت می‌کند."
+      },
+      {
+        "id": "A04",
+        "name": "مشاور معاوضه خودرو",
+        "activation": "tools_ready",
+        "prompt_version": "v1",
+        "responsibility": "تشکیل خواسته معاوضه، تطابق داخلی، دلتای واقعی و پیشنهاد قابل تأیید با رضایت دو طرف",
+        "status_badge": "آماده ابزار",
+        "status_color": "cyan",
+        "tools": [
+          "runSwapMatch",
+          "createSwapDraft",
+          "setSwapPreferences"
+        ],
+        "audit_note": "صرفاً بر روی موجودی‌های داخل پلتفرم انطباق انجام می‌دهد و جستجوی خارجی ندارد."
+      },
+      {
+        "id": "A05",
+        "name": "مقایسه پیشرفته مدل‌ها",
+        "activation": "tools_ready",
+        "prompt_version": "v1",
+        "responsibility": "مقایسه ۲ تا ۴ مدل یا نمونه داخلی با برجسته‌سازی تفاوت‌ها",
+        "status_badge": "آماده ابزار",
+        "status_color": "cyan",
+        "tools": [
+          "compareListings"
+        ],
+        "audit_note": "جدول مقایسه مشخصات فنی خودروهای شوروم."
+      },
+      {
+        "id": "A06",
+        "name": "توضیح گزارش کارشناسی",
+        "activation": "configured",
+        "prompt_version": "a06-v1",
+        "responsibility": "توضیح ساده گزارش تحویل‌شده، اهمیت هر عیب و سؤال پیشنهادی برای کارشناس بدون تغییر گزارش",
+        "status_badge": "پیکربندی‌شده",
+        "status_color": "cyan",
+        "tools": [
+          "getInspectionReport"
+        ],
+        "audit_note": "خلاصه‌ساز متنی برگه‌های کارشناسی فنی رنگ و بدنه."
+      },
+      {
+        "id": "A07",
+        "name": "همراه معامله و پشتیبانی",
+        "activation": "tools_ready",
+        "prompt_version": "a07-v0",
+        "responsibility": "وضعیت پرونده، رزرو، پرداخت، قرارداد و حمل با گردش کار",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /deals/:id",
+          "temporal describe deal workflow",
+          "GET /deals/:id/documents"
+        ],
+        "audit_note": "بخش مکالمه ساخته نشده است (conversation: not_built)."
+      },
+      {
+        "id": "A08",
+        "name": "همراه تحلیل بازار خودرو",
+        "activation": "tools_ready",
+        "prompt_version": "a08-v0",
+        "responsibility": "خواندن شواهد قیمت و موجودی داخلی بدون نرخ ساختگی",
+        "status_badge": "مسدود (blocked)",
+        "status_color": "rose",
+        "tools": [
+          "GET /pricing/mcp/status",
+          "GET /pricing/market",
+          "POST /agents/a08/runs"
+        ],
+        "audit_note": "تأمین‌کنندگان داده‌های کلان ارز، طلا و شاخص بورس مسدود هستند."
+      },
+      {
+        "id": "A09",
+        "name": "همراه عملیات و شعب",
+        "activation": "tools_ready",
+        "prompt_version": "a09-v0",
+        "responsibility": "خواندن صف تأیید، شعب و وضعیت عملیاتی از API واقعی",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /inventory/listings",
+          "GET /parts/shipments/carrier-status"
+        ],
+        "audit_note": "مکالمه هوشمند پیاده‌سازی نشده است."
+      },
+      {
+        "id": "A10",
+        "name": "همراه محتوا و دانش",
+        "activation": "tools_ready",
+        "prompt_version": "a10-v0",
+        "responsibility": "فهرست و متن مقالات و پرسش‌های متداول از CMS",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /mag",
+          "GET /mag/:slug",
+          "GET /faq"
+        ],
+        "audit_note": "رابط مکالمه ندارد و صرفاً فراخوانی مقالات وبلاگ است."
+      },
+      {
+        "id": "A11",
+        "name": "مشاور قطعه و سازگاری یدکی",
+        "activation": "not_built",
+        "prompt_version": "a11-v0",
+        "responsibility": "پیشنهاد قطعه با مشخصات معتبر و بررسی سازگاری فنی",
+        "status_badge": "کاملاً ساخته‌نشده (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /parts/products",
+          "POST /parts/fitment-checks"
+        ],
+        "audit_note": "در زمان تبلیغات رسانه‌ای هنوز توسعه داده نشده بود."
+      },
+      {
+        "id": "A12",
+        "name": "تشخیص عیب مکانیکی",
+        "activation": "tools_ready",
+        "prompt_version": "a12-v0",
+        "responsibility": "تشخیص قطعی از گفتگو صادر نمی‌شود",
+        "status_badge": "مسدود (blocked)",
+        "status_color": "amber",
+        "tools": [],
+        "audit_note": "به دلیل ملاحظات حقوقی و مسئولیت کارشناسی، چت مستقیم مسدود است."
+      },
+      {
+        "id": "A13",
+        "name": "مشاور لیزینگ و اقساط",
+        "activation": "tools_ready",
+        "prompt_version": "a13-v0",
+        "responsibility": "محاسبه پیش‌پرداخت و اقساط بدون نرخ تضمینی",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /leasing/plans",
+          "POST /leasing/quotes"
+        ],
+        "audit_note": "مکالمه هوشمند فعال نیست و صرفاً محاسبات پایه‌ای فرمول لیزینگ است."
+      },
+      {
+        "id": "A14",
+        "name": "مشاور و مقایسه بیمه",
+        "activation": "tools_ready",
+        "prompt_version": "a14-v0",
+        "responsibility": "مقایسه استعلام بیمه‌نامه‌ها از شرکت‌های بیمه‌گر",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /insurance/products",
+          "GET /insurance/quotes"
+        ],
+        "audit_note": "بخش مکالمه مستقیم کاربر پیاده‌سازی نشده است."
+      },
+      {
+        "id": "A15",
+        "name": "راهنمای امور و عوارض خودرو",
+        "activation": "tools_ready",
+        "prompt_version": "a15-v0",
+        "responsibility": "استعلام معاینه فنی، خلافی و عوارض بدون داده جعلی",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /technical-inspection/status",
+          "GET /fines/status",
+          "GET /tolls/status"
+        ],
+        "audit_note": "رابط مکالمه ساخته نشده و وب‌سرویس مستقیم است."
+      },
+      {
+        "id": "A16",
+        "name": "همراه تالار مزایده",
+        "activation": "not_built",
+        "prompt_version": "a16-v0",
+        "responsibility": "بررسی پارت‌های مزایده و ثبت پیشنهاد با تأیید کاربر",
+        "status_badge": "کاملاً ساخته‌نشده (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /auctions/:id/snapshot",
+          "POST /auctions/:id/bids"
+        ],
+        "audit_note": "سرویس تالار مزایده در فاز افتتاحیه فعال نبوده است."
+      },
+      {
+        "id": "A17",
+        "name": "راهنمای باشگاه مشتریان",
+        "activation": "tools_ready",
+        "prompt_version": "a17-v0",
+        "responsibility": "عضویت، امتیاز و پاداش‌های فعال از لجر باشگاه",
+        "status_badge": "توسعه‌نیافته (not_built)",
+        "status_color": "rose",
+        "tools": [
+          "GET /club/membership",
+          "GET /club/rewards"
+        ],
+        "audit_note": "چت ندارد و گردش کار متصل نشده است."
+      },
+      {
+        "id": "A18",
+        "name": "بررسی سازگاری بدنه و رنگ",
+        "activation": "tools_ready",
+        "prompt_version": "a18-v0",
+        "responsibility": "سازگاری نامعلوم تا بررسی مرکز قطعی نیست",
+        "status_badge": "مسدود (blocked)",
+        "status_color": "amber",
+        "tools": [],
+        "audit_note": "مکالمه به صورت قطعی مسدود است."
+      },
+      {
+        "id": "A19",
+        "name": "بررسی تجهیزات صوتی و الکترونیک",
+        "activation": "tools_ready",
+        "prompt_version": "a19-v0",
+        "responsibility": "سازگاری صوتی از کاتالوگ و بررسی مرکز می‌آید",
+        "status_badge": "مسدود (blocked)",
+        "status_color": "amber",
+        "tools": [],
+        "audit_note": "مکالمه به صورت قطعی مسدود است."
+      },
+      {
+        "id": "A20",
+        "name": "تولید برگه فنی خودرو",
+        "activation": "tools_ready",
+        "prompt_version": "a20-v1",
+        "responsibility": "تولید شناسنامه و برگه مشخصات فنی خودروها از پروتکل MCP و منابع آنلاین",
+        "status_badge": "آماده ابزار (پردازش داخلی)",
+        "status_color": "cyan",
+        "tools": [
+          "mcp_specs_crawler",
+          "online_catalog_fetch"
+        ],
+        "audit_note": "ابزار بک‌اندی برای ساخت کاتالوگ و مشخصات خودروها در شوروم."
+      }
+    ]
+  },
+  "market_and_guild_audit": {
+    "promotions_reality": {
+      "cash_discount_headline": "۲۰۰ میلیون تومان تخفیف نقدی برای همه خریداران",
+      "cash_discount_reality": "بررسی متادیتای اندپوینت رسمی فروش نشان می‌دهد این تخفیف بر روی قیمت‌های پایه‌ای اعمال شده که در برخی تیپ‌ها بالاتر از میانگین کف بازار آزاد بوده‌اند؛ به طور مثال قیمت نهایی تارا اتوماتیک پس از کسر تخفیف ۴ میلیارد و ۳۷۰ میلیون تومان، دنا پلاس دستی ۳ میلیارد و ۱۸۰ میلیون تومان و هایما 7X برابر با ۸ میلیارد تومان ثبت شده است.",
+      "deposit_requirement": "۳۰۰٬۰۰۰٬۰۰۰ تومان بیعانه نقدی فوری",
+      "reservation_window": "۳۰ دقیقه رزرو موقت پس از رفتن به درگاه",
+      "settlement_terms": "پرداخت باقیمانده مبلغ میلیاردی خودرو منحصراً تا ساعت ۱۹:۰۰ اولین روز کاری بعد به صورت حضوری در اتوپلازا",
+      "raffle_conditions": "برخلاف برداشت اولیه افکار عمومی که قرعه‌کشی پژو ۲۰۷ و خودرو برقی XPENG را ویژه عموم بازدیدکنندگان یا حاضران در کنسرت‌ها قلمداد می‌کردند، طبق اساسنامه سیستم فروش، قرعه‌کشی شبانه منحصراً میان خریداران قطعی خودرو در همان روز که تسویه حساب کامل کرده بودند برگزار شده است."
+    },
+    "trade_union_and_guild": {
+      "spokesperson": "کرمی (رئیس وقت اتحادیه صنف دارندگان نمایشگاه‌ها و فروشندگان خودرو تهران)",
+      "market_state": "رکود عمیق بازار، افت شدید تقاضای مصرفی و حباب قیمت‌های غیرواقعی",
+      "guild_concerns": [
+        "انتقاد رسمی از پدیدار شدن مراکز تجمیعی که بدون اخذ پروانه سنتی نمایشگاه‌داری و خارج از نظارت مستقیم اتحادیه به معاملات انبوه می‌پردازند.",
+        "گزارش تعطیلی یا تغییر شغل بیش از ۲۰ درصد از نمایشگاه‌داران باسابقه پایتخت ناشی از سنگینی اجاره‌بهای واحدهای صنفی و نوسانات بازار واردات خودرو.",
+        "ابهام در امکان تأمین درازمدت هزینه‌های سرسام‌آور نگهداری هاب ۱۶۴ هزار متری در شرایط رکود پایدار معاملات خودرویی کشور."
+      ]
+    },
+    "vertical_conflict_of_interest": {
+      "analysis_source": "پایگاه تحلیلی خودرویی بیت‌ران (تحلیل مانی حدادی)",
+      "conflict_summary": "در مدل‌های مرسوم تجاری، مدیریت فضای فیزیکی از فرآیند فروش و نظارت فنی تفکیک شده است. اما در اتوپلازا، هلدینگ کانون ایران نوین هم‌زمان مالک عرصه، بهره‌بردار شوروم‌ها، کارگزار مستقیم فروش، مجری کارشناسی رنگ و فنی، کارگزار بیمه و تسهیلات لیزینگ است. این تجمیع عمودی (Vertical Integration) استقلال و بی‌طرفی برگه‌های کارشناسی و قیمت‌گذاری را در مواجهه با منافع فروش خود مجموعه با چالش جدی روبرو می‌کند."
+    },
+    "geographical_and_urban_analysis": {
+      "coordinates": "کیلومتر ۱۱ بزرگراه شهید لشگری (جاده مخصوص کرج)، نبش خیابان سی‌ام",
+      "access_challenges": [
+        "ورود به مجموعه منحصراً از باند کندرو جاده مخصوص صورت می‌پذیرد که در ساعات اوج بار ترافیکی و برگزاری رویدادها، منجر به انسداد شریانی و پس‌زدگی ترافیک به بزرگراه اصلی می‌گردد.",
+        "نبود دسترسی پیاده به ایستگاه‌های شبکه متروی تهران (نزدیک‌ترین ایستگاه‌ها چیتگر و وردآورد در خط ۵ هستند که نیازمند مسافت تاکسی‌رانی هستند).",
+        "قرارگیری در هسته صنعتی و کارگاهی منطقه ۲۱ با تردد خودروهای سنگین و ناوگان ترانزیتی."
+      ]
+    }
+  }
 }
