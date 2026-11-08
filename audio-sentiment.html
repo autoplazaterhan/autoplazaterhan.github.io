@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واکاوی صوتی و تقابل دیدگاه‌ها | رصدخانه اتوپلازا تهران</title>
+    <meta name="description" content="تحلیل طیف‌های تمجید، تخریب، رونویسی کلامی ویدیوهای اینستاگرام و واکاوی متنی و معنایی مواضع چهره‌های حاضر.">
+    <link rel="canonical" href="https://autoplazaterhan.github.io/audio-sentiment.html" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        apz: {
+                            black: '#050505',
+                            bg: '#0a0a0a',
+                            card: '#0f0f11',
+                            surface: '#151518',
+                            orange: '#e85a2a',
+                            'orange-deep': '#d44a1c',
+                            'orange-glow': '#ff6b35',
+                            red: '#fb2c36'
+                        },
+                        dark: {
+                            950: '#050505',
+                            900: '#0a0a0a',
+                            800: '#111111',
+                            700: '#181818',
+                            600: '#222222',
+                            500: '#333333'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --background: #050505;
+            --foreground: #f5f5f5;
+            --orange: #e85a2a;
+            --orange-deep: #d44a1c;
+            --orange-glow: #ff6b35;
+            --accent: #e85a2a;
+        }
+        * {
+            font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            letter-spacing: 0 !important;
+        }
+        body {
+            background-color: #050505;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        ::selection {
+            background: #e85a2a;
+            color: #ffffff;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.025);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-panel:hover {
+            border-color: rgba(232, 90, 42, 0.45);
+        }
+        .apz-card {
+            background: rgba(18, 18, 20, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #e85a2a 0%, #d44a1c 100%);
+            color: #ffffff;
+            border-radius: 9999px;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 20px -4px rgba(232, 90, 42, 0.4);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 6px 30px 0 rgba(232, 90, 42, 0.65);
+            transform: translateY(-1px);
+        }
+        .btn-ghost {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: #ffffff;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(232, 90, 42, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-neutral-100 antialiased selection:bg-[#e85a2a] selection:text-white bg-[#050505]">
+    
+    <!-- Header: Authentic Tehran Auto Plaza Luxury Dark Navigation -->
+    <header class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-[#050505]/95 backdrop-blur-md text-white border-b border-white/10">
+        <div class="mx-auto flex h-[4.5rem] max-w-[1400px] items-center justify-between gap-3 px-4 md:h-[5rem] md:px-8">
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-3 group shrink-0">
+                <div class="relative h-11 w-8 md:h-12 md:w-9 flex items-center shrink-0 drop-shadow-[0_4px_16px_rgba(232,90,42,0.35)]">
+                    <img src="assets/apz1.png" alt="لوگوی اتو پلازا تهران" class="h-full w-full object-contain group-hover:scale-105 transition-transform">
+                </div>
+                <div class="relative h-8 w-[5.5rem] md:h-9 md:w-[6.75rem] flex items-center shrink-0">
+                    <img src="assets/apz2-light.png" alt="اتوپلازا تهران" class="h-full w-full object-contain object-right">
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-4 xl:gap-5 text-[0.85rem]">
+                <a href="index.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">صفحه اصلی</a>
+                <a href="timeline.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">تایم‌لاین رویدادها</a>
+                <a href="posts.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">پست‌ها و ریلزها</a>
+                <a href="influencers.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">شبکه اینفلوئنسرها</a>
+                <a href="news.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">خبرگزاری‌ها</a>
+                <a href="critiques.html" class="cursor-pointer transition text-white/80 hover:text-white font-medium">رصدخانه X</a>
+
+                <!-- The Enhanced Mega Menu Dropdown Trigger -->
+                <div class="relative" id="observatory-nav-dropdown-wrapper">
+                    <button type="button" onclick="toggleObservatoryMegaMenu(event)" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/[0.08] to-white/[0.02] border border-white/15 text-white font-bold text-xs hover:border-[#e85a2a]/60 hover:text-white transition-all shadow-sm">
+                        <svg class="w-4 h-4 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        <span>منوهای تحلیلی رصدخانه</span>
+                        <span class="px-1.5 py-0.2 rounded bg-[#e85a2a]/20 text-[#ff7b47] text-[10px] font-mono font-bold">۱۷ بخش</span>
+                        <svg class="w-3.5 h-3.5 text-white/50 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    
+    <!-- Mega Menu Dropdown Panel -->
+    <div id="observatory-mega-menu" class="hidden absolute top-full end-0 mt-3 w-[94vw] max-w-[1080px] rounded-2xl bg-[#08080a]/98 backdrop-blur-2xl border border-white/15 shadow-[0_25px_80px_rgba(0,0,0,0.95)] p-5 z-50 transition-all text-start">
+        <div class="flex items-center justify-between gap-3 pb-3 mb-3 border-b border-white/10">
+            <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#e85a2a] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-black text-white">منوهای تحلیلی رصدخانه اتوپلازا تهران</span>
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#e85a2a]/15 text-[#ff7b47] border border-[#e85a2a]/30 font-mono font-bold">۱۷ صفحه مستقل</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button type="button" onclick="closeObservatoryMegaMenu()" class="p-1 rounded-lg text-white/40 hover:text-white hover:bg-white/10 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- 4 Columns Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+        <div class="space-y-2">
+            <div class="flex items-center gap-2 pb-1.5 border-b border-white/10">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold border bg-cyan-500/10 text-cyan-400 border-cyan-500/20">شبکه‌های اجتماعی و افکار عمومی</span>
+                <span class="text-[10px] font-mono text-white/40">(5 بخش)</span>
+            </div>
+            <div class="space-y-1">
+                
+            <a href="posts.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پست‌ها و ریلزهای اینستاگرام</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۱۳۰ مدیا • ۱۲.۸M ویو</span>
+                </div>
+            </a>
+            
+            <a href="audio-sentiment.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-[#e85a2a]/60 bg-[#e85a2a]/15 text-white shadow-sm">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">واکاوی صوتی و تقابل دیدگاه‌ها</span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#e85a2a] animate-pulse"></span>
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">رونویسی صوت • کالبدشکافی کپشن</span>
+                </div>
+            </a>
+            
+            <a href="influencers.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">دایرکتوری اینفلوئنسرها و چهره‌ها</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۵۸ چهره • ۳۰M فالوور</span>
+                </div>
+            </a>
+            
+            <a href="critiques.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">رصدخانه توییت‌ها و شبکه X</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۱۷۵ توییت • ۷۹٪ نقد تند</span>
+                </div>
+            </a>
+            
+            <a href="hashtags.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پایش هشتگ‌ها و خطاهای املایی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">پایش زنده با BoxAPI</span>
+                </div>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-2">
+            <div class="flex items-center gap-2 pb-1.5 border-b border-white/10">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold border bg-amber-500/10 text-amber-400 border-amber-500/20">رویدادها و پوشش رسانه‌ای</span>
+                <span class="text-[10px] font-mono text-white/40">(4 بخش)</span>
+            </div>
+            <div class="space-y-1">
+                
+            <a href="timeline.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">تایم‌لاین جامع رویدادها و وقایع</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۷۸ فاز • ۶۳ پست رسمی</span>
+                </div>
+            </a>
+            
+            <a href="news.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پوشش خبرگزاری‌ها و پایگاه‌های رسمی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۳۴ رسانه با لوگوی رسمی</span>
+                </div>
+            </a>
+            
+            <a href="broadcast.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پوشش رادیو، تلویزیون و مجلات خودرویی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">پوشش چندرسانه‌ای</span>
+                </div>
+            </a>
+            
+            <a href="campaigns.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v3a2 2 0 01-2 2M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">کمپین‌ها و پروموشن‌های تبلیغاتی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">تخفیف ۲۰۰M • قرعه‌کشی خودرو</span>
+                </div>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-2">
+            <div class="flex items-center gap-2 pb-1.5 border-b border-white/10">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold border bg-emerald-500/10 text-emerald-400 border-emerald-500/20">کالبدشکافی و پرونده‌های ویژه</span>
+                <span class="text-[10px] font-mono text-white/40">(4 بخش)</span>
+            </div>
+            <div class="space-y-1">
+                
+            <a href="ai-audit.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">کالبدشکافی ۱۹ ایجنت هوش مصنوعی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۱۹ ایجنت هوشمند</span>
+                </div>
+            </a>
+            
+            <a href="investigation.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پرونده کارآگاهی و لایه‌های پنهان</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">کالبدشکافی پشت‌پرده</span>
+                </div>
+            </a>
+            
+            <a href="market-guild.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">تحلیل صنفی، جوایز و تعارض منافع</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">راستی‌آزمایی حقوقی</span>
+                </div>
+            </a>
+            
+            <a href="production.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">تولید، ایونت و ایران نوین ونچرز</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">ایران نوین ونچرز</span>
+                </div>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-2">
+            <div class="flex items-center gap-2 pb-1.5 border-b border-white/10">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold border bg-purple-500/10 text-purple-400 border-purple-500/20">اسناد، زیرساخت و آمار کلان</span>
+                <span class="text-[10px] font-mono text-white/40">(4 بخش)</span>
+            </div>
+            <div class="space-y-1">
+                
+            <a href="platforms.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">توزیع پلتفرمی داده‌ها و سهم کانال‌ها</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۵۷.۴٪ تلگرام • ۱۱.۶٪ اینستاگرام</span>
+                </div>
+            </a>
+            
+            <a href="specs.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">مشخصات فنی، سازه، مالکان و مدیران</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۸۵٬۰۰۰ متر • ۹۰ شوروم</span>
+                </div>
+            </a>
+            
+            <a href="faq.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">پاسخ به سوالات کلیدی و ابهامات افکار عمومی</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">۷ پرسش و پاسخ کلیدی</span>
+                </div>
+            </a>
+            
+            <a href="rawpdf.html" class="group/item flex items-start gap-2.5 p-2 rounded-xl border transition-all duration-200 border-white/5 bg-white/[0.02] hover:bg-white/[0.06] hover:border-[#e85a2a]/40 text-white/90">
+                <div class="p-1.5 rounded-lg bg-black/40 border border-white/5 shrink-0 group-hover/item:border-[#e85a2a]/40 group-hover/item:scale-105 transition-all">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-xs font-bold text-white group-hover/item:text-[#ff7b47] transition-colors truncate">متن کامل و استناد سند رسمی دیتاک</span>
+                        
+                    </div>
+                    <span class="text-[10px] text-white/50 block font-mono mt-0.5 truncate">سند رسمی PDF دیتاک</span>
+                </div>
+            </a>
+            
+            </div>
+        </div>
+        
+        </div>
+
+        <!-- Footer of Mega Menu -->
+        <div class="mt-4 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-white/60">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>پایش زنده ۳۶۰ درجه • ۱٬۰۹۴ رکورد داده استخراج‌شده</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="index.html#observatory-atlas" class="text-[#ff7b47] hover:underline font-bold flex items-center gap-1">
+                    <span>مشاهده اطلس کامل در صفحه اصلی</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                </a>
+                <span>•</span>
+                <a href="autoplaza-datak-report.pdf" target="_blank" class="hover:text-white transition">سند رسمی دیتاک (PDF)</a>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </nav>
+
+            <!-- Header CTA & Actions -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="autoplaza-datak-report.pdf" target="_blank" class="btn-ghost hidden xl:inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold text-white hover:border-[#e85a2a]/60">
+                    <svg class="w-4 h-4 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span>سند رسمی دیتاک</span>
+                </a>
+                <a href="https://autoplaza.ir/" target="_blank" rel="noopener noreferrer" class="btn-ghost hidden sm:inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold text-white/90 hover:border-[#e85a2a]/60">
+                    <span>autoplaza.ir</span>
+                    <svg class="w-3.5 h-3.5 text-[#ff7b47]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+                
+                <!-- Quick Menu Toggle Button (Visible on mobile/tablet) -->
+                <button type="button" onclick="toggleMobileDrawer()" class="lg:hidden p-2 rounded-xl bg-white/[0.05] border border-white/10 text-white hover:text-[#e85a2a] transition flex items-center gap-1.5 text-xs font-bold" aria-label="منوی رصدخانه">
+                    <svg class="w-5 h-5 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <span class="hidden sm:inline">منوهای تحلیلی</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-drawer-overlay" onclick="toggleMobileDrawer()" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden transition-opacity"></div>
+    
+    <!-- Mobile Drawer Panel -->
+    <aside id="mobile-drawer" class="fixed top-0 bottom-0 start-0 z-50 w-80 max-w-[85vw] bg-[#08080a] border-e border-white/10 shadow-2xl p-5 overflow-y-auto transform -translate-x-full rtl:translate-x-full transition-transform duration-300 space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <div class="flex items-center gap-2">
+                <img src="assets/apz1.png" alt="اتوپلازا تهران" class="h-8 w-6 object-contain">
+                <span class="text-sm font-black text-white">منوهای تحلیلی رصدخانه</span>
+            </div>
+            <button onclick="toggleMobileDrawer()" class="p-1 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+
+        <div class="space-y-1">
+            <a href="index.html" class="flex items-center gap-2 p-2.5 rounded-xl bg-white/[0.04] text-xs font-bold text-white hover:bg-[#e85a2a]/20 border border-white/5 transition">
+                <svg class="w-4 h-4 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <span>صفحه اصلی رصدخانه (هاب مرکزی)</span>
+            </a>
+        </div>
+
+        <div class="space-y-3">
+            
+        <div class="space-y-1.5 pt-2">
+            <span class="text-[11px] font-bold text-cyan-400 block px-1">شبکه‌های اجتماعی و افکار عمومی</span>
+            <div class="space-y-1">
+                
+            <a href="posts.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span class="font-bold text-white truncate">پست‌ها و ریلزهای اینستاگرام</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۱۳۰ مدیا • ۱۲.۸M ویو</span>
+            </a>
+            
+            <a href="audio-sentiment.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-[#e85a2a]/60 bg-[#e85a2a]/15 text-white">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                    <span class="font-bold text-white truncate">واکاوی صوتی و تقابل دیدگاه‌ها</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">رونویسی صوت • کالبدشکافی کپشن</span>
+            </a>
+            
+            <a href="influencers.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="font-bold text-white truncate">دایرکتوری اینفلوئنسرها و چهره‌ها</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۵۸ چهره • ۳۰M فالوور</span>
+            </a>
+            
+            <a href="critiques.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    <span class="font-bold text-white truncate">رصدخانه توییت‌ها و شبکه X</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۱۷۵ توییت • ۷۹٪ نقد تند</span>
+            </a>
+            
+            <a href="hashtags.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                    <span class="font-bold text-white truncate">پایش هشتگ‌ها و خطاهای املایی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">پایش زنده با BoxAPI</span>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-1.5 pt-2">
+            <span class="text-[11px] font-bold text-amber-400 block px-1">رویدادها و پوشش رسانه‌ای</span>
+            <div class="space-y-1">
+                
+            <a href="timeline.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="font-bold text-white truncate">تایم‌لاین جامع رویدادها و وقایع</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۷۸ فاز • ۶۳ پست رسمی</span>
+            </a>
+            
+            <a href="news.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                    <span class="font-bold text-white truncate">پوشش خبرگزاری‌ها و پایگاه‌های رسمی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۳۴ رسانه با لوگوی رسمی</span>
+            </a>
+            
+            <a href="broadcast.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span class="font-bold text-white truncate">پوشش رادیو، تلویزیون و مجلات خودرویی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">پوشش چندرسانه‌ای</span>
+            </a>
+            
+            <a href="campaigns.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v3a2 2 0 01-2 2M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                    <span class="font-bold text-white truncate">کمپین‌ها و پروموشن‌های تبلیغاتی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">تخفیف ۲۰۰M • قرعه‌کشی خودرو</span>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-1.5 pt-2">
+            <span class="text-[11px] font-bold text-emerald-400 block px-1">کالبدشکافی و پرونده‌های ویژه</span>
+            <div class="space-y-1">
+                
+            <a href="ai-audit.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    <span class="font-bold text-white truncate">کالبدشکافی ۱۹ ایجنت هوش مصنوعی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۱۹ ایجنت هوشمند</span>
+            </a>
+            
+            <a href="investigation.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <span class="font-bold text-white truncate">پرونده کارآگاهی و لایه‌های پنهان</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">کالبدشکافی پشت‌پرده</span>
+            </a>
+            
+            <a href="market-guild.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    <span class="font-bold text-white truncate">تحلیل صنفی، جوایز و تعارض منافع</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">راستی‌آزمایی حقوقی</span>
+            </a>
+            
+            <a href="production.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
+                    <span class="font-bold text-white truncate">تولید، ایونت و ایران نوین ونچرز</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">ایران نوین ونچرز</span>
+            </a>
+            
+            </div>
+        </div>
+        
+        <div class="space-y-1.5 pt-2">
+            <span class="text-[11px] font-bold text-purple-400 block px-1">اسناد، زیرساخت و آمار کلان</span>
+            <div class="space-y-1">
+                
+            <a href="platforms.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    <span class="font-bold text-white truncate">توزیع پلتفرمی داده‌ها و سهم کانال‌ها</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۵۷.۴٪ تلگرام • ۱۱.۶٪ اینستاگرام</span>
+            </a>
+            
+            <a href="specs.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <span class="font-bold text-white truncate">مشخصات فنی، سازه، مالکان و مدیران</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۸۵٬۰۰۰ متر • ۹۰ شوروم</span>
+            </a>
+            
+            <a href="faq.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="font-bold text-white truncate">پاسخ به سوالات کلیدی و ابهامات افکار عمومی</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">۷ پرسش و پاسخ کلیدی</span>
+            </a>
+            
+            <a href="rawpdf.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between p-2.5 rounded-xl border transition text-xs border-white/5 bg-white/[0.02] text-white/80">
+                <div class="flex items-center gap-2 truncate">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span class="font-bold text-white truncate">متن کامل و استناد سند رسمی دیتاک</span>
+                </div>
+                <span class="text-[10px] font-mono text-white/50 shrink-0">سند رسمی PDF دیتاک</span>
+            </a>
+            
+            </div>
+        </div>
+        
+        </div>
+
+        <div class="pt-4 border-t border-white/10 space-y-2">
+            <a href="autoplaza-datak-report.pdf" target="_blank" class="w-full btn-ghost py-2.5 px-3 text-xs font-bold flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <span>دانلود سند رسمی دیتاک (PDF)</span>
+            </a>
+            <a href="https://autoplaza.ir/" target="_blank" rel="noopener noreferrer" class="w-full btn-ghost py-2.5 px-3 text-xs font-semibold flex items-center justify-center gap-1.5 text-white/90">
+                <span>وب‌سایت رسمی autoplaza.ir ↗</span>
+            </a>
+        </div>
+    </aside>
+    
+
+    <!-- Page Dossier Header & Breadcrumb -->
+    <div class="pt-24 md:pt-28 pb-6 bg-gradient-to-b from-white/[0.04] to-transparent border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-4 md:px-8 space-y-4">
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center gap-2 text-xs text-white/50" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:text-white transition flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <span>صفحه اصلی</span>
+                </a>
+                <span>/</span>
+                <a href="index.html#observatory-atlas" class="hover:text-white transition">منوهای تحلیلی رصدخانه</a>
+                <span>/</span>
+                <span class="text-[#ff7b47] font-semibold">واکاوی صوتی و تقابل دیدگاه‌ها</span>
+            </nav>
+
+            <!-- Title & Quick Actions -->
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#e85a2a]/15 text-[#ff7b47] border border-[#e85a2a]/30">
+                        <span>شبکه‌های اجتماعی و افکار عمومی</span>
+                        <span>•</span>
+                        <span class="font-mono">رونویسی صوت • کالبدشکافی کپشن</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-white">واکاوی صوتی و تقابل دیدگاه‌ها</h1>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">تحلیل طیف‌های تمجید، تخریب، رونویسی کلامی ویدیوهای اینستاگرام و واکاوی متنی و معنایی مواضع چهره‌های حاضر.</p>
+                </div>
+                <div class="flex items-center gap-2.5 shrink-0">
+                    <a href="index.html#observatory-atlas" class="btn-ghost px-4 py-2 text-xs font-bold inline-flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[#e85a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        <span>هاب رصدخانه</span>
+                    </a>
+                    <a href="autoplaza-datak-report.pdf" target="_blank" class="btn-primary px-4 py-2 text-xs font-bold inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <span>سند رسمی دیتاک</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section Content -->
+    <main class="max-w-[1400px] mx-auto px-4 md:px-8 py-8 space-y-8">
+                <section id="tab-audio-sentiment" class="tab-pane hidden space-y-8">
+            <!-- Header Dossier Banner -->
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-[#e85a2a]/30 bg-gradient-to-br from-[#200e08] via-dark-800 to-dark-900 space-y-6">
+                <div class="border-b border-white/10 pb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e85a2a]/10 border border-[#e85a2a]/20 text-xs font-semibold text-[#ff7b47] mb-2">
+                            <span class="w-2 h-2 rounded-full bg-[#e85a2a] animate-pulse"></span>
+                            سامانه چندوجهی واکاوی صوتی هوش مصنوعی (Speech-to-Text Intelligence)
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-black text-white">واکاوی صوتی، رونویسی کلامی و تقابل تعریف در برابر تخریب</h2>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-1">رونویسی کلمه به کلمه گفتار اینفلوئنسرها، نریشن‌های استودیویی و موسیقی‌های سفارشی در مقایسه با موج نقادانه و تخریبی رسانه‌ها و کاربران مستقل</p>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="px-3 py-1.5 rounded-xl bg-black/40 border border-white/10 text-xs text-white/80 font-mono">
+                            ۱۰ فایل صوتی پیاده‌شده • ۵۸ ویدیوی رسمی
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 4 KPI Telemetry Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">مجموع بازدید ویدیوهای صوتی</span>
+                        <p class="text-xl sm:text-2xl font-black text-white font-mono">۲۲٬۴۳۰٬۰۰۰+</p>
+                        <span class="text-[10px] text-emerald-400">تحلیل کلامی پربازدیدترین ریلزها</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">قطب تعریف و پروموشن</span>
+                        <p class="text-xl sm:text-2xl font-black text-emerald-400 font-mono">۹۱٫۴٪</p>
+                        <span class="text-[10px] text-white/50">تمرکز بر کنسرت، جوایز و تخفیف ۲۰۰ میلیونی</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">قطب نقد و تخریب ساختاری</span>
+                        <p class="text-xl sm:text-2xl font-black text-rose-400 font-mono">۸٫۶٪</p>
+                        <span class="text-[10px] text-rose-300/80">طرح شبهه ارزی تسنیم و نقد کیفی خودروها</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">تطابق صوت با کپشن</span>
+                        <p class="text-xl sm:text-2xl font-black text-amber-400 font-mono">۹۸٪</p>
+                        <span class="text-[10px] text-amber-300/80">هم‌پوشانی کامل کلیدواژه‌های مالی و پروموشن</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two-Pillars Clash: Praise vs Criticism Deep Dive -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Pillar 1: Praise & High-Engagement Promotion -->
+                <div class="glass-panel rounded-2xl p-6 border border-emerald-500/30 bg-gradient-to-br from-emerald-950/20 via-dark-800 to-dark-900 space-y-5">
+                    <div class="flex items-center gap-2.5 text-emerald-400 font-bold border-b border-white/10 pb-4">
+                        <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                        <h3 class="text-base sm:text-lg text-white">قطب تعریف، تمجید و مشروعیت‌بخشی چهره‌ها</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        جریان اصلی محتوای پیج رسمی اتوپلازا تهران و اینفلوئنسرهای همکار (با مجموع ۱۱ میلیون فالوور) بر مدار **تعریف مطلق و هایپ پرهیجان** سازماندهی شده است. محورهای صوتی این قطب عبارتند از:
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-200">
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">مشروعیت‌بخشی سلبریتی‌ها:</strong> الیکا عبدالرزاقی و امیرحسین رستمی با لحنی مشتاقانه به ستایش پارکینگ ۳ هزارتایی، تفریحی بودن فضا و پر کردن خلاء بازار خودرو می‌پردازند.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">جینگل‌های ریتمیک سفارشی:</strong> قطعات رپ مارکتینگی اهورا نیازی و گروه H3N با تکنیک‌های صوتی ۸D، آفر تخفیف ۲۰۰ میلیونی و قرعه‌کشی هر شب یک پژو ۲۰۷ را در ذهن مخاطب نهادینه می‌کنند.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">موج‌آفرینی با کنسرت‌های رایگان:</strong> دعوت مردم به کنسرت‌های بدون ورودی رضا صادقی، اشوان، امید حاجیلی و علیرضا طلیسچی به عنوان ابزار جذب جمعیت چند ده هزار نفری به کیلومتر ۱۱ جاده مخصوص.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Critical & Investigative Resistance -->
+                <div class="glass-panel rounded-2xl p-6 border border-rose-500/30 bg-gradient-to-br from-rose-950/20 via-dark-800 to-dark-900 space-y-5">
+                    <div class="flex items-center gap-2.5 text-rose-400 font-bold border-b border-white/10 pb-4">
+                        <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                        <h3 class="text-base sm:text-lg text-white">قطب نقد، تخریب و مطالبه‌گری شفافیت ارزی</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        در نقطه مقابل، رسانه‌های تحلیلی صنعت خودرو و کاربران مستقل اینستاگرام با انتشار پست‌های هشتگی به **تخریب چهره تبلیغاتی و زیر سوال بردن رانت‌های پشت پرده** پرداخته‌اند:
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-200">
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">شبهه ارزی خبرگزاری تسنیم و مجله ماشین:</strong> مطالبه صریح از بانک مرکزی و وزارت صمت برای شفاف‌سازی منشأ ارز واردات خودروهای میلیاردی و تضاد مانور تجمل با معیشت جامعه.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">شکاف ادعا تا واقعیت نمایشگاه:</strong> انتقاد بازدیدکنندگان مستقل (پست‌های @ho3ein1377 و @ariyo_khosrojerdi) مبنی بر این‌که خودروهای شاخص صرفاً ماکت نمایشی یا پشت شیشه‌اند و کف نمایشگاه با تارا، ۲۰۷ و دنا پر شده است.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">رفتار طبقاتی و ورود گزینشی:</strong> گلایه عمومی از عدم اجازه ورود مردم به برخی غرفه‌های لوکس و استفاده از مردم عادی صرفاً برای شلوغ نشان دادن فودکورت و کنسرت.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Master Grid of All Transcribed Audio Assets -->
+            <div class="space-y-6 pt-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                    <div>
+                        <h3 class="text-lg font-black text-white">آرشیو رونویسی کلمه به کلمه و کالبدشکافی ۱۰ فایل صوتی کلیدی</h3>
+                        <p class="text-xs text-white/60">تحلیل گفتار، استخراج بار احساسی و تطبیق متن صحبت‌ها با کپشن پست‌ها</p>
+                    </div>
+                    <span class="text-xs font-mono text-[#ff7b47] bg-[#ff7b47]/10 px-3 py-1 rounded-full border border-[#ff7b47]/20">۱۰ ویدیو • صوت شفاف</span>
+                </div>
+
+                <div class="space-y-5">
+                    
+    <!-- Card: DfUx2HBR-UD -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-emerald-500/20 hover:border-emerald-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-emerald-500/10 border-emerald-500/30 text-emerald-400">
+                        تعریف و هایپ هیجانی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfUx2HBR-UD</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۳ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">تور الیکا عبدالرزاقی در شوروم‌ها و قرعه‌کشی ۲۰۷</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">الیکا عبدالرزاقی (بازیگر سینما)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۸٬۰۷۷</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۵۱۴٬۲۸۰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                در ادامه، رونویسی دقیق صحبت‌ها و بررسی نوع بازخورد ارائه شده است:<br><br>---<br><br><br>*(گوینده: یک خانم بلاگر / اینفلوئنسر)*<br><br>> «امروز اومدم اتوپلازا و قراره که از شوروم‌ها دیدن بکنیم. خیلی هیجان‌انگیزه. بیاین بیاین بیاین بیاین بیاین ببینیم، قراره با هم بریم.  <br>> وا! چرا اینجا این‌قدر ۲۰۷ هست؟! هر شب اینجا بین خریداران خودرو یه قرعه‌کشی برگزار می‌شه، یه ۲۰۷ جایزه می‌دن!  <br>> دسترسی خیلی راحته؛ یعنی تو مدتی که از اونجا راه افتادیم اومدیم، هم دسترسی راحته، هم تمام این مسیری که بودیم زیرش پارکینگه، پارکینگ‌های خیلی وسیع و گسترده... همه‌چی هم دارن!  <br>> الان اینجا نشستم بغل ۲۰۷ قرعه‌کشی. یه تور جذاب بود، عین شهربازی! موزیک، ماشین‌های مختلف، فضاهای تفریحی خوب، خیلی خیلی خیلی خوش گذشت و واقعاً واقعاً واقعاً یک مقصدی برای عاشقان خودرو! مخلصم.»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">دعوت به گشت و گذار در ۹۰ شوروم اتوپلازا و معرفی قرعه‌کشی روزانه ۲۰۷ بین خریداران.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل<br>• <strong>نوع بازخورد:<strong> <strong>پروموشن و تبلیغات (همراه با تعریف و تمجید مفرط)<strong><br><br>• <strong>دلایل:<strong><br>  ۱. <strong>معرفی مزایا و خدمات مجموعه:<strong> به مواردی مثل دسترسی آسان، پارکینگ‌های وسیع و طبقاتی، تنوع شوروم‌ها و به‌ویژه آفر جذاب تجاری (قرعه‌کشی هر شب یک پژو ۲۰۷ بین خریداران) اشاره مستقیم می‌شود.  <br>  ۲. <strong>لحن و بیان هیجانی و تبلیغاتی:<strong> استفاده مکرر از واژه‌ها و عبارات پرشور مانند •«خیلی هیجان‌انگیزه»•، •«عین شهربازی»•، •«خیلی خیلی خیلی خوش گذشت»• و •«مقصدی برای عاشقان خودرو»• نشان‌دهنده یک کمپین اینفلوئنسر مارکتینگ با هدف جذب مخاطب و ایجاد تمایل به بازدید/خرید است، نه یک نقد یا بررسی بی‌طرفانه.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfaRlg8uQIV -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-emerald-500/20 hover:border-emerald-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-emerald-500/10 border-emerald-500/30 text-emerald-400">
+                        تأییدیه رسمی سلبریتی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfaRlg8uQIV</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۴ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">حضور امیرحسین رستمی و ستایش تجمیع خدمات خودرویی</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">امیرحسین رستمی (بازیگر سینما و تلویزیون)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۸٬۸۵۹</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۲۶۰٬۳۹۵</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                (گوینده: امیرحسین رستمی - بازیگر سینما و تلویزیون)<br><br>«امشب دعوت شدم به مجموعه اتوپلازا. اول ترغیب شدم به‌خاطر اینکه گفتن خودروهای کلاسیک هست، اومدم خودروهای کلاسیکشو ببینم ولی با یه چیز جذابی مواجه شدم.  <br>اینجا یه مجموعه‌ای درست کردن که برندهای خودرویی حضور دارن، اگر قصد خرید ماشین کسی داشته باشه بین برندها می‌تونه انتخاب کنه. خلاصه هر آنچه که برای خرید و فروش ماشین هست، ظاهراً قراره اینجا اتفاق بیفته.  <br>تو این مجموعه برای سهولت پارک ماشین‌هاتون پارکینگ در نظر گرفتن، تمام کارها رو که دارن انجام می‌دن برای خرید، برای فروش، برای نقل‌وانتقال، می‌تونید از مراکزی که اینجا هست بازدید کنید و لذت ببرید.  <br>اینجا براتون علاوه بر اینکه امکانات رفاهی تدارک دیدن، هفت شب خواننده‌های خوب کشورمون اجرا دارن رایگان، هر روز یکی از هنرمندهای خوب سینما اینجا مهمان ویژه‌ست، می‌تونین بیاین گپ بزنید، از موسیقی لذت ببرین، خلاصه حالشو ببرین.  <br>جای همچین مجموعه‌ای خالی بود، من که کیف کردم.»
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">حضور ویژه در شب اول افتتاحیه، تأکید بر پارکینگ ۳ هزارتایی و کنسرت‌های رایگان شبانه.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و ارزیابی<br>• نوع بازخورد: کاملاً تعریف، تمجید و مشروعیت‌بخشی چهره سرشناس (Celebrity Endorsement)<br>• لحن: پرانرژی، مشتاقانه، تحسین‌آمیز و ترغیب‌کننده به بازدید عمومی.<br>• پیام اصلی: تمجید از متمرکز شدن خدمات خرید، فروش، تعویض پلاک، پارکینگ بزرگ و برنامه‌های شاد شبانه و خالی بودن جای چنین مجموعه‌ای در کشور.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfQBkfJR8oU -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-amber-500/20 hover:border-amber-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-amber-500/10 border-amber-500/30 text-amber-400">
+                        جینگل موزیکال پروموشن
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfQBkfJR8oU</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۹ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">جینگل رپ مارکتینگی اهورا نیازی، دلاور و ریحانی (صوت سه‌بعدی)</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">خواننده رپ سفارشی و هم‌خوانان برند</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۴۱٬۸۵۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۴۹۳٬۸۲۰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ موارد درخواستی شما به شرح زیر است:<br><br>---<br><br><br><br>* **خواننده مرد:**  <br>  تو هم اگه ماشین‌بازی بیا این‌ور بازار  <br>  وعده ما چهارشنبه ۱۳ آبان  <br>  سورپرایزت می‌کنه ۷ شب اتوپلازا  <br><br>* **هم‌خوان زن:**  <br>  یه افتتاحیه با این همه داستان!  <br><br>* **خواننده مرد (هم‌خوانی):**  <br>  کنسرت رایگان هر شب  <br>  این یعنی هم فال و هم تماشا هم تفریح  <br>  ۲۰۰ میلیون تومن تخفیف  <br><br>* **هم‌خوان زن:**  <br>  رو همه خودروها، خریدشم قطعی!  <br><br>* **خواننده مرد:**  <br>  یه دستگاه ۲۰۷ هر شب  <br>  بین خریدارها می‌دن هر هفت شب  <br>  تازه یه دستگاه ایکس‌پنگ هم هست  <br>  که بین خریدارها یه نفر می‌شه برنده‌ش  <br><br>* **خواننده مرد:**  <br>  پس تو هم اگه کنجکاوی بدو که با هم  <br>  یه هفته کیف کنیم تو اتوپلازا  <br>  این یه افتتاح ساده نیست، یه فستیوال کامله  <br>  اتوپلازا نگو، بگو ستون بازار!  <br>  جایی فراتر از نمایشگاه ماشین  <br>  خرید و فروش و همه خدماتی  <br>  همه‌چی یه جا از لوازم تا چکاپ و فیکس  <br><br>* **هم‌خوان زن:**  <br>  کافه، رستوران تا کارواش، آپاراتی  <br><br>* **خواننده مرد (و گروهی):**  <br>  بگو دیده هم‌ترازش تا به حال کی؟  <br>  باید بیاین چهارشنبه اینجا باشین  <br>  اتوپلازا که نداره کم و کاستی  <br>  پر از ماشین خفن وارداتی  <br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">معرفی اکوسیستم خودرویی اتوپلازا، ۲۰۰ میلیون تخفیف نقدی و جوایز پژو ۲۰۷ و ایکس‌پنگ.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br><br>• <strong>نوع:<strong> <strong>پروموشن صرف (تبلیغات تجاری)<strong><br>• <strong>دلایل:<strong>  <br>  این فایل بخشی از یک قطعه موزیکال رپ اختصاصی و سفارشی‌سازی‌شده (Jingle / Promo Track) توسط خود مجموعه یا تیم مارکتینگ کمپین است. محتوای آن کاملاً در جهت اعلام افتتاحیه، پروموت کردن جوایز (قرعه‌کشی پژو ۲۰۷ و خودروی برقی ایکس‌پنگ)، کنسرت‌های رایگان، تخفیف‌های خرید، و معرفی امکانات رفاهی و خدماتی مجموعه (کافه، رستوران، کارواش و...) تولید شده و یک نقد یا نظر مستقل کاربری به شمار نمی‌رود.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfZUdKkxi3s -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-sky-500/20 hover:border-sky-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-sky-500/10 border-sky-500/30 text-sky-400">
+                        وایرال‌ترین پست افتتاحیه
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfZUdKkxi3s</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۳ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">رونمایی سایبرتراک دست‌ساز بنیامین توفیق و هیجان جمعیت</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">بنیامین توفیق (تولیدکننده محتوا)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۶۱٬۸۵۹</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۳٬۶۸۳٬۰۶۶</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                در ادامه اطلاعات درخواستی ارائه شده است:<br><br>---<br><br><br><br>**گوینده (بلاگر/صاحب خودرو):**  <br>> «تا چند دقیقه دیگه رونمایی میشه. قراره بیام جلوی استیج بچه‌ها ببینن و خیلی ذوق‌زدم و فکر نمی‌کردم این‌قدر جمعیت بیاد به‌خاطر ماشین، به‌صورت رسمی رونماییش کنم. همیشه ویدیوهاش فقط بوده، هیچ‌وقت خودشو ندیدن از نزدیک. خب قبل از اینکه برنامه شروع بشه بریم بچه‌ها رو ببینیم، یه سلامی بکنم چون ممکنه دیگه نتونیم، شلوغ بشه و اینا...»<br><br>*(صدای تشویق و فریاد جمعیت)*  <br>**گوینده خطاب به جمعیت:** «بچه‌ها مرسی، مرسی!»  <br>**گوینده (رو به دوربین):** «بچه‌ها خیلی هیجان دارن، ایول! اصلاً انرژی بهم میده، استرس داشتم الآن خیلی اوکیتَرم.»  <br><br>*(پخش موزیک و سپس حضور روی سن)*  <br>**گوینده پشت میکروفون:** «مرسی! متشکرم!»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">اولین رونمایی رسمی از سایبرتراک دست‌ساز جلوی استیج با استقبال متراکم مخاطبان.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br><br>• <strong>نوع:<strong> <strong>پروموشن صرف (محتوای تبلیغاتی و فضاسازی / Hype)<strong> همراه با بار احساسی مثبت.<br>• <strong>توضیح:<strong> این صوت شامل نقد یا بررسی فنی، تعریف تخصصی از محصول یا تخریب نیست؛ بلکه یک محتوای بلاگری با هدف پوشش هیجان مراسم، جلب توجه مخاطبان به رونمایی ماشین و نشان دادن استقبال و شلوغی جمعیت در کمپین اتوپلازا است. هدف اصلی آن ایجاد جذابیت، افزایش بازدید و پروموت کردن رویداد/خودرو می‌باشد.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfSSqXhsdXW -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-amber-500/20 hover:border-amber-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-amber-500/10 border-amber-500/30 text-amber-400">
+                        پروموشن فانتزی و فان
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfSSqXhsdXW</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۱ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">تیزر رپ گروه H3N، موعظ حمیدی و حدیث حیدری</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">گروه هنری H3N (نریشن رپ ریتمیک)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۶٬۶۳۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۳۲۹٬۷۱۸</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                **۱. رونویسی کلمه به کلمه متن صحبت‌ها:**<br><br>*(گوینده: خواننده / نریتور تیزر تبلیغاتی به سبک رپ و ریتمیک)*<br><br>> پاتوقِ همه ماشین‌بازا: **اتوپلازا**  <br>> یه جا فراتر از یه بازار: **اتوپلازا**  <br>> انقد بزرگه مساحتش که معلومه حتی از ایستگاه فضایی ناسا: **اتوپلازا**  <br>> اتوپلازا می‌خواد بگیره حسابی جشن  <br>> از ۱۳ تا ۲۰ آبان هست افتتاحیه‌ش  <br>> ۲۰۰ میلیون تومن تخفیف خرید ماشین هست  <br>> اتوپلازا با سورپرایزهای استثنایی‌تر  <br>> فقط یه چشمه‌شو بگم بهت از داستانِ سورپرایز  <br>> هر شب می‌ذارن کنسرت‌های رایگانِ روباز  <br>> هر شب یه ۲۰ تا ۷۰ به غیرِ قرعه  <br>> هر خریدار خودروئه، یه بُرده  <br>> تازه یه دستگاه خودروی ایکس‌پنگ (Xpeng)  <br>> می‌کنه بین همه پیش‌کِش  <br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">دعوت طنزآمیز به افتتاحیه، دیده‌شدن اتوپلازا از ایستگاه فضایی ناسا و کنسرت‌های روباز.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل:<strong><br><br>• <strong>نوع بازخورد:<strong> <strong>پروموشن صرف (تبلیغات محض)<strong><br>• <strong>توضیح دلایل:<strong> این صوت بازخورد یا تجربه شخصی یک مشتری نیست، بلکه یک تیزر موزیکال (جینگل ریتمیک تبلیغاتی) و تولیدشده توسط خود مجموعه برای کمپین افتتاحیه «اتوپلازا» است. تمام محتوای آن شامل اعلام تاریخ افتتاحیه (۱۳ تا ۲۰ آبان)، معرفی آفرها و مشوق‌های خرید (تخفیف‌های میلیونی، کنسرت رایگان روباز و جایزه خودرو) با هدف جذب مخاطب و فروش است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfSf11uIrnS -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-indigo-500/20 hover:border-indigo-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-indigo-500/10 border-indigo-500/30 text-indigo-400">
+                        بالاترین تعامل لایف‌استایل
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfSf11uIrnS</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">پخت و پز ماشین‌بازها با امید استایل (Hope Styl)</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">امید استایل (میکس ترک‌های رپ فارسی و خارجی)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۹۹٬۳۹۶</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۲٬۶۷۳٬۲۱۳</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                بر اساس فایل صوتی، تحلیل و پیاده‌سازی موارد خواسته‌شده به شرح زیر است:<br><br>---<br><br><br>در این صوت هیچ‌گونه گفت‌وگو، مصاحبه یا صحبتی از سوی اشخاص یا مسئولان وجود ندارد؛ بلکه صوت متشکل از **میکس چند قطعه موسیقی رپ (فارسی و خارجی)** است که به عنوان موزیک متن (BGM) ویدیو استفاده شده است:<br><br>* **قطعه اول (موزیک رپ فارسی):**<br>  > «می‌گه من و دوستم جا نمی‌شیم توی بنز، آخه یعنی چی می‌گی بکشم بیرون رنجو، رنجو، رنجو...»<br><br>* **قطعه دوم (موزیک خارجی فیلم سریع و خشن - Tokyo Drift اثر Teriyaki Boyz):**<br>  > "...I wonder if you know, how they live in Tokyo"<br><br>* **قطعه سوم (موزیک رپ فارسی):**<br>  > «رخا اسپرت، موتورا تیونینگ، ۱۸۰ تا تو اتوبان می‌رونیم، ۱۰ نفر تو ماشینیم اندازه لیموزین، ۲۰۶ هم می‌خوره روزی دو تا تیوولی... رخا اسپرت، موتورا تیونینگ، ۱۸۰ تا تو اتوبان می‌رونیم، ۱۰ نفر تو ماشینیم اندازه لیموزین، ۲۰۶ هم می‌خوره روزی دو تا تیوولی...»<br><br>* **قطعه چهارم (موزیک رپ فارسی):**<br>  > «همه فکر می‌کنن یه مازراتی دارم، بعضی وقتا پشت... بعضی وقتا آمریکایی‌بازم، زندگی شخصیم یه رزمه که تصمیم تو لحظه... می‌جنگم تا برسم روبه‌رو...»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">کلیپ ویدیویی پر انرژی با ماشین‌های اسپرت و سوپراسپرت جهت تحریک آدرنالین ماشین‌بازها.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (محتوای تبلیغاتی / سرگرمی ویترینی)<strong><br><br>• <strong>دلایل:<strong><br>  1. هیچ اظهار نظر، ارزیابی، نقد فنی یا تمجیدی نسبت به خدمات، برندها یا فضای «اتوپلازا» مطرح نمی‌شود.<br>  2. استفاده از ترانه‌های رپ و ترند مرتبط با دنیای ماشین (بنز، رنج‌روور، مازراتی، تیونینگ و...) صرفاً با هدف فضاسازی هیجانی، ترندینگ و جذب تعامل (Engagement) مخاطبان اینستاگرام برای پروموت بصری رویداد صورت گرفته است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfcKoDaxgOU -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-purple-500/20 hover:border-purple-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-purple-500/10 border-purple-500/30 text-purple-400">
+                        ایونت مارکتینگ عمومی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfcKoDaxgOU</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۲ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">کنسرت بدون ورودی رضا صادقی در هوای بارانی شب دوم</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">اجرای زنده رضا صادقی و صدای هیجان سرنشینان</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۶٬۸۰۳</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱۲۱٬۹۲۶</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ دقیق به دو بخش درخواستی شما به شرح زیر است:<br><br>---<br><br><br><br>بخش عمده این صوت یک آهنگ پاپ است و تنها در ثانیه‌های پایانی صدای مکالمه ضبط‌شده داخل خودرو شنیده می‌شود:<br><br>* **متن آهنگ (خواننده - موسیقی پس‌زمینه):**<br>  > «می‌دونی دل بریدن از این همه عشق درست مث مرگمه  <br>  > خیابونای خلوت و پرسه زدن بدون تو حقمه  <br>  > رفتی و هر چی بین من و تو گذشت رسیده به گوش همه  <br>  > نمی‌تونم بدی‌تو به روت بیارم، غرورتو بشکنم  <br>  > دلم می‌خواست صداتو یه بار دیگه با دلخوری بشنوم  <br>  > با تو تموم پاییزو زیر یه چتر دوباره قدم بزنم...»<br><br>* **مکالمه پایانی (ثانیه ۴۶ تا ۵۰ - صدای سرنشینان خانم با هیجان و فریاد):**<br>  > **خانم:** «برو سمت هایدا بپیچ چپ!» *(همراه با جیغ هیجان و خنده)*<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">پوشش شب دوم افتتاحیه با کنسرت رایگان رضا صادقی و شور و شوق مردم در کیلومتر ۱۱.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل<br><br>• <strong>نوع بازخورد:<strong> <strong>پروموشن صرف (محتوای سرگرمی / تبلیغاتی هیجانی)<strong><br>• <strong>توضیح دلایل:<strong><br>  1. هیچ‌گونه اظهار نظر، نقد، تخریب یا تعریف و تمجید کلامی نسبت به مجموعه یا کمپین اتوپلازا در صوت وجود ندارد.<br>  2. استفاده از یک موزیک شناخته‌شده و در انتها کات شدن به صحنه‌ای پرهیجان از رالی یا مسیریابی مسابقه («برو سمت هایدا بپیچ چپ!»)، تکنیک مرسوم تولید محتوای شبکه‌های اجتماعی برای ایجاد حس هیجان، وایرال شدن و پروموت فضای مسابقه/کمپین است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfKsHjIgvXK -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-rose-500/20 hover:border-rose-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-rose-500/10 border-rose-500/30 text-rose-400">
+                        نریشن رسمی تجاری
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfKsHjIgvXK</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">نریشن تیزر رسمی: پیشنهادهای مالی و تخفیف ۲۰۰ میلیونی</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">نریتور رسمی کمپین کانون ایران نوین</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۶٬۷۴۱</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۳۷۷٬۴۶۲</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                تحلیل و اطلاعات مربوط به فایل صوتی به شرح زیر است:<br><br><br>**گوینده (نریتور / تیزر تبلیغاتی):**<br>> «آغاز به کار اتوپلازا با تحویل فوری تمامی خودروها، به همراه ۲۰۰ میلیون تومان تخفیف نقدی به ازای خرید هر دستگاه خودرو.  <br>> قرعه‌کشی روزانه یک دستگاه پژو ۲۰۷ ویژه خریداران همان روز.  <br>> بهره‌مندی از ۵۰ درصد تخفیف بیمه بدنه و شخص ثالث به مدت ۳ سال، و قرعه‌کشی یک دستگاه خودروی ایکس‌پنگ برای کل خریداران.  <br>> این فرصت استثنایی تنها به مدت یک هفته از سیزدهم آبان پیش روی شماست.  <br>> هدیه‌ای ویژه به مناسبت آغاز به کار اتوپلازا تقدیم به مردم ایران.  <br>> اتوپلازا؛ کیلومتر ۱۰ جاده مخصوص.  <br>> autoplaza.ir»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">اعلام تحویل فوری، تخفیف ۲۰۰ میلیونی، قرعه‌کشی روزانه ۲۰۷ و تخفیف ۵۰ درصدی بیمه بدنه.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (تبلیغاتی / تیزر رسمی کمپین)<strong><br>• <strong>توضیح دلایل:<strong> <br>این فایل حاوی نظر یا تجربه شخصی یک کاربر یا خریدار (تعریف، نقد یا تخریب) نیست؛ بلکه یک آگهی تجاری و نریشن تبلیغاتی است که به صورت رسمی توسط مجموعه تهیه شده و صرفاً بر روی اعلام جوایز، تخفیف‌ها، شرایط فروش و آدرس مجموعه برای جذب مشتری تمرکز دارد.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DewSke1g2vs -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-teal-500/20 hover:border-teal-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-teal-500/10 border-teal-500/30 text-teal-400">
+                        تصویرسازی سازمانی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DewSke1g2vs</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۳۹ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">نریشن معرفی چشم‌انداز زیرساختی و متراژ ۸۲ هزار متری</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">گوینده حرفه‌ای تیزر برند (صدای زن)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۰٬۲۹۰</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۳۳۹٬۷۳۸</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ به موارد درخواستی شما به شرح زیر است:<br><br><br><br>**گوینده:** نریتور (صدای زن / گوینده تیزر)<br><br>> «اینجا اتوپلازا، مقصد جدید عاشقان خودرو.  <br>> ۸۲ هزار متر مربع وسعت این فضاست؛  <br>> ۹۰ شوروم تخصصی با ظرفیت ۳ هزار واحد پارکینگ،  <br>> و امکانات رفاهی از قبیل رستوران و کافه، فضای سبز و فضای بازی کودکان.  <br>> از همه مهم‌تر، خدمات فروش و پس از فروش خودرو، مثل تعویض پلاک، لیزینگ، بیمه و هر چیزی که فکرشو بکنید.  <br>> همه و همه در اتوپلازا تهران؛  <br>> اولین و بزرگ‌ترین بازار خرید و فروش و خدمات خودرویی در ایران.»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">معرفی جامع ۹۰ شوروم تخصصی، ۳ هزار پارکینگ، تعویض پلاک، کارواش و فودکورت در جاده مخصوص.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل آن:<br><br>• <strong>نوع محتوا:<strong> <strong>پروموشن صرف (تبلیغاتی / تیزر رسمی)<strong><br><br>• <strong>دلایل:<strong><br>  1. <strong>لحن و ساختار نریشن:<strong> لحن گوینده کاملاً رسمی، تجاری و گویندگی تبلیغاتی (Voice-over) است و نظر شخصی یا تجربه کاربری یک فرد عادی در آن بیان نمی‌شود.<br>  2. <strong>معرفی امکانات و مشخصات فنی:<strong> تمام متن بر پایه ارائه آمار و ارقام جذاب (متراژ، تعداد شوروم، ظرفیت پارکینگ) و فهرست کردن امکانات رفاهی و خدماتی برای جذب مخاطب تدوین شده است.<br>  3. <strong>استفاده از شعارهای تبلیغاتی و صفات عالی:<strong> عباراتی مانند «مقصد جدید عاشقان خودرو» و «اولین و بزرگ‌ترین بازار خرید و فروش...» ماهیت کاملاً تبلیغاتی و پروموشن بودن ویدیو را نشان می‌دهند.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfWquX9OeNE -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-slate-500/20 hover:border-slate-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-slate-500/10 border-slate-500/30 text-slate-300">
+                        تیزر بصری محیطی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfWquX9OeNE</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">ریلز موسیقی الکترونیک و حال و هوای شب‌های افتتاحیه</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">بدون کلام (موسیقی ریتمیک الکترونیک)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۷٬۲۰۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱۹۸٬۸۷۵</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                بررسی این فایل صوتی به شرح زیر است:<br><br><br>در این فایل صوتی **هیچ‌گونه کلام، گفتار یا صدایی (Voice-over/نریشن) وجود ندارد** و کل فایل صرفاً شامل یک قطعه موسیقی بی‌کلام (موزیک الکترونیک/بیت ریتمیک) است. بنابراین متنی برای رونویسی وجود ندارد.<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">نمایش اتمسفر نورپردازی‌شده اتوپلازا تهران و دعوت به حضور رایگان در فستیوال ۷ شب.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (تیزر تبلیغاتی)<strong><br>• <strong>دلایل:<strong> <br>  • به دلیل عدم وجود کلام، هیچ‌گونه نقد، تعریف کلامی یا تخریبی در صدا مطرح نمی‌شود.<br>  • استفاده از موزیک پرانرژی و ترند اینستاگرامی نشان‌دهنده یک ویدیوی تیزری، ریلز نمایشی یا معرفی بصری از رویداد/نمایشگاه اتوپلازا است که صرفاً با هدف تبلیغ، جلب توجه مخاطب و پروموشن تولید شده است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+
+            <!-- Comparative Matrix: Voice Claims vs Ground Truth -->
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/10 bg-dark-900 space-y-5">
+                <h3 class="text-base sm:text-lg font-black text-white">ماتریس تطبیقی: ادعاهای مطرح‌شده در صوت در برابر واقعیت میدانی</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs sm:text-sm text-end border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 text-white/50 bg-white/[0.02]">
+                                <th class="p-3 font-semibold text-start">موضوع ادعا</th>
+                                <th class="p-3 font-semibold">ادعای صوتی و پروموشن سلبریتی</th>
+                                <th class="p-3 font-semibold">واقعیت میدانی و نقد رسانه‌ای</th>
+                                <th class="p-3 font-semibold text-center">ارزیابی نهایی</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5 text-slate-300">
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">تخفیف ۲۰۰ میلیون تومانی</td>
+                                <td class="p-3">«۲۰۰ میلیون تومن تخفیف خرید ماشین هست» (گروه H3N و اهورا نیازی)</td>
+                                <td class="p-3 text-white/70">مشروط به خرید نقدی خودروهای میلیاردی خارجی؛ عدم شمول روی خودروهای داخلی پرتیراژ</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-amber-500/20 text-amber-400 font-bold">بزرگ‌نمایی بازاریابی</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">تنوع شوروم‌ها و خودروها</td>
+                                <td class="p-3">«۹۰ شوروم و حضور همه برندها» (الیکا عبدالرزاقی و نریشن رسمی)</td>
+                                <td class="p-3 text-white/70">بخش عمده خودروهای قابل تحویل تارا و دنا هستند و خودروهای لوکس مثل فراری و سایبرتراک جنبه ویترینی دارند</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-sky-500/20 text-sky-400 font-bold">ویترین فریبنده</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">کنسرت‌های رایگان شبانه</td>
+                                <td class="p-3">«کنسرت بدون ورودی و رایگان برای عموم» (رضا صادقی و امیرحسین رستمی)</td>
+                                <td class="p-3 text-white/70">کاملاً واقعی و اجرا شده؛ با هدف ایجاد ترافیک سنگین و تجمع مخاطبان در کیلومتر ۱۱</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-emerald-500/20 text-emerald-400 font-bold">صحت ۱۰۰٪</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">شفافیت مالی و اصالت واردات</td>
+                                <td class="p-3">«پر از ماشین خفن وارداتی، خریدشم قطعی» (جینگل تبلیغاتی)</td>
+                                <td class="p-3 text-white/70">طرح شبهه جدی توسط تسنیم و مجله ماشین درباره منشأ ارز و تعهدات پس از فروش</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-rose-500/20 text-rose-400 font-bold">ابهام و ریسک نظارتی</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Related Sections Navigator -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 mt-12 space-y-4">
+            <div class="flex items-center justify-between pb-2 border-b border-white/10">
+                <span class="text-xs font-bold text-white flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#e85a2a]"></span>
+                    سایر بخش‌های تحلیلی مرتبط
+                </span>
+                <a href="index.html#observatory-atlas" class="text-xs text-[#ff7b47] hover:underline font-bold">مشاهده تمام ۱۷ بخش ↗</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+        <a href="posts.html" class="glass-panel rounded-xl p-4 border border-white/10 hover:border-[#e85a2a]/50 transition flex items-center justify-between gap-3 group">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-black/40 border border-white/5 text-white group-hover:scale-105 transition">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white group-hover:text-[#ff7b47] transition">پست‌ها و ریلزهای اینستاگرام</h5>
+                    <span class="text-[10px] text-white/50 font-mono">۱۳۰ مدیا • ۱۲.۸M ویو</span>
+                </div>
+            </div>
+            <svg class="w-4 h-4 text-white/40 group-hover:text-[#e85a2a] group-hover:translate-x-[-2px] rtl:group-hover:translate-x-[2px] transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </a>
+        
+        <a href="influencers.html" class="glass-panel rounded-xl p-4 border border-white/10 hover:border-[#e85a2a]/50 transition flex items-center justify-between gap-3 group">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-black/40 border border-white/5 text-white group-hover:scale-105 transition">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white group-hover:text-[#ff7b47] transition">دایرکتوری اینفلوئنسرها و چهره‌ها</h5>
+                    <span class="text-[10px] text-white/50 font-mono">۵۸ چهره • ۳۰M فالوور</span>
+                </div>
+            </div>
+            <svg class="w-4 h-4 text-white/40 group-hover:text-[#e85a2a] group-hover:translate-x-[-2px] rtl:group-hover:translate-x-[2px] transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </a>
+        
+        <a href="critiques.html" class="glass-panel rounded-xl p-4 border border-white/10 hover:border-[#e85a2a]/50 transition flex items-center justify-between gap-3 group">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-black/40 border border-white/5 text-white group-hover:scale-105 transition">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white group-hover:text-[#ff7b47] transition">رصدخانه توییت‌ها و شبکه X</h5>
+                    <span class="text-[10px] text-white/50 font-mono">۱۷۵ توییت • ۷۹٪ نقد تند</span>
+                </div>
+            </div>
+            <svg class="w-4 h-4 text-white/40 group-hover:text-[#e85a2a] group-hover:translate-x-[-2px] rtl:group-hover:translate-x-[2px] transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </a>
+        
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- Floating Quick Menu Button -->
+    <button id="floating-menu-btn" onclick="toggleObservatoryMegaMenu(event)" class="fixed bottom-5 start-5 z-40 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-gradient-to-r from-[#e85a2a] to-[#d44a1c] text-white text-xs font-bold shadow-[0_8px_30px_rgba(232,90,42,0.5)] border border-[#ff6b35]/60 hover:scale-105 transition-all flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+        <span>منوهای تحلیلی (۱۷ بخش)</span>
+    </button>
+    
+    
+    <!-- Authentic Tehran Auto Plaza Luxury Dark Footer -->
+    <footer class="border-t border-white/10 bg-[#050505] text-white/70 mt-20 pt-16 pb-12">
+        <div class="max-w-[1400px] mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                <!-- Col 1: Branding -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="relative h-12 w-9 flex items-center drop-shadow-[0_4px_16px_rgba(232,90,42,0.4)]">
+                            <img src="assets/apz1.png" alt="اتوپلازا تهران" class="h-full w-full object-contain">
+                        </div>
+                        <div class="relative h-8 w-[6.5rem] flex items-center">
+                            <img src="assets/apz2-light.png" alt="اتوپلازا تهران" class="h-full w-full object-contain object-right">
+                        </div>
+                    </div>
+                    <p class="text-xs leading-relaxed text-white/60">
+                        اتوپلازا تهران - بزرگ‌ترین مجتمع تخصصی خودرو و سبک زندگی در خاورمیانه. نمایشگاه‌ها، فرصت‌ها و اکوسیستم تحلیلی داده‌محور.
+                    </p>
+                    <div class="pt-2 flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-[#e85a2a]/10 text-[#ff7b47] border border-[#e85a2a]/30">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#e85a2a] animate-pulse"></span>
+                            پایگاه جامع داده‌کاوی رسانه‌ای
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Top Analytical Pages -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">صفحات مستقل تحلیلی</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="timeline.html" class="hover:text-[#e85a2a] transition">تایم‌لاین جامع رویدادها (۷۸ فاز)</a></li>
+                        <li><a href="posts.html" class="hover:text-[#e85a2a] transition">پست‌ها و ریلزهای اینستاگرام (۱۳۰ مدیا)</a></li>
+                        <li><a href="influencers.html" class="hover:text-[#e85a2a] transition">دایرکتوری اینفلوئنسرها (۵۸ پیج)</a></li>
+                        <li><a href="news.html" class="hover:text-[#e85a2a] transition">پوشش خبرگزاری‌ها (۳۴ رسانه رسمی)</a></li>
+                        <li><a href="audio-sentiment.html" class="hover:text-[#e85a2a] transition">واکاوی صوتی و کلامی اینستاگرام</a></li>
+                        <li><a href="critiques.html" class="hover:text-[#e85a2a] transition">رصدخانه توییت‌ها و شبکه X (۱۷۵ توییت)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Special Dossiers & Data -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">پرونده‌ها و داده‌های کلان</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="ai-audit.html" class="hover:text-[#e85a2a] transition">کالبدشکافی ۱۹ ایجنت هوش مصنوعی</a></li>
+                        <li><a href="investigation.html" class="hover:text-[#e85a2a] transition">پرونده کارآگاهی و لایه‌های پنهان</a></li>
+                        <li><a href="market-guild.html" class="hover:text-[#e85a2a] transition">تحلیل صنفی، جوایز و تعارض منافع</a></li>
+                        <li><a href="campaigns.html" class="hover:text-[#e85a2a] transition">کمپین‌ها و تخفیف ۲۰۰ میلیونی</a></li>
+                        <li><a href="platforms.html" class="hover:text-[#e85a2a] transition">توزیع پلتفرمی داده‌ها</a></li>
+                        <li><a href="rawpdf.html" class="hover:text-[#e85a2a] transition">متن کامل سند رسمی دیتاک (PDF)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Architecture & Provenance -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">شناسنامه و داده‌کاوی</h4>
+                    <div class="space-y-2 text-xs text-white/60 leading-relaxed">
+                        <p>داده‌کاوی، متدولوژی پژوهش و معماری سیستم توسط <strong>ریک سانچز</strong> و به کمک <strong>ایجنت هوشمند مستر هرمس</strong> پیاده‌سازی شده است.</p>
+                        <p>استخراج متادیتای زنده اینستاگرام با اتصال به <strong>باکس API</strong> و تحلیل کلان‌داده با اتکا به سامانه <strong>دیتاک (دستان)</strong> انجام گرفته است.</p>
+                        <div class="pt-2">
+                            <a href="https://autoplaza.ir/" target="_blank" rel="noopener noreferrer" class="text-[#ff7b47] hover:underline font-bold">وب‌سایت رسمی: autoplaza.ir ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Copyright & Meta -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
+                <p>پایگاه مستقل رصد و داده‌کاوی رسانه‌ای اتوپلازا تهران • پاییز ۱۴۰۵</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://autoplaza.ir/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">autoplaza.ir</a>
+                    <span>•</span>
+                    <a href="autoplaza-datak-report.pdf" target="_blank" class="hover:text-white transition">سند PDF دیتاک</a>
+                    <span>•</span>
+                    <a href="https://github.com/autoplazaterhan/autoplazaterhan.github.io" target="_blank" class="hover:text-white transition">مخزن گیت‌هاب</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="assets/js/observatory_core.js"></script>
+    
+</body>
+</html>

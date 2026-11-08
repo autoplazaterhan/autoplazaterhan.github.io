@@ -1,39 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/</loc>
+    <loc>https://autoplazaterhan.github.io/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/#posts</loc>
+    <loc>https://autoplazaterhan.github.io/posts.html</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/#influencers</loc>
+    <loc>https://autoplazaterhan.github.io/audio-sentiment.html</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/#news</loc>
+    <loc>https://autoplazaterhan.github.io/influencers.html</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/#timeline</loc>
+    <loc>https://autoplazaterhan.github.io/critiques.html</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://m4tinbeigi-official.github.io/autoplaza/#critiques</loc>
+    <loc>https://autoplazaterhan.github.io/hashtags.html</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/timeline.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/news.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/broadcast.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/campaigns.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/ai-audit.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/investigation.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/market-guild.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/production.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/platforms.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/specs.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/faq.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://autoplazaterhan.github.io/rawpdf.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
