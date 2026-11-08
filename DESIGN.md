@@ -9,7 +9,7 @@
 - **Brand:** اتو پلازا تهران (Tehran Auto Plaza)
 - **Scale:** ۸۵٬۰۰۰ مترمربع وسعت، ۹۰ شوروم تخصصی، ۳٬۰۰۰ ظرفیت پارکینگ
 - **Location:** تهران، کیلومتر ۱۱ بزرگراه لشگری (جاده مخصوص کرج)، نبش خیابان ۳۰
-- **Nature of Interface:** رصدخانه جامع داده‌کاوی، تحلیل رسانه‌ای و پایش ۳۶۰ درجه کلان‌پروژه اتوپلازا تهران (۵۵ پست رسمی، ۵۸ اینفلوئنسر تخصصی خودرو، ۱۳۷ توییت نقادانه شبکه X، تلگرام، تحلیل داده‌های اختصاصی استخراج‌شده از هوش مصنوعی دیتاک توسط ریک سانچز و پایش اختصاصی BoxAPI).
+- **Nature of Interface:** رصدخانه جامع داده‌کاوی، تحلیل رسانه‌ای و پایش ۳۶۰ درجه کلان‌پروژه اتوپلازا تهران (۵۵ پست رسمی، ۵۶ اینفلوئنسر تخصصی خودرو، ۱۳۷ توییت نقادانه شبکه X، تلگرام، تحلیل گزارش پایش افکار عمومی دیتاک (سامانه دستان) و پایش متادیتای اینستاگرام).
 - **Official Brand URLs:**
   - وب‌سایت اصلی: [autoplaza.ir](https://autoplaza.ir/)
   - سوپراپلیکیشن: [app.autoplaza.ir](https://app.autoplaza.ir/)
@@ -69,7 +69,7 @@ Strict 3 core colors + 1 accent rule (anti-slop R-29):
 1. **R-01 (No Generic Gradients):** Zero blue-to-purple, cyan, or pastel orb gradients. Palette is 100% anchored in AutoPlaza automotive black and brand orange `#e85a2a`.
 2. **R-05 & C-3 (Content-Driven Architecture):** No generic hero-cards template. Layout is shaped strictly around the 13 specialized intelligence domains of Tehran Auto Plaza.
 3. **R-08 (No Decorative Arrows):** Arrows reserved strictly for actionable navigation and external link hops.
-4. **R-09 & R-16 (Zero AI Buzzwords & Capsule Badges):** No "AI Powered", "Revolutionary", "Cutting-edge", or "Next-Gen" vanity pills. Every metric is real (55 posts, 58 influencers, 137 tweets, Datak PDF, BoxAPI telemetry).
+4. **R-09 & R-16 (Zero AI Buzzwords & Capsule Badges):** No "AI Powered", "Revolutionary", "Cutting-edge", or "Next-Gen" vanity pills. Every metric is real (55 posts, 58 influencers, 137 tweets, Datak PDF, Instagram metadata).
 5. **R-10 (Glassmorphism Dose Cap):** Glass blur restricted to fixed header and sticky tab bar. Content cards remain solid dark surfaces (`#0a0a0a` / `#121214`) for sharp contrast and legibility.
 6. **R-11 (Corner Radius Variety):** Rounded-full strictly for circular counters and main CTA buttons; rounded-xl and rounded-2xl for content containers; rounded-md for status badges.
 7. **R-12 & R-13 (Restrained Elevation & Glow):** Glow capped at single focal telemetry indicators.

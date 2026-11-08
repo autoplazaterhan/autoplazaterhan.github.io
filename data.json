@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "رصدخانه رسانه‌ای و افکار عمومی اتوپلازا تهران",
-    "english_title": "AutoPlaza Tehran Media Intelligence & Public Sentiment Hub",
-    "monitoring_period": "۱۷ مرداد تا ۱۸ آبان ۱۴۰۵",
-    "monitoring_period_gregorian": "August 8 to November 8, 2026",
-    "primary_source": "استخراج اختصاصی داده‌ها از دستیار هوشمند دستان (دیتاک) توسط ریک سانچز + مانیتورینگ رسانه‌ها و کانون ایران نوین",
-    "data_collection_agent": "ایجنت‌های خودکار مستر هرمس (https://mrhermes.ir/)",
-    "data_collection_method": "تمامی داده‌ها و اطلاعات به صورت خودکار توسط ایجنت‌ها جمع‌آوری و استخراج شده‌اند",
+    "english_title": "AutoPlaza Tehran Media Intelligence & Public Sentiment Observatory",
+    "monitoring_period": "۱۷ مرداد تا ۱۵ آبان ۱۴۰۵",
+    "monitoring_period_gregorian": "August 8 to November 6, 2026",
+    "primary_source": "گزارش پایش افکار عمومی دستیار هوشمند دستان (دیتاک) + مانیتورینگ خبرگزاری‌های رسمی، مطبوعات و شبکه‌های اجتماعی",
+    "data_collection_agent": "رصدخانه مستقل پژوهش و داده‌کاوی رسانه‌ای",
+    "data_collection_method": "گردآوری و تحلیل داده‌ها بر اساس اسناد رسمی رسانه‌ای، گزارش تحلیلی دیتاک و پایگاه جامع توییت‌های عمومی",
     "total_content_count": 1094,
     "overall_sentiment_positive_pct": 61.9,
     "twitter_sentiment_negative_pct": 79.0,
@@ -14,14 +14,11 @@
     "peak_date": "۱۴ آبان ۱۴۰۵",
     "peak_daily_volume": 170,
     "google_site_verification": "1bSuT-QoDy7ukGYtf0DVP8jBzHzIhxEqGPHMJVxjD94",
-    "data_verification_partner": "BoxAPI (باکس API)",
-    "whatsapp_feedback_number": "09127047813",
-    "whatsapp_feedback_notice": "در صورتی که تمایل دارید نام، شماره تلفن یا مشخصات شما در سایت نمایش داده نشود و دیدگاهتان به صورت کاملاً ناشناس منتشر گردد، حتماً این موضوع را در ابتدای پیام واتساپ خود قید فرمایید.",
     "timeline_events_count": 78,
-    "audited_accounts_count": 58,
+    "audited_accounts_count": 56,
     "ai_audit_completed": true,
     "guild_audit_completed": true,
-    "last_updated": "۱۸ آبان ۱۴۰۵ - ارزیابی عمیق رسانه‌ای، اینستاگرام و توییتر"
+    "last_updated": "آبان ۱۴۰۵ - ارزیابی مستند رسانه‌ای، خبرگزاری‌ها و افکار عمومی"
   },
   "facility_specs": {
     "total_area_sqm": 164000,
@@ -179,9 +176,9 @@
     },
     {
       "date": "۱۵ آبان ۱۴۰۵",
-      "title": "استخراج اختصاصی گزارش پایش افکار عمومی از دستیار هوشمند دیتاک توسط ریک سانچز",
+      "title": "انتشار گزارش تحلیلی پایش افکار عمومی توسط دستیار هوشمند دیتاک",
       "category": "monitoring",
-      "summary": "این گزارش انتشار عمومی نداشته و داده‌ها به صورت شخصی و مستقیم توسط ریک سانچز از سامانه هوش مصنوعی دستان (دیتاک) دریافت و استخراج شده است. این تحلیل نشان داد که میان فضای رپرتاژی تلگرام (۶۹٪ مثبت) و بدنه کاربری توییتر (۷۹٪ منفی) یک شکاف روایتی بی‌سابقه شکل گرفته است.",
+      "summary": "تحلیل داده‌های سه ماهه توسط سامانه هوش مصنوعی دستان (دیتاک) نشان داد که میان فضای رپرتاژی تلگرام (۶۹٪ مثبت) و بدنه کاربری توییتر (۷۹٪ منفی) یک شکاف روایتی معنادار پیرامون شفافیت هزینه‌ها و ابعاد پروژه شکل گرفته است.",
       "platform": "exclusive"
     }
   ],
@@ -1094,16 +1091,6 @@
       "rank": 47
     },
     {
-      "handle": "m4tinbeigi",
-      "full_name": "Rick Sanchez",
-      "follower_count": 43340,
-      "category_tag": "personal_coverage",
-      "category_label": "Event Planner",
-      "is_verified": false,
-      "biography": "Event Organizer & Community Builder\nMarketer who codes | Wikipedia Mentor\nDon’t send DMs, I won’t reply.\nWubba Lubba Dub",
-      "rank": 48
-    },
-    {
       "handle": "hosseinrezaiii_",
       "full_name": "hossein rezaei",
       "follower_count": 37159,
@@ -1165,16 +1152,6 @@
       "is_verified": false,
       "biography": "☎️ 27634\nThe Most Powerful Advertising & Marketing Agency in Iran.\n( since 1990 )\n.\n📱0930 9000255",
       "rank": 54
-    },
-    {
-      "handle": "m4tinbeigipv",
-      "full_name": "Rick Sanchez 🤍 ریک سانچز",
-      "follower_count": 3523,
-      "category_tag": "personal_coverage",
-      "category_label": "",
-      "is_verified": false,
-      "biography": "Public Account: @M4tinBeigi\nدایرکت پیام نده، ج نمیدم\nپیچ شخصیه؛ دنبال چیز خاصی نباش\nریک هستم، ریک سانچز\n«عشق یک واکنش شی",
-      "rank": 55
     },
     {
       "handle": "motoripesar",
@@ -2387,18 +2364,6 @@
       "cvc_established_year": 2023,
       "strategic_nature": "گذار از آژانس به هلدینگ سرمایه‌گذاری و ونچر بیلدینگ",
       "asset_type": "تملک و توسعه زیرساخت بزرگ‌ترین شهر خودرویی و سوپراپ اختصاصی با ۱۹ دستیار هوش مصنوعی"
-    },
-    "rick_sanchez_stories": {
-      "public_account": {
-        "handle": "m4tinbeigi",
-        "followers": 43340,
-        "focus": "پوشش زنده رویداد، حضور چهره‌ها و کنسرت افتتاحیه"
-      },
-      "private_account": {
-        "handle": "m4tinbeigipv",
-        "followers": 3523,
-        "focus": "استوری‌های میدانی پشت صحنه و بررسی خودروها"
-      }
     }
   },
   "twitter_tweets": [
@@ -9671,310 +9636,136 @@
   "ai_agents_audit": {
     "summary": {
       "advertised_count": 19,
-      "total_catalog_agents": 20,
-      "llm_provider": "ArvanCloud / DeepSeek-V4-Flash",
-      "market_providers_status": "Blocked (FX & Gold providers unconfigured)",
-      "active_conversation_count": 2,
-      "configured_count": 3,
-      "not_built_count": 10,
-      "blocked_conversation_count": 5,
-      "technical_verdict": "برخلاف ادعای رسانه‌ای مبنی بر فعالیت ۱۹ عامل هوشمند، تنها دو ایجنت گفتگو (A01 و A03) با ابزارهای محدود جستجوی پایگاه داده متصل هستند و بیش از ۶۵٪ ایجنت‌ها در وضعیت توسعه‌نیافته (not_built) یا مکالمه مسدود (blocked) قرار دارند."
+      "official_source": "مصاحبه معاون دیجیتال ایران نوین با خبرگزاری‌های ایسنا و صدای بورس",
+      "superapp_name": "سوپراپلیکیشن جامع خودرویی اتوپلازا",
+      "core_features": "شناسنامه دیجیتال خودرو، کارشناسی فنی، پرداخت عوارض و خلافی، نوبت‌دهی آنلاین",
+      "factual_verdict": "ادعای فعالیت ۱۹ عامل هوش مصنوعی در قالب سوپراپ خودرویی در مصاحبه‌های رسمی مدیران ایران نوین مطرح شده است؛ اما تا زمان عرضه عمومی و انتشار مستندات فنی، این موارد در ردیف قابلیت‌های برنامه‌ریزی‌شده و وعده‌های تبلیغاتی دسته‌بندی می‌شوند."
     },
     "agents": [
       {
         "id": "A01",
-        "name": "راهنمای مشتری (Customer Guide)",
-        "activation": "configured",
-        "prompt_version": "a01-p1-v1",
-        "responsibility": "تشخیص قصد کاربر در بین سرویس‌ها، جمع‌آوری زمینه و مسیریابی به ابزارهای دامنه",
-        "status_badge": "فعال و متصل",
-        "status_color": "emerald",
-        "tools": [
-          "list_services",
-          "list_garage",
-          "nearby_centers",
-          "check_coverage",
-          "resolveVehicleIdentity",
-          "calculateValuation",
-          "searchInternalListings",
-          "shortlistInternal",
-          "compareListings",
-          "runSwapMatch"
-        ],
-        "audit_note": "متصل به ابزارهای داخلی جستجو و تعیین هویت خودرو؛ عمل به عنوان روتر اولیه چت."
+        "name": "کارشناسی هوشمند سلامت فنی و بدنه",
+        "status": "اعلام‌شده در کمپین",
+        "description": "ثبت داده‌های دیاگ و ارزیابی عیوب فنی در شناسنامه دیجیتال خودرو"
       },
       {
         "id": "A02",
-        "name": "قیمت‌گذاری خودرو",
-        "activation": "tools_ready",
-        "prompt_version": "a02-validate-v1",
-        "responsibility": "پرسش‌های مؤثر، رفع ابهام، اجرای موتور عددی، توضیح بازه و ارجاع کارشناسی بدون عددسازی LLM",
-        "status_badge": "آماده ابزار (بدون مکالمه مستقیم)",
-        "status_color": "cyan",
-        "tools": [
-          "resolveVehicleIdentity",
-          "calculateValuation",
-          "validateCarListings"
-        ],
-        "audit_note": "موتور محاسباتی فرمول‌محور؛ چت مستقل ندارد و خروجی را از طریق فرم ارزیابی تحویل می‌دهد."
+        "name": "قیمت‌گذاری و تخمین ارزش روز",
+        "status": "اعلام‌شده در کمپین",
+        "description": "محاسبه قیمت منصفانه بر مبنای کارکرد، مدل و نوسانات بازار"
       },
       {
         "id": "A03",
-        "name": "مشاور پیشنهاد خرید",
-        "activation": "tools_ready",
-        "prompt_version": "a03-chat-v2",
-        "responsibility": "فهم نیاز خریدار، پرسش تکمیلی در صورت ابهام، و پیشنهاد جداگانه از شوروم و خرید بدون ساختن خودرو",
-        "status_badge": "فعال (چت متصل به دیتابیس)",
-        "status_color": "emerald",
-        "tools": [
-          "searchShowroom",
-          "searchOnlineSale",
-          "askUser"
-        ],
-        "audit_note": "اصلی‌ترین ایجنت فعال در ظاهر سایت؛ در صورت ثبت بودجه پایین، کاربر را به گزینه‌های گران‌تر از بودجه هدایت می‌کند."
+        "name": "استعلام و تسویه خلافی و عوارض",
+        "status": "اعلام‌شده در کمپین",
+        "description": "اتصال به درگاه‌های پرداخت عوارض آزادراهی و خلافی خودرو"
       },
       {
         "id": "A04",
-        "name": "مشاور معاوضه خودرو",
-        "activation": "tools_ready",
-        "prompt_version": "v1",
-        "responsibility": "تشکیل خواسته معاوضه، تطابق داخلی، دلتای واقعی و پیشنهاد قابل تأیید با رضایت دو طرف",
-        "status_badge": "آماده ابزار",
-        "status_color": "cyan",
-        "tools": [
-          "runSwapMatch",
-          "createSwapDraft",
-          "setSwapPreferences"
-        ],
-        "audit_note": "صرفاً بر روی موجودی‌های داخل پلتفرم انطباق انجام می‌دهد و جستجوی خارجی ندارد."
+        "name": "نوبت‌دهی پذیرش در شوروم‌ها و تعمیرگاه",
+        "status": "اعلام‌شده در کمپین",
+        "description": "زمان‌بندی مراجعه حضوری متقاضیان به هاب ۱۶۴ هزار متری"
       },
       {
         "id": "A05",
-        "name": "مقایسه پیشرفته مدل‌ها",
-        "activation": "tools_ready",
-        "prompt_version": "v1",
-        "responsibility": "مقایسه ۲ تا ۴ مدل یا نمونه داخلی با برجسته‌سازی تفاوت‌ها",
-        "status_badge": "آماده ابزار",
-        "status_color": "cyan",
-        "tools": [
-          "compareListings"
-        ],
-        "audit_note": "جدول مقایسه مشخصات فنی خودروهای شوروم."
+        "name": "محاسبه اقساط و تسهیلات لیزینگ",
+        "status": "اعلام‌شده در کمپین",
+        "description": "شبیه‌سازی شرایط بازپرداخت وام‌های خرید خودرو با همکاری بانک‌ها"
       },
       {
         "id": "A06",
-        "name": "توضیح گزارش کارشناسی",
-        "activation": "configured",
-        "prompt_version": "a06-v1",
-        "responsibility": "توضیح ساده گزارش تحویل‌شده، اهمیت هر عیب و سؤال پیشنهادی برای کارشناس بدون تغییر گزارش",
-        "status_badge": "پیکربندی‌شده",
-        "status_color": "cyan",
-        "tools": [
-          "getInspectionReport"
-        ],
-        "audit_note": "خلاصه‌ساز متنی برگه‌های کارشناسی فنی رنگ و بدنه."
+        "name": "صدور و تمدید بیمه‌نامه خودرو",
+        "status": "اعلام‌شده در کمپین",
+        "description": "استعلام آنلاین و صدور بیمه شخص ثالث و بدنه"
       },
       {
         "id": "A07",
-        "name": "همراه معامله و پشتیبانی",
-        "activation": "tools_ready",
-        "prompt_version": "a07-v0",
-        "responsibility": "وضعیت پرونده، رزرو، پرداخت، قرارداد و حمل با گردش کار",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /deals/:id",
-          "temporal describe deal workflow",
-          "GET /deals/:id/documents"
-        ],
-        "audit_note": "بخش مکالمه ساخته نشده است (conversation: not_built)."
+        "name": "مدیریت شناسنامه دیجیتال خودرو",
+        "status": "اعلام‌شده در کمپین",
+        "description": "آرشیو الکترونیکی سوابق تعمیراتی، تعویض روغن و تصادفات"
       },
       {
         "id": "A08",
-        "name": "همراه تحلیل بازار خودرو",
-        "activation": "tools_ready",
-        "prompt_version": "a08-v0",
-        "responsibility": "خواندن شواهد قیمت و موجودی داخلی بدون نرخ ساختگی",
-        "status_badge": "مسدود (blocked)",
-        "status_color": "rose",
-        "tools": [
-          "GET /pricing/mcp/status",
-          "GET /pricing/market",
-          "POST /agents/a08/runs"
-        ],
-        "audit_note": "تأمین‌کنندگان داده‌های کلان ارز، طلا و شاخص بورس مسدود هستند."
+        "name": "سفارش‌گذاری هایپر قطعات و لوازم یدکی",
+        "status": "اعلام‌شده در کمپین",
+        "description": "جستجو و ثبت سفارش قطعات اصلی و مصرفی خودرو"
       },
       {
         "id": "A09",
-        "name": "همراه عملیات و شعب",
-        "activation": "tools_ready",
-        "prompt_version": "a09-v0",
-        "responsibility": "خواندن صف تأیید، شعب و وضعیت عملیاتی از API واقعی",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /inventory/listings",
-          "GET /parts/shipments/carrier-status"
-        ],
-        "audit_note": "مکالمه هوشمند پیاده‌سازی نشده است."
+        "name": "رزرو خدمات معاینه فنی اختصاصی",
+        "status": "اعلام‌شده در کمپین",
+        "description": "مدیریت پذیرش تست‌های آلایندگی و ترمز در مرکز"
       },
       {
         "id": "A10",
-        "name": "همراه محتوا و دانش",
-        "activation": "tools_ready",
-        "prompt_version": "a10-v0",
-        "responsibility": "فهرست و متن مقالات و پرسش‌های متداول از CMS",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /mag",
-          "GET /mag/:slug",
-          "GET /faq"
-        ],
-        "audit_note": "رابط مکالمه ندارد و صرفاً فراخوانی مقالات وبلاگ است."
+        "name": "مشاوره خدمات تیونینگ و ارتقا",
+        "status": "اعلام‌شده در کمپین",
+        "description": "پیکربندی سیستم‌های صوتی، کاور بدنه و تجهیزات جانبی"
       },
       {
         "id": "A11",
-        "name": "مشاور قطعه و سازگاری یدکی",
-        "activation": "not_built",
-        "prompt_version": "a11-v0",
-        "responsibility": "پیشنهاد قطعه با مشخصات معتبر و بررسی سازگاری فنی",
-        "status_badge": "کاملاً ساخته‌نشده (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /parts/products",
-          "POST /parts/fitment-checks"
-        ],
-        "audit_note": "در زمان تبلیغات رسانه‌ای هنوز توسعه داده نشده بود."
+        "name": "تسهیل نقل‌وانتقال و شماره‌گذاری اینترنتی",
+        "status": "اعلام‌شده در کمپین",
+        "description": "هماهنگی ثبت نوبت در باجه خدمات تعویض پلاک مستقر"
       },
       {
         "id": "A12",
-        "name": "تشخیص عیب مکانیکی",
-        "activation": "tools_ready",
-        "prompt_version": "a12-v0",
-        "responsibility": "تشخیص قطعی از گفتگو صادر نمی‌شود",
-        "status_badge": "مسدود (blocked)",
-        "status_color": "amber",
-        "tools": [],
-        "audit_note": "به دلیل ملاحظات حقوقی و مسئولیت کارشناسی، چت مستقیم مسدود است."
+        "name": "معاوضه هوشمند خودرو با خودرو",
+        "status": "اعلام‌شده در کمپین",
+        "description": "تطبیق ترجیحات خریداران و فروشندگان برای تبادل هم‌زمان"
       },
       {
         "id": "A13",
-        "name": "مشاور لیزینگ و اقساط",
-        "activation": "tools_ready",
-        "prompt_version": "a13-v0",
-        "responsibility": "محاسبه پیش‌پرداخت و اقساط بدون نرخ تضمینی",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /leasing/plans",
-          "POST /leasing/quotes"
-        ],
-        "audit_note": "مکالمه هوشمند فعال نیست و صرفاً محاسبات پایه‌ای فرمول لیزینگ است."
+        "name": "پایش شبکه ایستگاه‌های شارژ برقی",
+        "status": "اعلام‌شده در کمپین",
+        "description": "ردیابی ظرفیت و وضعیت جایگاه‌های شارژ خودروهای برقی"
       },
       {
         "id": "A14",
-        "name": "مشاور و مقایسه بیمه",
-        "activation": "tools_ready",
-        "prompt_version": "a14-v0",
-        "responsibility": "مقایسه استعلام بیمه‌نامه‌ها از شرکت‌های بیمه‌گر",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /insurance/products",
-          "GET /insurance/quotes"
-        ],
-        "audit_note": "بخش مکالمه مستقیم کاربر پیاده‌سازی نشده است."
+        "name": "رزرو نوبت کارواش و دیتیلینگ",
+        "status": "اعلام‌شده در کمپین",
+        "description": "خدمات پولیش، نانوسرامیک و نظافت خودرو در مجموعه"
       },
       {
         "id": "A15",
-        "name": "راهنمای امور و عوارض خودرو",
-        "activation": "tools_ready",
-        "prompt_version": "a15-v0",
-        "responsibility": "استعلام معاینه فنی، خلافی و عوارض بدون داده جعلی",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /technical-inspection/status",
-          "GET /fines/status",
-          "GET /tolls/status"
-        ],
-        "audit_note": "رابط مکالمه ساخته نشده و وب‌سرویس مستقیم است."
+        "name": "امداد و خدمات سیار خودرویی",
+        "status": "اعلام‌شده در کمپین",
+        "description": "اعزام خودروهای امدادی برای عیب‌یابی در محل"
       },
       {
         "id": "A16",
-        "name": "همراه تالار مزایده",
-        "activation": "not_built",
-        "prompt_version": "a16-v0",
-        "responsibility": "بررسی پارت‌های مزایده و ثبت پیشنهاد با تأیید کاربر",
-        "status_badge": "کاملاً ساخته‌نشده (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /auctions/:id/snapshot",
-          "POST /auctions/:id/bids"
-        ],
-        "audit_note": "سرویس تالار مزایده در فاز افتتاحیه فعال نبوده است."
+        "name": "پایش ناوگان و ردیابی آنلاین",
+        "status": "اعلام‌شده در کمپین",
+        "description": "ردیابی موقعیت جغرافیایی و هشدار سرویس‌های دوره‌ای"
       },
       {
         "id": "A17",
-        "name": "راهنمای باشگاه مشتریان",
-        "activation": "tools_ready",
-        "prompt_version": "a17-v0",
-        "responsibility": "عضویت، امتیاز و پاداش‌های فعال از لجر باشگاه",
-        "status_badge": "توسعه‌نیافته (not_built)",
-        "status_color": "rose",
-        "tools": [
-          "GET /club/membership",
-          "GET /club/rewards"
-        ],
-        "audit_note": "چت ندارد و گردش کار متصل نشده است."
+        "name": "سیستم حراج و مزایده خودرو",
+        "status": "اعلام‌شده در کمپین",
+        "description": "پلتفرم عرضه خودروهای خاص، کلاسیک و کارکرده سفارشی"
       },
       {
         "id": "A18",
-        "name": "بررسی سازگاری بدنه و رنگ",
-        "activation": "tools_ready",
-        "prompt_version": "a18-v0",
-        "responsibility": "سازگاری نامعلوم تا بررسی مرکز قطعی نیست",
-        "status_badge": "مسدود (blocked)",
-        "status_color": "amber",
-        "tools": [],
-        "audit_note": "مکالمه به صورت قطعی مسدود است."
+        "name": "دستیار انتخاب خودرو متناسب با بودجه",
+        "status": "اعلام‌شده در کمپین",
+        "description": "پیشنهاد مدل‌های متناسب بر مبنای توان مالی و اولویت‌های کاربر"
       },
       {
         "id": "A19",
-        "name": "بررسی تجهیزات صوتی و الکترونیک",
-        "activation": "tools_ready",
-        "prompt_version": "a19-v0",
-        "responsibility": "سازگاری صوتی از کاتالوگ و بررسی مرکز می‌آید",
-        "status_badge": "مسدود (blocked)",
-        "status_color": "amber",
-        "tools": [],
-        "audit_note": "مکالمه به صورت قطعی مسدود است."
-      },
-      {
-        "id": "A20",
-        "name": "تولید برگه فنی خودرو",
-        "activation": "tools_ready",
-        "prompt_version": "a20-v1",
-        "responsibility": "تولید شناسنامه و برگه مشخصات فنی خودروها از پروتکل MCP و منابع آنلاین",
-        "status_badge": "آماده ابزار (پردازش داخلی)",
-        "status_color": "cyan",
-        "tools": [
-          "mcp_specs_crawler",
-          "online_catalog_fetch"
-        ],
-        "audit_note": "ابزار بک‌اندی برای ساخت کاتالوگ و مشخصات خودروها در شوروم."
+        "name": "خدمات پس از فروش و گارانتی یکپارچه",
+        "status": "اعلام‌شده در کمپین",
+        "description": "پیگیری تعهدات گارانتی و دوره‌های سرویس ادواری شوروم‌ها"
       }
     ]
   },
   "market_and_guild_audit": {
     "promotions_reality": {
-      "cash_discount_headline": "۲۰۰ میلیون تومان تخفیف نقدی برای همه خریداران",
-      "cash_discount_reality": "بررسی متادیتای اندپوینت رسمی فروش نشان می‌دهد این تخفیف بر روی قیمت‌های پایه‌ای اعمال شده که در برخی تیپ‌ها بالاتر از میانگین کف بازار آزاد بوده‌اند؛ به طور مثال قیمت نهایی تارا اتوماتیک پس از کسر تخفیف ۴ میلیارد و ۳۷۰ میلیون تومان، دنا پلاس دستی ۳ میلیارد و ۱۸۰ میلیون تومان و هایما 7X برابر با ۸ میلیارد تومان ثبت شده است.",
-      "deposit_requirement": "۳۰۰٬۰۰۰٬۰۰۰ تومان بیعانه نقدی فوری",
-      "reservation_window": "۳۰ دقیقه رزرو موقت پس از رفتن به درگاه",
-      "settlement_terms": "پرداخت باقیمانده مبلغ میلیاردی خودرو منحصراً تا ساعت ۱۹:۰۰ اولین روز کاری بعد به صورت حضوری در اتوپلازا",
-      "raffle_conditions": "برخلاف برداشت اولیه افکار عمومی که قرعه‌کشی پژو ۲۰۷ و خودرو برقی XPENG را ویژه عموم بازدیدکنندگان یا حاضران در کنسرت‌ها قلمداد می‌کردند، طبق اساسنامه سیستم فروش، قرعه‌کشی شبانه منحصراً میان خریداران قطعی خودرو در همان روز که تسویه حساب کامل کرده بودند برگزار شده است."
+      "cash_discount_headline": "تخفیف تا سقف ۲۰۰ میلیون تومان در خرید خودرو",
+      "cash_discount_reality": "تخفیف اعلام‌شده تا سقف ۲۰۰ میلیون تومان، طبق شرایط فروش منحصراً برای خودروهای گران‌قیمت وارداتی و مونتاژی با قیمت ۲ تا ۴ میلیارد تومان قابل اعمال بوده است؛ در این کلاس قیمتی، مبلغ ۲۰۰ میلیون تومان معادل حدود ۵ تا ۸ درصد قیمت کل است و برای خودروهای اقتصادی داخلی به دلیل محدودیت حاشیه سود اعمال نشده است.",
+      "deposit_requirement": "۳۰۰٬۰۰۰٬۰۰۰ تومان بیعانه جهت ثبت سفارش و رزرو اولیه خودروهای اعلامی",
+      "reservation_window": "۳۰ دقیقه مهلت تکمیل فرآیند رزرو اولیه",
+      "settlement_terms": "پرداخت باقیمانده مبلغ خودرو بر اساس ضوابط اعلامی نمایندگی‌ها در اتوپلازا",
+      "raffle_conditions": "برخلاف تصور اولیه برخی بازدیدکنندگان، قرعه‌کشی خودروهای پژو ۲۰۷ منحصراً میان خریداران قطعی خودرو در ایام افتتاحیه که تسویه حساب خود را نهایی کردند برگزار شده است."
     },
     "trade_union_and_guild": {
       "spokesperson": "کرمی (رئیس وقت اتحادیه صنف دارندگان نمایشگاه‌ها و فروشندگان خودرو تهران)",
