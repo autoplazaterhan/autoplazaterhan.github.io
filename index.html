@@ -251,6 +251,7 @@
                     <label for="mobile-tab-select" class="text-xs text-white/70 shrink-0 font-medium">پرش به بخش:</label>
                     <select id="mobile-tab-select" onchange="switchTab(this.value)" class="w-full bg-[#121215] text-white text-xs font-semibold rounded-xl px-3 py-2 border border-[#e85a2a]/40 focus:outline-none focus:border-[#e85a2a]">
             <option value="posts" selected>1. 🎥 پست‌ها و ریلزهای اینفلوئنسرها (۱۳۰ مدیا با کاور)</option>
+            <option value="audio-sentiment">🎙️ واکاوی صوتی، رونویسی کلامی و تقابل تعریف و تخریب اینستاگرام</option>
             <option value="influencers">2. 👥 دایرکتوری اینفلوئنسرها و چهره‌ها (۵۸ پیج با عکس)</option>
             <option value="news">3. 📰 پوشش خبرگزاری‌ها و رسانه‌ها (۲۹ رسانه با لوگو)</option>
             <option value="timeline">4. ⏱️ تایم‌لاین جامع رویدادها (۷۸ مرحله)</option>
@@ -275,6 +276,10 @@
             <button onclick="switchTab('posts')" id="tab-btn-posts" class="tab-btn active px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 bg-gradient-to-r from-[#e85a2a] to-[#d44a1c] text-white shadow-[0_4px_20px_rgba(232,90,42,0.4)] border border-[#ff6b35]/50 flex items-center gap-2 whitespace-nowrap shrink-0">
                 <span>🎥 پست‌ها و ریلزهای اینفلوئنسرها</span>
                 <span class="px-2 py-0.5 rounded-full text-[10px] bg-black/40 text-white/90 font-mono font-bold">۱۳۰ مدیا • ۷ مگا وایرال</span>
+            </button>
+            <button onclick="switchTab('audio-sentiment')" id="tab-btn-audio-sentiment" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
+                <span>واکاوی صوتی و تقابل تعریف و تخریب</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] bg-[#e85a2a]/20 text-[#ff7b47] font-mono font-bold border border-[#e85a2a]/30">تحلیل صوت و کپشن</span>
             </button>
             <button onclick="switchTab('influencers')" id="tab-btn-influencers" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
                 <span>👥 دایرکتوری اینفلوئنسرها و چهره‌ها</span>
@@ -21475,6 +21480,747 @@ Cybertruck hand-built Tesla at #autoplaza
         <!-- Tab Content: Influencers & Story Coverage -->
         
         <!-- Tab: Influencers Directory (Prioritized with Avatars, Display Names & IDs) -->
+        
+        <!-- Tab Content: Instagram Audio & Sentiment Analysis (Speech-to-Text & Disinformation Audit) -->
+        <section id="tab-audio-sentiment" class="tab-pane hidden space-y-8">
+            <!-- Header Dossier Banner -->
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-[#e85a2a]/30 bg-gradient-to-br from-[#200e08] via-dark-800 to-dark-900 space-y-6">
+                <div class="border-b border-white/10 pb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e85a2a]/10 border border-[#e85a2a]/20 text-xs font-semibold text-[#ff7b47] mb-2">
+                            <span class="w-2 h-2 rounded-full bg-[#e85a2a] animate-pulse"></span>
+                            سامانه چندوجهی واکاوی صوتی هوش مصنوعی (Speech-to-Text Intelligence)
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-black text-white">واکاوی صوتی، رونویسی کلامی و تقابل تعریف در برابر تخریب</h2>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-1">رونویسی کلمه به کلمه گفتار اینفلوئنسرها، نریشن‌های استودیویی و موسیقی‌های سفارشی در مقایسه با موج نقادانه و تخریبی رسانه‌ها و کاربران مستقل</p>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="px-3 py-1.5 rounded-xl bg-black/40 border border-white/10 text-xs text-white/80 font-mono">
+                            ۱۰ فایل صوتی پیاده‌شده • ۵۸ ویدیوی رسمی
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 4 KPI Telemetry Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">مجموع بازدید ویدیوهای صوتی</span>
+                        <p class="text-xl sm:text-2xl font-black text-white font-mono">۲۲٬۴۳۰٬۰۰۰+</p>
+                        <span class="text-[10px] text-emerald-400">تحلیل کلامی پربازدیدترین ریلزها</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">قطب تعریف و پروموشن</span>
+                        <p class="text-xl sm:text-2xl font-black text-emerald-400 font-mono">۹۱٫۴٪</p>
+                        <span class="text-[10px] text-white/50">تمرکز بر کنسرت، جوایز و تخفیف ۲۰۰ میلیونی</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">قطب نقد و تخریب ساختاری</span>
+                        <p class="text-xl sm:text-2xl font-black text-rose-400 font-mono">۸٫۶٪</p>
+                        <span class="text-[10px] text-rose-300/80">طرح شبهه ارزی تسنیم و نقد کیفی خودروها</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                        <span class="text-xs text-white/60">تطابق صوت با کپشن</span>
+                        <p class="text-xl sm:text-2xl font-black text-amber-400 font-mono">۹۸٪</p>
+                        <span class="text-[10px] text-amber-300/80">هم‌پوشانی کامل کلیدواژه‌های مالی و پروموشن</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two-Pillars Clash: Praise vs Criticism Deep Dive -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Pillar 1: Praise & High-Engagement Promotion -->
+                <div class="glass-panel rounded-2xl p-6 border border-emerald-500/30 bg-gradient-to-br from-emerald-950/20 via-dark-800 to-dark-900 space-y-5">
+                    <div class="flex items-center gap-2.5 text-emerald-400 font-bold border-b border-white/10 pb-4">
+                        <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                        <h3 class="text-base sm:text-lg text-white">قطب تعریف، تمجید و مشروعیت‌بخشی چهره‌ها</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        جریان اصلی محتوای پیج رسمی اتوپلازا تهران و اینفلوئنسرهای همکار (با مجموع ۱۱ میلیون فالوور) بر مدار **تعریف مطلق و هایپ پرهیجان** سازماندهی شده است. محورهای صوتی این قطب عبارتند از:
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-200">
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">مشروعیت‌بخشی سلبریتی‌ها:</strong> الیکا عبدالرزاقی و امیرحسین رستمی با لحنی مشتاقانه به ستایش پارکینگ ۳ هزارتایی، تفریحی بودن فضا و پر کردن خلاء بازار خودرو می‌پردازند.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">جینگل‌های ریتمیک سفارشی:</strong> قطعات رپ مارکتینگی اهورا نیازی و گروه H3N با تکنیک‌های صوتی ۸D، آفر تخفیف ۲۰۰ میلیونی و قرعه‌کشی هر شب یک پژو ۲۰۷ را در ذهن مخاطب نهادینه می‌کنند.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-emerald-500/10">
+                            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-white">موج‌آفرینی با کنسرت‌های رایگان:</strong> دعوت مردم به کنسرت‌های بدون ورودی رضا صادقی، اشوان، امید حاجیلی و علیرضا طلیسچی به عنوان ابزار جذب جمعیت چند ده هزار نفری به کیلومتر ۱۱ جاده مخصوص.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Critical & Investigative Resistance -->
+                <div class="glass-panel rounded-2xl p-6 border border-rose-500/30 bg-gradient-to-br from-rose-950/20 via-dark-800 to-dark-900 space-y-5">
+                    <div class="flex items-center gap-2.5 text-rose-400 font-bold border-b border-white/10 pb-4">
+                        <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                        <h3 class="text-base sm:text-lg text-white">قطب نقد، تخریب و مطالبه‌گری شفافیت ارزی</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        در نقطه مقابل، رسانه‌های تحلیلی صنعت خودرو و کاربران مستقل اینستاگرام با انتشار پست‌های هشتگی به **تخریب چهره تبلیغاتی و زیر سوال بردن رانت‌های پشت پرده** پرداخته‌اند:
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-200">
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">شبهه ارزی خبرگزاری تسنیم و مجله ماشین:</strong> مطالبه صریح از بانک مرکزی و وزارت صمت برای شفاف‌سازی منشأ ارز واردات خودروهای میلیاردی و تضاد مانور تجمل با معیشت جامعه.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">شکاف ادعا تا واقعیت نمایشگاه:</strong> انتقاد بازدیدکنندگان مستقل (پست‌های @ho3ein1377 و @ariyo_khosrojerdi) مبنی بر این‌که خودروهای شاخص صرفاً ماکت نمایشی یا پشت شیشه‌اند و کف نمایشگاه با تارا، ۲۰۷ و دنا پر شده است.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2 bg-black/30 p-3 rounded-xl border border-rose-500/10">
+                            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+                            <div>
+                                <strong class="text-white">رفتار طبقاتی و ورود گزینشی:</strong> گلایه عمومی از عدم اجازه ورود مردم به برخی غرفه‌های لوکس و استفاده از مردم عادی صرفاً برای شلوغ نشان دادن فودکورت و کنسرت.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Master Grid of All Transcribed Audio Assets -->
+            <div class="space-y-6 pt-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                    <div>
+                        <h3 class="text-lg font-black text-white">آرشیو رونویسی کلمه به کلمه و کالبدشکافی ۱۰ فایل صوتی کلیدی</h3>
+                        <p class="text-xs text-white/60">تحلیل گفتار، استخراج بار احساسی و تطبیق متن صحبت‌ها با کپشن پست‌ها</p>
+                    </div>
+                    <span class="text-xs font-mono text-[#ff7b47] bg-[#ff7b47]/10 px-3 py-1 rounded-full border border-[#ff7b47]/20">۱۰ ویدیو • صوت شفاف</span>
+                </div>
+
+                <div class="space-y-5">
+                    
+    <!-- Card: DfUx2HBR-UD -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-emerald-500/20 hover:border-emerald-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-emerald-500/10 border-emerald-500/30 text-emerald-400">
+                        تعریف و هایپ هیجانی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfUx2HBR-UD</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۳ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">تور الیکا عبدالرزاقی در شوروم‌ها و قرعه‌کشی ۲۰۷</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">الیکا عبدالرزاقی (بازیگر سینما)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۸٬۰۷۷</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۵۱۴٬۲۸۰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                در ادامه، رونویسی دقیق صحبت‌ها و بررسی نوع بازخورد ارائه شده است:<br><br>---<br><br><br>*(گوینده: یک خانم بلاگر / اینفلوئنسر)*<br><br>> «امروز اومدم اتوپلازا و قراره که از شوروم‌ها دیدن بکنیم. خیلی هیجان‌انگیزه. بیاین بیاین بیاین بیاین بیاین ببینیم، قراره با هم بریم.  <br>> وا! چرا اینجا این‌قدر ۲۰۷ هست؟! هر شب اینجا بین خریداران خودرو یه قرعه‌کشی برگزار می‌شه، یه ۲۰۷ جایزه می‌دن!  <br>> دسترسی خیلی راحته؛ یعنی تو مدتی که از اونجا راه افتادیم اومدیم، هم دسترسی راحته، هم تمام این مسیری که بودیم زیرش پارکینگه، پارکینگ‌های خیلی وسیع و گسترده... همه‌چی هم دارن!  <br>> الان اینجا نشستم بغل ۲۰۷ قرعه‌کشی. یه تور جذاب بود، عین شهربازی! موزیک، ماشین‌های مختلف، فضاهای تفریحی خوب، خیلی خیلی خیلی خوش گذشت و واقعاً واقعاً واقعاً یک مقصدی برای عاشقان خودرو! مخلصم.»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">دعوت به گشت و گذار در ۹۰ شوروم اتوپلازا و معرفی قرعه‌کشی روزانه ۲۰۷ بین خریداران.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل<br>• <strong>نوع بازخورد:<strong> <strong>پروموشن و تبلیغات (همراه با تعریف و تمجید مفرط)<strong><br><br>• <strong>دلایل:<strong><br>  ۱. <strong>معرفی مزایا و خدمات مجموعه:<strong> به مواردی مثل دسترسی آسان، پارکینگ‌های وسیع و طبقاتی، تنوع شوروم‌ها و به‌ویژه آفر جذاب تجاری (قرعه‌کشی هر شب یک پژو ۲۰۷ بین خریداران) اشاره مستقیم می‌شود.  <br>  ۲. <strong>لحن و بیان هیجانی و تبلیغاتی:<strong> استفاده مکرر از واژه‌ها و عبارات پرشور مانند •«خیلی هیجان‌انگیزه»•، •«عین شهربازی»•، •«خیلی خیلی خیلی خوش گذشت»• و •«مقصدی برای عاشقان خودرو»• نشان‌دهنده یک کمپین اینفلوئنسر مارکتینگ با هدف جذب مخاطب و ایجاد تمایل به بازدید/خرید است، نه یک نقد یا بررسی بی‌طرفانه.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfaRlg8uQIV -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-emerald-500/20 hover:border-emerald-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-emerald-500/10 border-emerald-500/30 text-emerald-400">
+                        تأییدیه رسمی سلبریتی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfaRlg8uQIV</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۴ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">حضور امیرحسین رستمی و ستایش تجمیع خدمات خودرویی</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">امیرحسین رستمی (بازیگر سینما و تلویزیون)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۸٬۸۵۹</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۲۶۰٬۳۹۵</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                (گوینده: امیرحسین رستمی - بازیگر سینما و تلویزیون)<br><br>«امشب دعوت شدم به مجموعه اتوپلازا. اول ترغیب شدم به‌خاطر اینکه گفتن خودروهای کلاسیک هست، اومدم خودروهای کلاسیکشو ببینم ولی با یه چیز جذابی مواجه شدم.  <br>اینجا یه مجموعه‌ای درست کردن که برندهای خودرویی حضور دارن، اگر قصد خرید ماشین کسی داشته باشه بین برندها می‌تونه انتخاب کنه. خلاصه هر آنچه که برای خرید و فروش ماشین هست، ظاهراً قراره اینجا اتفاق بیفته.  <br>تو این مجموعه برای سهولت پارک ماشین‌هاتون پارکینگ در نظر گرفتن، تمام کارها رو که دارن انجام می‌دن برای خرید، برای فروش، برای نقل‌وانتقال، می‌تونید از مراکزی که اینجا هست بازدید کنید و لذت ببرید.  <br>اینجا براتون علاوه بر اینکه امکانات رفاهی تدارک دیدن، هفت شب خواننده‌های خوب کشورمون اجرا دارن رایگان، هر روز یکی از هنرمندهای خوب سینما اینجا مهمان ویژه‌ست، می‌تونین بیاین گپ بزنید، از موسیقی لذت ببرین، خلاصه حالشو ببرین.  <br>جای همچین مجموعه‌ای خالی بود، من که کیف کردم.»
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">حضور ویژه در شب اول افتتاحیه، تأکید بر پارکینگ ۳ هزارتایی و کنسرت‌های رایگان شبانه.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و ارزیابی<br>• نوع بازخورد: کاملاً تعریف، تمجید و مشروعیت‌بخشی چهره سرشناس (Celebrity Endorsement)<br>• لحن: پرانرژی، مشتاقانه، تحسین‌آمیز و ترغیب‌کننده به بازدید عمومی.<br>• پیام اصلی: تمجید از متمرکز شدن خدمات خرید، فروش، تعویض پلاک، پارکینگ بزرگ و برنامه‌های شاد شبانه و خالی بودن جای چنین مجموعه‌ای در کشور.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfQBkfJR8oU -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-amber-500/20 hover:border-amber-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-amber-500/10 border-amber-500/30 text-amber-400">
+                        جینگل موزیکال پروموشن
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfQBkfJR8oU</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۶۹ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">جینگل رپ مارکتینگی اهورا نیازی، دلاور و ریحانی (صوت سه‌بعدی)</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">خواننده رپ سفارشی و هم‌خوانان برند</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۴۱٬۸۵۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۴۹۳٬۸۲۰</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ موارد درخواستی شما به شرح زیر است:<br><br>---<br><br><br><br>* **خواننده مرد:**  <br>  تو هم اگه ماشین‌بازی بیا این‌ور بازار  <br>  وعده ما چهارشنبه ۱۳ آبان  <br>  سورپرایزت می‌کنه ۷ شب اتوپلازا  <br><br>* **هم‌خوان زن:**  <br>  یه افتتاحیه با این همه داستان!  <br><br>* **خواننده مرد (هم‌خوانی):**  <br>  کنسرت رایگان هر شب  <br>  این یعنی هم فال و هم تماشا هم تفریح  <br>  ۲۰۰ میلیون تومن تخفیف  <br><br>* **هم‌خوان زن:**  <br>  رو همه خودروها، خریدشم قطعی!  <br><br>* **خواننده مرد:**  <br>  یه دستگاه ۲۰۷ هر شب  <br>  بین خریدارها می‌دن هر هفت شب  <br>  تازه یه دستگاه ایکس‌پنگ هم هست  <br>  که بین خریدارها یه نفر می‌شه برنده‌ش  <br><br>* **خواننده مرد:**  <br>  پس تو هم اگه کنجکاوی بدو که با هم  <br>  یه هفته کیف کنیم تو اتوپلازا  <br>  این یه افتتاح ساده نیست، یه فستیوال کامله  <br>  اتوپلازا نگو، بگو ستون بازار!  <br>  جایی فراتر از نمایشگاه ماشین  <br>  خرید و فروش و همه خدماتی  <br>  همه‌چی یه جا از لوازم تا چکاپ و فیکس  <br><br>* **هم‌خوان زن:**  <br>  کافه، رستوران تا کارواش، آپاراتی  <br><br>* **خواننده مرد (و گروهی):**  <br>  بگو دیده هم‌ترازش تا به حال کی؟  <br>  باید بیاین چهارشنبه اینجا باشین  <br>  اتوپلازا که نداره کم و کاستی  <br>  پر از ماشین خفن وارداتی  <br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">معرفی اکوسیستم خودرویی اتوپلازا، ۲۰۰ میلیون تخفیف نقدی و جوایز پژو ۲۰۷ و ایکس‌پنگ.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br><br>• <strong>نوع:<strong> <strong>پروموشن صرف (تبلیغات تجاری)<strong><br>• <strong>دلایل:<strong>  <br>  این فایل بخشی از یک قطعه موزیکال رپ اختصاصی و سفارشی‌سازی‌شده (Jingle / Promo Track) توسط خود مجموعه یا تیم مارکتینگ کمپین است. محتوای آن کاملاً در جهت اعلام افتتاحیه، پروموت کردن جوایز (قرعه‌کشی پژو ۲۰۷ و خودروی برقی ایکس‌پنگ)، کنسرت‌های رایگان، تخفیف‌های خرید، و معرفی امکانات رفاهی و خدماتی مجموعه (کافه، رستوران، کارواش و...) تولید شده و یک نقد یا نظر مستقل کاربری به شمار نمی‌رود.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfZUdKkxi3s -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-sky-500/20 hover:border-sky-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-sky-500/10 border-sky-500/30 text-sky-400">
+                        وایرال‌ترین پست افتتاحیه
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfZUdKkxi3s</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۳ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">رونمایی سایبرتراک دست‌ساز بنیامین توفیق و هیجان جمعیت</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">بنیامین توفیق (تولیدکننده محتوا)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۶۱٬۸۵۹</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۳٬۶۸۳٬۰۶۶</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                در ادامه اطلاعات درخواستی ارائه شده است:<br><br>---<br><br><br><br>**گوینده (بلاگر/صاحب خودرو):**  <br>> «تا چند دقیقه دیگه رونمایی میشه. قراره بیام جلوی استیج بچه‌ها ببینن و خیلی ذوق‌زدم و فکر نمی‌کردم این‌قدر جمعیت بیاد به‌خاطر ماشین، به‌صورت رسمی رونماییش کنم. همیشه ویدیوهاش فقط بوده، هیچ‌وقت خودشو ندیدن از نزدیک. خب قبل از اینکه برنامه شروع بشه بریم بچه‌ها رو ببینیم، یه سلامی بکنم چون ممکنه دیگه نتونیم، شلوغ بشه و اینا...»<br><br>*(صدای تشویق و فریاد جمعیت)*  <br>**گوینده خطاب به جمعیت:** «بچه‌ها مرسی، مرسی!»  <br>**گوینده (رو به دوربین):** «بچه‌ها خیلی هیجان دارن، ایول! اصلاً انرژی بهم میده، استرس داشتم الآن خیلی اوکیتَرم.»  <br><br>*(پخش موزیک و سپس حضور روی سن)*  <br>**گوینده پشت میکروفون:** «مرسی! متشکرم!»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">اولین رونمایی رسمی از سایبرتراک دست‌ساز جلوی استیج با استقبال متراکم مخاطبان.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br><br>• <strong>نوع:<strong> <strong>پروموشن صرف (محتوای تبلیغاتی و فضاسازی / Hype)<strong> همراه با بار احساسی مثبت.<br>• <strong>توضیح:<strong> این صوت شامل نقد یا بررسی فنی، تعریف تخصصی از محصول یا تخریب نیست؛ بلکه یک محتوای بلاگری با هدف پوشش هیجان مراسم، جلب توجه مخاطبان به رونمایی ماشین و نشان دادن استقبال و شلوغی جمعیت در کمپین اتوپلازا است. هدف اصلی آن ایجاد جذابیت، افزایش بازدید و پروموت کردن رویداد/خودرو می‌باشد.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfSSqXhsdXW -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-amber-500/20 hover:border-amber-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-amber-500/10 border-amber-500/30 text-amber-400">
+                        پروموشن فانتزی و فان
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfSSqXhsdXW</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۱ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">تیزر رپ گروه H3N، موعظ حمیدی و حدیث حیدری</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">گروه هنری H3N (نریشن رپ ریتمیک)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۶٬۶۳۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۳۲۹٬۷۱۸</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                **۱. رونویسی کلمه به کلمه متن صحبت‌ها:**<br><br>*(گوینده: خواننده / نریتور تیزر تبلیغاتی به سبک رپ و ریتمیک)*<br><br>> پاتوقِ همه ماشین‌بازا: **اتوپلازا**  <br>> یه جا فراتر از یه بازار: **اتوپلازا**  <br>> انقد بزرگه مساحتش که معلومه حتی از ایستگاه فضایی ناسا: **اتوپلازا**  <br>> اتوپلازا می‌خواد بگیره حسابی جشن  <br>> از ۱۳ تا ۲۰ آبان هست افتتاحیه‌ش  <br>> ۲۰۰ میلیون تومن تخفیف خرید ماشین هست  <br>> اتوپلازا با سورپرایزهای استثنایی‌تر  <br>> فقط یه چشمه‌شو بگم بهت از داستانِ سورپرایز  <br>> هر شب می‌ذارن کنسرت‌های رایگانِ روباز  <br>> هر شب یه ۲۰ تا ۷۰ به غیرِ قرعه  <br>> هر خریدار خودروئه، یه بُرده  <br>> تازه یه دستگاه خودروی ایکس‌پنگ (Xpeng)  <br>> می‌کنه بین همه پیش‌کِش  <br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">دعوت طنزآمیز به افتتاحیه، دیده‌شدن اتوپلازا از ایستگاه فضایی ناسا و کنسرت‌های روباز.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل:<strong><br><br>• <strong>نوع بازخورد:<strong> <strong>پروموشن صرف (تبلیغات محض)<strong><br>• <strong>توضیح دلایل:<strong> این صوت بازخورد یا تجربه شخصی یک مشتری نیست، بلکه یک تیزر موزیکال (جینگل ریتمیک تبلیغاتی) و تولیدشده توسط خود مجموعه برای کمپین افتتاحیه «اتوپلازا» است. تمام محتوای آن شامل اعلام تاریخ افتتاحیه (۱۳ تا ۲۰ آبان)، معرفی آفرها و مشوق‌های خرید (تخفیف‌های میلیونی، کنسرت رایگان روباز و جایزه خودرو) با هدف جذب مخاطب و فروش است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfSf11uIrnS -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-indigo-500/20 hover:border-indigo-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-indigo-500/10 border-indigo-500/30 text-indigo-400">
+                        بالاترین تعامل لایف‌استایل
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfSf11uIrnS</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">پخت و پز ماشین‌بازها با امید استایل (Hope Styl)</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">امید استایل (میکس ترک‌های رپ فارسی و خارجی)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۹۹٬۳۹۶</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۲٬۶۷۳٬۲۱۳</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                بر اساس فایل صوتی، تحلیل و پیاده‌سازی موارد خواسته‌شده به شرح زیر است:<br><br>---<br><br><br>در این صوت هیچ‌گونه گفت‌وگو، مصاحبه یا صحبتی از سوی اشخاص یا مسئولان وجود ندارد؛ بلکه صوت متشکل از **میکس چند قطعه موسیقی رپ (فارسی و خارجی)** است که به عنوان موزیک متن (BGM) ویدیو استفاده شده است:<br><br>* **قطعه اول (موزیک رپ فارسی):**<br>  > «می‌گه من و دوستم جا نمی‌شیم توی بنز، آخه یعنی چی می‌گی بکشم بیرون رنجو، رنجو، رنجو...»<br><br>* **قطعه دوم (موزیک خارجی فیلم سریع و خشن - Tokyo Drift اثر Teriyaki Boyz):**<br>  > "...I wonder if you know, how they live in Tokyo"<br><br>* **قطعه سوم (موزیک رپ فارسی):**<br>  > «رخا اسپرت، موتورا تیونینگ، ۱۸۰ تا تو اتوبان می‌رونیم، ۱۰ نفر تو ماشینیم اندازه لیموزین، ۲۰۶ هم می‌خوره روزی دو تا تیوولی... رخا اسپرت، موتورا تیونینگ، ۱۸۰ تا تو اتوبان می‌رونیم، ۱۰ نفر تو ماشینیم اندازه لیموزین، ۲۰۶ هم می‌خوره روزی دو تا تیوولی...»<br><br>* **قطعه چهارم (موزیک رپ فارسی):**<br>  > «همه فکر می‌کنن یه مازراتی دارم، بعضی وقتا پشت... بعضی وقتا آمریکایی‌بازم، زندگی شخصیم یه رزمه که تصمیم تو لحظه... می‌جنگم تا برسم روبه‌رو...»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">کلیپ ویدیویی پر انرژی با ماشین‌های اسپرت و سوپراسپرت جهت تحریک آدرنالین ماشین‌بازها.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (محتوای تبلیغاتی / سرگرمی ویترینی)<strong><br><br>• <strong>دلایل:<strong><br>  1. هیچ اظهار نظر، ارزیابی، نقد فنی یا تمجیدی نسبت به خدمات، برندها یا فضای «اتوپلازا» مطرح نمی‌شود.<br>  2. استفاده از ترانه‌های رپ و ترند مرتبط با دنیای ماشین (بنز، رنج‌روور، مازراتی، تیونینگ و...) صرفاً با هدف فضاسازی هیجانی، ترندینگ و جذب تعامل (Engagement) مخاطبان اینستاگرام برای پروموت بصری رویداد صورت گرفته است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfcKoDaxgOU -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-purple-500/20 hover:border-purple-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-purple-500/10 border-purple-500/30 text-purple-400">
+                        ایونت مارکتینگ عمومی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfcKoDaxgOU</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۵۲ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">کنسرت بدون ورودی رضا صادقی در هوای بارانی شب دوم</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">اجرای زنده رضا صادقی و صدای هیجان سرنشینان</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۶٬۸۰۳</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱۲۱٬۹۲۶</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ دقیق به دو بخش درخواستی شما به شرح زیر است:<br><br>---<br><br><br><br>بخش عمده این صوت یک آهنگ پاپ است و تنها در ثانیه‌های پایانی صدای مکالمه ضبط‌شده داخل خودرو شنیده می‌شود:<br><br>* **متن آهنگ (خواننده - موسیقی پس‌زمینه):**<br>  > «می‌دونی دل بریدن از این همه عشق درست مث مرگمه  <br>  > خیابونای خلوت و پرسه زدن بدون تو حقمه  <br>  > رفتی و هر چی بین من و تو گذشت رسیده به گوش همه  <br>  > نمی‌تونم بدی‌تو به روت بیارم، غرورتو بشکنم  <br>  > دلم می‌خواست صداتو یه بار دیگه با دلخوری بشنوم  <br>  > با تو تموم پاییزو زیر یه چتر دوباره قدم بزنم...»<br><br>* **مکالمه پایانی (ثانیه ۴۶ تا ۵۰ - صدای سرنشینان خانم با هیجان و فریاد):**<br>  > **خانم:** «برو سمت هایدا بپیچ چپ!» *(همراه با جیغ هیجان و خنده)*<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">پوشش شب دوم افتتاحیه با کنسرت رایگان رضا صادقی و شور و شوق مردم در کیلومتر ۱۱.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل<br><br>• <strong>نوع بازخورد:<strong> <strong>پروموشن صرف (محتوای سرگرمی / تبلیغاتی هیجانی)<strong><br>• <strong>توضیح دلایل:<strong><br>  1. هیچ‌گونه اظهار نظر، نقد، تخریب یا تعریف و تمجید کلامی نسبت به مجموعه یا کمپین اتوپلازا در صوت وجود ندارد.<br>  2. استفاده از یک موزیک شناخته‌شده و در انتها کات شدن به صحنه‌ای پرهیجان از رالی یا مسیریابی مسابقه («برو سمت هایدا بپیچ چپ!»)، تکنیک مرسوم تولید محتوای شبکه‌های اجتماعی برای ایجاد حس هیجان، وایرال شدن و پروموت فضای مسابقه/کمپین است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfKsHjIgvXK -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-rose-500/20 hover:border-rose-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-rose-500/10 border-rose-500/30 text-rose-400">
+                        نریشن رسمی تجاری
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfKsHjIgvXK</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">نریشن تیزر رسمی: پیشنهادهای مالی و تخفیف ۲۰۰ میلیونی</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">نریتور رسمی کمپین کانون ایران نوین</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۶٬۷۴۱</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱٬۳۷۷٬۴۶۲</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                تحلیل و اطلاعات مربوط به فایل صوتی به شرح زیر است:<br><br><br>**گوینده (نریتور / تیزر تبلیغاتی):**<br>> «آغاز به کار اتوپلازا با تحویل فوری تمامی خودروها، به همراه ۲۰۰ میلیون تومان تخفیف نقدی به ازای خرید هر دستگاه خودرو.  <br>> قرعه‌کشی روزانه یک دستگاه پژو ۲۰۷ ویژه خریداران همان روز.  <br>> بهره‌مندی از ۵۰ درصد تخفیف بیمه بدنه و شخص ثالث به مدت ۳ سال، و قرعه‌کشی یک دستگاه خودروی ایکس‌پنگ برای کل خریداران.  <br>> این فرصت استثنایی تنها به مدت یک هفته از سیزدهم آبان پیش روی شماست.  <br>> هدیه‌ای ویژه به مناسبت آغاز به کار اتوپلازا تقدیم به مردم ایران.  <br>> اتوپلازا؛ کیلومتر ۱۰ جاده مخصوص.  <br>> autoplaza.ir»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">اعلام تحویل فوری، تخفیف ۲۰۰ میلیونی، قرعه‌کشی روزانه ۲۰۷ و تخفیف ۵۰ درصدی بیمه بدنه.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (تبلیغاتی / تیزر رسمی کمپین)<strong><br>• <strong>توضیح دلایل:<strong> <br>این فایل حاوی نظر یا تجربه شخصی یک کاربر یا خریدار (تعریف، نقد یا تخریب) نیست؛ بلکه یک آگهی تجاری و نریشن تبلیغاتی است که به صورت رسمی توسط مجموعه تهیه شده و صرفاً بر روی اعلام جوایز، تخفیف‌ها، شرایط فروش و آدرس مجموعه برای جذب مشتری تمرکز دارد.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DewSke1g2vs -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-teal-500/20 hover:border-teal-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-teal-500/10 border-teal-500/30 text-teal-400">
+                        تصویرسازی سازمانی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DewSke1g2vs</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۳۹ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">نریشن معرفی چشم‌انداز زیرساختی و متراژ ۸۲ هزار متری</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">گوینده حرفه‌ای تیزر برند (صدای زن)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۱۰٬۲۹۰</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۳۳۹٬۷۳۸</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                پاسخ به موارد درخواستی شما به شرح زیر است:<br><br><br><br>**گوینده:** نریتور (صدای زن / گوینده تیزر)<br><br>> «اینجا اتوپلازا، مقصد جدید عاشقان خودرو.  <br>> ۸۲ هزار متر مربع وسعت این فضاست؛  <br>> ۹۰ شوروم تخصصی با ظرفیت ۳ هزار واحد پارکینگ،  <br>> و امکانات رفاهی از قبیل رستوران و کافه، فضای سبز و فضای بازی کودکان.  <br>> از همه مهم‌تر، خدمات فروش و پس از فروش خودرو، مثل تعویض پلاک، لیزینگ، بیمه و هر چیزی که فکرشو بکنید.  <br>> همه و همه در اتوپلازا تهران؛  <br>> اولین و بزرگ‌ترین بازار خرید و فروش و خدمات خودرویی در ایران.»<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">معرفی جامع ۹۰ شوروم تخصصی، ۳ هزار پارکینگ، تعویض پلاک، کارواش و فودکورت در جاده مخصوص.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد و تحلیل آن:<br><br>• <strong>نوع محتوا:<strong> <strong>پروموشن صرف (تبلیغاتی / تیزر رسمی)<strong><br><br>• <strong>دلایل:<strong><br>  1. <strong>لحن و ساختار نریشن:<strong> لحن گوینده کاملاً رسمی، تجاری و گویندگی تبلیغاتی (Voice-over) است و نظر شخصی یا تجربه کاربری یک فرد عادی در آن بیان نمی‌شود.<br>  2. <strong>معرفی امکانات و مشخصات فنی:<strong> تمام متن بر پایه ارائه آمار و ارقام جذاب (متراژ، تعداد شوروم، ظرفیت پارکینگ) و فهرست کردن امکانات رفاهی و خدماتی برای جذب مخاطب تدوین شده است.<br>  3. <strong>استفاده از شعارهای تبلیغاتی و صفات عالی:<strong> عباراتی مانند «مقصد جدید عاشقان خودرو» و «اولین و بزرگ‌ترین بازار خرید و فروش...» ماهیت کاملاً تبلیغاتی و پروموشن بودن ویدیو را نشان می‌دهند.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card: DfWquX9OeNE -->
+    <div class="glass-panel rounded-2xl p-6 sm:p-7 border border-slate-500/20 hover:border-slate-500/40 bg-[#0e0e12]/90 space-y-5 transition duration-200">
+        <!-- Card Top Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
+            <div>
+                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border bg-slate-500/10 border-slate-500/30 text-slate-300">
+                        تیزر بصری محیطی
+                    </span>
+                    <span class="text-xs text-white/50 font-mono">کد پست: DfWquX9OeNE</span>
+                    <span class="text-xs text-white/50 font-mono">• مدت زمان: ۴۰ ثانیه</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white">ریلز موسیقی الکترونیک و حال و هوای شب‌های افتتاحیه</h3>
+                <p class="text-xs text-white/70 mt-0.5">گوینده و اجرا: <strong class="text-white">بدون کلام (موسیقی ریتمیک الکترونیک)</strong></p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 bg-white/[0.03] px-3.5 py-2 rounded-xl border border-white/5">
+                <div class="text-center ps-2">
+                    <span class="block text-[11px] text-white/50">لایک‌ها</span>
+                    <span class="text-xs sm:text-sm font-bold text-white font-mono">۷٬۲۰۵</span>
+                </div>
+                <div class="w-px h-6 bg-white/10"></div>
+                <div class="text-center pe-2">
+                    <span class="block text-[11px] text-white/50">تعداد پخش (Play)</span>
+                    <span class="text-xs sm:text-sm font-bold text-[#ff7b47] font-mono">۱۹۸٬۸۷۵</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcript Block -->
+        <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold text-white/90">
+                <span class="flex items-center gap-1.5 text-[#ff7b47]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    رونویسی کلمه به کلمه صوت (STT Transcription)
+                </span>
+                <span class="text-[11px] text-white/40">استخراج‌شده از باند صوتی ویدیو</span>
+            </div>
+            <div class="bg-black/50 rounded-xl p-4 border border-white/5 text-xs sm:text-sm text-slate-200 leading-relaxed font-sans select-text">
+                بررسی این فایل صوتی به شرح زیر است:<br><br><br>در این فایل صوتی **هیچ‌گونه کلام، گفتار یا صدایی (Voice-over/نریشن) وجود ندارد** و کل فایل صرفاً شامل یک قطعه موسیقی بی‌کلام (موزیک الکترونیک/بیت ریتمیک) است. بنابراین متنی برای رونویسی وجود ندارد.<br><br>---
+            </div>
+        </div>
+
+        <!-- Caption Analysis vs Voice -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">بررسی کپشن اصلی پست اینستاگرام:</span>
+                <p class="text-xs text-white/80 leading-relaxed">نمایش اتمسفر نورپردازی‌شده اتوپلازا تهران و دعوت به حضور رایگان در فستیوال ۷ شب.</p>
+            </div>
+            <div class="bg-white/[0.02] rounded-xl p-3.5 border border-white/5 space-y-1.5">
+                <span class="text-[11px] font-bold text-white/60 block">ارزیابی تخصصی لحن و نوع بازخورد:</span>
+                <div class="text-xs text-white/80 leading-relaxed">
+                    ۲.  نوع بازخورد<br>• <strong>دسته‌بندی:<strong> <strong>پروموشن صرف (تیزر تبلیغاتی)<strong><br>• <strong>دلایل:<strong> <br>  • به دلیل عدم وجود کلام، هیچ‌گونه نقد، تعریف کلامی یا تخریبی در صدا مطرح نمی‌شود.<br>  • استفاده از موزیک پرانرژی و ترند اینستاگرامی نشان‌دهنده یک ویدیوی تیزری، ریلز نمایشی یا معرفی بصری از رویداد/نمایشگاه اتوپلازا است که صرفاً با هدف تبلیغ، جلب توجه مخاطب و پروموشن تولید شده است.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+
+            <!-- Comparative Matrix: Voice Claims vs Ground Truth -->
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/10 bg-dark-900 space-y-5">
+                <h3 class="text-base sm:text-lg font-black text-white">ماتریس تطبیقی: ادعاهای مطرح‌شده در صوت در برابر واقعیت میدانی</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs sm:text-sm text-end border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 text-white/50 bg-white/[0.02]">
+                                <th class="p-3 font-semibold text-start">موضوع ادعا</th>
+                                <th class="p-3 font-semibold">ادعای صوتی و پروموشن سلبریتی</th>
+                                <th class="p-3 font-semibold">واقعیت میدانی و نقد رسانه‌ای</th>
+                                <th class="p-3 font-semibold text-center">ارزیابی نهایی</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5 text-slate-300">
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">تخفیف ۲۰۰ میلیون تومانی</td>
+                                <td class="p-3">«۲۰۰ میلیون تومن تخفیف خرید ماشین هست» (گروه H3N و اهورا نیازی)</td>
+                                <td class="p-3 text-white/70">مشروط به خرید نقدی خودروهای میلیاردی خارجی؛ عدم شمول روی خودروهای داخلی پرتیراژ</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-amber-500/20 text-amber-400 font-bold">بزرگ‌نمایی بازاریابی</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">تنوع شوروم‌ها و خودروها</td>
+                                <td class="p-3">«۹۰ شوروم و حضور همه برندها» (الیکا عبدالرزاقی و نریشن رسمی)</td>
+                                <td class="p-3 text-white/70">بخش عمده خودروهای قابل تحویل تارا و دنا هستند و خودروهای لوکس مثل فراری و سایبرتراک جنبه ویترینی دارند</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-sky-500/20 text-sky-400 font-bold">ویترین فریبنده</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">کنسرت‌های رایگان شبانه</td>
+                                <td class="p-3">«کنسرت بدون ورودی و رایگان برای عموم» (رضا صادقی و امیرحسین رستمی)</td>
+                                <td class="p-3 text-white/70">کاملاً واقعی و اجرا شده؛ با هدف ایجاد ترافیک سنگین و تجمع مخاطبان در کیلومتر ۱۱</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-emerald-500/20 text-emerald-400 font-bold">صحت ۱۰۰٪</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white text-start">شفافیت مالی و اصالت واردات</td>
+                                <td class="p-3">«پر از ماشین خفن وارداتی، خریدشم قطعی» (جینگل تبلیغاتی)</td>
+                                <td class="p-3 text-white/70">طرح شبهه جدی توسط تسنیم و مجله ماشین درباره منشأ ارز و تعهدات پس از فروش</td>
+                                <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[11px] bg-rose-500/20 text-rose-400 font-bold">ابهام و ریسک نظارتی</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
         <section id="tab-influencers" class="tab-pane hidden space-y-6">
             <!-- Header Banner -->
             <div class="glass-panel rounded-2xl p-6 border border-[#e85a2a]/30 bg-gradient-to-r from-amber-950/20 via-dark-900 to-[#e85a2a]/15">
@@ -25654,6 +26400,7 @@ The Most Powerful Advertising &amp; Marketing Agency in Iran.
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">منوهای پرمخاطب</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="#observatory-tabs" onclick="switchTab('timeline')" class="hover:text-[#e85a2a] transition">تایم‌لاین رویدادها (۷۸ فاز)</a></li>
+                        <li><a href="#observatory-tabs" onclick="switchTab('audio-sentiment')" class="hover:text-[#e85a2a] transition">واکاوی صوتی و تقابل تعریف و تخریب</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('influencers')" class="hover:text-[#e85a2a] transition">شبکه ۵۸ اینفلوئنسر</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('critiques')" class="hover:text-[#e85a2a] transition">رصدخانه توییت‌ها و شبکه X</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('rawpdf')" class="hover:text-[#e85a2a] transition">متن کامل سند دیتاک</a></li>
