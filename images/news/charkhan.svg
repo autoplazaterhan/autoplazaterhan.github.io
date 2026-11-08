@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="10" fill="#ea580c"/>
+  <circle cx="35" cy="30" r="14" fill="#ffffff" opacity="0.2"/>
+  <text x="115" y="34" fill="#ffffff" font-family="Vazirmatn, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle">چرخان</text>
+  <text x="115" y="48" fill="#fed7aa" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Charkhan.com</text>
+</svg>
