@@ -2,9 +2,9 @@
   "metadata": {
     "title": "رصدخانه رسانه‌ای و افکار عمومی اتوپلازا تهران",
     "english_title": "AutoPlaza Tehran Media Intelligence & Public Sentiment Hub",
-    "monitoring_period": "۱۷ مرداد تا ۱۵ آبان ۱۴۰۵",
-    "monitoring_period_gregorian": "August 8 to November 6, 2026",
-    "primary_source": "دستیار هوشمند دستان (دیتاک) + مانیتورینگ رسانه‌ها و کانون ایران نوین",
+    "monitoring_period": "۱۷ مرداد تا ۱۸ آبان ۱۴۰۵",
+    "monitoring_period_gregorian": "August 8 to November 8, 2026",
+    "primary_source": "استخراج اختصاصی داده‌ها از دستیار هوشمند دستان (دیتاک) توسط ریک سانچز + مانیتورینگ رسانه‌ها و کانون ایران نوین",
     "data_collection_agent": "ایجنت‌های خودکار مستر هرمس (https://mrhermes.ir/)",
     "data_collection_method": "تمامی داده‌ها و اطلاعات به صورت خودکار توسط ایجنت‌ها جمع‌آوری و استخراج شده‌اند",
     "total_content_count": 1094,
@@ -17,11 +17,11 @@
     "data_verification_partner": "BoxAPI (باکس API)",
     "whatsapp_feedback_number": "09127047813",
     "whatsapp_feedback_notice": "در صورتی که تمایل دارید نام، شماره تلفن یا مشخصات شما در سایت نمایش داده نشود و دیدگاهتان به صورت کاملاً ناشناس منتشر گردد، حتماً این موضوع را در ابتدای پیام واتساپ خود قید فرمایید.",
-    "timeline_events_count": 69,
+    "timeline_events_count": 78,
     "audited_accounts_count": 58,
     "ai_audit_completed": true,
     "guild_audit_completed": true,
-    "last_updated": "آبان ۱۴۰۵ - ارزیابی عمیق فنی و صنفی"
+    "last_updated": "۱۸ آبان ۱۴۰۵ - ارزیابی عمیق رسانه‌ای، اینستاگرام و توییتر"
   },
   "facility_specs": {
     "total_area_sqm": 164000,
@@ -179,10 +179,10 @@
     },
     {
       "date": "۱۵ آبان ۱۴۰۵",
-      "title": "انتشار گزارش پایش افکار عمومی دستیار هوشمند دیتاک",
+      "title": "استخراج اختصاصی گزارش پایش افکار عمومی از دستیار هوشمند دیتاک توسط ریک سانچز",
       "category": "monitoring",
-      "summary": "تحلیل هوش مصنوعی دستان نشان داد که میان فضای رپرتاژی تلگرام (۶۹٪ مثبت) و بدنه کاربری توییتر (۷۹٪ منفی) یک شکاف روایتی بی‌سابقه شکل گرفته است.",
-      "platform": "news"
+      "summary": "این گزارش انتشار عمومی نداشته و داده‌ها به صورت شخصی و مستقیم توسط ریک سانچز از سامانه هوش مصنوعی دستان (دیتاک) دریافت و استخراج شده است. این تحلیل نشان داد که میان فضای رپرتاژی تلگرام (۶۹٪ مثبت) و بدنه کاربری توییتر (۷۹٪ منفی) یک شکاف روایتی بی‌سابقه شکل گرفته است.",
+      "platform": "exclusive"
     }
   ],
   "campaigns": [
@@ -295,6 +295,36 @@
       "date": "آبان ۱۴۰۵",
       "title": "اتوپلازای تهران؛ آینده بازار خودرو یا آزمونی پرهزینه برای یک ایده جذاب؟",
       "summary": "تحلیل علی باخرد پیرامون چالش‌های تعارض منافع، نقش هم‌زمان مالک، فروشنده و ناظر توسط ایران نوین و ریسک‌های تجمیع ۹۰ شوروم."
+    },
+    {
+      "title": "آئودی E5 اسپرت‌بک توسط معین خودرو در اتوپلازای تهران رونمایی شد",
+      "source": "پایگاه خبری اسب بخار و پرشین خودرو",
+      "date": "۱۵ آبان ۱۴۰۵",
+      "summary": "شرکت معین خودرو در مراسمی باشکوه در شوروم اختصاصی خود در اتوپلازا، از سدان تمام برقی آئودی E5 اسپرت‌بک با شتاب ۳٫۴ ثانیه‌ای و برد ۷۷۰ کیلومتری رونمایی کرد."
+    },
+    {
+      "title": "لغو فستیوال کنسرت‌های رایگان اتوپلازا در تهران به علت هشدار قرمز سیل",
+      "source": "روزنامه همشهری آنلاین، رکنا و شهرآرانیوز",
+      "date": "۱۶ آبان ۱۴۰۵",
+      "summary": "در پی اعلام سازمان هواشناسی مبنی بر وضعیت قرمز جوی و احتمال سیلاب در غرب تهران، ادامه کنسرت‌های روباز افتتاحیه اتوپلازا برای حفظ سلامت شهروندان موقتاً لغو شد."
+    },
+    {
+      "title": "رژه خودروهای لوکس در تنگنای ارزی؛ پشت پرده اتوپلازا چیست؟",
+      "source": "خبرگزاری تسنیم و پایگاه استارتاپ ۳۶۰",
+      "date": "۱۷ آبان ۱۴۰۵",
+      "summary": "گزارش چالشی پیرامون حضور سوپرکارهای خاص، ابعاد مالی صدها میلیاردی تبلیغات و مطالبه نهادهای نظارتی برای شفاف‌سازی معاملات و تأمین ارز خودروهای وارداتی."
+    },
+    {
+      "title": "استقبال پرشور مردم از کنسرت‌های اشوان، رضا صادقی و امید حاجیلی در اتوپلازا",
+      "source": "خبرگزاری‌های سراسری و رسانه‌های فرهنگی",
+      "date": "۱۴ تا ۱۶ آبان ۱۴۰۵",
+      "summary": "حضور ده‌ها هزار نفری شهروندان در محوطه کیلومتر ۱۱ جاده مخصوص در شب‌های بارانی افتتاحیه و ثبت رکوردهای جدید بازدید و تعامل در شبکه‌های اجتماعی."
+    },
+    {
+      "title": "رونمایی از تسلا دست‌ساز بنیامین و هیجان در دومین شب افتتاحیه اتوپلازا",
+      "source": "رسانه‌های اجتماعی و خودرویی",
+      "date": "۱۵ آبان ۱۴۰۵",
+      "summary": "حضور خودروی تسلا دست‌ساز بنیامین در محوطه اتوپلازا با ثبت بیش از ۳٫۶ میلیون بازدید و ۱۶۱ هزار لایک، به یکی از پربازدیدترین رویدادهای افتتاحیه تبدیل شد."
     }
   ],
   "critiques": [
@@ -407,6 +437,12 @@
       "question": "اینجا بازار طبقه متوسط است یا پیست پز دادن ثروتمندان؟",
       "category": "هویت اجتماعی و مخاطب",
       "answer": "سوپرکارهای پر زرق‌وبرق مثل لامبورگینی، رم TRX، کوروت و سایبرتراک متعلق به شرکت‌های اجاره خودرو و کلکسیونرها برای وایرال شدن در شبکه‌های اجتماعی هستند و فروشی نیستند. بدنه واقعی بازار اتوپلازا مربوط به خودروهای پرتیراژ داخلی، مونتاژی‌های متداول بازار، هایپرمارکت قطعات یدکی و خدمات مصرفی طبقه متوسط است."
+    },
+    {
+      "id": "q8",
+      "question": "چرا کنسرت‌های روباز اتوپلازا از ۱۶ آبان لغو شد و آیا برنامه‌ها مجدداً تمدید می‌شوند؟",
+      "answer": "در پی صدور هشدار وضعیت قرمز توسط سازمان هواشناسی استان تهران و اعلام احتمال وقوع سیلاب و تندباد در غرب پایتخت، مسئولان فستیوال برای حفظ ایمنی بازدیدکنندگان، اجرای کنسرت‌های استیج روباز (از جمله علیرضا طلیسچی و عرشیاس) را موقتاً لغو کردند. با این حال سالن‌های سرپوشیده ۹۰ شوروم تخصصی، خدمات کارشناسی رنگ، تحویل خودرو و سوپراپ طبق روال فعال هستند و تاریخ جدید کنسرت‌ها متعاقباً اعلام خواهد شد.",
+      "category": "رویدادها و برگزاری"
     }
   ],
   "volume_chart": [
@@ -2159,6 +2195,168 @@
       "jalali_date": "1405/08/14",
       "jalali_time": "19:26",
       "jalali_full": "1405/08/14 ساعت 19:26"
+    },
+    {
+      "code": "DfZHEAAFSmY",
+      "timestamp": 1793951438,
+      "date_jalali": "1405/08/15 11:20",
+      "media_type": "Carousel",
+      "duration_sec": 0.0,
+      "likes": 5854,
+      "comments": 124,
+      "plays": 0,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "ویژه‌برنامه‌های اتوپلازا، روز جمعه ۱۵ آبان🔥",
+      "full_caption": "ویژه‌برنامه‌های اتوپلازا، روز جمعه ۱۵ آبان🔥\n\n✨این برنامه‌ها هرروز از ساعت ۱۱ صبح الی ۲۳ برگزار می‌شن و شرکت برای عموم آزاده و نیاز به هیچ ثبت‌نام و ورودی‌ای نیست✌🏻 \n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)\n\n#اتوپلازا_میبینمت✌🏻 \n\n#اتوپلازاتهران #tehranautoplaza",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "11:20",
+      "jalali_full": "1405/08/15 ساعت 11:20"
+    },
+    {
+      "code": "DfZHT6BgCFS",
+      "timestamp": 1793952100,
+      "date_jalali": "1405/08/15 11:31",
+      "media_type": "Reel / Video",
+      "duration_sec": 27.281,
+      "likes": 2319,
+      "comments": 114,
+      "plays": 147027,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "⁨\t⁨\t⁨\tاجرای امید حاجیلی در اتوپلازا تهران، جمعه ۱۵ آبان✌🏻🔥",
+      "full_caption": "⁨\t⁨\t⁨\tاجرای امید حاجیلی در اتوپلازا تهران، جمعه ۱۵ آبان✌🏻🔥\n\nشرکت در برنامه‌های افتتاحیه و کنسرت‌ها برای عموم آزاد و رایگانه✨\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)\nهرروز از ۱۱ صبح تا ۱۱ شب\n\n#اتوپلازا_میبینمت✌🏻\n\n#اتوپلازاتهران #tehranautoplaza⁩⁩⁩",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "11:31",
+      "jalali_full": "1405/08/15 ساعت 11:31"
+    },
+    {
+      "code": "DfZSd5jOp8-",
+      "timestamp": 1793957952,
+      "date_jalali": "1405/08/15 13:09",
+      "media_type": "Reel / Video",
+      "duration_sec": 22.64,
+      "likes": 8838,
+      "comments": 140,
+      "plays": 255586,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "افتتاحیه اتوپلازا تهران، ۷ شب، ۷ برنامه جذاب برای همه✌🏻🔥",
+      "full_caption": "افتتاحیه اتوپلازا تهران، ۷ شب، ۷ برنامه جذاب برای همه✌🏻🔥\n\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "13:09",
+      "jalali_full": "1405/08/15 ساعت 13:09"
+    },
+    {
+      "code": "DfZUdKkxi3s",
+      "timestamp": 1793958650,
+      "date_jalali": "1405/08/15 13:20",
+      "media_type": "Reel / Video",
+      "duration_sec": 42.933,
+      "likes": 161859,
+      "comments": 2595,
+      "plays": 3683066,
+      "coauthors": [
+        "benyamin_co.ir"
+      ],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "⁨\tرونمایی از تسلا بنیامین برای اولین بار در شب دوم افتتاحیه اتوپلازا تهران✌🏻",
+      "full_caption": "⁨\tرونمایی از تسلا بنیامین برای اولین بار در شب دوم افتتاحیه اتوپلازا تهران✌🏻\n\nبنیامین تسلا دست‌ساز خودش رو برای اولین‌بار امشب رونمایی کرد و جمعیتی که با هیجان برای دیدنش اومده بودن🔥\n\n#اتوپلازا_میبینمت✌🏻 \n\n#اتوپلازاتهران #tehranautoplaza⁩",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "13:20",
+      "jalali_full": "1405/08/15 ساعت 13:20"
+    },
+    {
+      "code": "DfZW6BLhu-J",
+      "timestamp": 1793959785,
+      "date_jalali": "1405/08/15 13:39",
+      "media_type": "Reel / Video",
+      "duration_sec": 12.0,
+      "likes": 5315,
+      "comments": 69,
+      "plays": 191656,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "⁨\t⁨\tخلاصه‌ای از برنامه‌های شب دوم افتتاحیه اتوپلازا تهران🔥",
+      "full_caption": "⁨\t⁨\tخلاصه‌ای از برنامه‌های شب دوم افتتاحیه اتوپلازا تهران🔥\n\nهرشب تا ۱۹ ابان\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran⁩⁩",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "13:39",
+      "jalali_full": "1405/08/15 ساعت 13:39"
+    },
+    {
+      "code": "DfaOZ8qvMmB",
+      "timestamp": 1793989499,
+      "date_jalali": "1405/08/15 21:54",
+      "media_type": "Reel / Video",
+      "duration_sec": 24.433,
+      "likes": 2885,
+      "comments": 58,
+      "plays": 110701,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "از روز سوم افتتاحیه اتوپلازا تهران✌🏻🔥",
+      "full_caption": "از روز سوم افتتاحیه اتوپلازا تهران✌🏻🔥\n\nتا سه‌شنبه ۱۹ آبان، هرروز از ۱۱ صبح تا ۱۱ شب با:\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "21:54",
+      "jalali_full": "1405/08/15 ساعت 21:54"
+    },
+    {
+      "code": "DfaRlg8uQIV",
+      "timestamp": 1793990852,
+      "date_jalali": "1405/08/15 22:17",
+      "media_type": "Reel / Video",
+      "duration_sec": 63.714,
+      "likes": 8859,
+      "comments": 112,
+      "plays": 260395,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "⁨\t⁨\tحضور امیرحسین رستمی در شب اول افتتاحیه اتوپلازا تهران🔥",
+      "full_caption": "⁨\t⁨\tحضور امیرحسین رستمی در شب اول افتتاحیه اتوپلازا تهران🔥\n\nهرروز تا سه‌شنبه ۱۹ آبان، \n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran⁩⁩",
+      "jalali_date": "1405/08/15",
+      "jalali_time": "22:17",
+      "jalali_full": "1405/08/15 ساعت 22:17"
+    },
+    {
+      "code": "DfcKoDaxgOU",
+      "timestamp": 1794054330,
+      "date_jalali": "1405/08/16 15:55",
+      "media_type": "Reel / Video",
+      "duration_sec": 52.243,
+      "likes": 6803,
+      "comments": 61,
+      "plays": 121926,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "first_line": "⁨\t⁨\tکنسرت بدون ورودی رضا صادقی عزیز در شب دوم افتتاحیه اتوپلازا تهران✨",
+      "full_caption": "⁨\t⁨\tکنسرت بدون ورودی رضا صادقی عزیز در شب دوم افتتاحیه اتوپلازا تهران✨\n\nدر هوای بارونی، و صدای زیبا رضا صادقی لحظات رویایی‌ای باهم سپری کردیم.\n\n برنامه‌های افتتاحیه بزرگ اتوپلازا تهران، کنسرت و اجرای‌دی‌جی‌ها، در روزهای شنبه تا سه‌شنبه به دلیل شرایط نامساعد جوی لغو شدند؛\nاما شما ‌همچنان می‌تونید از مجموعه بازدید کنید و از شرایط ویژه فروش با تخفیف به مناسبت افتتاحیه تا تاریخ ۱۹ آبان استفاده کنید.✨\n\nبازدید از مجموعه اتوپلازا تهران برای عموم آزاد و رایگان هست🔥✌🏻\n\n#اتوپلازا_میبینمت✌🏻\n\n#اتوپلازاتهران #tehranautoplaza⁩⁩",
+      "jalali_date": "1405/08/16",
+      "jalali_time": "15:55",
+      "jalali_full": "1405/08/16 ساعت 15:55"
     }
   ],
   "production_execution": {
@@ -2205,6 +2403,487 @@
   },
   "twitter_tweets": [
     {
+      "id": "2119184428295410137",
+      "url": "https://x.com/KosarSoley12021/status/2119184428295410137",
+      "date": "2026-11-07T21:45:14+00:00",
+      "username": "KosarSoley12021",
+      "name": "M3düßà",
+      "text": "از وقتی مک کویین میدیدم روش کراش زدم 🫣\n#اتوپلازا https://t.co/5v3hygngWw",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 28,
+      "view_count": 348,
+      "lang": "fa"
+    },
+    {
+      "id": "2119162983322460324",
+      "url": "https://x.com/amirvaataan/status/2119162983322460324",
+      "date": "2026-11-07T20:20:02+00:00",
+      "username": "amirvaataan",
+      "name": "VATANPARAST",
+      "text": "اتوپلازا دیگه چه کصشریه \nکصکشای عادی ساز ننه اجاره ای جمع کنین کاسه کوزتونو\nمردم نون ندارن بخورن رفتین برا من نمایشگاه ماشین زدین \nماشینی که ملت نمیتونن حتی لاستیک زاپاسشو بخرن؟ \nیه سری دیجی و بلاگر کصخل تر از خودتونو برداشتین آوردین اونا بهشون گوشه دوهزاری نشون بدی ننشو میفروشه",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 14,
+      "lang": "fa"
+    },
+    {
+      "id": "2119135088176660525",
+      "url": "https://x.com/ghafour13552642/status/2119135088176660525",
+      "date": "2026-11-07T18:29:11+00:00",
+      "username": "ghafour13552642",
+      "name": "ghafour",
+      "text": "@SaraGhazanfar1 شما به عنوان خبرنگار حوزه خودرو امکان بررسی بیشتر دارید که چطور یک شرکت تبلیغات توانسته این مکان را برای اتوپلازا تعبیه و تجهیز کنه",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 192,
+      "lang": "fa"
+    },
+    {
+      "id": "2119129034231595492",
+      "url": "https://x.com/No_one_with_E/status/2119129034231595492",
+      "date": "2026-11-07T18:05:07+00:00",
+      "username": "No_one_with_E",
+      "name": "No one",
+      "text": "این اتوپلازا هم چیز قشنگی بود حیف متوجه نشدم\nالانم فعلا کنسل شد",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 26,
+      "view_count": 264,
+      "lang": "fa"
+    },
+    {
+      "id": "2119120755493396953",
+      "url": "https://x.com/lonely_lobat/status/2119120755493396953",
+      "date": "2026-11-07T17:32:14+00:00",
+      "username": "lonely_lobat",
+      "name": "منِ لعبت",
+      "text": "چقدر من از این افتتاحیه‌ی اتوپلازا و هر تلاش مذبوحانه‌ای برای گل‌و‌بلبل نشون دادن ایران بدم میاد.",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 25,
+      "view_count": 298,
+      "lang": "fa"
+    },
+    {
+      "id": "2119083821446386147",
+      "url": "https://x.com/yasfatft/status/2119083821446386147",
+      "date": "2026-11-07T15:05:28+00:00",
+      "username": "yasfatft",
+      "name": "The Kid",
+      "text": "همتونم که کلکا اتوپلازا بودین 😉 \nماروهم نبردین!",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 32,
+      "lang": "fa"
+    },
+    {
+      "id": "2119056610936979474",
+      "url": "https://x.com/Chiz_Miz_Nevis/status/2119056610936979474",
+      "date": "2026-11-07T13:17:20+00:00",
+      "username": "Chiz_Miz_Nevis",
+      "name": "چیزمیزنویس",
+      "text": "انشا الله همیشه شاد باشید\nو خدا نگذره اگر کسی نتونه شادی مردم و ببینه \nاما\nدیگه کسی ملتی که زیر بارون پرچم به دست میگیرن رو مسخره نکنه...\n\nبنظرم کار دوتا گروه مسخره کردن نداره \n\nشاد باشید\nچه زیر پرچم مقدس کشور دور میادین\nچه زیر نوت های موسیقی تو اتوپلازا\nهمین میشه خار تو چشم دشمن",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 5,
+      "view_count": 179,
+      "lang": "fa"
+    },
+    {
+      "id": "2119050422488867002",
+      "url": "https://x.com/stup360/status/2119050422488867002",
+      "date": "2026-11-07T12:52:45+00:00",
+      "username": "stup360",
+      "name": "Startup360 | استارتاپ ۳۶۰",
+      "text": "افتتاح اتوپلازا در تهران با ۹۰ شوروم و نمایش خودروهای لوکس، پرسش‌هایی درباره منشا ارز واردات ایجاد کرده است. تسنیم با اشاره به تبلیغات پرهزینه و ابهام در قیمت‌گذاری و خدمات پس از فروش، خواستار ورود نهادهای نظارتی شده است. https://t.co/gwAcKZVd4A",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 1,
+      "view_count": 153,
+      "lang": "fa"
+    },
+    {
+      "id": "2119038742316916892",
+      "url": "https://x.com/Narges_hme/status/2119038742316916892",
+      "date": "2026-11-07T12:06:20+00:00",
+      "username": "Narges_hme",
+      "name": "Narges!",
+      "text": "چند وقت دیگه هم اختلاس اتوپلازا و شرکت پشتش درمیاد، مثل قبلیا!",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 2,
+      "view_count": 88,
+      "lang": "fa"
+    },
+    {
+      "id": "2119009184612016407",
+      "url": "https://x.com/Unsansabri/status/2119009184612016407",
+      "date": "2026-11-07T10:08:53+00:00",
+      "username": "Unsansabri",
+      "name": "Un sans-abri",
+      "text": "میگن اتوپلازا رو دارن برگزار میکنن که حواس مردم از حضور پر شکوه رضا پهلوی در فرانکفورت پرت بشه😂😂😂",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 16,
+      "view_count": 275,
+      "lang": "fa"
+    },
+    {
+      "id": "2119004874197316000",
+      "url": "https://x.com/feranchesko_gh/status/2119004874197316000",
+      "date": "2026-11-07T09:51:45+00:00",
+      "username": "feranchesko_gh",
+      "name": "francesco",
+      "text": "این اتوپلازا واسه کدوم آقازادست؟!",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 15,
+      "view_count": 670,
+      "lang": "fa"
+    },
+    {
+      "id": "2118995584199610647",
+      "url": "https://x.com/Shaghayegh95830/status/2118995584199610647",
+      "date": "2026-11-07T09:14:50+00:00",
+      "username": "Shaghayegh95830",
+      "name": "💜Shaghayegh💜",
+      "text": "@Ehsan9459911 اتو پلازا شب آخرکنسرتش بود فک کنم دیشب",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 1,
+      "view_count": 33,
+      "lang": "fa"
+    },
+    {
+      "id": "2118986445046096252",
+      "url": "https://x.com/fourKhoonepoosh/status/2118986445046096252",
+      "date": "2026-11-07T08:38:32+00:00",
+      "username": "fourKhoonepoosh",
+      "name": "دختر چارخونه پوش v.2",
+      "text": "احساس میکنم آدمای تو کون نرو میرن اتوپلازا",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 11,
+      "view_count": 124,
+      "lang": "fa"
+    },
+    {
+      "id": "2118980478342443361",
+      "url": "https://x.com/anka_seemorgh/status/2118980478342443361",
+      "date": "2026-11-07T08:14:49+00:00",
+      "username": "anka_seemorgh",
+      "name": "سیمرغ",
+      "text": "رژه خودروهای لوکس در تنگنای ارز؛ پشت پرده اتوپلازا چیست؟\n\n در روزهایی که اقتصاد کشور با تنگناهای شدید ارزی و فشارهای معیشتی روبه‌روست، کیلومتر ۱۱ جاده مخصوص میزبان «اتوپلازا»؛ مجموعه‌ای با ۹۰ شوروم و بریزوبپاش‌های چندصد میلیاردی از ابهامات بزرگ ارزی پرده برداشت. https://t.co/EYiVCD6KMo",
+      "reply_count": 3,
+      "retweet_count": 2,
+      "like_count": 21,
+      "view_count": 522,
+      "lang": "fa"
+    },
+    {
+      "id": "2118974579519447475",
+      "url": "https://x.com/Shaghayegh95830/status/2118974579519447475",
+      "date": "2026-11-07T07:51:23+00:00",
+      "username": "Shaghayegh95830",
+      "name": "💜Shaghayegh💜",
+      "text": "دیشب بعضیا رفته بودن خیابون ایرانشهر فتح کردن ،خبر نداشتن دیشب برنامه اتو پلازا بوده 😂💃🏼\n#alirzaspeed https://t.co/WRoEwInhiP",
+      "reply_count": 7,
+      "retweet_count": 3,
+      "like_count": 177,
+      "view_count": 18730,
+      "lang": "fa"
+    },
+    {
+      "id": "2118969965688795343",
+      "url": "https://x.com/th3SBi/status/2118969965688795343",
+      "date": "2026-11-07T07:33:03+00:00",
+      "username": "th3SBi",
+      "name": "𓆰𓆪 BATمن",
+      "text": "بهتون قول میدم این نمایشگاه و بازار خودرو جدیده (اتو پلازا) که انقد داره تبلیغ میکنه و سرو صدا درست کرده هم بعدا گندش در میاد و یه دزدی یا رانتی یا … ازش درمیاد",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 5,
+      "view_count": 218,
+      "lang": "fa"
+    },
+    {
+      "id": "2118959661189894551",
+      "url": "https://x.com/psychoamiir/status/2118959661189894551",
+      "date": "2026-11-07T06:52:06+00:00",
+      "username": "psychoamiir",
+      "name": "ΛMIЯЯΣZΛ",
+      "text": "@imobinnaa بد مشکوکم به این اتوپلازا",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 56,
+      "lang": "fa"
+    },
+    {
+      "id": "2118955232558543013",
+      "url": "https://x.com/Mehdi66gh/status/2118955232558543013",
+      "date": "2026-11-07T06:34:30+00:00",
+      "username": "Mehdi66gh",
+      "name": "⭐Mehdi ⭐",
+      "text": "@DonJuan63294 @grok  جواب بده برای کی اتو پلازا که تبلیغ کرده",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 41,
+      "lang": "fa"
+    },
+    {
+      "id": "2118954790503793077",
+      "url": "https://x.com/danialataeii/status/2118954790503793077",
+      "date": "2026-11-07T06:32:44+00:00",
+      "username": "danialataeii",
+      "name": "D",
+      "text": "فقط آدمایی بیکار‌تخمی میتونن برن اتو پلازا اسکولارو ویو میدید همینه",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 17,
+      "view_count": 429,
+      "lang": "fa"
+    },
+    {
+      "id": "2118952789116154074",
+      "url": "https://x.com/DonJuan63294/status/2118952789116154074",
+      "date": "2026-11-07T06:24:47+00:00",
+      "username": "DonJuan63294",
+      "name": "مرد تنها (شب و روز)",
+      "text": "@Mehdi66gh این اتو پلازا برای کیه اینقدر تبلیغ کرده؟",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 24,
+      "lang": "fa"
+    },
+    {
+      "id": "2118939131514360094",
+      "url": "https://x.com/zrafh22/status/2118939131514360094",
+      "date": "2026-11-07T05:30:31+00:00",
+      "username": "zrafh22",
+      "name": "زرافه سیاه",
+      "text": "خواهر دوستم خیلی پیک می،طفلی نمی تونه هیچ جوره قائم کنه،الان یک بلاگر کلیپ گذاشت رفته ایونت اتو پلازا می گه بیخوده،پاهاشون گلی شده،مردم ترافیک گیر کردن،کلی وایساد کنار جاده ماشین گیرشون بیاد.\nاین کامنت گذاشت ما با ماشین رفتیم خیلی هم عالی بوو🤣",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 37,
+      "lang": "fa"
+    },
+    {
+      "id": "2118925517516911062",
+      "url": "https://x.com/hadi2011m/status/2118925517516911062",
+      "date": "2026-11-07T04:36:25+00:00",
+      "username": "hadi2011m",
+      "name": "هادی (خان)",
+      "text": "@behroozrezaei61 اگر بدونن این چند روز تو #اتوپلازا چه خبر بود میرن برینن اونجا",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 1,
+      "view_count": 212,
+      "lang": "fa"
+    },
+    {
+      "id": "2118910598591169009",
+      "url": "https://x.com/iAmhastti/status/2118910598591169009",
+      "date": "2026-11-07T03:37:08+00:00",
+      "username": "iAmhastti",
+      "name": "hasti",
+      "text": "هیچ حس خوبی به این اتوپلازا ندارم!\nطرف تو شبکه دو حکومت با الحمدالله و انشالله و اقتصاد مقاومتی مردم پرچم‌دار رو دعوت می‌کنه بیان ماشین بخرن، تو اینستا با دی‌جی و رقص.\nبوی پدیده شاندیز میاد.",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 6,
+      "view_count": 92,
+      "lang": "fa"
+    },
+    {
+      "id": "2118881662415036417",
+      "url": "https://x.com/Nim___a/status/2118881662415036417",
+      "date": "2026-11-07T01:42:09+00:00",
+      "username": "Nim___a",
+      "name": "nimآ",
+      "text": "آقا ما رفتیم اتوپلازا\nکاری به خوب و یا بد بودنش نداریم(خوب بود به نظرم)\nسوالی که من دارم اینه این مجموعه مالکش کیه که اینقدر خرج کردن برای افتتاحیه\nخیلی سرچ کردم ولی به جایی نرسیدم‌",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 53,
+      "lang": "fa"
+    },
+    {
+      "id": "2118860855362138602",
+      "url": "https://x.com/basimlaleh/status/2118860855362138602",
+      "date": "2026-11-07T00:19:29+00:00",
+      "username": "basimlaleh",
+      "name": "Basim Laleh بسیم لاله",
+      "text": "این اتو پلازا کی گندش در میاد خدا میدونه، فقط این دفعه به عنوان خبرنگار یک قدم هم براشون بر نمیدارم",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 2,
+      "view_count": 188,
+      "lang": "fa"
+    },
+    {
+      "id": "2118855824206401876",
+      "url": "https://x.com/sssaraaa92/status/2118855824206401876",
+      "date": "2026-11-06T23:59:29+00:00",
+      "username": "sssaraaa92",
+      "name": "sara",
+      "text": "امشب گول ویدیوهای اتوپلازا رو خوردم و رفتم ببینم چه خبره؛ جز گل، ترافیک و یه موزیک با کیفیت ضبط صوت پیکان، هیچی نصیبم نشد. 😂🤦🏻‍♀️",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 39,
+      "view_count": 481,
+      "lang": "fa"
+    },
+    {
+      "id": "2118829684997632379",
+      "url": "https://x.com/florathelilies/status/2118829684997632379",
+      "date": "2026-11-06T22:15:37+00:00",
+      "username": "florathelilies",
+      "name": "Lilieth 🌺",
+      "text": "اتوپلازا چه کصشریه؟ خجالت نمیکشید واقعا؟فقط کصتون با کونتون بازی میکنه... تو این وضعیت اقاتصادی و بگایی جز ادا اطفار هیچی برای ارائه ندارین !!! حالم بهم میخوره از این قشر مرفه که هیچ عنی براش مهم نیست جز خوشی خودش ایشالا خاک بر سر بشین زودتر",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 50,
+      "lang": "fa"
+    },
+    {
+      "id": "2118810380935860358",
+      "url": "https://x.com/Bahman_Babazade/status/2118810380935860358",
+      "date": "2026-11-06T20:58:55+00:00",
+      "username": "Bahman_Babazade",
+      "name": "Bahman Babazadeh|بهمن بابازاده",
+      "text": "کنسرت رایگان امشب #امید_حاجیلی زیر باران شدید در #اتوپلازا و استقبال جالب توجه هزاران نفر... https://t.co/ZeJU2SSepU",
+      "reply_count": 3,
+      "retweet_count": 0,
+      "like_count": 31,
+      "view_count": 6064,
+      "lang": "fa"
+    },
+    {
+      "id": "2118805704647512187",
+      "url": "https://x.com/hadi2011m/status/2118805704647512187",
+      "date": "2026-11-06T20:40:20+00:00",
+      "username": "hadi2011m",
+      "name": "هادی (خان)",
+      "text": "#اتوپلازا شلوغ و بهم ریخته\nبا پرسنل آموزش ندیده\nبیشتر شبیه راسته فست فود سی تیر بود",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 1,
+      "view_count": 130,
+      "lang": "fa"
+    },
+    {
+      "id": "2118796741697040393",
+      "url": "https://x.com/fazelzd/status/2118796741697040393",
+      "date": "2026-11-06T20:04:43+00:00",
+      "username": "fazelzd",
+      "name": "fazel",
+      "text": "با این چیزی که امشب از اتوپلازا دیدم تا فردا قطعا خبر پلمپش میاد:)",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 69,
+      "lang": "fa"
+    },
+    {
+      "id": "2118793024138342721",
+      "url": "https://x.com/i_1mir/status/2118793024138342721",
+      "date": "2026-11-06T19:49:56+00:00",
+      "username": "i_1mir",
+      "name": "The 1",
+      "text": "امروز رفتیم اتوپلازا فقط برای اینکه ببینیم توش چخبره \nوقتی رسیدم دم ورودی پارکینگ یه نفر اومد گفت ماشینتونو خواستید بیارید داخل که به نمایش بزاریم \nیجورایی خوششون اومد یعنی منم اوکی رو دادم و رفتیم داخل یه جا مشخص بهمون دادن همونجا پارک کنیم \nیکی دو ساعت بعد که همه دور ماشینا (1)",
+      "reply_count": 14,
+      "retweet_count": 0,
+      "like_count": 450,
+      "view_count": 138015,
+      "lang": "fa"
+    },
+    {
+      "id": "2118787954089025716",
+      "url": "https://x.com/Schawyanmehr/status/2118787954089025716",
+      "date": "2026-11-06T19:29:48+00:00",
+      "username": "Schawyanmehr",
+      "name": "shayan",
+      "text": "اتوپلازا رو نمیتونم بگم کصشر بود.\nمتوسط بود.",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 85,
+      "lang": "fa"
+    },
+    {
+      "id": "2118786835707031960",
+      "url": "https://x.com/Paoola111011/status/2118786835707031960",
+      "date": "2026-11-06T19:25:21+00:00",
+      "username": "Paoola111011",
+      "name": "امیر",
+      "text": "امروز اتوپلازا بودم و ماشین هایی که دیدم، قطعا مسیر خریدشون از درس نمی‌گذشت. خب بریم سراغ چ کاری دوزتان؟",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 0,
+      "view_count": 81,
+      "lang": "fa"
+    },
+    {
+      "id": "2118784580249657816",
+      "url": "https://x.com/m06karimi/status/2118784580249657816",
+      "date": "2026-11-06T19:16:23+00:00",
+      "username": "m06karimi",
+      "name": "تــوتــفـرنگــی🍓",
+      "text": "یه دخملللللی بیاد اتو پلازا  بریم فردا🥲",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "like_count": 14,
+      "view_count": 110,
+      "lang": "fa"
+    },
+    {
+      "id": "2118780487250403343",
+      "url": "https://x.com/farzvd_/status/2118780487250403343",
+      "date": "2026-11-06T19:00:07+00:00",
+      "username": "farzvd_",
+      "name": "Far💤ad",
+      "text": "از بچه های توییتر کسی رفته اتو پلازا؟\nاگه رفتید بیاید بگید چطور بود، بریم یا نریم؟",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "like_count": 22,
+      "view_count": 328,
+      "lang": "fa"
+    },
+    {
+      "id": "2118776719502930172",
+      "url": "https://x.com/Itsamirfrh/status/2118776719502930172",
+      "date": "2026-11-06T18:45:09+00:00",
+      "username": "Itsamirfrh",
+      "name": "اَمیرمِیتی",
+      "text": "بخدا که این اتوپلازا هم یه مافیایی چیزی پشتشه انقد که تبلیغشو میکنن",
+      "reply_count": 5,
+      "retweet_count": 0,
+      "like_count": 90,
+      "view_count": 1361,
+      "lang": "fa"
+    },
+    {
+      "id": "2118761723218030657",
+      "url": "https://x.com/m4tinbeigi/status/2118761723218030657",
+      "date": "2026-11-06T17:45:34+00:00",
+      "username": "m4tinbeigi",
+      "name": "Rick Sanchez 🤍 ریک سانچز",
+      "text": "آیا می‌دانستید اتوپلازا برای کانون ایران نوینه؟! https://t.co/zJpDeELm0l",
+      "reply_count": 10,
+      "retweet_count": 0,
+      "like_count": 67,
+      "view_count": 7198,
+      "lang": "fa"
+    },
+    {
       "id": "2118750083571175645",
       "url": "https://x.com/yoda_s5/status/2118750083571175645",
       "date": "2026-11-06T16:59:19+00:00",
@@ -2215,17 +2894,7 @@
       "retweet_count": 0,
       "like_count": 7,
       "view_count": 29,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 1,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۲۰:۲۹",
-      "like_count_fa": "۷",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۹"
+      "lang": "fa"
     },
     {
       "id": "2118746201134711117",
@@ -2238,17 +2907,7 @@
       "retweet_count": 0,
       "like_count": 6,
       "view_count": 69,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 2,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۲۰:۱۳",
-      "like_count_fa": "۶",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶۹"
+      "lang": "fa"
     },
     {
       "id": "2118741892666106046",
@@ -2261,17 +2920,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 22,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 3,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۹:۵۶",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۲"
+      "lang": "fa"
     },
     {
       "id": "2118739575141290142",
@@ -2285,17 +2934,7 @@
       "like_count": 1,
       "view_count": 4,
       "lang": "fa",
-      "in_reply_to": "2118507333668241740",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 4,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۹:۴۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۴"
+      "in_reply_to": "2118507333668241740"
     },
     {
       "id": "2118715270088777789",
@@ -2308,17 +2947,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 53,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 5,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۸:۱۰",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۵۳"
+      "lang": "fa"
     },
     {
       "id": "2118704444942508117",
@@ -2332,17 +2961,7 @@
       "like_count": 1,
       "view_count": 7,
       "lang": "fa",
-      "in_reply_to": "2118684050722291846",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 6,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۷:۲۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۷"
+      "in_reply_to": "2118684050722291846"
     },
     {
       "id": "2118702524463194388",
@@ -2355,17 +2974,7 @@
       "retweet_count": 0,
       "like_count": 13,
       "view_count": 397,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 7,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۷:۲۰",
-      "like_count_fa": "۱۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۹۷"
+      "lang": "fa"
     },
     {
       "id": "2118700564682883513",
@@ -2379,17 +2988,7 @@
       "like_count": 0,
       "view_count": 37,
       "lang": "fa",
-      "in_reply_to": "2118696792174858266",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 8,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۷:۱۲",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۷"
+      "in_reply_to": "2118696792174858266"
     },
     {
       "id": "2118696792174858266",
@@ -2403,17 +3002,7 @@
       "like_count": 1,
       "view_count": 30,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 9,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۵۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۰"
+      "checked_replies": true
     },
     {
       "id": "2118692881816846395",
@@ -2427,17 +3016,7 @@
       "like_count": 0,
       "view_count": 24,
       "lang": "fa",
-      "in_reply_to": "2118692205095223305",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 10,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۴۲",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۴"
+      "in_reply_to": "2118692205095223305"
     },
     {
       "id": "2118692205095223305",
@@ -2452,17 +3031,7 @@
       "view_count": 93,
       "lang": "fa",
       "in_reply_to": "2118692102947152153",
-      "checked_replies": true,
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 11,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۳۹",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۹۳"
+      "checked_replies": true
     },
     {
       "id": "2118692102947152153",
@@ -2476,17 +3045,7 @@
       "like_count": 0,
       "view_count": 100,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 12,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۳۸",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۰۰"
+      "checked_replies": true
     },
     {
       "id": "2118689156662726902",
@@ -2500,17 +3059,7 @@
       "like_count": 48,
       "view_count": 517,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 13,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۲۷",
-      "like_count_fa": "۴۸",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۵۱۷"
+      "checked_replies": true
     },
     {
       "id": "2118687427581665312",
@@ -2523,17 +3072,7 @@
       "retweet_count": 0,
       "like_count": 3,
       "view_count": 43,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 14,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۲۰",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۳"
+      "lang": "fa"
     },
     {
       "id": "2118684050722291846",
@@ -2548,17 +3087,7 @@
       "view_count": 17,
       "lang": "fa",
       "in_reply_to": "2118674355198492834",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 15,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۶:۰۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۷"
+      "checked_replies": true
     },
     {
       "id": "2118674355198492834",
@@ -2572,17 +3101,7 @@
       "like_count": 5,
       "view_count": 357,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 16,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۵:۲۸",
-      "like_count_fa": "۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۵۷"
+      "checked_replies": true
     },
     {
       "id": "2118636005267800079",
@@ -2595,17 +3114,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 44,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 17,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۲:۵۶",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۴"
+      "lang": "fa"
     },
     {
       "id": "2118635596226707926",
@@ -2619,17 +3128,7 @@
       "like_count": 0,
       "view_count": 13,
       "lang": "fa",
-      "in_reply_to": "2118633058131714090",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 18,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۲:۵۴",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۳"
+      "in_reply_to": "2118633058131714090"
     },
     {
       "id": "2118633058131714090",
@@ -2644,17 +3143,7 @@
       "view_count": 29,
       "lang": "fa",
       "in_reply_to": "2118257420954718403",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 19,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۲:۴۴",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۹"
+      "checked_replies": true
     },
     {
       "id": "2118631828110168106",
@@ -2667,17 +3156,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 28,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 20,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۲:۳۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۸"
+      "lang": "fa"
     },
     {
       "id": "2118628820433465616",
@@ -2690,17 +3169,7 @@
       "retweet_count": 0,
       "like_count": 17,
       "view_count": 154,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 21,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۲:۲۷",
-      "like_count_fa": "۱۷",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۵۴"
+      "lang": "fa"
     },
     {
       "id": "2118621198636486832",
@@ -2713,17 +3182,7 @@
       "retweet_count": 0,
       "like_count": 3,
       "view_count": 58,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 22,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۱:۵۷",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۵۸"
+      "lang": "fa"
     },
     {
       "id": "2118601211997729169",
@@ -2736,17 +3195,7 @@
       "retweet_count": 0,
       "like_count": 14,
       "view_count": 341,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 23,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۱۰:۳۷",
-      "like_count_fa": "۱۴",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۴۱"
+      "lang": "fa"
     },
     {
       "id": "2118587302062723082",
@@ -2759,17 +3208,7 @@
       "retweet_count": 0,
       "like_count": 4,
       "view_count": 122,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 24,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۹:۴۲",
-      "like_count_fa": "۴",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۲۲"
+      "lang": "fa"
     },
     {
       "id": "2118507333668241740",
@@ -2784,17 +3223,7 @@
       "view_count": 34,
       "lang": "fa",
       "in_reply_to": "2118455826419703867",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 25,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۴:۲۴",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۴"
+      "checked_replies": true
     },
     {
       "id": "2118482168338886726",
@@ -2807,17 +3236,7 @@
       "retweet_count": 0,
       "like_count": 5,
       "view_count": 223,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 26,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۲:۴۴",
-      "like_count_fa": "۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۲۳"
+      "lang": "fa"
     },
     {
       "id": "2118475720527950214",
@@ -2831,17 +3250,7 @@
       "like_count": 0,
       "view_count": 32,
       "lang": "fa",
-      "in_reply_to": "2118460785747963996",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 27,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۲:۱۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۲"
+      "in_reply_to": "2118460785747963996"
     },
     {
       "id": "2118470199720444281",
@@ -2854,17 +3263,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 35,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 28,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۱:۵۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۵"
+      "lang": "fa"
     },
     {
       "id": "2118460785747963996",
@@ -2879,17 +3278,7 @@
       "view_count": 53,
       "lang": "hi",
       "in_reply_to": "2118455826419703867",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 29,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۱:۱۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۵۳"
+      "checked_replies": true
     },
     {
       "id": "2118457038254514566",
@@ -2902,17 +3291,7 @@
       "retweet_count": 0,
       "like_count": 13,
       "view_count": 304,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 30,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۱:۰۴",
-      "like_count_fa": "۱۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۰۴"
+      "lang": "fa"
     },
     {
       "id": "2118455826419703867",
@@ -2926,17 +3305,7 @@
       "like_count": 24,
       "view_count": 552,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 31,
-      "jalali_date": "۱۵ آبان ۱۴۰۵ - ۰۱:۰۰",
-      "like_count_fa": "۲۴",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۲",
-      "view_count_fa": "۵۵۲"
+      "checked_replies": true
     },
     {
       "id": "2118427890542940613",
@@ -2949,17 +3318,7 @@
       "retweet_count": 0,
       "like_count": 12,
       "view_count": 191,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 32,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۳:۰۹",
-      "like_count_fa": "۱۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۹۱"
+      "lang": "fa"
     },
     {
       "id": "2118424906509467845",
@@ -2973,17 +3332,7 @@
       "like_count": 9,
       "view_count": 369,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 33,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۲:۵۷",
-      "like_count_fa": "۹",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۶۹"
+      "checked_replies": true
     },
     {
       "id": "2118408191427952931",
@@ -2996,17 +3345,7 @@
       "retweet_count": 0,
       "like_count": 11,
       "view_count": 252,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 34,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۱:۵۰",
-      "like_count_fa": "۱۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۵۲"
+      "lang": "fa"
     },
     {
       "id": "2118406926778421295",
@@ -3019,17 +3358,7 @@
       "retweet_count": 0,
       "like_count": 8,
       "view_count": 134,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 35,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۱:۴۵",
-      "like_count_fa": "۸",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۳۴"
+      "lang": "fa"
     },
     {
       "id": "2118401118753477002",
@@ -3042,17 +3371,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 100,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 36,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۱:۲۲",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۰۰"
+      "lang": "fa"
     },
     {
       "id": "2118399982227067314",
@@ -3066,17 +3385,7 @@
       "like_count": 0,
       "view_count": 32,
       "lang": "fa",
-      "in_reply_to": "2118393065366770119",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 37,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۱:۱۸",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۲"
+      "in_reply_to": "2118393065366770119"
     },
     {
       "id": "2118393065366770119",
@@ -3091,17 +3400,7 @@
       "view_count": 25,
       "lang": "fa",
       "in_reply_to": "2118318910311465407",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 38,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۲۰:۵۰",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۵"
+      "checked_replies": true
     },
     {
       "id": "2118377988089667614",
@@ -3114,17 +3413,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 32,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 39,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۹:۵۰",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۲"
+      "lang": "fa"
     },
     {
       "id": "2118376567814361356",
@@ -3138,17 +3427,7 @@
       "like_count": 0,
       "view_count": 14,
       "lang": "fa",
-      "in_reply_to": "2118289071009386740",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 40,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۹:۴۵",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۴"
+      "in_reply_to": "2118289071009386740"
     },
     {
       "id": "2118340973503930682",
@@ -3161,17 +3440,7 @@
       "retweet_count": 0,
       "like_count": 3,
       "view_count": 74,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 41,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۷:۲۳",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۷۴"
+      "lang": "fa"
     },
     {
       "id": "2118333866398122239",
@@ -3184,17 +3453,7 @@
       "retweet_count": 0,
       "like_count": 9,
       "view_count": 177,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 42,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۶:۵۵",
-      "like_count_fa": "۹",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۷۷"
+      "lang": "fa"
     },
     {
       "id": "2118324348515647869",
@@ -3207,17 +3466,7 @@
       "retweet_count": 0,
       "like_count": 7,
       "view_count": 142,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 43,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۶:۱۷",
-      "like_count_fa": "۷",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۴۲"
+      "lang": "fa"
     },
     {
       "id": "2118321968042639809",
@@ -3231,17 +3480,7 @@
       "like_count": 0,
       "view_count": 29,
       "lang": "fa",
-      "in_reply_to": "2118320695100752002",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 44,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۶:۰۸",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۹"
+      "in_reply_to": "2118320695100752002"
     },
     {
       "id": "2118320695100752002",
@@ -3256,17 +3495,7 @@
       "view_count": 35,
       "lang": "fa",
       "in_reply_to": "2118318910311465407",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 45,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۶:۰۳",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۵"
+      "checked_replies": true
     },
     {
       "id": "2118319188091498688",
@@ -3279,17 +3508,7 @@
       "retweet_count": 0,
       "like_count": 13,
       "view_count": 207,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 46,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۵:۵۷",
-      "like_count_fa": "۱۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۰۷"
+      "lang": "fa"
     },
     {
       "id": "2118318910311465407",
@@ -3303,17 +3522,7 @@
       "like_count": 16,
       "view_count": 465,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 47,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۵:۵۵",
-      "like_count_fa": "۱۶",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۲",
-      "view_count_fa": "۴۶۵"
+      "checked_replies": true
     },
     {
       "id": "2118312412579348529",
@@ -3326,17 +3535,7 @@
       "retweet_count": 0,
       "like_count": 15,
       "view_count": 244,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 48,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۵:۳۰",
-      "like_count_fa": "۱۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۴۴"
+      "lang": "fa"
     },
     {
       "id": "2118309494375490003",
@@ -3349,17 +3548,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 127,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 49,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۵:۱۸",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۲۷"
+      "lang": "fa"
     },
     {
       "id": "2118303622660301006",
@@ -3373,17 +3562,7 @@
       "like_count": 1,
       "view_count": 42,
       "lang": "fa",
-      "in_reply_to": "2118283420111368607",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 50,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۴:۵۵",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۲"
+      "in_reply_to": "2118283420111368607"
     },
     {
       "id": "2118300491406782560",
@@ -3396,17 +3575,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 43,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 51,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۴:۴۲",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۳"
+      "lang": "fa"
     },
     {
       "id": "2118291338445643872",
@@ -3419,17 +3588,7 @@
       "retweet_count": 0,
       "like_count": 5,
       "view_count": 71,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 52,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۴:۰۶",
-      "like_count_fa": "۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۷۱"
+      "lang": "fa"
     },
     {
       "id": "2118289071009386740",
@@ -3443,17 +3602,7 @@
       "like_count": 20,
       "view_count": 304,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 53,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۳:۵۷",
-      "like_count_fa": "۲۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۰۴"
+      "checked_replies": true
     },
     {
       "id": "2118286555559186711",
@@ -3466,17 +3615,7 @@
       "retweet_count": 0,
       "like_count": 3,
       "view_count": 91,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 54,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۳:۴۷",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۹۱"
+      "lang": "fa"
     },
     {
       "id": "2118283420111368607",
@@ -3491,17 +3630,7 @@
       "view_count": 47,
       "lang": "fa",
       "in_reply_to": "2118257420954718403",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 55,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۳:۳۴",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۴۷"
+      "checked_replies": true
     },
     {
       "id": "2118279120249557154",
@@ -3515,17 +3644,7 @@
       "like_count": 0,
       "view_count": 100,
       "lang": "fa",
-      "in_reply_to": "2118124001210122272",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 56,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۳:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۰۰"
+      "in_reply_to": "2118124001210122272"
     },
     {
       "id": "2118278838966944096",
@@ -3538,17 +3657,7 @@
       "retweet_count": 0,
       "like_count": 1,
       "view_count": 167,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 57,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۳:۱۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۶۷"
+      "lang": "fa"
     },
     {
       "id": "2118267836565274989",
@@ -3561,17 +3670,7 @@
       "retweet_count": 0,
       "like_count": 1,
       "view_count": 61,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 58,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۲:۳۳",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶۱"
+      "lang": "fa"
     },
     {
       "id": "2118257420954718403",
@@ -3585,17 +3684,7 @@
       "like_count": 75,
       "view_count": 712,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 59,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۱:۵۱",
-      "like_count_fa": "۷۵",
-      "retweet_count_fa": "۱",
-      "reply_count_fa": "۲",
-      "view_count_fa": "۷۱۲"
+      "checked_replies": true
     },
     {
       "id": "2118256475223339478",
@@ -3609,17 +3698,7 @@
       "like_count": 1,
       "view_count": 13,
       "lang": "fa",
-      "in_reply_to": "2118209196730843390",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 60,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۱۱:۴۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۳"
+      "in_reply_to": "2118209196730843390"
     },
     {
       "id": "2118209196730843390",
@@ -3634,17 +3713,7 @@
       "view_count": 37,
       "lang": "fa",
       "in_reply_to": "2118079995910254971",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 61,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۸:۴۰",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۷"
+      "checked_replies": true
     },
     {
       "id": "2118125478427201715",
@@ -3658,17 +3727,7 @@
       "like_count": 3,
       "view_count": 127,
       "lang": "fa",
-      "in_reply_to": "2118124001210122272",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 62,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۳:۰۷",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۲۷"
+      "in_reply_to": "2118124001210122272"
     },
     {
       "id": "2118124001210122272",
@@ -3682,17 +3741,7 @@
       "like_count": 25,
       "view_count": 703,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 63,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۳:۰۱",
-      "like_count_fa": "۲۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۲",
-      "view_count_fa": "۷۰۳"
+      "checked_replies": true
     },
     {
       "id": "2118093074257662069",
@@ -3705,17 +3754,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 174,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 64,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۵۸",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۷۴"
+      "lang": "fa"
     },
     {
       "id": "2118087096963358754",
@@ -3728,17 +3767,7 @@
       "retweet_count": 0,
       "like_count": 20,
       "view_count": 303,
-      "lang": "fa",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 65,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۳۴",
-      "like_count_fa": "۲۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۰۳"
+      "lang": "fa"
     },
     {
       "id": "2118081943426187443",
@@ -3753,17 +3782,7 @@
       "view_count": 142,
       "lang": "fa",
       "in_reply_to": "2118081736756150496",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 66,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۱۴",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۴۲"
+      "checked_replies": true
     },
     {
       "id": "2118081736756150496",
@@ -3777,17 +3796,7 @@
       "like_count": 1,
       "view_count": 202,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 67,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۱۳",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۰۲"
+      "checked_replies": true
     },
     {
       "id": "2118081412062458192",
@@ -3801,17 +3810,7 @@
       "like_count": 1,
       "view_count": 188,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 68,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۱۲",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۸۸"
+      "checked_replies": true
     },
     {
       "id": "2118081227454353836",
@@ -3825,17 +3824,7 @@
       "like_count": 2,
       "view_count": 202,
       "lang": "fa",
-      "in_reply_to": "2118081023426892080",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 69,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۱۱",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۰۲"
+      "in_reply_to": "2118081023426892080"
     },
     {
       "id": "2118081023426892080",
@@ -3850,17 +3839,7 @@
       "view_count": 280,
       "lang": "fa",
       "in_reply_to": "2118080822586593756",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 70,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۱۰",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۸۰"
+      "checked_replies": true
     },
     {
       "id": "2118080822586593756",
@@ -3874,17 +3853,7 @@
       "like_count": 2,
       "view_count": 772,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 71,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۰۹",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۷۷۲"
+      "checked_replies": true
     },
     {
       "id": "2118079995910254971",
@@ -3898,17 +3867,7 @@
       "like_count": 1,
       "view_count": 88,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 72,
-      "jalali_date": "۱۴ آبان ۱۴۰۵ - ۰۰:۰۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۸۸"
+      "checked_replies": true
     },
     {
       "id": "2118056796543746275",
@@ -3921,17 +3880,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 114,
-      "lang": "fa",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 73,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۲۲:۳۴",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۱۴"
+      "lang": "fa"
     },
     {
       "id": "2118050645257396314",
@@ -3945,17 +3894,7 @@
       "like_count": 0,
       "view_count": 23,
       "lang": "fa",
-      "in_reply_to": "2118004651098296477",
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 74,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۲۲:۰۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۳"
+      "in_reply_to": "2118004651098296477"
     },
     {
       "id": "2118041775378170351",
@@ -3968,17 +3907,7 @@
       "retweet_count": 0,
       "like_count": 1,
       "view_count": 106,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 75,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۲۱:۳۴",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۰۶"
+      "lang": "fa"
     },
     {
       "id": "2118004651098296477",
@@ -3993,17 +3922,7 @@
       "view_count": 145,
       "lang": "fa",
       "in_reply_to": "2117912523861262524",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 76,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۹:۰۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۴۵"
+      "checked_replies": true
     },
     {
       "id": "2117962557814198635",
@@ -4016,17 +3935,7 @@
       "retweet_count": 0,
       "like_count": 6,
       "view_count": 471,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 77,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۶:۱۹",
-      "like_count_fa": "۶",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۷۱"
+      "lang": "fa"
     },
     {
       "id": "2117961770031595747",
@@ -4039,17 +3948,7 @@
       "retweet_count": 0,
       "like_count": 3,
       "view_count": 146,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 78,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۶:۱۶",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۴۶"
+      "lang": "fa"
     },
     {
       "id": "2117955104292712585",
@@ -4063,17 +3962,7 @@
       "like_count": 9,
       "view_count": 294,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 79,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۵:۵۰",
-      "like_count_fa": "۹",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۹۴"
+      "checked_replies": true
     },
     {
       "id": "2117931758410969577",
@@ -4087,17 +3976,7 @@
       "like_count": 0,
       "view_count": 90,
       "lang": "fa",
-      "in_reply_to": "2117931754849759501",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 80,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۹۰"
+      "in_reply_to": "2117931754849759501"
     },
     {
       "id": "2117931754849759501",
@@ -4112,17 +3991,7 @@
       "view_count": 106,
       "lang": "fa",
       "in_reply_to": "2117931751326769375",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 81,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۰۶"
+      "checked_replies": true
     },
     {
       "id": "2117931751326769375",
@@ -4136,17 +4005,7 @@
       "like_count": 0,
       "view_count": 156,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 82,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۵۶"
+      "checked_replies": true
     },
     {
       "id": "2117931743168938277",
@@ -4160,17 +4019,7 @@
       "like_count": 0,
       "view_count": 130,
       "lang": "fa",
-      "in_reply_to": "2117931739238576364",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 83,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۳۰"
+      "in_reply_to": "2117931739238576364"
     },
     {
       "id": "2117931739238576364",
@@ -4185,17 +4034,7 @@
       "view_count": 223,
       "lang": "fa",
       "in_reply_to": "2117931734465380698",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 84,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۲۳"
+      "checked_replies": true
     },
     {
       "id": "2117931734465380698",
@@ -4209,17 +4048,7 @@
       "like_count": 7,
       "view_count": 1110,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 85,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۴:۱۷",
-      "like_count_fa": "۷",
-      "retweet_count_fa": "۱",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۱۱۰"
+      "checked_replies": true
     },
     {
       "id": "2117912523861262524",
@@ -4233,17 +4062,7 @@
       "like_count": 2,
       "view_count": 284,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "class_divide",
-      "category_fa": "شکاف طبقاتی و بلاگرها",
-      "category_style": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      "sentiment": "انتقاد فرهنگی و طبقاتی",
-      "row_num": 86,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۱۳:۰۱",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۸۴"
+      "checked_replies": true
     },
     {
       "id": "2117734700022370447",
@@ -4256,17 +4075,7 @@
       "retweet_count": 0,
       "like_count": 1,
       "view_count": 60,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 87,
-      "jalali_date": "۱۳ آبان ۱۴۰۵ - ۰۱:۱۴",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶۰"
+      "lang": "fa"
     },
     {
       "id": "2117519042072158569",
@@ -4279,17 +4088,7 @@
       "retweet_count": 0,
       "like_count": 0,
       "view_count": 44,
-      "lang": "fa",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 88,
-      "jalali_date": "۱۲ آبان ۱۴۰۵ - ۱۰:۵۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۴"
+      "lang": "fa"
     },
     {
       "id": "2117518465154134076",
@@ -4302,17 +4101,7 @@
       "retweet_count": 0,
       "like_count": 23,
       "view_count": 590,
-      "lang": "fa",
-      "category": "laundering",
-      "category_fa": "شائبه پولشویی و رانت",
-      "category_style": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-      "sentiment": "شائبه مالی و شفافیت",
-      "row_num": 89,
-      "jalali_date": "۱۲ آبان ۱۴۰۵ - ۱۰:۵۵",
-      "like_count_fa": "۲۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۵۹۰"
+      "lang": "fa"
     },
     {
       "id": "2117517715413877220",
@@ -4326,17 +4115,7 @@
       "like_count": 1,
       "view_count": 50,
       "lang": "fa",
-      "in_reply_to": "2117483383244701877",
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 90,
-      "jalali_date": "۱۲ آبان ۱۴۰۵ - ۱۰:۵۲",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۵۰"
+      "in_reply_to": "2117483383244701877"
     },
     {
       "id": "2117483383244701877",
@@ -4351,17 +4130,7 @@
       "view_count": 90,
       "lang": "fa",
       "in_reply_to": "2117363257300169018",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 91,
-      "jalali_date": "۱۲ آبان ۱۴۰۵ - ۰۸:۳۵",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۹۰"
+      "checked_replies": true
     },
     {
       "id": "2117363257300169018",
@@ -4375,17 +4144,7 @@
       "like_count": 22,
       "view_count": 611,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "experience",
-      "category_fa": "بازدید و فضای خودرویی",
-      "category_style": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-      "sentiment": "تجربه و حس کنجکاوی",
-      "row_num": 92,
-      "jalali_date": "۱۲ آبان ۱۴۰۵ - ۰۰:۳۸",
-      "like_count_fa": "۲۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۶۱۱"
+      "checked_replies": true
     },
     {
       "id": "2116789352541925596",
@@ -4399,17 +4158,7 @@
       "like_count": 1,
       "view_count": 18,
       "lang": "fa",
-      "in_reply_to": "2116599438630158766",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 93,
-      "jalali_date": "۱۰ آبان ۱۴۰۵ - ۱۰:۳۸",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۸"
+      "in_reply_to": "2116599438630158766"
     },
     {
       "id": "2116599438630158766",
@@ -4424,17 +4173,7 @@
       "view_count": 22,
       "lang": "fa",
       "in_reply_to": "2114479452415746256",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 94,
-      "jalali_date": "۹ آبان ۱۴۰۵ - ۲۲:۰۳",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۲"
+      "checked_replies": true
     },
     {
       "id": "2116486544403865909",
@@ -4448,17 +4187,7 @@
       "like_count": 0,
       "view_count": 11,
       "lang": "fa",
-      "in_reply_to": "2116439678903796011",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 95,
-      "jalali_date": "۹ آبان ۱۴۰۵ - ۱۴:۳۴",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۱"
+      "in_reply_to": "2116439678903796011"
     },
     {
       "id": "2116439678903796011",
@@ -4472,17 +4201,7 @@
       "like_count": 4,
       "view_count": 221,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 96,
-      "jalali_date": "۹ آبان ۱۴۰۵ - ۱۱:۲۸",
-      "like_count_fa": "۴",
-      "retweet_count_fa": "۱",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۲۱"
+      "checked_replies": true
     },
     {
       "id": "2115875471800037390",
@@ -4496,17 +4215,7 @@
       "like_count": 1,
       "view_count": 17,
       "lang": "fa",
-      "in_reply_to": "2115862957213278528",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 97,
-      "jalali_date": "۷ آبان ۱۴۰۵ - ۲۲:۰۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۷"
+      "in_reply_to": "2115862957213278528"
     },
     {
       "id": "2115862957213278528",
@@ -4521,17 +4230,7 @@
       "view_count": 21,
       "lang": "fa",
       "in_reply_to": "2114458030364623237",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 98,
-      "jalali_date": "۷ آبان ۱۴۰۵ - ۲۱:۱۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۱"
+      "checked_replies": true
     },
     {
       "id": "2114484683803361436",
@@ -4545,17 +4244,7 @@
       "like_count": 0,
       "view_count": 19,
       "lang": "fa",
-      "in_reply_to": "2114484184005951684",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 99,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۲:۰۰",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۹"
+      "in_reply_to": "2114484184005951684"
     },
     {
       "id": "2114484184005951684",
@@ -4570,17 +4259,7 @@
       "view_count": 23,
       "lang": "fa",
       "in_reply_to": "2114458030364623237",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 100,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۵۸",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۳"
+      "checked_replies": true
     },
     {
       "id": "2114482003877765545",
@@ -4594,17 +4273,7 @@
       "like_count": 1,
       "view_count": 20,
       "lang": "fa",
-      "in_reply_to": "2114481047849058553",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 101,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۹",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۰"
+      "in_reply_to": "2114481047849058553"
     },
     {
       "id": "2114481952401273307",
@@ -4618,17 +4287,7 @@
       "like_count": 0,
       "view_count": 26,
       "lang": "fa",
-      "in_reply_to": "2114481081525379309",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 102,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۶"
+      "in_reply_to": "2114481081525379309"
     },
     {
       "id": "2114481081525379309",
@@ -4643,17 +4302,7 @@
       "view_count": 27,
       "lang": "fa",
       "in_reply_to": "2114479452415746256",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 103,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۵",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۷"
+      "checked_replies": true
     },
     {
       "id": "2114481047849058553",
@@ -4668,17 +4317,7 @@
       "view_count": 34,
       "lang": "fa",
       "in_reply_to": "2114479452415746256",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 104,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۵",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۴"
+      "checked_replies": true
     },
     {
       "id": "2114480653051854989",
@@ -4692,17 +4331,7 @@
       "like_count": 1,
       "view_count": 24,
       "lang": "qme",
-      "in_reply_to": "2114479452415746256",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 105,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۴",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۴"
+      "in_reply_to": "2114479452415746256"
     },
     {
       "id": "2114479909217403355",
@@ -4716,17 +4345,7 @@
       "like_count": 1,
       "view_count": 21,
       "lang": "fa",
-      "in_reply_to": "2114479759841255495",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 106,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۱",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۱"
+      "in_reply_to": "2114479759841255495"
     },
     {
       "id": "2114479759841255495",
@@ -4741,17 +4360,7 @@
       "view_count": 32,
       "lang": "qme",
       "in_reply_to": "2114458030364623237",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 107,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۴۰",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۳۲"
+      "checked_replies": true
     },
     {
       "id": "2114479452415746256",
@@ -4765,17 +4374,7 @@
       "like_count": 25,
       "view_count": 517,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 108,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۳۹",
-      "like_count_fa": "۲۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۴",
-      "view_count_fa": "۵۱۷"
+      "checked_replies": true
     },
     {
       "id": "2114478437209379130",
@@ -4788,17 +4387,7 @@
       "retweet_count": 0,
       "like_count": 23,
       "view_count": 355,
-      "lang": "fa",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 109,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۳۵",
-      "like_count_fa": "۲۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۵۵"
+      "lang": "fa"
     },
     {
       "id": "2114477580686610872",
@@ -4811,17 +4400,7 @@
       "retweet_count": 0,
       "like_count": 9,
       "view_count": 323,
-      "lang": "fa",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 110,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۳۱",
-      "like_count_fa": "۹",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۲۳"
+      "lang": "fa"
     },
     {
       "id": "2114476124012998752",
@@ -4835,17 +4414,7 @@
       "like_count": 1,
       "view_count": 24,
       "lang": "qme",
-      "in_reply_to": "2114474408026988668",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 111,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۲۶",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۴"
+      "in_reply_to": "2114474408026988668"
     },
     {
       "id": "2114475478044057602",
@@ -4858,17 +4427,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 141,
-      "lang": "fa",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 112,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۲۳",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۴۱"
+      "lang": "fa"
     },
     {
       "id": "2114474408026988668",
@@ -4883,17 +4442,7 @@
       "view_count": 46,
       "lang": "fa",
       "in_reply_to": "2114472210358223250",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 113,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۱۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۴۶"
+      "checked_replies": true
     },
     {
       "id": "2114472210358223250",
@@ -4907,17 +4456,7 @@
       "like_count": 8,
       "view_count": 155,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 114,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۱۰",
-      "like_count_fa": "۸",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۵۵"
+      "checked_replies": true
     },
     {
       "id": "2114469602709086442",
@@ -4931,17 +4470,7 @@
       "like_count": 1,
       "view_count": 30,
       "lang": "fa",
-      "in_reply_to": "2114464002688360654",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 115,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۱:۰۰",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۰"
+      "in_reply_to": "2114464002688360654"
     },
     {
       "id": "2114464719960440893",
@@ -4954,17 +4483,7 @@
       "retweet_count": 0,
       "like_count": 5,
       "view_count": 147,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 116,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۰:۴۰",
-      "like_count_fa": "۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۴۷"
+      "lang": "fa"
     },
     {
       "id": "2114464002688360654",
@@ -4979,17 +4498,7 @@
       "view_count": 25,
       "lang": "fa",
       "in_reply_to": "2114458030364623237",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 117,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۰:۳۷",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۵"
+      "checked_replies": true
     },
     {
       "id": "2114461931427787023",
@@ -5003,17 +4512,7 @@
       "like_count": 3,
       "view_count": 45,
       "lang": "fa",
-      "in_reply_to": "2114457787707314320",
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 118,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۰:۲۹",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۵"
+      "in_reply_to": "2114457787707314320"
     },
     {
       "id": "2114458030364623237",
@@ -5027,17 +4526,7 @@
       "like_count": 51,
       "view_count": 979,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 119,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۰:۱۴",
-      "like_count_fa": "۵۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۴",
-      "view_count_fa": "۹۷۹"
+      "checked_replies": true
     },
     {
       "id": "2114457787707314320",
@@ -5051,17 +4540,7 @@
       "like_count": 5,
       "view_count": 184,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "ads",
-      "category_fa": "تبلیغات ال‌کلاسیکو و سیما",
-      "category_style": "bg-rose-500/10 text-rose-400 border-rose-500/20",
-      "sentiment": "اعتراض به تبلیغات",
-      "row_num": 120,
-      "jalali_date": "۴ آبان ۱۴۰۵ - ۰۰:۱۳",
-      "like_count_fa": "۵",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۱۸۴"
+      "checked_replies": true
     },
     {
       "id": "2113327472645214366",
@@ -5074,17 +4553,7 @@
       "retweet_count": 0,
       "like_count": 4,
       "view_count": 104,
-      "lang": "fa",
-      "category": "general",
-      "category_fa": "دیدگاه عمومی و واکنش",
-      "category_style": "bg-slate-500/10 text-slate-300 border-slate-500/20",
-      "sentiment": "دیدگاه عمومی",
-      "row_num": 121,
-      "jalali_date": "۳۰ مهر ۱۴۰۵ - ۲۱:۲۱",
-      "like_count_fa": "۴",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۰۴"
+      "lang": "fa"
     },
     {
       "id": "2111009893595361565",
@@ -5098,17 +4567,7 @@
       "like_count": 0,
       "view_count": 10,
       "lang": "fa",
-      "in_reply_to": "2104257447942631868",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 122,
-      "jalali_date": "۲۴ مهر ۱۴۰۵ - ۱۱:۵۲",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۰"
+      "in_reply_to": "2104257447942631868"
     },
     {
       "id": "2110810561466507341",
@@ -5122,17 +4581,7 @@
       "like_count": 0,
       "view_count": 2,
       "lang": "qme",
-      "in_reply_to": "2110420342326063566",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 123,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۲۲:۴۰",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲"
+      "in_reply_to": "2110420342326063566"
     },
     {
       "id": "2110810363352535383",
@@ -5146,17 +4595,7 @@
       "like_count": 0,
       "view_count": 3,
       "lang": "qme",
-      "in_reply_to": "2110420342326063566",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 124,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۲۲:۳۹",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳"
+      "in_reply_to": "2110420342326063566"
     },
     {
       "id": "2110810072414658805",
@@ -5170,17 +4609,7 @@
       "like_count": 0,
       "view_count": 6,
       "lang": "qme",
-      "in_reply_to": "2110686806568296662",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 125,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۲۲:۳۸",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶"
+      "in_reply_to": "2110686806568296662"
     },
     {
       "id": "2110796178967208180",
@@ -5194,17 +4623,7 @@
       "like_count": 0,
       "view_count": 16,
       "lang": "qme",
-      "in_reply_to": "2110686806568296662",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 126,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۲۱:۴۳",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۱۶"
+      "in_reply_to": "2110686806568296662"
     },
     {
       "id": "2110686806568296662",
@@ -5218,17 +4637,7 @@
       "like_count": 12,
       "view_count": 245,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 127,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۱۴:۲۸",
-      "like_count_fa": "۱۲",
-      "retweet_count_fa": "۴",
-      "reply_count_fa": "۳",
-      "view_count_fa": "۲۴۵"
+      "checked_replies": true
     },
     {
       "id": "2110686709918916684",
@@ -5241,17 +4650,20 @@
       "retweet_count": 17,
       "like_count": 0,
       "view_count": 6810,
-      "lang": "en",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 128,
-      "jalali_date": "۲۳ مهر ۱۴۰۵ - ۱۴:۲۸",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۱۷",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶۸۱۰"
+      "lang": "en"
+    },
+    {
+      "id": "2110646396676133045",
+      "url": "https://x.com/TehranTimes79/status/2110646396676133045",
+      "date": "2026-10-15T08:18:09+00:00",
+      "username": "TehranTimes79",
+      "name": "Tehran Times",
+      "text": "Introduced to the media on October 12, the complex is planned as a large-scale automotive destination, bringing together vehicle showrooms, specialist facilities, commercial outlets and spaces for activities beyond buying and selling cars.\n@tehranautoplaza",
+      "reply_count": 0,
+      "retweet_count": 17,
+      "like_count": 145,
+      "view_count": 6811,
+      "lang": "en"
     },
     {
       "id": "2110420342326063566",
@@ -5265,17 +4677,7 @@
       "like_count": 6,
       "view_count": 155,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 129,
-      "jalali_date": "۲۲ مهر ۱۴۰۵ - ۲۰:۴۹",
-      "like_count_fa": "۶",
-      "retweet_count_fa": "۲",
-      "reply_count_fa": "۲",
-      "view_count_fa": "۱۵۵"
+      "checked_replies": true
     },
     {
       "id": "2110389177825243397",
@@ -5289,17 +4691,7 @@
       "like_count": 0,
       "view_count": 22,
       "lang": "en",
-      "in_reply_to": "2110379702200258650",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 130,
-      "jalali_date": "۲۲ مهر ۱۴۰۵ - ۱۸:۴۶",
-      "like_count_fa": "۰",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۲"
+      "in_reply_to": "2110379702200258650"
     },
     {
       "id": "2110379702200258650",
@@ -5313,17 +4705,7 @@
       "like_count": 506,
       "view_count": 25607,
       "lang": "en",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 131,
-      "jalali_date": "۲۲ مهر ۱۴۰۵ - ۱۸:۰۸",
-      "like_count_fa": "۵۰۶",
-      "retweet_count_fa": "۷۹",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۲۵۶۰۷"
+      "checked_replies": true
     },
     {
       "id": "2108512174025179365",
@@ -5336,17 +4718,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 65,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 132,
-      "jalali_date": "۱۷ مهر ۱۴۰۵ - ۱۴:۲۷",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۶۵"
+      "lang": "fa"
     },
     {
       "id": "2107144483385065875",
@@ -5359,17 +4731,7 @@
       "retweet_count": 2,
       "like_count": 6,
       "view_count": 228,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 133,
-      "jalali_date": "۱۳ مهر ۱۴۰۵ - ۱۹:۵۲",
-      "like_count_fa": "۶",
-      "retweet_count_fa": "۲",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۲۲۸"
+      "lang": "fa"
     },
     {
       "id": "2106734732801397020",
@@ -5382,17 +4744,7 @@
       "retweet_count": 2,
       "like_count": 3,
       "view_count": 58,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 134,
-      "jalali_date": "۱۲ مهر ۱۴۰۵ - ۱۶:۴۴",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۲",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۵۸"
+      "lang": "fa"
     },
     {
       "id": "2106383242228105383",
@@ -5405,17 +4757,7 @@
       "retweet_count": 0,
       "like_count": 1,
       "view_count": 44,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 135,
-      "jalali_date": "۱۱ مهر ۱۴۰۵ - ۱۷:۲۷",
-      "like_count_fa": "۱",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۴۴"
+      "lang": "fa"
     },
     {
       "id": "2106111774718124038",
@@ -5428,17 +4770,7 @@
       "retweet_count": 0,
       "like_count": 2,
       "view_count": 39,
-      "lang": "fa",
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 136,
-      "jalali_date": "۱۰ مهر ۱۴۰۵ - ۲۳:۲۹",
-      "like_count_fa": "۲",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۰",
-      "view_count_fa": "۳۹"
+      "lang": "fa"
     },
     {
       "id": "2104257447942631868",
@@ -5452,31 +4784,57 @@
       "like_count": 3,
       "view_count": 55,
       "lang": "fa",
-      "checked_replies": true,
-      "category": "official",
-      "category_fa": "اطلاعیه و معرفی رسمی",
-      "category_style": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-      "sentiment": "رسمی",
-      "row_num": 137,
-      "jalali_date": "۵ مهر ۱۴۰۵ - ۲۰:۴۰",
-      "like_count_fa": "۳",
-      "retweet_count_fa": "۰",
-      "reply_count_fa": "۱",
-      "view_count_fa": "۵۵"
+      "checked_replies": true
     }
   ],
   "twitter_stats": {
-    "total_tweets": 137,
+    "total_tweets": 175,
     "negative_sentiment_pct": 79,
     "dominant_topics": [
-      "تبلیغات ال‌کلاسیکو و کادر تلویزیون",
-      "شائبه پولشویی و رانت مالی",
-      "شکاف طبقاتی و نقد بلاگرها"
+      "لغو کنسرت‌ها به علت هشدار قرمز سیل و شرایط جوی",
+      "رونمایی آئودی E5 و تسلا دست‌ساز بنیامین",
+      "شبهات ارزی، شفافیت مالی و رژه خودروهای لوکس",
+      "ترافیک جاده مخصوص، گل‌آلود شدن مسیر و کیفیت برگزاری"
     ],
     "data_source": "X / Twitter Direct API & Public GraphQL",
-    "sync_time": "۱۶ آبان ۱۴۰۵"
+    "sync_time": "۱۸ آبان ۱۴۰۵"
   },
   "unified_posts": [
+    {
+      "code": "DfZUdKkxi3s",
+      "url": "https://www.instagram.com/reel/DfZUdKkxi3s/",
+      "cover_url": "images/posts/DfZUdKkxi3s.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 42.933,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [
+        {
+          "handle": "benyamin_co.ir",
+          "name": "benyamin_co.ir",
+          "avatar": "images/influencers/benyamin_co.ir.jpg"
+        }
+      ],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 161859,
+      "likes_fa": "۱۶۱٬۸۵۹",
+      "plays": 3683066,
+      "plays_fa": "۳٬۶۸۳٬۰۶۶",
+      "comments": 2595,
+      "comments_fa": "۲٬۵۹۵",
+      "first_line": "⁨\tرونمایی از تسلا بنیامین برای اولین بار در شب دوم افتتاحیه اتوپلازا تهران✌🏻",
+      "caption": "⁨\tرونمایی از تسلا بنیامین برای اولین بار در شب دوم افتتاحیه اتوپلازا تهران✌🏻\n\nبنیامین تسلا دست‌ساز خودش رو برای اولین‌بار امشب رونمایی کرد و جمعیتی که با هیجان برای دیدنش اومده بودن🔥\n\n#اتوپلازا_میبینمت✌🏻 \n\n#اتوپلازاتهران #tehranautoplaza⁩",
+      "jalali_date": "1405/08/15",
+      "priority_score": 358987.3,
+      "source_tier": "official_collab",
+      "rank": 1,
+      "rank_fa": "۱"
+    },
     {
       "code": "DfSf11uIrnS",
       "url": "https://www.instagram.com/reel/DfSf11uIrnS/",
@@ -5508,8 +4866,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 319076.964,
       "source_tier": "official_collab",
-      "rank": 1,
-      "rank_fa": "۱"
+      "rank": 2,
+      "rank_fa": "۲"
     },
     {
       "code": "DfQBkfJR8oU",
@@ -5560,8 +4918,8 @@
       "jalali_date": "1405/08/11",
       "priority_score": 98202.38,
       "source_tier": "official_collab",
-      "rank": 2,
-      "rank_fa": "۲"
+      "rank": 3,
+      "rank_fa": "۳"
     },
     {
       "code": "DfSSqXhsdXW",
@@ -5618,8 +4976,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 60775.016,
       "source_tier": "official_collab",
-      "rank": 3,
-      "rank_fa": "۳"
+      "rank": 4,
+      "rank_fa": "۴"
     },
     {
       "code": "DfWiLtHOjAP",
@@ -5644,8 +5002,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 48809.912,
       "source_tier": "official",
-      "rank": 4,
-      "rank_fa": "۴"
+      "rank": 5,
+      "rank_fa": "۵"
     },
     {
       "code": "DfUx2HBR-UD",
@@ -5678,8 +5036,8 @@
       "jalali_date": "1405/08/13",
       "priority_score": 36865.584,
       "source_tier": "official_collab",
-      "rank": 5,
-      "rank_fa": "۵"
+      "rank": 6,
+      "rank_fa": "۶"
     },
     {
       "code": "DfKsHjIgvXK",
@@ -5710,8 +5068,8 @@
       "jalali_date": "1405/08/09",
       "priority_score": 32840.356,
       "source_tier": "official",
-      "rank": 6,
-      "rank_fa": "۶"
+      "rank": 7,
+      "rank_fa": "۷"
     },
     {
       "code": "DfSdtHCsid7",
@@ -5736,8 +5094,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 30714.482,
       "source_tier": "official",
-      "rank": 7,
-      "rank_fa": "۷"
+      "rank": 8,
+      "rank_fa": "۸"
     },
     {
       "code": "DeZwy78Atco",
@@ -5768,8 +5126,66 @@
       "jalali_date": "1405/07/20",
       "priority_score": 28912.71,
       "source_tier": "official",
-      "rank": 8,
-      "rank_fa": "۸"
+      "rank": 9,
+      "rank_fa": "۹"
+    },
+    {
+      "code": "DfaRlg8uQIV",
+      "url": "https://www.instagram.com/reel/DfaRlg8uQIV/",
+      "cover_url": "images/posts/DfaRlg8uQIV.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 63.714,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 8859,
+      "likes_fa": "۸٬۸۵۹",
+      "plays": 260395,
+      "plays_fa": "۲۶۰٬۳۹۵",
+      "comments": 112,
+      "comments_fa": "۱۱۲",
+      "first_line": "⁨\t⁨\tحضور امیرحسین رستمی در شب اول افتتاحیه اتوپلازا تهران🔥",
+      "caption": "⁨\t⁨\tحضور امیرحسین رستمی در شب اول افتتاحیه اتوپلازا تهران🔥\n\nهرروز تا سه‌شنبه ۱۹ آبان، \n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran⁩⁩",
+      "jalali_date": "1405/08/15",
+      "priority_score": 22438.75,
+      "source_tier": "official",
+      "rank": 10,
+      "rank_fa": "۱۰"
+    },
+    {
+      "code": "DfZSd5jOp8-",
+      "url": "https://www.instagram.com/reel/DfZSd5jOp8-/",
+      "cover_url": "images/posts/DfZSd5jOp8-.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 22.64,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 8838,
+      "likes_fa": "۸٬۸۳۸",
+      "plays": 255586,
+      "plays_fa": "۲۵۵٬۵۸۶",
+      "comments": 140,
+      "comments_fa": "۱۴۰",
+      "first_line": "افتتاحیه اتوپلازا تهران، ۷ شب، ۷ برنامه جذاب برای همه✌🏻🔥",
+      "caption": "افتتاحیه اتوپلازا تهران، ۷ شب، ۷ برنامه جذاب برای همه✌🏻🔥\n\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran",
+      "jalali_date": "1405/08/15",
+      "priority_score": 22317.3,
+      "source_tier": "official",
+      "rank": 11,
+      "rank_fa": "۱۱"
     },
     {
       "code": "DfUjmPCg2n3",
@@ -5794,8 +5210,8 @@
       "jalali_date": "1405/08/13",
       "priority_score": 17346.114,
       "source_tier": "official",
-      "rank": 9,
-      "rank_fa": "۹"
+      "rank": 12,
+      "rank_fa": "۱۲"
     },
     {
       "code": "Degvs76Aypl",
@@ -5828,8 +5244,8 @@
       "jalali_date": "1405/07/23",
       "priority_score": 15794.31,
       "source_tier": "official_collab",
-      "rank": 10,
-      "rank_fa": "۱۰"
+      "rank": 13,
+      "rank_fa": "۱۳"
     },
     {
       "code": "DetcTjRtcxd",
@@ -5862,8 +5278,8 @@
       "jalali_date": "1405/07/28",
       "priority_score": 15729.598,
       "source_tier": "official_collab",
-      "rank": 11,
-      "rank_fa": "۱۱"
+      "rank": 14,
+      "rank_fa": "۱۴"
     },
     {
       "code": "DfZHEAAFSmY",
@@ -5891,8 +5307,66 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 15411.5,
       "source_tier": "influencer_hashtag",
-      "rank": 12,
-      "rank_fa": "۱۲"
+      "rank": 15,
+      "rank_fa": "۱۵"
+    },
+    {
+      "code": "DfZW6BLhu-J",
+      "url": "https://www.instagram.com/reel/DfZW6BLhu-J/",
+      "cover_url": "images/posts/DfZW6BLhu-J.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 12.0,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 5315,
+      "likes_fa": "۵٬۳۱۵",
+      "plays": 191656,
+      "plays_fa": "۱۹۱٬۶۵۶",
+      "comments": 69,
+      "comments_fa": "۶۹",
+      "first_line": "⁨\t⁨\tخلاصه‌ای از برنامه‌های شب دوم افتتاحیه اتوپلازا تهران🔥",
+      "caption": "⁨\t⁨\tخلاصه‌ای از برنامه‌های شب دوم افتتاحیه اتوپلازا تهران🔥\n\nهرشب تا ۱۹ ابان\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran⁩⁩",
+      "jalali_date": "1405/08/15",
+      "priority_score": 15242.8,
+      "source_tier": "official",
+      "rank": 16,
+      "rank_fa": "۱۶"
+    },
+    {
+      "code": "DfcKoDaxgOU",
+      "url": "https://www.instagram.com/reel/DfcKoDaxgOU/",
+      "cover_url": "images/posts/DfcKoDaxgOU.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 52.243,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 6803,
+      "likes_fa": "۶٬۸۰۳",
+      "plays": 121926,
+      "plays_fa": "۱۲۱٬۹۲۶",
+      "comments": 61,
+      "comments_fa": "۶۱",
+      "first_line": "⁨\t⁨\tکنسرت بدون ورودی رضا صادقی عزیز در شب دوم افتتاحیه اتوپلازا تهران✨",
+      "caption": "⁨\t⁨\tکنسرت بدون ورودی رضا صادقی عزیز در شب دوم افتتاحیه اتوپلازا تهران✨\n\nدر هوای بارونی، و صدای زیبا رضا صادقی لحظات رویایی‌ای باهم سپری کردیم.\n\n برنامه‌های افتتاحیه بزرگ اتوپلازا تهران، کنسرت و اجرای‌دی‌جی‌ها، در روزهای شنبه تا سه‌شنبه به دلیل شرایط نامساعد جوی لغو شدند؛\nاما شما ‌همچنان می‌تونید از مجموعه بازدید کنید و از شرایط ویژه فروش با تخفیف به مناسبت افتتاحیه تا تاریخ ۱۹ آبان استفاده کنید.✨\n\nبازدید از مجموعه اتوپلازا تهران برای عموم آزاد و رایگان هست🔥✌🏻\n\n#اتوپلازا_میبینمت✌🏻\n\n#اتوپلازاتهران #tehranautoplaza⁩⁩",
+      "jalali_date": "1405/08/16",
+      "priority_score": 13204.3,
+      "source_tier": "official",
+      "rank": 17,
+      "rank_fa": "۱۷"
     },
     {
       "code": "DewSke1g2vs",
@@ -5917,8 +5391,37 @@
       "jalali_date": "1405/07/29",
       "priority_score": 11920.61,
       "source_tier": "official",
-      "rank": 13,
-      "rank_fa": "۱۳"
+      "rank": 18,
+      "rank_fa": "۱۸"
+    },
+    {
+      "code": "DfZHT6BgCFS",
+      "url": "https://www.instagram.com/reel/DfZHT6BgCFS/",
+      "cover_url": "images/posts/DfZHT6BgCFS.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 27.281,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 2319,
+      "likes_fa": "۲٬۳۱۹",
+      "plays": 147027,
+      "plays_fa": "۱۴۷٬۰۲۷",
+      "comments": 114,
+      "comments_fa": "۱۱۴",
+      "first_line": "⁨\t⁨\t⁨\tاجرای امید حاجیلی در اتوپلازا تهران، جمعه ۱۵ آبان✌🏻🔥",
+      "caption": "⁨\t⁨\t⁨\tاجرای امید حاجیلی در اتوپلازا تهران، جمعه ۱۵ آبان✌🏻🔥\n\nشرکت در برنامه‌های افتتاحیه و کنسرت‌ها برای عموم آزاد و رایگانه✨\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج (غرب به شرق)\nهرروز از ۱۱ صبح تا ۱۱ شب\n\n#اتوپلازا_میبینمت✌🏻\n\n#اتوپلازاتهران #tehranautoplaza⁩⁩⁩",
+      "jalali_date": "1405/08/15",
+      "priority_score": 10240.35,
+      "source_tier": "official",
+      "rank": 19,
+      "rank_fa": "۱۹"
     },
     {
       "code": "DfSP2ozDYt3",
@@ -5943,8 +5446,37 @@
       "jalali_date": "1405/08/12",
       "priority_score": 8758.5,
       "source_tier": "official",
-      "rank": 14,
-      "rank_fa": "۱۴"
+      "rank": 20,
+      "rank_fa": "۲۰"
+    },
+    {
+      "code": "DfaOZ8qvMmB",
+      "url": "https://www.instagram.com/reel/DfaOZ8qvMmB/",
+      "cover_url": "images/posts/DfaOZ8qvMmB.jpg",
+      "media_type": "Reel / Video",
+      "is_reel": true,
+      "duration_sec": 24.433,
+      "author_handle": "tehranautoplaza",
+      "author_name": "اتو پلازا تهران",
+      "author_avatar": "images/influencers/tehranautoplaza.jpg",
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza",
+        "اتوپلازا"
+      ],
+      "likes": 2885,
+      "likes_fa": "۲٬۸۸۵",
+      "plays": 110701,
+      "plays_fa": "۱۱۰٬۷۰۱",
+      "comments": 58,
+      "comments_fa": "۵۸",
+      "first_line": "از روز سوم افتتاحیه اتوپلازا تهران✌🏻🔥",
+      "caption": "از روز سوم افتتاحیه اتوپلازا تهران✌🏻🔥\n\nتا سه‌شنبه ۱۹ آبان، هرروز از ۱۱ صبح تا ۱۱ شب با:\n🔻️️️️️️کنسرت رایگان بدون ورودی\n🔻️️️️️️اجرای موزیک توسط دی‌جی‌ها\n🔻️️️️️️حضور چهره‌‌های سرشناس\n🔻️️️️️️شرایط ویژه برای خرید خودرو، +۲۰۰ میلیون‌ تومان تخفیف در هر خرید\n\nشرکت در مراسم افتتاحیه برای عموم آزاد و بدون ورودی✌️\n\n📍کیلومتر ۱۰ جاده مخصوص تهران کرج(غرب به شرق)\nلوکیشن در هایلایت‌ها هست\n\n#اتوپلازا_میبینمت✌️\n\n#اتوپلازاتهران #autoplazatehran",
+      "jalali_date": "1405/08/15",
+      "priority_score": 8710.05,
+      "source_tier": "official",
+      "rank": 21,
+      "rank_fa": "۲۱"
     },
     {
       "code": "DfWquX9OeNE",
@@ -5969,8 +5501,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 7445.112,
       "source_tier": "official",
-      "rank": 15,
-      "rank_fa": "۱۵"
+      "rank": 22,
+      "rank_fa": "۲۲"
     },
     {
       "code": "DecdltIgV-L",
@@ -5995,8 +5527,8 @@
       "jalali_date": "1405/07/21",
       "priority_score": 7148.604,
       "source_tier": "official",
-      "rank": 16,
-      "rank_fa": "۱۶"
+      "rank": 23,
+      "rank_fa": "۲۳"
     },
     {
       "code": "DfWjmHAjk2k",
@@ -6021,8 +5553,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 7075.5,
       "source_tier": "official",
-      "rank": 17,
-      "rank_fa": "۱۷"
+      "rank": 24,
+      "rank_fa": "۲۴"
     },
     {
       "code": "DfXWIF3R5om",
@@ -6047,8 +5579,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 5205.71,
       "source_tier": "official",
-      "rank": 18,
-      "rank_fa": "۱۸"
+      "rank": 25,
+      "rank_fa": "۲۵"
     },
     {
       "code": "CsUB9RqIyjZ",
@@ -6075,8 +5607,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 5158.5,
       "source_tier": "influencer_hashtag",
-      "rank": 19,
-      "rank_fa": "۱۹"
+      "rank": 26,
+      "rank_fa": "۲۶"
     },
     {
       "code": "DfXZZqEx0Tj",
@@ -6101,8 +5633,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 4851.554,
       "source_tier": "official",
-      "rank": 20,
-      "rank_fa": "۲۰"
+      "rank": 27,
+      "rank_fa": "۲۷"
     },
     {
       "code": "DfWkE9TOmWe",
@@ -6127,8 +5659,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 4362.156,
       "source_tier": "official",
-      "rank": 21,
-      "rank_fa": "۲۱"
+      "rank": 28,
+      "rank_fa": "۲۸"
     },
     {
       "code": "DfWz_ZQpng5",
@@ -6153,8 +5685,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 3360.652,
       "source_tier": "official",
-      "rank": 22,
-      "rank_fa": "۲۲"
+      "rank": 29,
+      "rank_fa": "۲۹"
     },
     {
       "code": "DfP1sECJHhu",
@@ -6179,8 +5711,8 @@
       "jalali_date": "1405/08/11",
       "priority_score": 3228.058,
       "source_tier": "official",
-      "rank": 23,
-      "rank_fa": "۲۳"
+      "rank": 30,
+      "rank_fa": "۳۰"
     },
     {
       "code": "DfS0uHWg12Y",
@@ -6205,8 +5737,36 @@
       "jalali_date": "1405/08/13",
       "priority_score": 2961.578,
       "source_tier": "official",
-      "rank": 24,
-      "rank_fa": "۲۴"
+      "rank": 31,
+      "rank_fa": "۳۱"
+    },
+    {
+      "code": "Dfb9DBojcjD",
+      "url": "https://www.instagram.com/p/Dfb9DBojcjD/",
+      "cover_url": "images/posts/Dfb9DBojcjD.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "machine.magazine",
+      "author_name": "مجله ماشین",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 1575,
+      "likes_fa": "۱٬۵۷۵",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 158,
+      "comments_fa": "۱۵۸",
+      "first_line": "⁨\tمطالبه شفاف‌سازی واردات خودروهای لوکس",
+      "caption": "⁨\tمطالبه شفاف‌سازی واردات خودروهای لوکس\n\nفعالان مستقل صنعت خودرو با انتقاد از برگزاری فستیوال‌های پرهزینه و نمایش خودروهای میلیاردی در مجموعه اتوپلازا، این اقدامات را در تضاد با شرایط اقتصادی و معیشتی جامعه دانسته‌اند.\n\nدر این انتقادها، سه مطالبه اصلی مطرح شده است: شفاف‌سازی منشأ ارز واردات خودروها از سوی بانک مرکزی و وزارت صمت، بررسی سازوکار قیمت‌گذاری و معاملات از سوی نهادهای نظارتی و قضایی و روشن شدن وضعیت مجوزها و تعهدات خدمات پس از فروش.\n\nمنتقدان معتقدند سکوت نهادهای مسئول می‌تواند این تصور را تقویت کند که محدودیت‌های ارزی و وارداتی برای همه فعالان بازار یکسان اجرا نمی‌شود.\n\nمنبع:تسنیم\n\n#اتوپلازا #واردات_خودرو #خودروهای_لوکس #مجله_ماشین⁩",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 2365.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 32,
+      "rank_fa": "۳۲"
     },
     {
       "code": "DfRc_arA4ER",
@@ -6231,8 +5791,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 2117.372,
       "source_tier": "official",
-      "rank": 25,
-      "rank_fa": "۲۵"
+      "rank": 33,
+      "rank_fa": "۳۳"
     },
     {
       "code": "DfXUWWURD_J",
@@ -6257,8 +5817,8 @@
       "jalali_date": "1405/08/14",
       "priority_score": 1998.97,
       "source_tier": "official",
-      "rank": 26,
-      "rank_fa": "۲۶"
+      "rank": 34,
+      "rank_fa": "۳۴"
     },
     {
       "code": "DfALvIpJhex",
@@ -6283,8 +5843,8 @@
       "jalali_date": "1405/08/05",
       "priority_score": 1997.804,
       "source_tier": "official",
-      "rank": 27,
-      "rank_fa": "۲۷"
+      "rank": 35,
+      "rank_fa": "۳۵"
     },
     {
       "code": "DemKPYJAnIH",
@@ -6309,8 +5869,8 @@
       "jalali_date": "1405/07/25",
       "priority_score": 1965.046,
       "source_tier": "official",
-      "rank": 28,
-      "rank_fa": "۲۸"
+      "rank": 36,
+      "rank_fa": "۳۶"
     },
     {
       "code": "DfSlUSmpXQI",
@@ -6335,8 +5895,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 1901.856,
       "source_tier": "official",
-      "rank": 29,
-      "rank_fa": "۲۹"
+      "rank": 37,
+      "rank_fa": "۳۷"
     },
     {
       "code": "DfSi8Q5CfYh",
@@ -6363,8 +5923,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 1867.5,
       "source_tier": "influencer_hashtag",
-      "rank": 30,
-      "rank_fa": "۳۰"
+      "rank": 38,
+      "rank_fa": "۳۸"
     },
     {
       "code": "DfUi_KcRcTD",
@@ -6389,8 +5949,8 @@
       "jalali_date": "1405/08/13",
       "priority_score": 1693.628,
       "source_tier": "official",
-      "rank": 31,
-      "rank_fa": "۳۱"
+      "rank": 39,
+      "rank_fa": "۳۹"
     },
     {
       "code": "DeYsBRwAuBG",
@@ -6415,8 +5975,8 @@
       "jalali_date": "1405/07/20",
       "priority_score": 1646.372,
       "source_tier": "official",
-      "rank": 32,
-      "rank_fa": "۳۲"
+      "rank": 40,
+      "rank_fa": "۴۰"
     },
     {
       "code": "DfPBCVegL-U",
@@ -6441,8 +6001,8 @@
       "jalali_date": "1405/08/11",
       "priority_score": 1600.988,
       "source_tier": "official",
-      "rank": 33,
-      "rank_fa": "۳۳"
+      "rank": 41,
+      "rank_fa": "۴۱"
     },
     {
       "code": "DePGLGsgL4V",
@@ -6467,8 +6027,8 @@
       "jalali_date": "1405/07/16",
       "priority_score": 1389.09,
       "source_tier": "official",
-      "rank": 34,
-      "rank_fa": "۳۴"
+      "rank": 42,
+      "rank_fa": "۴۲"
     },
     {
       "code": "CpKT2DQImrg",
@@ -6495,8 +6055,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 1386.0,
       "source_tier": "influencer_hashtag",
-      "rank": 35,
-      "rank_fa": "۳۵"
+      "rank": 43,
+      "rank_fa": "۴۳"
     },
     {
       "code": "DfKTaMPgvGz",
@@ -6521,8 +6081,8 @@
       "jalali_date": "1405/08/09",
       "priority_score": 1360.5,
       "source_tier": "official",
-      "rank": 36,
-      "rank_fa": "۳۶"
+      "rank": 44,
+      "rank_fa": "۴۴"
     },
     {
       "code": "DgXd7YvpRm4",
@@ -6547,8 +6107,8 @@
       "jalali_date": "1405/08/11",
       "priority_score": 1335.226,
       "source_tier": "official",
-      "rank": 37,
-      "rank_fa": "۳۷"
+      "rank": 45,
+      "rank_fa": "۴۵"
     },
     {
       "code": "DfMLoOPJl58",
@@ -6573,8 +6133,8 @@
       "jalali_date": "1405/08/10",
       "priority_score": 1302.426,
       "source_tier": "official",
-      "rank": 38,
-      "rank_fa": "۳۸"
+      "rank": 46,
+      "rank_fa": "۴۶"
     },
     {
       "code": "DeEia_8AOJ2",
@@ -6599,8 +6159,8 @@
       "jalali_date": "1405/07/12",
       "priority_score": 1290.27,
       "source_tier": "official",
-      "rank": 39,
-      "rank_fa": "۳۹"
+      "rank": 47,
+      "rank_fa": "۴۷"
     },
     {
       "code": "DeCJOl8ARgY",
@@ -6625,8 +6185,8 @@
       "jalali_date": "1405/07/11",
       "priority_score": 1288.652,
       "source_tier": "official",
-      "rank": 40,
-      "rank_fa": "۴۰"
+      "rank": 48,
+      "rank_fa": "۴۸"
     },
     {
       "code": "Deo-zjCAzEW",
@@ -6651,8 +6211,8 @@
       "jalali_date": "1405/07/26",
       "priority_score": 1230.324,
       "source_tier": "official",
-      "rank": 41,
-      "rank_fa": "۴۱"
+      "rank": 49,
+      "rank_fa": "۴۹"
     },
     {
       "code": "DfSVRRjJQy5",
@@ -6677,8 +6237,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 1210.586,
       "source_tier": "official",
-      "rank": 42,
-      "rank_fa": "۴۲"
+      "rank": 50,
+      "rank_fa": "۵۰"
     },
     {
       "code": "De7IZ1JtOMm",
@@ -6703,8 +6263,8 @@
       "jalali_date": "1405/08/03",
       "priority_score": 1186.824,
       "source_tier": "official",
-      "rank": 43,
-      "rank_fa": "۴۳"
+      "rank": 51,
+      "rank_fa": "۵۱"
     },
     {
       "code": "De_7-StDj19",
@@ -6732,8 +6292,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 1162.5,
       "source_tier": "influencer_hashtag",
-      "rank": 44,
-      "rank_fa": "۴۴"
+      "rank": 52,
+      "rank_fa": "۵۲"
     },
     {
       "code": "DfRPjUJJUK5",
@@ -6758,8 +6318,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 1137.158,
       "source_tier": "official",
-      "rank": 45,
-      "rank_fa": "۴۵"
+      "rank": 53,
+      "rank_fa": "۵۳"
     },
     {
       "code": "De66GjSp97I",
@@ -6784,8 +6344,8 @@
       "jalali_date": "1405/08/03",
       "priority_score": 1111.656,
       "source_tier": "official",
-      "rank": 46,
-      "rank_fa": "۴۶"
+      "rank": 54,
+      "rank_fa": "۵۴"
     },
     {
       "code": "DfCjaUvJ5by",
@@ -6810,8 +6370,8 @@
       "jalali_date": "1405/08/06",
       "priority_score": 1103.658,
       "source_tier": "official",
-      "rank": 47,
-      "rank_fa": "۴۷"
+      "rank": 55,
+      "rank_fa": "۵۵"
     },
     {
       "code": "De9i6P0At93",
@@ -6836,8 +6396,8 @@
       "jalali_date": "1405/08/04",
       "priority_score": 1098.12,
       "source_tier": "official",
-      "rank": 48,
-      "rank_fa": "۴۸"
+      "rank": 56,
+      "rank_fa": "۵۶"
     },
     {
       "code": "De4VPELtQr6",
@@ -6862,8 +6422,8 @@
       "jalali_date": "1405/08/02",
       "priority_score": 1053.9479999999999,
       "source_tier": "official",
-      "rank": 49,
-      "rank_fa": "۴۹"
+      "rank": 57,
+      "rank_fa": "۵۷"
     },
     {
       "code": "DeRNS41Ao1v",
@@ -6888,8 +6448,8 @@
       "jalali_date": "1405/07/17",
       "priority_score": 1032.69,
       "source_tier": "official",
-      "rank": 50,
-      "rank_fa": "۵۰"
+      "rank": 58,
+      "rank_fa": "۵۸"
     },
     {
       "code": "DecLXMQAaa1",
@@ -6914,8 +6474,8 @@
       "jalali_date": "1405/07/21",
       "priority_score": 1010.242,
       "source_tier": "official",
-      "rank": 51,
-      "rank_fa": "۵۱"
+      "rank": 59,
+      "rank_fa": "۵۹"
     },
     {
       "code": "DeUyaC9gB2F",
@@ -6940,8 +6500,8 @@
       "jalali_date": "1405/07/18",
       "priority_score": 1000.904,
       "source_tier": "official",
-      "rank": 52,
-      "rank_fa": "۵۲"
+      "rank": 60,
+      "rank_fa": "۶۰"
     },
     {
       "code": "DeMhEHGgHbq",
@@ -6966,8 +6526,8 @@
       "jalali_date": "1405/07/15",
       "priority_score": 985.376,
       "source_tier": "official",
-      "rank": 53,
-      "rank_fa": "۵۳"
+      "rank": 61,
+      "rank_fa": "۶۱"
     },
     {
       "code": "DelbnvPlxKK",
@@ -6994,8 +6554,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 903.0,
       "source_tier": "influencer_hashtag",
-      "rank": 54,
-      "rank_fa": "۵۴"
+      "rank": 62,
+      "rank_fa": "۶۲"
     },
     {
       "code": "DfR4weAJq-5",
@@ -7020,8 +6580,8 @@
       "jalali_date": "1405/08/12",
       "priority_score": 902.262,
       "source_tier": "official",
-      "rank": 55,
-      "rank_fa": "۵۵"
+      "rank": 63,
+      "rank_fa": "۶۳"
     },
     {
       "code": "DeHnbmTgvDC",
@@ -7046,8 +6606,8 @@
       "jalali_date": "1405/07/13",
       "priority_score": 845.192,
       "source_tier": "official",
-      "rank": 56,
-      "rank_fa": "۵۶"
+      "rank": 64,
+      "rank_fa": "۶۴"
     },
     {
       "code": "DeKQEOxA4tX",
@@ -7072,8 +6632,8 @@
       "jalali_date": "1405/07/14",
       "priority_score": 823.728,
       "source_tier": "official",
-      "rank": 57,
-      "rank_fa": "۵۷"
+      "rank": 65,
+      "rank_fa": "۶۵"
     },
     {
       "code": "DeeyGdnged7",
@@ -7098,8 +6658,8 @@
       "jalali_date": "1405/07/22",
       "priority_score": 819.622,
       "source_tier": "official",
-      "rank": 58,
-      "rank_fa": "۵۸"
+      "rank": 66,
+      "rank_fa": "۶۶"
     },
     {
       "code": "Dd6gANsghPW",
@@ -7124,8 +6684,8 @@
       "jalali_date": "1405/07/08",
       "priority_score": 767.98,
       "source_tier": "official",
-      "rank": 59,
-      "rank_fa": "۵۹"
+      "rank": 67,
+      "rank_fa": "۶۷"
     },
     {
       "code": "DfX6i1Mkcny",
@@ -7152,8 +6712,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 708.0,
       "source_tier": "influencer_hashtag",
-      "rank": 60,
-      "rank_fa": "۶۰"
+      "rank": 68,
+      "rank_fa": "۶۸"
     },
     {
       "code": "DdzGCQHAVVK",
@@ -7178,8 +6738,8 @@
       "jalali_date": "1405/07/05",
       "priority_score": 678.05,
       "source_tier": "official",
-      "rank": 61,
-      "rank_fa": "۶۱"
+      "rank": 69,
+      "rank_fa": "۶۹"
     },
     {
       "code": "DeATj1JAJgW",
@@ -7204,8 +6764,64 @@
       "jalali_date": "1405/07/10",
       "priority_score": 657.0,
       "source_tier": "official",
-      "rank": 62,
-      "rank_fa": "۶۲"
+      "rank": 70,
+      "rank_fa": "۷۰"
+    },
+    {
+      "code": "Dfcqq_1EVpe",
+      "url": "https://www.instagram.com/p/Dfcqq_1EVpe/",
+      "cover_url": "images/posts/Dfcqq_1EVpe.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "arya_ahmadiian",
+      "author_name": "arya_ahmadiian",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 134,
+      "likes_fa": "۱۳۴",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 63,
+      "comments_fa": "۶۳",
+      "first_line": "اصالت و چک کن 🪙🎞️",
+      "caption": "اصالت و چک کن 🪙🎞️\n#oldmoney #اتوپلازا #کلاسیک #ماشین_لوکس",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 449.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 71,
+      "rank_fa": "۷۱"
+    },
+    {
+      "code": "DfbrtVfFGbF",
+      "url": "https://www.instagram.com/p/DfbrtVfFGbF/",
+      "cover_url": "images/posts/DfbrtVfFGbF.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "haj.omidwm",
+      "author_name": "𝖔𝖒𝖎𝖉 𝕬𝖐𝖇𝖆𝖗𝖎",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 127,
+      "likes_fa": "۱۲۷",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 57,
+      "comments_fa": "۵۷",
+      "first_line": "کسی ک با زخم رشد کرده؛از نیش آدم بی ذات نمیترسه🩸🖤",
+      "caption": "کسی ک با زخم رشد کرده؛از نیش آدم بی ذات نمیترسه🩸🖤\n#اتوپلازا",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 412.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 72,
+      "rank_fa": "۷۲"
     },
     {
       "code": "De7nky0NqEn",
@@ -7232,8 +6848,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 364.5,
       "source_tier": "influencer_hashtag",
-      "rank": 63,
-      "rank_fa": "۶۳"
+      "rank": 73,
+      "rank_fa": "۷۳"
     },
     {
       "code": "DeZkPCLiJLd",
@@ -7261,8 +6877,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 331.5,
       "source_tier": "influencer_hashtag",
-      "rank": 64,
-      "rank_fa": "۶۴"
+      "rank": 74,
+      "rank_fa": "۷۴"
+    },
+    {
+      "code": "Dfc77T2kTSc",
+      "url": "https://www.instagram.com/p/Dfc77T2kTSc/",
+      "cover_url": "images/posts/Dfc77T2kTSc.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "sanaznaderiiii",
+      "author_name": "sanaznaderiiii",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 92,
+      "likes_fa": "۹۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 47,
+      "comments_fa": "۴۷",
+      "first_line": "اتـوپلازا 🚘",
+      "caption": "اتـوپلازا 🚘\n\n#عکس #عکاسی #اتوپلازا #تهران#اکسپلور_اینستاگرام",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 327.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 75,
+      "rank_fa": "۷۵"
+    },
+    {
+      "code": "DdEHAIZu-nM",
+      "url": "https://www.instagram.com/p/DdEHAIZu-nM/",
+      "cover_url": "images/posts/DdEHAIZu-nM.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "mersad._.pv128",
+      "author_name": "Amir",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 156,
+      "likes_fa": "۱۵۶",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 33,
+      "comments_fa": "۳۳",
+      "first_line": "هرکی ازت پرسید گفت تو فکر می کنی کی هستی بهش بگو من دقیقا همون کسی هستم که تو آرزوشو داشتی بشی",
+      "caption": "هرکی ازت پرسید گفت تو فکر می کنی کی هستی بهش بگو من دقیقا همون کسی هستم که تو آرزوشو داشتی بشی \nولی نشدی من دقیقا همونم...\n🤟🔥:)\n#اتوپلازا\n#ایران\n#هالووین\n#تهران\n#اکسپلور",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 321.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 76,
+      "rank_fa": "۷۶"
     },
     {
       "code": "DfYQiFSCCMH",
@@ -7289,8 +6961,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 300.0,
       "source_tier": "influencer_hashtag",
-      "rank": 65,
-      "rank_fa": "۶۵"
+      "rank": 77,
+      "rank_fa": "۷۷"
     },
     {
       "code": "DfXhhYYjBNs",
@@ -7317,8 +6989,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 298.5,
       "source_tier": "influencer_hashtag",
-      "rank": 66,
-      "rank_fa": "۶۶"
+      "rank": 78,
+      "rank_fa": "۷۸"
+    },
+    {
+      "code": "DfcnvfzAB3I",
+      "url": "https://www.instagram.com/p/DfcnvfzAB3I/",
+      "cover_url": "images/posts/DfcnvfzAB3I.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "novin_nama021",
+      "author_name": "Novin_nama",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "tehranautoplaza"
+      ],
+      "likes": 138,
+      "likes_fa": "۱۳۸",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 25,
+      "comments_fa": "۲۵",
+      "first_line": "⁨\tخدا نمیذاره داستان آدمی که قلب پاکی داره بد تموم بشه نگران نباش💎",
+      "caption": "⁨\tخدا نمیذاره داستان آدمی که قلب پاکی داره بد تموم بشه نگران نباش💎\n\n#viralreelsvideo❤️ #پلازا #tehranautoplaza⁩#tehran#ماشینبازان_تهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 263.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 79,
+      "rank_fa": "۷۹"
+    },
+    {
+      "code": "DfaShVRiM4l",
+      "url": "https://www.instagram.com/p/DfaShVRiM4l/",
+      "cover_url": "images/posts/DfaShVRiM4l.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "taha_rasoulzadeh0056",
+      "author_name": "taha",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا_تهران"
+      ],
+      "likes": 175,
+      "likes_fa": "۱۷۵",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 10,
+      "comments_fa": "۱۰",
+      "first_line": "نمایشگاه اتوپلازا یکی از خفن ترین جاها برا ماشین بازا بود از تسلای دست ساز بنیامین تا تسلای واقعی و دوج و موستانگ و کلی ماشین نوستالژی و مدرن هرچی بگید پیدا میشد 🔥🔥🔥",
+      "caption": "نمایشگاه اتوپلازا یکی از خفن ترین جاها برا ماشین بازا بود از تسلای دست ساز بنیامین تا تسلای واقعی و دوج و موستانگ و کلی ماشین نوستالژی و مدرن هرچی بگید پیدا میشد 🔥🔥🔥\n#اتوپلازا #ماشین #اتوپلازا_تهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 225.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 80,
+      "rank_fa": "۸۰"
     },
     {
       "code": "DfWwrE4ER4h",
@@ -7345,8 +7073,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 198.0,
       "source_tier": "influencer_hashtag",
-      "rank": 67,
-      "rank_fa": "۶۷"
+      "rank": 81,
+      "rank_fa": "۸۱"
+    },
+    {
+      "code": "DfaYyBwkakk",
+      "url": "https://www.instagram.com/p/DfaYyBwkakk/",
+      "cover_url": "images/posts/DfaYyBwkakk.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "wreyhnx",
+      "author_name": "RYHAN",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازاتهران"
+      ],
+      "likes": 146,
+      "likes_fa": "۱۴۶",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 8,
+      "comments_fa": "۸",
+      "first_line": "⁨\tامیدوارم یه روزی برسه که تنها دغدغمون ست کردن رنگ لباسمون با ماشین مورد علاقمون باشه.",
+      "caption": "⁨\tامیدوارم یه روزی برسه که تنها دغدغمون ست کردن رنگ لباسمون با ماشین مورد علاقمون باشه.\n\n#اتوپلازاتهران#عکس#ماشین#کامارو⁩",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 186.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 82,
+      "rank_fa": "۸۲"
+    },
+    {
+      "code": "Dfc7bZLAH-e",
+      "url": "https://www.instagram.com/p/Dfc7bZLAH-e/",
+      "cover_url": "images/posts/Dfc7bZLAH-e.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "shadiibagherii",
+      "author_name": "Fire Dancer & Flow Artist / Choreographer",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 100,
+      "likes_fa": "۱۰۰",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 12,
+      "comments_fa": "۱۲",
+      "first_line": "قلبم پیشش موند 🧡🥹",
+      "caption": "قلبم پیشش موند 🧡🥹\n1956\n#اتوپلازا #RenaultDauphine #classiccar #ماشین_کلاسیک",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 160.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 83,
+      "rank_fa": "۸۳"
     },
     {
       "code": "DfNCQA7N9Ys",
@@ -7374,8 +7158,36 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 154.5,
       "source_tier": "influencer_hashtag",
-      "rank": 68,
-      "rank_fa": "۶۸"
+      "rank": 84,
+      "rank_fa": "۸۴"
+    },
+    {
+      "code": "Dfb4-3kDqlJ",
+      "url": "https://www.instagram.com/p/Dfb4-3kDqlJ/",
+      "cover_url": "images/posts/Dfb4-3kDqlJ.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "behrooz_si",
+      "author_name": "behrooz solemani",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا_تهران"
+      ],
+      "likes": 73,
+      "likes_fa": "۷۳",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 16,
+      "comments_fa": "۱۶",
+      "first_line": "هدف بزرگ",
+      "caption": "هدف بزرگ \nمسیر خفن \nپیش به سوی \nقله...🤍💚\n#نمایشگاه_بین_المللی #استایل_پاییزی🍁🍂 #مدلینگ #مدل مردونه #اتوپلازا_تهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 153.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 85,
+      "rank_fa": "۸۵"
     },
     {
       "code": "DfVG_0DEWtP",
@@ -7402,8 +7214,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 133.5,
       "source_tier": "influencer_hashtag",
-      "rank": 69,
-      "rank_fa": "۶۹"
+      "rank": 86,
+      "rank_fa": "۸۶"
     },
     {
       "code": "DfRejWZuFIL",
@@ -7430,8 +7242,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 123.0,
       "source_tier": "influencer_hashtag",
-      "rank": 70,
-      "rank_fa": "۷۰"
+      "rank": 87,
+      "rank_fa": "۸۷"
     },
     {
       "code": "DfWMCIVDMNI",
@@ -7460,8 +7272,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 121.5,
       "source_tier": "influencer_hashtag",
-      "rank": 71,
-      "rank_fa": "۷۱"
+      "rank": 88,
+      "rank_fa": "۸۸"
     },
     {
       "code": "DeXH3wioNuU",
@@ -7488,8 +7300,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 111.0,
       "source_tier": "influencer_hashtag",
-      "rank": 72,
-      "rank_fa": "۷۲"
+      "rank": 89,
+      "rank_fa": "۸۹"
     },
     {
       "code": "DfYDMgIClld",
@@ -7516,8 +7328,204 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 96.0,
       "source_tier": "influencer_hashtag",
-      "rank": 73,
-      "rank_fa": "۷۳"
+      "rank": 90,
+      "rank_fa": "۹۰"
+    },
+    {
+      "code": "DfcBzenDV5H",
+      "url": "https://www.instagram.com/p/DfcBzenDV5H/",
+      "cover_url": "images/posts/DfcBzenDV5H.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "tasadofimilad",
+      "author_name": "تصادفـی مرسلی",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 47,
+      "likes_fa": "۴۷",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 9,
+      "comments_fa": "۹",
+      "first_line": "سمند lx مدل۹۱",
+      "caption": "سمند lx مدل۹۱\nسند مزایده ای خام مستقیم به نام خریدار\nکم کار شاسی ها و سقف سالم\nعکس گویای همه چیز هستش\nقیمت ۴۹۰\n۰۹۱۲۷۷۰۲۴۱۴\n#تصادفی\n#سمند \n#مزایده\n#صافکاری\n#اتوپلازا",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 92.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 91,
+      "rank_fa": "۹۱"
+    },
+    {
+      "code": "DfcBry7CHMW",
+      "url": "https://www.instagram.com/p/DfcBry7CHMW/",
+      "cover_url": "images/posts/DfcBry7CHMW.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "_nadia_hashemi",
+      "author_name": "نادیا هاشمی✨",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 90,
+      "likes_fa": "۹۰",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "😶❤️",
+      "caption": "😶❤️\n.\n.\n.\n\n.\n،\n.\n.\n.\n،\n #تهران #اتوپلازا #ماشین #اکسپلور #ژست_عکاسی",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 90.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 92,
+      "rank_fa": "۹۲"
+    },
+    {
+      "code": "Dfcf1cPjspC",
+      "url": "https://www.instagram.com/p/Dfcf1cPjspC/",
+      "cover_url": "images/posts/Dfcf1cPjspC.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "niloofr_plr",
+      "author_name": "Niloofar",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 53,
+      "likes_fa": "۵۳",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 7,
+      "comments_fa": "۷",
+      "first_line": "#اتوپلازا #ماشین #استایل #خفن",
+      "caption": "#اتوپلازا #ماشین #استایل #خفن",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 88.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 93,
+      "rank_fa": "۹۳"
+    },
+    {
+      "code": "Dfam_2JmFzg",
+      "url": "https://www.instagram.com/p/Dfam_2JmFzg/",
+      "cover_url": "images/posts/Dfam_2JmFzg.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "taranomahmadi_photography",
+      "author_name": "Taranom ahmadi | ترنم احمدی",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 42,
+      "likes_fa": "۴۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 7,
+      "comments_fa": "۷",
+      "first_line": "حضور دیجی آلیزو در اتوپلازا تهران",
+      "caption": "حضور دیجی آلیزو در اتوپلازا تهران\n\n‪@dj.alizo‪@tehranautoplaza‬za \n#عکاس #عکاسی #دیجی #اتوپلازا #آلیزو⁩",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 77.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 94,
+      "rank_fa": "۹۴"
+    },
+    {
+      "code": "DfdD8qUDQl7",
+      "url": "https://www.instagram.com/p/DfdD8qUDQl7/",
+      "cover_url": "images/posts/DfdD8qUDQl7.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "3ahel.a",
+      "author_name": "SAHEL",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازاتهران"
+      ],
+      "likes": 67,
+      "likes_fa": "۶۷",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 2,
+      "comments_fa": "۲",
+      "first_line": "😈🚘",
+      "caption": "😈🚘\n.\n.\n.\n.\n.\n.\n.\n.\n. #اتوپلازاتهران  #اکسپلور  #ماشین #استایل",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 77.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 95,
+      "rank_fa": "۹۵"
+    },
+    {
+      "code": "DfcP_O8kTKI",
+      "url": "https://www.instagram.com/p/DfcP_O8kTKI/",
+      "cover_url": "images/posts/DfcP_O8kTKI.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "m.r.ghasmie",
+      "author_name": "mohammad",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 22,
+      "likes_fa": "۲۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 10,
+      "comments_fa": "۱۰",
+      "first_line": "#اتوپلازا #سرعت #سرعت_هیجان #کانون ایران نوین#کارتینگ_آزادی",
+      "caption": "#اتوپلازا #سرعت #سرعت_هیجان #کانون ایران نوین#کارتینگ_آزادی",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 72.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 96,
+      "rank_fa": "۹۶"
+    },
+    {
+      "code": "DfaljwmE33l",
+      "url": "https://www.instagram.com/p/DfaljwmE33l/",
+      "cover_url": "images/posts/DfaljwmE33l.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "mobina_rooji",
+      "author_name": "ᴹᵒᵇⁱⁿᵃ ᴿᵒᵒʲⁱ",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 58,
+      "likes_fa": "۵۸",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "گفتم منم عقب نمونم😌🎀",
+      "caption": "گفتم منم عقب نمونم😌🎀\n#اتوپلازا  #اتوپلازا_تهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 58.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 97,
+      "rank_fa": "۹۷"
     },
     {
       "code": "DfaAoFYDJZN",
@@ -7544,8 +7552,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 55.5,
       "source_tier": "influencer_hashtag",
-      "rank": 74,
-      "rank_fa": "۷۴"
+      "rank": 98,
+      "rank_fa": "۹۸"
+    },
+    {
+      "code": "DfcsqXHlEng",
+      "url": "https://www.instagram.com/p/DfcsqXHlEng/",
+      "cover_url": "images/posts/DfcsqXHlEng.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "mohandesev",
+      "author_name": "مهندس ای وی",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 17,
+      "likes_fa": "۱۷",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 7,
+      "comments_fa": "۷",
+      "first_line": "برای امنیت بیشتر پست فردا شب ما رو دنبال کنید😍",
+      "caption": "برای امنیت بیشتر پست فردا شب ما رو دنبال کنید😍\n\n#خودرو_برقی #electric_vehicles #خودرو #اتوپلازا #تعمیرات_خودرو",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 52.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 99,
+      "rank_fa": "۹۹"
+    },
+    {
+      "code": "DfcMs2Oq4ob",
+      "url": "https://www.instagram.com/p/DfcMs2Oq4ob/",
+      "cover_url": "images/posts/DfcMs2Oq4ob.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "nail.mellizo",
+      "author_name": "خدمات ناخن | طراحی ناخن",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 18,
+      "likes_fa": "۱۸",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 6,
+      "comments_fa": "۶",
+      "first_line": "(Ferrari 458 Italia)",
+      "caption": "(Ferrari 458 Italia)\n\n#ferari #ماشین #ناخن #اتوپلازا #auto",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 48.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 100,
+      "rank_fa": "۱۰۰"
     },
     {
       "code": "DfUyyHqgBiF",
@@ -7572,8 +7636,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 43.5,
       "source_tier": "influencer_hashtag",
-      "rank": 75,
-      "rank_fa": "۷۵"
+      "rank": 101,
+      "rank_fa": "۱۰۱"
     },
     {
       "code": "DfWGSVNEVnD",
@@ -7600,8 +7664,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 43.5,
       "source_tier": "influencer_hashtag",
-      "rank": 76,
-      "rank_fa": "۷۶"
+      "rank": 102,
+      "rank_fa": "۱۰۲"
     },
     {
       "code": "DfZMz0vDpBt",
@@ -7628,8 +7692,92 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 42.0,
       "source_tier": "influencer_hashtag",
-      "rank": 77,
-      "rank_fa": "۷۷"
+      "rank": 103,
+      "rank_fa": "۱۰۳"
+    },
+    {
+      "code": "DfaoLUyDbHC",
+      "url": "https://www.instagram.com/p/DfaoLUyDbHC/",
+      "cover_url": "images/posts/DfaoLUyDbHC.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "mohssen.b10",
+      "author_name": "🅼🅾🅷🆂🅴🅽",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 41,
+      "likes_fa": "۴۱",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "#اتوپلازا_تهران#اتوپلازا#اکسپلور#سوپر_اسپرت_ایتالیایی#ماشینباز",
+      "caption": "#اتوپلازا_تهران#اتوپلازا#اکسپلور#سوپر_اسپرت_ایتالیایی#ماشینباز",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 41.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 104,
+      "rank_fa": "۱۰۴"
+    },
+    {
+      "code": "Dfcn8B0Ip5V",
+      "url": "https://www.instagram.com/p/Dfcn8B0Ip5V/",
+      "cover_url": "images/posts/Dfcn8B0Ip5V.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "bontium_iran",
+      "author_name": "Bontium",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 29,
+      "likes_fa": "۲۹",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 2,
+      "comments_fa": "۲",
+      "first_line": "اگه خیلی تاریک شد نگران نباش بیشتر بدرخش🌞✨",
+      "caption": "اگه خیلی تاریک شد نگران نباش بیشتر بدرخش🌞✨\n\n#اتوپلازا #تجارت #توسعه_فردی",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 39.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 105,
+      "rank_fa": "۱۰۵"
+    },
+    {
+      "code": "DfcMgPxDRl3",
+      "url": "https://www.instagram.com/p/DfcMgPxDRl3/",
+      "cover_url": "images/posts/DfcMgPxDRl3.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "negarestaann",
+      "author_name": "نگارستان / تهرانگردي|كافه و رستورانگردي",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازاتهران"
+      ],
+      "likes": 3,
+      "likes_fa": "۳",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 7,
+      "comments_fa": "۷",
+      "first_line": "tehran auto plaza 2026",
+      "caption": "tehran auto plaza 2026 \n\n#تهران #اتوپلازاتهران #ماشین_باز #ماشین_باز",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 38.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 106,
+      "rank_fa": "۱۰۶"
     },
     {
       "code": "DfU5Y1ZjgPB",
@@ -7656,8 +7804,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 33.0,
       "source_tier": "influencer_hashtag",
-      "rank": 78,
-      "rank_fa": "۷۸"
+      "rank": 107,
+      "rank_fa": "۱۰۷"
+    },
+    {
+      "code": "DfbuMsQiHpI",
+      "url": "https://www.instagram.com/p/DfbuMsQiHpI/",
+      "cover_url": "images/posts/DfbuMsQiHpI.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "sepehrgrimm6521",
+      "author_name": "sepehrgrimm",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 31,
+      "likes_fa": "۳۱",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "#اتوپلازا",
+      "caption": "#اتوپلازا",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 31.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 108,
+      "rank_fa": "۱۰۸"
+    },
+    {
+      "code": "Dfb1wG6lUTk",
+      "url": "https://www.instagram.com/p/Dfb1wG6lUTk/",
+      "cover_url": "images/posts/Dfb1wG6lUTk.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "ho3ein1377",
+      "author_name": "حسين معماريان",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 20,
+      "likes_fa": "۲۰",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 2,
+      "comments_fa": "۲",
+      "first_line": "#اتوپلازا بدرد نمیخوره رفتنش فعلا (شاید بعدا بهتر شه) چون بغیر از ماشینایی که عکس گرفتم، دیگه اکثرا یا تارا هستن یا ۲۰۷ و دنا ... شاید فقط کنسرت‌های شب‌‌های اولیه‌ش خوب باشه",
+      "caption": "#اتوپلازا بدرد نمیخوره رفتنش فعلا (شاید بعدا بهتر شه) چون بغیر از ماشینایی که عکس گرفتم، دیگه اکثرا یا تارا هستن یا ۲۰۷ و دنا ... شاید فقط کنسرت‌های شب‌‌های اولیه‌ش خوب باشه\nپ ن: وضعیت مونتاژ و فاصله قطعات بدنه سایبرتراکی که اورده بودن هم بدتر از وضعیت محصولات سایپا بود",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 30.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 109,
+      "rank_fa": "۱۰۹"
     },
     {
       "code": "DfZ-A5MjMtV",
@@ -7685,8 +7889,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 28.5,
       "source_tier": "influencer_hashtag",
-      "rank": 79,
-      "rank_fa": "۷۹"
+      "rank": 110,
+      "rank_fa": "۱۱۰"
     },
     {
       "code": "DfZ87EpxrUy",
@@ -7713,8 +7917,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 28.5,
       "source_tier": "influencer_hashtag",
-      "rank": 80,
-      "rank_fa": "۸۰"
+      "rank": 111,
+      "rank_fa": "۱۱۱"
     },
     {
       "code": "DfXtKn7CKdD",
@@ -7741,8 +7945,120 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 28.5,
       "source_tier": "influencer_hashtag",
-      "rank": 81,
-      "rank_fa": "۸۱"
+      "rank": 112,
+      "rank_fa": "۱۱۲"
+    },
+    {
+      "code": "DfcSO2OC4Ye",
+      "url": "https://www.instagram.com/p/DfcSO2OC4Ye/",
+      "cover_url": "images/posts/DfcSO2OC4Ye.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "editgeram.ir",
+      "author_name": "ادیتگرام | آموزش ادیت | تولیدمحتوا | هوش مصنوعی",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 27,
+      "likes_fa": "۲۷",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "اتـــوپــــلازا 💙💎",
+      "caption": "اتـــوپــــلازا 💙💎\n\nبهشت عاشقان ماشین 🔥\n\n.\n.\n#ماشین #بنز  #اتوپلازا #عشق #تهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 27.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 113,
+      "rank_fa": "۱۱۳"
+    },
+    {
+      "code": "DfcOZUipBEJ",
+      "url": "https://www.instagram.com/p/DfcOZUipBEJ/",
+      "cover_url": "images/posts/DfcOZUipBEJ.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "startup360.ir",
+      "author_name": "Startup360",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 18,
+      "likes_fa": "۱۸",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 1,
+      "comments_fa": "۱",
+      "first_line": "رژه خودروهای لوکس در اتوپلازا؛ واردات این خودروها با چه ارزی انجام شده است؟",
+      "caption": "رژه خودروهای لوکس در اتوپلازا؛ واردات این خودروها با چه ارزی انجام شده است؟\n\nمجموعه خودرویی اتوپلازا از ۱۳ آبان در کیلومتر ۱۱ جاده مخصوص کرج، با وسعت ۱۶۴ هزار مترمربع و ۹۰ شوروم افتتاح شده است. تبلیغات گسترده اینستاگرامی، کنسرت‌های شبانه، وعده قرعه‌کشی پژو ۲۰۷ و تخفیف‌های ۲۰۰ میلیون تومانی از برنامه‌های این مجموعه بوده است.\n\nخبرگزاری تسنیم با اشاره به نمایش خودروهای لوکس در شرایط محدودیت ارزی کشور، درباره منشا ارز واردات، نحوه قیمت‌گذاری و خدمات پس از فروش آنها پرسش‌هایی مطرح کرده است. براساس این گزارش، بخشی از خودروهای عرضه‌شده نیز لوکس و کلاسیک دست‌دوم هستند.\n\nتسنیم خواستار ورود بانک مرکزی، وزارت صمت و نهادهای نظارتی برای بررسی منشا ارز، معاملات و مجوزهای فعالیت اتوپلازا شده است. با این حال، تاکنون تخلفی در این مجموعه اثبات نشده و ابهامات مطرح‌شده نیازمند بررسی رسمی است.\n.\n.\n.\n.\n#اتوپلازا #بازار_خودرو #خودروهای_لوکس #واردات_خودرو #نمایشگاه_خودرو #قیمت_خودرو #ارز_وارداتی #AutoPlaza #LuxuryCars #CarMarket #CarImport",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 23.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 114,
+      "rank_fa": "۱۱۴"
+    },
+    {
+      "code": "DfY5XpDMhGE",
+      "url": "https://www.instagram.com/p/DfY5XpDMhGE/",
+      "cover_url": "images/posts/DfY5XpDMhGE.jpg",
+      "media_type": "Photo",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "hassanaghaeii80",
+      "author_name": "🅷🅰🆂🆂🅰🅽 🅰🅶🅷🅰🅴🅸",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازاتهران"
+      ],
+      "likes": 13,
+      "likes_fa": "۱۳",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 2,
+      "comments_fa": "۲",
+      "first_line": "فعلاً فقط یه آرزوئه ولی من به روزی فکر می‌کنم که دیگه آرزو نباشه... 🖤",
+      "caption": "فعلاً فقط یه آرزوئه ولی من به روزی فکر می‌کنم که دیگه آرزو نباشه... 🖤\n\nیه روزی نه برای عکس گرفتن بلکه برای سوار شدن و لذت بردنش کنارش می‌ایستم.\n\nتا اون روز تلاش می‌کنم می‌جنگم و به رؤیاهام نزدیک‌تر می‌شم.\n\nبالاخره یه روز مال خودم می‌شه... \n\nبه امید اون روز 🤍🏁\n\nیادگاری اتوپلازا تهران تاریخ 1405/08/14\n\n#ایونت #اتوپلازاتهران",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 23.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 115,
+      "rank_fa": "۱۱۵"
+    },
+    {
+      "code": "Dfck52JDmMG",
+      "url": "https://www.instagram.com/p/Dfck52JDmMG/",
+      "cover_url": "images/posts/Dfck52JDmMG.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "ghazallotfi365",
+      "author_name": "𝑮𝒉𝒂𝒛𝒂𝒍 𝑳𝒐𝒕𝒇𝒊 ♛",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 22,
+      "likes_fa": "۲۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "ولي يه شب يه جايي …..",
+      "caption": "ولي يه شب يه جايي …..\n\nقشنگ ميشه همه چي…..\n\n#اتوپلازا #اتوپلازاتهران #اتومبیل #بارون #بارونی_پاییزه🍁",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 22.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 116,
+      "rank_fa": "۱۱۶"
     },
     {
       "code": "DfX6_vNmo74",
@@ -7769,8 +8085,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 18.0,
       "source_tier": "influencer_hashtag",
-      "rank": 82,
-      "rank_fa": "۸۲"
+      "rank": 117,
+      "rank_fa": "۱۱۷"
     },
     {
       "code": "DfXliMMDZJZ",
@@ -7799,8 +8115,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 13.5,
       "source_tier": "influencer_hashtag",
-      "rank": 83,
-      "rank_fa": "۸۳"
+      "rank": 118,
+      "rank_fa": "۱۱۸"
     },
     {
       "code": "DfZ86oQDcT4",
@@ -7827,8 +8143,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 12.0,
       "source_tier": "influencer_hashtag",
-      "rank": 84,
-      "rank_fa": "۸۴"
+      "rank": 119,
+      "rank_fa": "۱۱۹"
     },
     {
       "code": "De-EmtIJic5",
@@ -7855,8 +8171,36 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 12.0,
       "source_tier": "influencer_hashtag",
-      "rank": 85,
-      "rank_fa": "۸۵"
+      "rank": 120,
+      "rank_fa": "۱۲۰"
+    },
+    {
+      "code": "DfcYh1kkSuZ",
+      "url": "https://www.instagram.com/p/DfcYh1kkSuZ/",
+      "cover_url": "images/posts/DfcYh1kkSuZ.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "parviz_mohammadshahi",
+      "author_name": "پرویز محمدشاهی",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 12,
+      "likes_fa": "۱۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "#اتوپلازا #تهران #نمایشگاه #ایونت #ماشین_باز 👌",
+      "caption": "#اتوپلازا #تهران #نمایشگاه #ایونت #ماشین_باز 👌",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 12.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 121,
+      "rank_fa": "۱۲۱"
     },
     {
       "code": "DfZ-jRijAAL",
@@ -7883,8 +8227,8 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 9.0,
       "source_tier": "influencer_hashtag",
-      "rank": 86,
-      "rank_fa": "۸۶"
+      "rank": 122,
+      "rank_fa": "۱۲۲"
     },
     {
       "code": "DfZ43aziEQ4",
@@ -7911,8 +8255,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 4.5,
       "source_tier": "influencer_hashtag",
-      "rank": 87,
-      "rank_fa": "۸۷"
+      "rank": 123,
+      "rank_fa": "۱۲۳"
+    },
+    {
+      "code": "DfdOlyBEWqi",
+      "url": "https://www.instagram.com/p/DfdOlyBEWqi/",
+      "cover_url": "images/posts/DfdOlyBEWqi.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "amiralishojaei1381",
+      "author_name": "amiralishojaei81",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 4,
+      "likes_fa": "۴",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "#اتوپلازا",
+      "caption": "#اتوپلازا",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 4.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 124,
+      "rank_fa": "۱۲۴"
+    },
+    {
+      "code": "DfdHv1pgFZr",
+      "url": "https://www.instagram.com/p/DfdHv1pgFZr/",
+      "cover_url": "images/posts/DfdHv1pgFZr.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "roham_daghighi",
+      "author_name": ".𐎶𐏃𐎮𐎹",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 4,
+      "likes_fa": "۴",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "Superstar car❤️‍🔥🇬🇧",
+      "caption": "Superstar car❤️‍🔥🇬🇧\n\n#explorepage \n#car\n#maclaren \n#اتوپلازا\n@tehranautoplaza",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 4.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 125,
+      "rank_fa": "۱۲۵"
     },
     {
       "code": "DfWvfI6N4BY",
@@ -7939,8 +8339,64 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 3.0,
       "source_tier": "influencer_hashtag",
-      "rank": 88,
-      "rank_fa": "۸۸"
+      "rank": 126,
+      "rank_fa": "۱۲۶"
+    },
+    {
+      "code": "DfdUhrHCHmX",
+      "url": "https://www.instagram.com/p/DfdUhrHCHmX/",
+      "cover_url": "images/posts/DfdUhrHCHmX.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "dal.8pv",
+      "author_name": "H.D",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 3,
+      "likes_fa": "۳",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "افتتاحیه نمایشگاه اتوپلازا تهران {Tehran Auto plaza}",
+      "caption": "افتتاحیه نمایشگاه اتوپلازا تهران {Tehran Auto plaza}\n@tehranautoplaza\n1405/8/16\n#اتوپلازا_تهران #اتوپلازا",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 3.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 127,
+      "rank_fa": "۱۲۷"
+    },
+    {
+      "code": "DfdIGSjAOtv",
+      "url": "https://www.instagram.com/p/DfdIGSjAOtv/",
+      "cover_url": "images/posts/DfdIGSjAOtv.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "roham_daghighi",
+      "author_name": ".𐎶𐏃𐎮𐎹",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 2,
+      "likes_fa": "۲",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "Superstar ❤️‍🔥🇮🇹",
+      "caption": "Superstar ❤️‍🔥🇮🇹\n\n#explorepage \n#lamborghini \n#اتوپلازا \n@tehranautoplaza \n#viralreels",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 2.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 128,
+      "rank_fa": "۱۲۸"
     },
     {
       "code": "DfYB5_6IJaH",
@@ -7967,8 +8423,36 @@
       "jalali_date": "آبان ۱۴۰۵",
       "priority_score": 1.5,
       "source_tier": "influencer_hashtag",
-      "rank": 89,
-      "rank_fa": "۸۹"
+      "rank": 129,
+      "rank_fa": "۱۲۹"
+    },
+    {
+      "code": "Dfb-iqvlg9G",
+      "url": "https://www.instagram.com/p/Dfb-iqvlg9G/",
+      "cover_url": "images/posts/Dfb-iqvlg9G.jpg",
+      "media_type": "Carousel",
+      "is_reel": false,
+      "duration_sec": 0,
+      "author_handle": "utb650_itm",
+      "author_name": "Iranian tractor owners",
+      "author_avatar": null,
+      "coauthors": [],
+      "tags": [
+        "اتوپلازا"
+      ],
+      "likes": 0,
+      "likes_fa": "۰",
+      "plays": 0,
+      "plays_fa": "۰",
+      "comments": 0,
+      "comments_fa": "۰",
+      "first_line": "مراسم افتحتاحیه اتو پلازا تهران.",
+      "caption": "مراسم افتحتاحیه اتو پلازا تهران.\n\n#اتوپلازا#تهران#حضرت#نمایشگاه#آلمان",
+      "jalali_date": "آبان ۱۴۰۵",
+      "priority_score": 0.0,
+      "source_tier": "influencer_hashtag",
+      "rank": 130,
+      "rank_fa": "۱۳۰"
     }
   ],
   "news_coverage": [
@@ -8257,6 +8741,71 @@
       "summary": "پخش پیام‌های ترافیکی در رادیو پیام برای هدایت روان خودروها به پارکینگ ۳ هزار واحدی و تیزرهای جشنواره پرانرژی ۷ شب کنسرت در رادیو جوان.",
       "tier": "صداوسیما FM",
       "rank_fa": "۲۲"
+    },
+    {
+      "rank": 23,
+      "name": "پایگاه خبری اسب بخار (Asbe-Bokhar)",
+      "logo": "images/news/bitrun.svg",
+      "category_tag": "automotive_media",
+      "category_fa": "رسانه تخصصی خودرو",
+      "date": "۱۵ آبان ۱۴۰۵",
+      "title": "آئودی E5 اسپرت‌بک توسط معین خودرو در شوروم اتوپلازا رونمایی شد",
+      "url": "https://asbe-bokhar.com",
+      "summary": "رونمایی رسمی معین خودرو از پرچمدار مدرن تمام برقی آئودی E5 اسپرت‌بک با موتور قدرتمند ۲۹۹ تا ۷۷۶ اسب بخار و پیمایش ۶۱۸ تا ۷۷۰ کیلومتر در شوروم اختصاصی اتوپلازا.",
+      "tier": "رسانه تخصصی خودرو",
+      "rank_fa": "۲۳"
+    },
+    {
+      "rank": 24,
+      "name": "پایگاه خبری پرشین خودرو (Persian Khodro)",
+      "logo": "images/news/mashin3.svg",
+      "category_tag": "automotive_media",
+      "category_fa": "خبرگزاری خودرویی",
+      "date": "۱۶ آبان ۱۴۰۵",
+      "title": "رونمایی از آئودی E5 اسپرت‌بک برقی در ایران + مشخصات فنی و امکانات در اتوپلازا",
+      "url": "https://persiankhodro.com",
+      "summary": "گزارش اختصاصی از حضور سدان برقی پرچمدار آئودی در اتوپلازا؛ بررسی جزئیات قوای محرکه الکتریکی، سامانه‌های پیشرفته کمک‌راننده و زیرساخت ایستگاه‌های شارژ سریع ۸۰۰ ولتی.",
+      "tier": "خبرگزاری خودرویی",
+      "rank_fa": "۲۴"
+    },
+    {
+      "rank": 25,
+      "name": "پایگاه خبری رکنا و همشهری آنلاین",
+      "logo": "images/news/hamshahri.svg",
+      "category_tag": "general_news",
+      "category_fa": "پایگاه خبری و شهری",
+      "date": "۱۶ آبان ۱۴۰۵",
+      "title": "لغو فستیوال کنسرت‌های رایگان اتوپلازا به علت شرایط نامساعد جوی و هشدار قرمز سیل",
+      "url": "https://rokna.net",
+      "summary": "فستیوال کنسرت‌های رایگان اتوپلازا پس از میزبانی از هزاران مخاطب در ۳ شب اول، از ۱۶ آبان به دلیل صدور هشدار قرمز هواشناسی تهران و احتمال وقوع سیلاب موقتاً لغو و به زمان دیگری موکول شد.",
+      "tier": "رسانه عمومی",
+      "rank_fa": "۲۵"
+    },
+    {
+      "rank": 26,
+      "name": "شهرآرانیوز و صاحب‌خبر",
+      "logo": "images/news/khabaronline.svg",
+      "category_tag": "general_news",
+      "category_fa": "رسانه خبری و فرهنگی",
+      "date": "۱۷ آبان ۱۴۰۵",
+      "title": "بازتاب شب‌های بارانی افتتاحیه اتوپلازا؛ اجرای اشوان، رضا صادقی و امید حاجیلی",
+      "url": "https://sahebkhabar.ir",
+      "summary": "گزارش میدانی از حضور پرشور خانواده‌ها و جوانان زیر باران شدید پاییزی در محوطه باز اتوپلازا، اجرای پرانرژی خوانندگان مطرح پاپ و قرعه‌کشی‌های خودرویی.",
+      "tier": "رسانه عمومی",
+      "rank_fa": "۲۶"
+    },
+    {
+      "rank": 27,
+      "name": "پایگاه تحلیلی استارتاپ ۳۶۰ و تسنیم",
+      "logo": "images/news/tgju.svg",
+      "category_tag": "analytical_critique",
+      "category_fa": "پایگاه تحلیلی اقتصادی",
+      "date": "۱۷ آبان ۱۴۰۵",
+      "title": "رژه خودروهای لوکس در تنگنای ارزی؛ پرسش‌های نظارتی پیرامون بازار خودرویی اتوپلازا",
+      "url": "https://startup360.ir",
+      "summary": "تحلیل موشکافانه رسانه‌های اقتصادی پیرامون منشأ ارز واردات خودروهای لوکس نمایشی، هزینه‌های تبلیغات گسترده کانون ایران نوین و ضرورت شفافیت در قیمت‌گذاری و خدمات پس از فروش.",
+      "tier": "پایگاه تحلیلی",
+      "rank_fa": "۲۷"
     }
   ],
   "unified_master_timeline_69": [
@@ -9016,6 +9565,105 @@
       "publisher": "محوطه اتوپلازا",
       "title": "آغاز جشنواره افتتاحیه با کنسرت اشوان و قرعه‌کشی",
       "collabs": "اشوان، الیکا عبدالرزاقی، امیرحسین رستمی",
+      "cat": "live_event",
+      "badge_color": "bg-amber-500/10 text-amber-400 border-amber-500/20"
+    },
+    {
+      "row": "۷۰",
+      "date": "۱۴ آبان",
+      "time": "۲۰:۰۰",
+      "media_type": "رویداد زنده",
+      "publisher": "استیج روباز اتوپلازا",
+      "title": "کنسرت رایگان و بدون ورودی رضا صادقی در شب دوم افتتاحیه",
+      "collabs": "رضا صادقی (`@rezasadeghi_official`) + هزاران بازدیدکننده",
+      "cat": "live_event",
+      "badge_color": "bg-amber-500/10 text-amber-400 border-amber-500/20"
+    },
+    {
+      "row": "۷۱",
+      "date": "۱۴ آبان",
+      "time": "۲۱:۳۰",
+      "media_type": "اینستاگرام (Collab)",
+      "publisher": "`@tehranautoplaza` + `@benyamin_co.ir`",
+      "title": "رونمایی از تسلا دست‌ساز بنیامین در شب دوم افتتاحیه (`DfZUdKkxi3s`)",
+      "collabs": "بنیامین خودرو (۱۶۱٫۸K لایک و ۳٫۶M ویو)",
+      "cat": "instagram",
+      "badge_color": "bg-purple-500/10 text-purple-400 border-purple-500/20"
+    },
+    {
+      "row": "۷۲",
+      "date": "۱۵ آبان",
+      "time": "۱۸:۰۰",
+      "media_type": "رویداد خودرویی وب",
+      "publisher": "اسب بخار و پرشین خودرو",
+      "title": "رونمایی رسمی معین خودرو از سدان برقی آئودی E5 اسپرت‌بک در شوروم اتوپلازا",
+      "collabs": "شرکت معین خودرو ایران",
+      "cat": "web_news",
+      "badge_color": "bg-blue-500/10 text-blue-400 border-blue-500/20"
+    },
+    {
+      "row": "۷۳",
+      "date": "۱۵ آبان",
+      "time": "۲۰:۰۰",
+      "media_type": "رویداد زنده",
+      "publisher": "استیج روباز اتوپلازا",
+      "title": "کنسرت پرشور امید حاجیلی زیر باران شدید پاییزی در محوطه باز",
+      "collabs": "امید حاجیلی (`@omidhajili`) + پوشش بهمن بابازاده",
+      "cat": "live_event",
+      "badge_color": "bg-amber-500/10 text-amber-400 border-amber-500/20"
+    },
+    {
+      "row": "۷۴",
+      "date": "۱۶ آبان",
+      "time": "۱۲:۰۰",
+      "media_type": "خبر وب / شهری",
+      "publisher": "همشهری آنلاین، رکنا و شهرآرانیوز",
+      "title": "لغو کنسرت‌های رایگان اتوپلازا به علت هشدار قرمز هواشناسی و احتمال سیل",
+      "collabs": "ستاد مدیریت بحران تهران و مسئولان فستیوال",
+      "cat": "web_news",
+      "badge_color": "bg-blue-500/10 text-blue-400 border-blue-500/20"
+    },
+    {
+      "row": "۷۵",
+      "date": "۱۶ آبان",
+      "time": "۱۸:۰۰",
+      "media_type": "شبکه اجتماعی X",
+      "publisher": "رصدخانه افکار عمومی توییتر",
+      "title": "موج گسترده واکنش کاربران و ژورنالیست‌ها پیرامون لغو کنسرت‌ها و حواشی بارندگی",
+      "collabs": "کاربران توییتر (۳۸ توییت تحلیلی جدید)",
+      "cat": "threads",
+      "badge_color": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+    },
+    {
+      "row": "۷۶",
+      "date": "۱۷ آبان",
+      "time": "۱۲:۰۰",
+      "media_type": "تحلیلی وب",
+      "publisher": "استارتاپ ۳۶۰ و تسنیم",
+      "title": "رژه خودروهای لوکس در تنگنای ارزی؛ پرسش‌های نظارتی پیرامون بازار خودرویی",
+      "collabs": "تحریریه استارتاپ ۳۶۰ و خبرنگاران اقتصادی",
+      "cat": "web_news",
+      "badge_color": "bg-blue-500/10 text-blue-400 border-blue-500/20"
+    },
+    {
+      "row": "۷۷",
+      "date": "۱۷ آبان",
+      "time": "۱۵:۵۵",
+      "media_type": "اینستاگرام",
+      "publisher": "`@tehranautoplaza`",
+      "title": "انتشار خلاصه‌ای از رویدادها و تداوم خدمات‌رسانی شوروم‌ها و خدمات خودرویی",
+      "collabs": "روابط عمومی اتوپلازا تهران (`DfcKoDaxgOU`)",
+      "cat": "instagram",
+      "badge_color": "bg-purple-500/10 text-purple-400 border-purple-500/20"
+    },
+    {
+      "row": "۷۸",
+      "date": "۱۸ آبان",
+      "time": "۱۱:۰۰",
+      "media_type": "رصد میدانی",
+      "publisher": "کیلومتر ۱۱ جاده مخصوص",
+      "title": "فعالیت مستمر ۹۰ شوروم تخصصی، باجه‌های خدمات پلاک و سوپراپ خودرویی",
+      "collabs": "کارشناسان فنی، دفاتر اسناد و خریداران خودرو",
       "cat": "live_event",
       "badge_color": "bg-amber-500/10 text-amber-400 border-amber-500/20"
     }
