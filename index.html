@@ -328,6 +328,7 @@
                     <label for="mobile-tab-select" class="text-xs text-white/70 shrink-0 font-medium">پرش به بخش:</label>
                     <select id="mobile-tab-select" onchange="switchTab(this.value)" class="w-full bg-[#121215] text-white text-xs font-semibold rounded-xl px-3 py-2 border border-[#e85a2a]/40 focus:outline-none focus:border-[#e85a2a]">
             <option value="timeline">1. تایم‌لاین جامع رویدادها (۷۸ مرحله) و ۶۳ پست رسمی</option>
+            <option value="audio-sentiment">★ واکاوی صوتی، رونویسی کلامی و تقابل تعریف و تخریب اینستاگرام</option>
             <option value="influencers">2. شبکه اینفلوئنسرها و استوری‌ها ۵۸ پیج</option>
             <option value="production">3. تولید، ایونت و ایران نوین ونچرز ویژه</option>
             <option value="platforms">4. توزیع پلتفرمی</option>
@@ -351,6 +352,10 @@
             <button onclick="switchTab('timeline')" id="tab-btn-timeline" class="tab-btn active px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 bg-gradient-to-r from-[#e85a2a] to-[#d44a1c] text-white shadow-[0_4px_20px_rgba(232,90,42,0.4)] border border-[#ff6b35]/50 flex items-center gap-2 whitespace-nowrap shrink-0">
                 <span>تایم‌لاین جامع رویدادها (۷۸ مرحله) و ۶۳ پست رسمی</span>
                 <span class="px-2 py-0.5 rounded-full text-[10px] bg-black/40 text-white/90 font-mono font-bold">۷۸ مرحله • ۶۳ پست</span>
+            </button>
+            <button onclick="switchTab('audio-sentiment')" id="tab-btn-audio-sentiment" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
+                <span>واکاوی صوتی و تقابل تعریف و تخریب</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] bg-[#e85a2a]/20 text-[#ff7b47] font-mono font-bold border border-[#e85a2a]/30">تحلیل صوت و کپشن</span>
             </button>
             <button onclick="switchTab('influencers')" id="tab-btn-influencers" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
                 <span>شبکه اینفلوئنسرها و استوری‌ها ۵۸ پیج</span>
@@ -407,6 +412,10 @@
             <button onclick="switchTab('market-guild')" id="tab-btn-market-guild" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
                 <span>تحلیل صنفی، جوایز و تعارض منافع</span>
                 <span class="px-2 py-0.5 rounded-full text-[10px] bg-black/40 text-white/90 font-mono font-bold">راستی‌آزمایی</span>
+            </button>
+            <button onclick="switchTab('reshares')" id="tab-btn-reshares" class="tab-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 bg-white/[0.03] text-white/70 hover:text-white hover:bg-white/[0.08] border border-white/10 flex items-center gap-2 whitespace-nowrap shrink-0">
+                <span>کالبدشکافی اسکرین‌شات‌ها و ریشیرها (ساعت ۱۳:۳۰)</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] bg-[#e85a2a]/20 text-[#ff6b35] font-mono font-bold">۱۵ سند اختصاصی</span>
             </button>
             </div>
         </div>
@@ -6566,6 +6575,224 @@ The Most Powerful Advertising &amp; Marketing Agency in Iran.
             </div>
         </section>
 
+        <!-- Tab: Live Reshares & Screenshot Investigation (ساعت 13:30) -->
+        <section id="tab-reshares" class="tab-pane hidden space-y-8">
+            <!-- Header Card -->
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-[#ff6b35]/30 bg-gradient-to-br from-[#2a130c] via-dark-800 to-dark-900">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/10 pb-6">
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e85a2a]/10 text-[#ff6b35] border border-[#ff6b35]/20 text-xs font-semibold">
+                            <span class="w-2 h-2 rounded-full bg-[#ff6b35] animate-pulse"></span>
+                            اسناد ارسالی و رصد زنده اسکرین‌شات‌ها (ساعت ۱۳:۳۰ و ۱۳:۵۶ روز افتتاحیه)
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-black text-white">
+                            کالبدشکافی تصویری ریشیرها، اکیپ‌های خودرویی و سوپرکارهای محوطه اتوپلازا
+                        </h2>
+                        <p class="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+                            در ساعت ۱۳:۳۰ ظهر روز افتتاحیه، جریان تعاملی پیج اتوپلازا و ریشیرهای متقابل با اینفلوئنسرها به نقطه اوج رسید. بررسی دقیق متادیتای ۱۵ اسکرین‌شات ارسالی از محیط اپلیکیشن‌های اینستاگرام و تردز نشان می‌دهد که کانون ایران نوین علاوه بر موج رپرتاژهای متنی، محوطه باز ۱۶۴ هزار متری را به یک شوکیس بصری با سوپرکارهای گذر موقت، اکیپ‌های جوانان و سناریوهای هدفمند جذب خریدار تبدیل کرده است.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start md:items-end gap-1.5 font-mono text-xs text-slate-400 shrink-0">
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-900/90 text-cyan-400 border border-cyan-500/30">
+                            Verified Source: User Mobile Screenshots
+                        </span>
+                        <span class="text-[11px] text-slate-500">ثبت رسمی در پرونده تحلیلی رصدخانه</span>
+                    </div>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <span class="text-xs text-slate-400 block mb-1">تعداد اسناد و شواهد تصویری</span>
+                        <span class="text-xl font-bold font-mono text-cyan-400">۱۵ اسکرین‌شات</span>
+                        <span class="text-[10px] text-slate-500 block mt-1">تطبیق زمان واقعی ۱۳:۳۰ تا ۱۳:۵۶</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <span class="text-xs text-slate-400 block mb-1">رکورد اشتراک‌گذاری (Shares)</span>
+                        <span class="text-xl font-bold font-mono text-emerald-400">۷,۰۲۷ اشتراک</span>
+                        <span class="text-[10px] text-slate-500 block mt-1">ریلز مشترک سعید یوسفی و رضایی</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <span class="text-xs text-slate-400 block mb-1">سوپرکارهای مستقر در محوطه</span>
+                        <span class="text-xl font-bold font-mono text-amber-400">۷ سوپراسپرت خاص</span>
+                        <span class="text-[10px] text-slate-500 block mt-1">سایبرتراک، هوراکان، کوروت C8، رم TRX</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <span class="text-xs text-slate-400 block mb-1">جدول کنسرت‌های قطعی روباز</span>
+                        <span class="text-xl font-bold font-mono text-[#ff6b35]">۵ شب قطعی</span>
+                        <span class="text-[10px] text-slate-500 block mt-1">سامانه رسمی ایونتی (Eventee)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Evidence Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Evidence 1: Mahyar Hassan -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-amber-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            <h3 class="text-base font-bold text-white">مهیار حسن و مهبد؛ انتشار آفرها و قرعه‌کشی‌ها</h3>
+                        </div>
+                        <span class="text-xs font-mono text-amber-400">ساعت ۱۲:۳۴ (۵۶ دقیقه قبل)</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        مهیار حسن (<a href="https://www.instagram.com/mahyarhassan/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@mahyarhassan</a> با ۱٫۵۵ میلیون فالوور) با همراهی مهبد (<a href="https://www.instagram.com/mr.mahbod/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@mr.mahbod</a>) در محوطه باز اتوپلازا جلوی سازه شیشه‌ای و پرچم BYD نشسته و سناریوی طنز «تکراری‌ترین مکالمه پسرها» را اجرا کردند.
+                    </p>
+                    <div class="p-3.5 rounded-xl bg-dark-900/90 border border-slate-800 text-xs text-slate-300 space-y-1.5 font-sans">
+                        <strong class="text-white block">مهم‌ترین آفرها و جوایز اعلام‌شده در کپشن:</strong>
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-[11px]">
+                            <li>تخفیف ۲۰۰ میلیون تومانی روی خرید نقدی خودروها در هفته اول افتتاحیه</li>
+                            <li><span class="text-amber-400 font-bold">اهداء هر شب یک دستگاه پژو ۲۰۷</span> به خریداران همان روز</li>
+                            <li><span class="text-cyan-400 font-bold">قرعه‌کشی یک دستگاه خودروی برقی لوکس ایکس‌پنگ (XPENG)</span> بین خریداران هفته</li>
+                            <li>کنسرت روباز رایگان و اجرای دی‌جی‌های مطرح در شب‌های افتتاحیه</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-800/80">
+                        <span>پلتفرم: Threads و Instagram</span>
+                        <span class="font-mono text-slate-400">تگ: @tehranautoplaza</span>
+                    </div>
+                </div>
+
+                <!-- Evidence 2: TV Pluss -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-cyan-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                            <h3 class="text-base font-bold text-white">تی‌وی پلاس؛ رپرتاژ رسمی اعتماد و شفافیت معاملات</h3>
+                        </div>
+                        <span class="text-xs font-mono text-cyan-400">ساعت ۱۱:۳۰ (۲ ساعت قبل)</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        تی‌وی پلاس (<a href="https://www.instagram.com/tvpluss/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@tvpluss</a> با ۲٫۶۳ میلیون فالوور) با حضور مجری ارشد در محوطه باز با پیراهن و پلیور رسمی، ویدیویی با هوک حقوقی و روانی تولید کرده است.
+                    </p>
+                    <div class="p-3.5 rounded-xl bg-dark-900/90 border border-slate-800 text-xs text-slate-300 space-y-1 font-sans">
+                        <strong class="text-cyan-400 block mb-1">فراز کلیدی از کپشن رسمی تی‌وی پلاس:</strong>
+                        <blockquote class="italic text-slate-400 text-[11px] leading-relaxed border-r-2 border-cyan-400 pr-2">
+                            «اعتماد، از جایی آغاز می‌شود که ابهام کنار می‌رود. وقتی اطلاعات روشن باشد، شرایط مشخص باشد و بتوان گزینه‌های مختلف را با آگاهی مقایسه کرد، تصمیم‌گرفتن معنای دیگری پیدا می‌کند. ما در اتوپلازا به دنبال شکل‌دادن به فضایی هستیم که در آن، شفافیت اطلاعات و کیفیت خدمات، مبنای انتخاب خودرو باشد...»
+                        </blockquote>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-800/80">
+                        <span>تمرکز محتوا: برندینگ شرکتی و رفع تردید خریداران</span>
+                        <span class="font-mono text-slate-400">تگ: @tehranautoplaza</span>
+                    </div>
+                </div>
+
+                <!-- Evidence 3: Saeed Yousefi & Hossein Rezaei -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-emerald-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                            <h3 class="text-base font-bold text-white">سعید یوسفی و حسین رضایی؛ رکورد وایرال ۷K شیر</h3>
+                        </div>
+                        <span class="text-xs font-mono text-emerald-400">پست ترند افتتاحیه</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        سعید یوسفی (<a href="https://www.instagram.com/saeedyousefiofficial/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@saeedyousefiofficial</a> با ۳۳۳K فالوور) و حسین رضایی (<a href="https://www.instagram.com/hosseinrezaiii_/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@hosseinrezaiii_</a> با ۳۷K فالوور) با استایل کت‌وشلوار دبل‌برست رسمی، در میان یک دستگاه لامبورگینی هوراکان نارنجی و تسلا سایبرتراک استیل در محوطه قدم می‌زنند.
+                    </p>
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs font-mono">
+                        <div class="p-2 rounded-lg bg-dark-900 border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">لایک</span>
+                            <span class="text-emerald-400 font-bold">۵,۶۹۸</span>
+                        </div>
+                        <div class="p-2 rounded-lg bg-dark-900 border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">کامنت</span>
+                            <span class="text-amber-400 font-bold">۱,۲۵۸</span>
+                        </div>
+                        <div class="p-2 rounded-lg bg-dark-900 border border-emerald-500/30">
+                            <span class="text-slate-500 block text-[10px]">اشتراک (Share)</span>
+                            <span class="text-cyan-400 font-bold">۷,۰۲۷</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-400">
+                        <strong>ترفند کامنت‌مارکتینگ:</strong> فراخوان «جهت دریافت آدرس کلمه ماشین رو کامنت کنید» که به وسیله اتوماسیون دایرکت صدها لوکیشن را مستقیماً برای کاربران علاقه‌مند ارسال کرده است.
+                    </p>
+                </div>
+
+                <!-- Evidence 4: XMotors Official Presence -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-purple-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+                            <h3 class="text-base font-bold text-white">ایکس‌موتورز؛ رونمایی انحصاری از XPENG G9 Performance</h3>
+                        </div>
+                        <span class="text-xs font-mono text-purple-400">ساعت ۰۸:۵۰ صبح ۱۳ آبان</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        صفحه رسمی ایکس موتورز (<a href="https://www.instagram.com/xmotorsco/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@xmotorsco</a> - نماینده رسمی ایکس‌پنگ در ایران) با انتشار ویدیوی کراس‌اوور الکتریکی لوکس XPENG G9 Performance روی صفحه چرخان داخل شوروم، آغاز به کار رسمی مرکز تجربه خود را از ساعت ۱۹:۰۰ روز ۱۳ آبان در اتوپلازا اعلام کرد.
+                    </p>
+                    <div class="p-3.5 rounded-xl bg-dark-900/90 border border-slate-800 text-xs text-slate-300 space-y-1 font-sans">
+                        <strong class="text-purple-400 block mb-1">کپشن رسمی: «THE WAIT IS OVER💫⚡»</strong>
+                        <p class="text-[11px] text-slate-400">
+                            افتتاح مرکز تجربه ایکس‌موتورز همزمان با روز اول افتتاحیه اتوپلازا؛ این همان برندی است که یک دستگاه از خودروهای هوشمند آن به عنوان جایزه بزرگ پایان هفته افتتاحیه قرعه‌کشی می‌شود.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-800/80">
+                        <span>نوع خودرو: برقی پیشرفته دو موتوره (AWD)</span>
+                        <span class="font-mono text-slate-400">محل: شوروم اختصاصی XMotors</span>
+                    </div>
+                </div>
+
+                <!-- Evidence 5: Eventee 5 Concerts Carousel -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-pink-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-pink-400"></span>
+                            <h3 class="text-base font-bold text-white">ایونتی؛ سند تصویری و تقویم ۵ کنسرت روباز</h3>
+                        </div>
+                        <span class="text-xs font-mono text-pink-400">اسلایدهای ۲ تا ۶ کاروسل</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        اسکرین‌شات‌های ثبت‌شده از صفحه رسمی سامانه ایونتی (<a href="https://www.instagram.com/eventee.ir/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@eventee.ir</a>) جزئیات کاروسل ۶ اسلایدی اطلاع‌رسانی کنسرت‌ها را مستند کرده است:
+                    </p>
+                    <div class="space-y-2 font-mono text-xs">
+                        <div class="flex items-center justify-between p-2 rounded-lg bg-dark-900/90 border border-slate-800">
+                            <span class="text-slate-300">اسلاید ۲: چهارشنبه ۱۳ آبان</span>
+                            <span class="text-cyan-400 font-bold">اشوان (Ashvan)</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 rounded-lg bg-dark-900/90 border border-slate-800">
+                            <span class="text-slate-300">اسلاید ۵: پنج‌شنبه ۱۴ آبان</span>
+                            <span class="text-amber-400 font-bold">رضا صادقی (Reza Sadeghi)</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 rounded-lg bg-dark-900/90 border border-slate-800">
+                            <span class="text-slate-300">اسلاید ۴: جمعه ۱۵ آبان</span>
+                            <span class="text-emerald-400 font-bold">امید حاجیلی (Omid Hajili)</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 rounded-lg bg-dark-900/90 border border-slate-800">
+                            <span class="text-slate-300">اسلاید ۳: شنبه ۱۶ آبان</span>
+                            <span class="text-purple-400 font-bold">علیرضا طلیسچی (Alireza Talischi)</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2 rounded-lg bg-dark-900/90 border border-slate-800">
+                            <span class="text-slate-300">اسلاید ۶: یک‌شنبه ۱۷ آبان</span>
+                            <span class="text-pink-400 font-bold">عرشیاس (Arshiyas)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evidence 6: Supercars, Shemron Cars & Hami Rent -->
+                <div class="glass-panel rounded-2xl p-6 border border-white/10 space-y-4 hover:border-blue-400/40 transition">
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+                            <h3 class="text-base font-bold text-white">سوپرکارهای محوطه؛ حامی رنت، شمرون کارز و استودیو لوژی</h3>
+                        </div>
+                        <span class="text-xs font-mono text-blue-400">پوشش شبانه و روزانه</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        اسکرین‌شات‌های ارسالی نشان می‌دهد کانون ایران نوین برای خلق جلوه بصری لاکچری از اکیپ‌های دورهمی و شرکت‌های اجاره خودرو بهره برده است:
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside">
+                        <li><strong>حامی رنت (<a href="https://www.instagram.com/hamirent/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@hamirent</a>):</strong> استقرار کاروان مرسدس بنز G-Class مشکی، دوج چلنجر وایدبادی زرشکی و رولزرویس در ورودی سنگ‌فرش.</li>
+                        <li><strong>شمرون کارز و مهدی داگر (<a href="https://www.instagram.com/mahdii_dgr/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@mahdii_dgr</a>):</strong> حضور کوروت C8 آبی فیروزه‌ای پلاک موقت با ۱٬۲۶۲ لایک.</li>
+                        <li><strong>استودیو لوژی (<a href="https://www.instagram.com/studiolozhi/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 font-mono dir-ltr hover:underline">@studiolozhi</a>):</strong> تیزر شبانه با فراری ۴۸۸ قرمز و لامبورگینی هوراکان نارنجی جلوی غرفه سلامتیان با ۲٬۶۷۵ لایک.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
 
 <!-- WhatsApp Feedback & Public Opinion Contribution Section -->
         <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-500/30 bg-gradient-to-br from-emerald-950/30 via-dark-800 to-dark-900 relative overflow-hidden my-8">
@@ -6633,6 +6860,7 @@ The Most Powerful Advertising &amp; Marketing Agency in Iran.
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">منوهای پرمخاطب</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="#observatory-tabs" onclick="switchTab('timeline')" class="hover:text-[#e85a2a] transition">تایم‌لاین رویدادها (۷۸ فاز)</a></li>
+                        <li><a href="#observatory-tabs" onclick="switchTab('audio-sentiment')" class="hover:text-[#e85a2a] transition">واکاوی صوتی و تقابل تعریف و تخریب</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('influencers')" class="hover:text-[#e85a2a] transition">شبکه ۵۸ اینفلوئنسر</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('critiques')" class="hover:text-[#e85a2a] transition">رصدخانه توییت‌ها و شبکه X</a></li>
                         <li><a href="#observatory-tabs" onclick="switchTab('rawpdf')" class="hover:text-[#e85a2a] transition">متن کامل سند دیتاک</a></li>
