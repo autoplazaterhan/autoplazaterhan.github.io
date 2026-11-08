@@ -6,6 +6,13 @@
     <title>اتو پلازا تهران | پایگاه جامع رصد، تحلیل و داده‌های اطلاعاتی (Tehran Auto Plaza)</title>
     <meta name="description" content="رصدخانه تحلیلی، کالبدشکافی رسانه‌ای، ۵۵ پست رسمی، شبکه ۵۸ اینفلوئنسر، ۱۳۷ توییت X، پایش اختصاصی متادیتای اینستاگرام با باکس API (BoxAPI) و متن سند دیتاک اتوپلازا تهران.">
     <meta name="google-site-verification" content="1bSuT-QoDy7ukGYtf0DVP8jBzHzIhxEqGPHMJVxjD94" />
+        <!-- Official Tehran Auto Plaza Font Preloads (RaviFaNum - autoplaza.ir sync) -->
+    <link rel="preload" href="assets/fonts/RaviFaNum-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/RaviFaNum-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/RaviFaNum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/RaviFaNum-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/RaviFaNum-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/RaviFaNum-ExtraBlack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,6 +48,76 @@
         }
     </script>
     <style>
+        /* Official Tehran Auto Plaza (autoplaza.ir) Typography */
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Thin.woff2') format('woff2');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Light.woff2') format('woff2');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-Black.woff2') format('woff2');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'RaviFaNum';
+            src: url('assets/fonts/RaviFaNum-ExtraBlack.woff2') format('woff2');
+            font-weight: 950;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @keyframes apzMarquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(50%); }
+        }
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: apzMarquee 38s linear infinite;
+        }
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
         :root {
             --background: #050505;
             --foreground: #f5f5f5;
@@ -50,7 +127,7 @@
             --accent: #e85a2a;
         }
         * {
-            font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            font-family: 'RaviFaNum', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
             letter-spacing: 0 !important;
         }
         body {
@@ -2415,7 +2492,7 @@
 
                 <!-- Engagement Concentration Insight -->
                 <div class="p-4 rounded-xl bg-dark-800/80 border border-[#e85a2a]/30 flex items-start gap-3 text-xs leading-relaxed">
-                    <span class="text-lg">💡</span>
+                    <svg class="w-5 h-5 text-[#e85a2a] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                     <div>
                         <strong class="text-[#e85a2a] font-bold block mb-0.5">قانون تمرکز تعامل (The 67.8% Engagement Law):</strong>
                         از مجموع ۳۷۲K لایک کل پیج، بیش از ۲۵۲K لایک (۶۷.۸٪ کل پیج) منحصراً حاصل ۳ ریلز وایرال است: ریلز آشپزی امید استایل (۱۸۲K لایک)، ریلز ۴ نفره با صدای سه‌بعدی اهورا نیازی (۳۸.۸K لایک) و ریلز استقبال شب اول افتتاحیه (۳۱K لایک).
@@ -3704,7 +3781,7 @@
                     <!-- Search Input -->
                     <div class="relative flex-1 max-w-md">
                         <input type="text" id="tweet-search-input" oninput="handleTweetFilter()" placeholder="جستجو در متن توییت، نام یا آیدی کاربر (@...)" dir="rtl" class="w-full bg-dark-900 border border-slate-700/80 rounded-xl ps-4 pe-10 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-rose-500/60 focus:ring-1 focus:ring-rose-500/60 transition">
-                        <span class="absolute end-3 top-3 text-slate-500 text-xs">🔍</span>
+                        <svg class="w-4 h-4 text-slate-500 absolute end-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
 
                     <!-- Sort Select -->
